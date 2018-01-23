@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-23T04:08:29-08:00</updated><id>http://localhost:4000/</id><title type="html">UCSC Software Portal</title><subtitle>Software Portal for the Center for Research in Open Source Software (CROSS)</subtitle><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><entry><title type="html">MFEM 3.3.2 Released</title><link href="http://localhost:4000/news/2017/11/10/mfem-3.3.2/" rel="alternate" type="text/html" title="MFEM 3.3.2 Released" /><published>2017-11-10T00:00:00-08:00</published><updated>2017-11-10T00:00:00-08:00</updated><id>http://localhost:4000/news/2017/11/10/mfem-3.3.2</id><content type="html" xml:base="http://localhost:4000/news/2017/11/10/mfem-3.3.2/">&lt;p&gt;Version 3.3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: &lt;a href=&quot;http://mfem.org&quot;&gt;http://mfem.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal of MFEM is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to &lt;a href=&quot;http://ceed.exascaleproject.org/&quot;&gt;exascale supercomputers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It has many features, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.&lt;/li&gt;
+  &lt;li&gt;Parallel version scalable to hundreds of thousands of MPI cores.&lt;/li&gt;
+  &lt;li&gt;Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.&lt;/li&gt;
+  &lt;li&gt;Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.&lt;/li&gt;
+  &lt;li&gt;Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.&lt;/li&gt;
+  &lt;li&gt;Scalable algebraic multigrid, time integrators, and eigensolvers.&lt;/li&gt;
+  &lt;li&gt;Lightweight interactive OpenGL visualization with the MFEM-based &lt;a href=&quot;http://glvis.org&quot;&gt;GLVis&lt;/a&gt; tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the &lt;a href=&quot;https://github.com/mfem/mfem/blob/v3.3.2/CHANGELOG&quot;&gt;new additions in version 3.3.2&lt;/a&gt; are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support for high-order mesh optimization based on the target-matrix optimization paradigm from the &lt;a href=&quot;https:www.llnl.gov/casc/ethos&quot;&gt;ETHOS project&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Implementation of the community policies in xSDK, the &lt;a href=&quot;https://xsdk.info/&quot;&gt;Extreme-scale Scientific Software Development Kit&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Integration with the &lt;a href=&quot;http://portal.nersc.gov/project/sparse/strumpack&quot;&gt;STRUMPACK&lt;/a&gt; parallel sparse direct solver and preconditioner.&lt;/li&gt;
+  &lt;li&gt;Several new &lt;a href=&quot;http://mfem.org/lininterp/&quot;&gt;linear interpolators&lt;/a&gt;, five new examples and miniapps.&lt;/li&gt;
+  &lt;li&gt;Various memory, performance, discretization and solver improvements, including physical-to-reference space mapping capabilities.&lt;/li&gt;
+  &lt;li&gt;Continuous integration testing on Linux, Mac and Windows.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MFEM is being developed in &lt;a href=&quot;https://computation.llnl.gov/casc&quot;&gt;CASC&lt;/a&gt;, &lt;a href=&quot;https://www.llnl.gov&quot;&gt;LLNL&lt;/a&gt; and is freely available under LGPL 2.1.&lt;/p&gt;
+
+&lt;p&gt;For more details, see the &lt;a href=&quot;http://mfem.org/examples&quot;&gt;interactive documentation&lt;/a&gt; and the full &lt;a href=&quot;https://github.com/mfem/mfem/blob/v3.3.2/CHANGELOG&quot;&gt;CHANGELOG&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 3.3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: http://mfem.org</summary></entry><entry><title type="html">VisIt 2.12.3 Released</title><link href="http://localhost:4000/news/2017/06/30/visit-2.12.3/" rel="alternate" type="text/html" title="VisIt 2.12.3 Released" /><published>2017-06-30T00:00:00-07:00</published><updated>2017-06-30T00:00:00-07:00</updated><id>http://localhost:4000/news/2017/06/30/visit-2.12.3</id><content type="html" xml:base="http://localhost:4000/news/2017/06/30/visit-2.12.3/">&lt;p&gt;Version 2.12.3 of VisIt is now available at: &lt;a href=&quot;https://visit.llnl.gov/&quot;&gt;visit.llnl.gov&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VisIt is an open source, cross platform, interactive, scalable, visualization and analysis tool for simulation data. VisIt 2.12.3 is primarily a bug fix release.&lt;/p&gt;
+
+&lt;p&gt;2.12.3 release highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The ANSYS reader was improved to support more general kinds of NBLOCK format strings.&lt;/li&gt;
+  &lt;li&gt;The GUI performance was improved on databases with large numbers of variables.&lt;/li&gt;
+  &lt;li&gt;A bug was corrected with query-over-time where it would yield different results in certain instances than repeatedly changing the time state and querying the value.&lt;/li&gt;
+  &lt;li&gt;A couple of bugs were corrected with the Silo reader.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a complete list of changes see the 2.12.3 &lt;a href=&quot;https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.12.3&quot;&gt;release notes&lt;/a&gt;&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 2.12.3 of VisIt is now available at: visit.llnl.gov</summary></entry><entry><title type="html">MFEM 3.3 Released</title><link href="http://localhost:4000/news/2017/01/28/mfem-3.3/" rel="alternate" type="text/html" title="MFEM 3.3 Released" /><published>2017-01-28T00:00:00-08:00</published><updated>2017-01-28T00:00:00-08:00</updated><id>http://localhost:4000/news/2017/01/28/mfem-3.3</id><content type="html" xml:base="http://localhost:4000/news/2017/01/28/mfem-3.3/">&lt;p&gt;Version 3.3 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: &lt;a href=&quot;http://mfem.org&quot;&gt;http://mfem.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal of MFEM is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to &lt;a href=&quot;https://exascaleproject.org/2016/11/11/ecp_co-design_centers&quot;&gt;exascale supercomputers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It has many features, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.&lt;/li&gt;
+  &lt;li&gt;Parallel version scalable to hundreds of thousands of MPI cores.&lt;/li&gt;
+  &lt;li&gt;Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.&lt;/li&gt;
+  &lt;li&gt;Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.&lt;/li&gt;
+  &lt;li&gt;Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.&lt;/li&gt;
+  &lt;li&gt;Scalable algebraic multigrid, time integrators, and eigensolvers.&lt;/li&gt;
+  &lt;li&gt;Lightweight interactive OpenGL visualization with the MFEM-based &lt;a href=&quot;http://glvis.org&quot;&gt;GLVis&lt;/a&gt; tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the &lt;a href=&quot;https://raw.githubusercontent.com/mfem/mfem/1569425857975d7c961b97d09c300da09aad9f82/CHANGELOG&quot;&gt;new additions in version 3.3&lt;/a&gt; are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comprehensive support for the linear and nonlinear solvers, preconditioners, time integrators and other features from the &lt;a href=&quot;https://www.mcs.anl.gov/petsc&quot;&gt;PETSc&lt;/a&gt; and &lt;a href=&quot;https://computation.llnl.gov/projects/sundials/sundials-software&quot;&gt;SUNDIALS&lt;/a&gt; suites.&lt;/li&gt;
+  &lt;li&gt;Linear system interface for action-only linear operators including support for matrix-free preconditioning and low-order-refined spaces.&lt;/li&gt;
+  &lt;li&gt;General quadrature and nodal finite element basis types.&lt;/li&gt;
+  &lt;li&gt;Scalable parallel mesh format.&lt;/li&gt;
+  &lt;li&gt;Thirty six new integrators for common families of operators.&lt;/li&gt;
+  &lt;li&gt;Sixteen new serial and parallel example codes.&lt;/li&gt;
+  &lt;li&gt;Support for CMake, on-the-fly compression of file streams, and HDF5-based output following the &lt;a href=&quot;https://github.com/LLNL/conduit&quot;&gt;Conduit&lt;/a&gt; mesh blueprint specification.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MFEM is being developed in &lt;a href=&quot;https://computation.llnl.gov/casc&quot;&gt;CASC&lt;/a&gt;, &lt;a href=&quot;https://www.llnl.gov&quot;&gt;LLNL&lt;/a&gt; and is freely available under LGPL 2.1.&lt;/p&gt;
+
+&lt;p&gt;For more details, see the &lt;a href=&quot;http://mfem.org/examples&quot;&gt;interactive documentation&lt;/a&gt; and the full &lt;a href=&quot;https://raw.githubusercontent.com/mfem/mfem/master/CHANGELOG&quot;&gt;CHANGELOG&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 3.3 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: http://mfem.org</summary></entry><entry><title type="html">Strawman 0.1.0 Released</title><link href="http://localhost:4000/news/2017/01/10/strawman-0.1.0/" rel="alternate" type="text/html" title="Strawman 0.1.0 Released" /><published>2017-01-10T00:00:00-08:00</published><updated>2017-01-10T00:00:00-08:00</updated><id>http://localhost:4000/news/2017/01/10/strawman-0.1.0</id><content type="html" xml:base="http://localhost:4000/news/2017/01/10/strawman-0.1.0/">&lt;p&gt;Strawman is an open source many-core capable lightweight in situ visualization and analysis infrastructure for multi-physics HPC simulations.&lt;/p&gt;
+
+&lt;p&gt;0.1.0, the first release of Strawman, is now available at: https://software.llnl.gov/strawman/Releases.html and on GitHub at https://github.com/llnl/strawman&lt;/p&gt;
+
+&lt;p&gt;For more details, see Strawman’s &lt;a href=&quot;https://software.llnl.gov/strawman&quot;&gt;Documentation&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Strawman is an open source many-core capable lightweight in situ visualization and analysis infrastructure for multi-physics HPC simulations.</summary></entry><entry><title type="html">Conduit 0.2.1 Released</title><link href="http://localhost:4000/news/2017/01/06/conduit-0.2.1/" rel="alternate" type="text/html" title="Conduit 0.2.1 Released" /><published>2017-01-06T00:00:00-08:00</published><updated>2017-01-06T00:00:00-08:00</updated><id>http://localhost:4000/news/2017/01/06/conduit-0.2.1</id><content type="html" xml:base="http://localhost:4000/news/2017/01/06/conduit-0.2.1/">&lt;p&gt;Version 0.2.1 of Conduit is now available at: https://software.llnl.gov/conduit/releases.html&lt;/p&gt;
+
+&lt;p&gt;Conduit provides APIs focused on simplifying data exchange in HPC simulations. It provides an intuitive model for describing hierarchical scientific data in C++, C, Fortran, and Python and is used for data coupling between packages in-core, serialization, and I/O tasks.&lt;/p&gt;
+
+&lt;p&gt;The 0.2.1 version is primarily a bug fix releases, which includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixes to support static builds, including on on BGQ using xlc and gcc&lt;/li&gt;
+  &lt;li&gt;Bug fixes for Blueprint verify routines.&lt;/li&gt;
+  &lt;li&gt;The elimination of separate fortran libs by moving fortran symbols into their associated main libs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more details, see Conduit’s &lt;a href=&quot;https://software.llnl.gov/conduit/releases.html#v0-2-1&quot;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 0.2.1 of Conduit is now available at: https://software.llnl.gov/conduit/releases.html</summary></entry><entry><title type="html">VisIt 2.12.0 Released</title><link href="http://localhost:4000/news/2016/11/10/visit-2.12.0/" rel="alternate" type="text/html" title="VisIt 2.12.0 Released" /><published>2016-11-10T00:00:00-08:00</published><updated>2016-11-10T00:00:00-08:00</updated><id>http://localhost:4000/news/2016/11/10/visit-2.12.0</id><content type="html" xml:base="http://localhost:4000/news/2016/11/10/visit-2.12.0/">&lt;p&gt;Version 2.12.0 of VisIt is now available at: &lt;a href=&quot;https://visit.llnl.gov/&quot;&gt;visit.llnl.gov&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VisIt is an open source, cross platform, interactive, scalable, visualization and analysis tool for simulation data.&lt;/p&gt;
+
+&lt;p&gt;2.12.0 release highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improvements for rendering streamlines with the Pseudocolor Plot&lt;/li&gt;
+  &lt;li&gt;Added gzstream support for ASCII-based database readers&lt;/li&gt;
+  &lt;li&gt;Added experimental topological segmentation expressions (&lt;code class=&quot;highlighter-rouge&quot;&gt;merge_tree&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;split_tree&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;local_threshold&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Several bug fixes to VisIt and Libsim&lt;/li&gt;
+  &lt;li&gt;Ship numpy with VisIt’s CLI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a complete list of the changes see the 2.12.0 &lt;a href=&quot;https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.12.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 2.12.0 of VisIt is now available at: visit.llnl.gov</summary></entry><entry><title type="html">Conduit 0.2.0 Released</title><link href="http://localhost:4000/news/2016/11/03/conduit-0.2.0/" rel="alternate" type="text/html" title="Conduit 0.2.0 Released" /><published>2016-11-03T00:00:00-07:00</published><updated>2016-11-03T00:00:00-07:00</updated><id>http://localhost:4000/news/2016/11/03/conduit-0.2.0</id><content type="html" xml:base="http://localhost:4000/news/2016/11/03/conduit-0.2.0/">&lt;p&gt;Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html&lt;/p&gt;
+
+&lt;p&gt;Conduit provides APIs focused on simplifying data exchange in HPC simulations. It provides an intuitive model for describing hierarchical scientific data in C++, C, Fortran, and Python and is used for data coupling between packages in-core, serialization, and I/O tasks.&lt;/p&gt;
+
+&lt;p&gt;The 0.2.0 release includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Changes to clarify concepts in the &lt;code class=&quot;highlighter-rouge&quot;&gt;conduit::Node&lt;/code&gt; API&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;const&lt;/code&gt; access to &lt;code class=&quot;highlighter-rouge&quot;&gt;conduit::Node&lt;/code&gt;’s children and a new &lt;code class=&quot;highlighter-rouge&quot;&gt;NodeConstIterator&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Added support for building on Windows&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;conduit::blueprint&lt;/code&gt; verify support and examples for the mcarray and mesh protocols&lt;/li&gt;
+  &lt;li&gt;Added extensive HDF5 I/O support to &lt;code class=&quot;highlighter-rouge&quot;&gt;conduit::relay&lt;/code&gt; for reading and writing between HDF5 files and conduit Node trees&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more details, see Conduit’s &lt;a href=&quot;http://software.llnl.gov/conduit/releases.html#v0-2-0&quot;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html</summary></entry><entry><title type="html">GridDyn Initial Release</title><link href="http://localhost:4000/news/2016/08/17/griddyn/" rel="alternate" type="text/html" title="GridDyn Initial Release" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>http://localhost:4000/news/2016/08/17/griddyn</id><content type="html" xml:base="http://localhost:4000/news/2016/08/17/griddyn/">&lt;p&gt;GridDyn is a power system simulator developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as “Grid Dine”. It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.&lt;/p&gt;
+
+&lt;p&gt;While good open source tools existed on the distribution side,  the open source tools on the transmission side were limited in usability either in the language or platform or simulation capability, and commercial tools, while quite capable, simply did not allow the access to the internal components and data required to conduct the research. Thus, the decision was made to design a platform that met the needs of the research project. Building off of prior efforts in grid simulation, GridDyn was designed to meet the current and future research needs of the various power grid related research and computational efforts.&lt;/p&gt;
+
+&lt;p&gt;It is written in C++, making use of recent improvements in the C++ standards.  It is intended to be cross platform with regard to operating system and machine scale. The design goals were for the software to be easy to couple with other simulation, and be easy to modify and extend.  It is very much still in development and as such, the interfaces and code is likely to change, in some cases significantly as more experience and testing is done. It is our expectation that the performance, reliability, capabilities, and flexibility will continue to improve as projects making use of the code continue and new ones develop.  We expect there are still many issues so any bug reports or fixes are welcome. And hopefully even in its current state and as the software improves the broader power systems research community will find it useful.&lt;/p&gt;
+
+&lt;p&gt;GridDyn is Open Source software, publicly available on GitHub at: &lt;a href=&quot;https://github.com/llnl/griddyn&quot;&gt;github.com/llnl/griddyn&lt;/a&gt; under a &lt;a href=&quot;https://github.com/LLNL/GridDyn/blob/master/LICENSE&quot;&gt;BSD License&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">GridDyn is a power system simulator developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as “Grid Dine”. It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.</summary></entry><entry><title type="html">VisIt 2.10.3 Released</title><link href="http://localhost:4000/news/2016/07/21/visit-2.10.3/" rel="alternate" type="text/html" title="VisIt 2.10.3 Released" /><published>2016-07-21T00:00:00-07:00</published><updated>2016-07-21T00:00:00-07:00</updated><id>http://localhost:4000/news/2016/07/21/visit-2.10.3</id><content type="html" xml:base="http://localhost:4000/news/2016/07/21/visit-2.10.3/">&lt;p&gt;Version 2.10.3 of VisIt, a cross platform Open Source, interactive, scalable, visualization, animation and analysis tool is now available at: &lt;a href=&quot;https://visit.llnl.gov/&quot;&gt;visit.llnl.gov&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;VisIt 2.10.3 is primarily a bug fix release that resolves about twenty important issues.&lt;/p&gt;
+
+&lt;p&gt;For a complete list of the changes see the 2.10.3 &lt;a href=&quot;https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.10.3&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 2.10.3 of VisIt, a cross platform Open Source, interactive, scalable, visualization, animation and analysis tool is now available at: visit.llnl.gov</summary></entry><entry><title type="html">MFEM 3.2 Released</title><link href="http://localhost:4000/news/2016/06/30/mfem-3.2/" rel="alternate" type="text/html" title="MFEM 3.2 Released" /><published>2016-06-30T00:00:00-07:00</published><updated>2016-06-30T00:00:00-07:00</updated><id>http://localhost:4000/news/2016/06/30/mfem-3.2</id><content type="html" xml:base="http://localhost:4000/news/2016/06/30/mfem-3.2/">&lt;p&gt;Version 3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: &lt;a href=&quot;http://mfem.org&quot;&gt;http://mfem.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The goal of MFEM is to enable high-performance scalable finite element discretization research and application development. It has many features, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.&lt;/li&gt;
+  &lt;li&gt;Parallel version scalable to hundreds of thousands of MPI cores.&lt;/li&gt;
+  &lt;li&gt;Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.&lt;/li&gt;
+  &lt;li&gt;Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.&lt;/li&gt;
+  &lt;li&gt;Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.&lt;/li&gt;
+  &lt;li&gt;Scalable algebraic multigrid, time integrators, and eigensolvers.&lt;/li&gt;
+  &lt;li&gt;Lightweight interactive OpenGL visualization with the MFEM-based &lt;a href=&quot;http://glvis.org&quot;&gt;GLVis&lt;/a&gt; tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the new additions in version 3.2 are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dynamic AMR with parallel load balancing, derefinement of non-conforming meshes.&lt;/li&gt;
+  &lt;li&gt;Tensor-based high-performance finite element operator assembly and (matrix-free) evaluation.&lt;/li&gt;
+  &lt;li&gt;Support for discontinuous Galerkin and hybridization methods on parallel non-conforming meshes.&lt;/li&gt;
+  &lt;li&gt;Support for Gmsh and CUBIT meshes.&lt;/li&gt;
+  &lt;li&gt;Secure socket communications in class socketstream based on GnuTLS.&lt;/li&gt;
+  &lt;li&gt;Four new serial and parallel example codes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MFEM is being developed in CASC, LLNL and is freely available under LGPL 2.1.&lt;/p&gt;
+
+&lt;p&gt;For more details, see the &lt;a href=&quot;http://mfem.org/examples&quot;&gt;interactive documentation&lt;/a&gt; and the full &lt;a href=&quot;https://raw.githubusercontent.com/mfem/mfem/master/CHANGELOG&quot;&gt;CHANGELOG&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sina Hamedian &lt;sina@ucsc.edu&gt;</name></author><summary type="html">Version 3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: http://mfem.org</summary></entry></feed>

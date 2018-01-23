@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="http://www.iconj.com/ico/b/h/bhsk5a4k6n.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="/css/main.css" media="screen">
+
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>News | UCSC Software Portal</title>
+<meta property="og:title" content="News" />
+<meta name="author" content="Sina Hamedian <sina@ucsc.edu>" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
+<meta property="og:description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
+<link rel="canonical" href="http://localhost:4000/news/" />
+<meta property="og:url" content="http://localhost:4000/news/" />
+<meta property="og:site_name" content="UCSC Software Portal" />
+<script type="application/ld+json">
+{"name":null,"description":"Software Portal for the Center for Research in Open Source Software (CROSS)","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"WebPage","url":"http://localhost:4000/news/","publisher":null,"image":null,"headline":"News","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+<nav id="header-slim" class="navbar navbar-default navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#siteNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CROSS Software Portal</a>
+    </div>
+    <div id="siteNavbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right navbar-collapse">
+        <li id="home"><a href="/">Catalog</a></li>
+        <li id="about"><a href="https://cross.ucsc.edu/about/">About</a></li>
+        <li id="github"><a href="https://github.com/uccross"><span class="fa fa-github fa-lg"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<article>
+    <h2>
+      <a href="/news/2017/11/10/mfem-3.3.2/">MFEM 3.3.2 Released</a>
+      <small class="pull-right">November 10, 2017</small>
+    </h2>
+
+    <p>Version 3.3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: <a href="http://mfem.org">http://mfem.org</a></p>
+
+<p>The goal of MFEM is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to <a href="http://ceed.exascaleproject.org/">exascale supercomputers</a>.</p>
+
+<p>It has many features, including:</p>
+
+<ul>
+  <li>2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.</li>
+  <li>Parallel version scalable to hundreds of thousands of MPI cores.</li>
+  <li>Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.</li>
+  <li>Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.</li>
+  <li>Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.</li>
+  <li>Scalable algebraic multigrid, time integrators, and eigensolvers.</li>
+  <li>Lightweight interactive OpenGL visualization with the MFEM-based <a href="http://glvis.org">GLVis</a> tool.</li>
+</ul>
+
+<p>Some of the <a href="https://github.com/mfem/mfem/blob/v3.3.2/CHANGELOG">new additions in version 3.3.2</a> are:</p>
+
+<ul>
+  <li>Support for high-order mesh optimization based on the target-matrix optimization paradigm from the <a href="https:www.llnl.gov/casc/ethos">ETHOS project</a>.</li>
+  <li>Implementation of the community policies in xSDK, the <a href="https://xsdk.info/">Extreme-scale Scientific Software Development Kit</a>.</li>
+  <li>Integration with the <a href="http://portal.nersc.gov/project/sparse/strumpack">STRUMPACK</a> parallel sparse direct solver and preconditioner.</li>
+  <li>Several new <a href="http://mfem.org/lininterp/">linear interpolators</a>, five new examples and miniapps.</li>
+  <li>Various memory, performance, discretization and solver improvements, including physical-to-reference space mapping capabilities.</li>
+  <li>Continuous integration testing on Linux, Mac and Windows.</li>
+</ul>
+
+<p>MFEM is being developed in <a href="https://computation.llnl.gov/casc">CASC</a>, <a href="https://www.llnl.gov">LLNL</a> and is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the <a href="http://mfem.org/examples">interactive documentation</a> and the full <a href="https://github.com/mfem/mfem/blob/v3.3.2/CHANGELOG">CHANGELOG</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2017/06/30/visit-2.12.3/">VisIt 2.12.3 Released</a>
+      <small class="pull-right">June 30, 2017</small>
+    </h2>
+
+    <p>Version 2.12.3 of VisIt is now available at: <a href="https://visit.llnl.gov/">visit.llnl.gov</a></p>
+
+<p>VisIt is an open source, cross platform, interactive, scalable, visualization and analysis tool for simulation data. VisIt 2.12.3 is primarily a bug fix release.</p>
+
+<p>2.12.3 release highlights:</p>
+
+<ul>
+  <li>The ANSYS reader was improved to support more general kinds of NBLOCK format strings.</li>
+  <li>The GUI performance was improved on databases with large numbers of variables.</li>
+  <li>A bug was corrected with query-over-time where it would yield different results in certain instances than repeatedly changing the time state and querying the value.</li>
+  <li>A couple of bugs were corrected with the Silo reader.</li>
+</ul>
+
+<p>For a complete list of changes see the 2.12.3 <a href="https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.12.3">release notes</a></p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2017/01/28/mfem-3.3/">MFEM 3.3 Released</a>
+      <small class="pull-right">January 28, 2017</small>
+    </h2>
+
+    <p>Version 3.3 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: <a href="http://mfem.org">http://mfem.org</a></p>
+
+<p>The goal of MFEM is to enable high-performance scalable finite element discretization research and application development on a wide variety of platforms, ranging from laptops to <a href="https://exascaleproject.org/2016/11/11/ecp_co-design_centers">exascale supercomputers</a>.</p>
+
+<p>It has many features, including:</p>
+
+<ul>
+  <li>2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.</li>
+  <li>Parallel version scalable to hundreds of thousands of MPI cores.</li>
+  <li>Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.</li>
+  <li>Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.</li>
+  <li>Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.</li>
+  <li>Scalable algebraic multigrid, time integrators, and eigensolvers.</li>
+  <li>Lightweight interactive OpenGL visualization with the MFEM-based <a href="http://glvis.org">GLVis</a> tool.</li>
+</ul>
+
+<p>Some of the <a href="https://raw.githubusercontent.com/mfem/mfem/1569425857975d7c961b97d09c300da09aad9f82/CHANGELOG">new additions in version 3.3</a> are:</p>
+
+<ul>
+  <li>Comprehensive support for the linear and nonlinear solvers, preconditioners, time integrators and other features from the <a href="https://www.mcs.anl.gov/petsc">PETSc</a> and <a href="https://computation.llnl.gov/projects/sundials/sundials-software">SUNDIALS</a> suites.</li>
+  <li>Linear system interface for action-only linear operators including support for matrix-free preconditioning and low-order-refined spaces.</li>
+  <li>General quadrature and nodal finite element basis types.</li>
+  <li>Scalable parallel mesh format.</li>
+  <li>Thirty six new integrators for common families of operators.</li>
+  <li>Sixteen new serial and parallel example codes.</li>
+  <li>Support for CMake, on-the-fly compression of file streams, and HDF5-based output following the <a href="https://github.com/LLNL/conduit">Conduit</a> mesh blueprint specification.</li>
+</ul>
+
+<p>MFEM is being developed in <a href="https://computation.llnl.gov/casc">CASC</a>, <a href="https://www.llnl.gov">LLNL</a> and is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the <a href="http://mfem.org/examples">interactive documentation</a> and the full <a href="https://raw.githubusercontent.com/mfem/mfem/master/CHANGELOG">CHANGELOG</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2017/01/10/strawman-0.1.0/">Strawman 0.1.0 Released</a>
+      <small class="pull-right">January 10, 2017</small>
+    </h2>
+
+    <p>Strawman is an open source many-core capable lightweight in situ visualization and analysis infrastructure for multi-physics HPC simulations.</p>
+
+<p>0.1.0, the first release of Strawman, is now available at: https://software.llnl.gov/strawman/Releases.html and on GitHub at https://github.com/llnl/strawman</p>
+
+<p>For more details, see Strawman’s <a href="https://software.llnl.gov/strawman">Documentation</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2017/01/06/conduit-0.2.1/">Conduit 0.2.1 Released</a>
+      <small class="pull-right">January 06, 2017</small>
+    </h2>
+
+    <p>Version 0.2.1 of Conduit is now available at: https://software.llnl.gov/conduit/releases.html</p>
+
+<p>Conduit provides APIs focused on simplifying data exchange in HPC simulations. It provides an intuitive model for describing hierarchical scientific data in C++, C, Fortran, and Python and is used for data coupling between packages in-core, serialization, and I/O tasks.</p>
+
+<p>The 0.2.1 version is primarily a bug fix releases, which includes:</p>
+
+<ul>
+  <li>Fixes to support static builds, including on on BGQ using xlc and gcc</li>
+  <li>Bug fixes for Blueprint verify routines.</li>
+  <li>The elimination of separate fortran libs by moving fortran symbols into their associated main libs</li>
+</ul>
+
+<p>For more details, see Conduit’s <a href="https://software.llnl.gov/conduit/releases.html#v0-2-1">Release Notes</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/11/10/visit-2.12.0/">VisIt 2.12.0 Released</a>
+      <small class="pull-right">November 10, 2016</small>
+    </h2>
+
+    <p>Version 2.12.0 of VisIt is now available at: <a href="https://visit.llnl.gov/">visit.llnl.gov</a></p>
+
+<p>VisIt is an open source, cross platform, interactive, scalable, visualization and analysis tool for simulation data.</p>
+
+<p>2.12.0 release highlights:</p>
+
+<ul>
+  <li>Improvements for rendering streamlines with the Pseudocolor Plot</li>
+  <li>Added gzstream support for ASCII-based database readers</li>
+  <li>Added experimental topological segmentation expressions (<code class="highlighter-rouge">merge_tree</code>,<code class="highlighter-rouge">split_tree</code>, and <code class="highlighter-rouge">local_threshold</code>)</li>
+  <li>Several bug fixes to VisIt and Libsim</li>
+  <li>Ship numpy with VisIt’s CLI</li>
+</ul>
+
+<p>For a complete list of the changes see the 2.12.0 <a href="https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.12.0">release notes</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/11/03/conduit-0.2.0/">Conduit 0.2.0 Released</a>
+      <small class="pull-right">November 03, 2016</small>
+    </h2>
+
+    <p>Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html</p>
+
+<p>Conduit provides APIs focused on simplifying data exchange in HPC simulations. It provides an intuitive model for describing hierarchical scientific data in C++, C, Fortran, and Python and is used for data coupling between packages in-core, serialization, and I/O tasks.</p>
+
+<p>The 0.2.0 release includes:</p>
+
+<ul>
+  <li>Changes to clarify concepts in the <code class="highlighter-rouge">conduit::Node</code> API</li>
+  <li>Added <code class="highlighter-rouge">const</code> access to <code class="highlighter-rouge">conduit::Node</code>’s children and a new <code class="highlighter-rouge">NodeConstIterator</code></li>
+  <li>Added support for building on Windows</li>
+  <li>Added <code class="highlighter-rouge">conduit::blueprint</code> verify support and examples for the mcarray and mesh protocols</li>
+  <li>Added extensive HDF5 I/O support to <code class="highlighter-rouge">conduit::relay</code> for reading and writing between HDF5 files and conduit Node trees</li>
+</ul>
+
+<p>For more details, see Conduit’s <a href="http://software.llnl.gov/conduit/releases.html#v0-2-0">Release Notes</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/08/17/griddyn/">GridDyn Initial Release</a>
+      <small class="pull-right">August 17, 2016</small>
+    </h2>
+
+    <p>GridDyn is a power system simulator developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as “Grid Dine”. It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.</p>
+
+<p>While good open source tools existed on the distribution side,  the open source tools on the transmission side were limited in usability either in the language or platform or simulation capability, and commercial tools, while quite capable, simply did not allow the access to the internal components and data required to conduct the research. Thus, the decision was made to design a platform that met the needs of the research project. Building off of prior efforts in grid simulation, GridDyn was designed to meet the current and future research needs of the various power grid related research and computational efforts.</p>
+
+<p>It is written in C++, making use of recent improvements in the C++ standards.  It is intended to be cross platform with regard to operating system and machine scale. The design goals were for the software to be easy to couple with other simulation, and be easy to modify and extend.  It is very much still in development and as such, the interfaces and code is likely to change, in some cases significantly as more experience and testing is done. It is our expectation that the performance, reliability, capabilities, and flexibility will continue to improve as projects making use of the code continue and new ones develop.  We expect there are still many issues so any bug reports or fixes are welcome. And hopefully even in its current state and as the software improves the broader power systems research community will find it useful.</p>
+
+<p>GridDyn is Open Source software, publicly available on GitHub at: <a href="https://github.com/llnl/griddyn">github.com/llnl/griddyn</a> under a <a href="https://github.com/LLNL/GridDyn/blob/master/LICENSE">BSD License</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/07/21/visit-2.10.3/">VisIt 2.10.3 Released</a>
+      <small class="pull-right">July 21, 2016</small>
+    </h2>
+
+    <p>Version 2.10.3 of VisIt, a cross platform Open Source, interactive, scalable, visualization, animation and analysis tool is now available at: <a href="https://visit.llnl.gov/">visit.llnl.gov</a></p>
+
+<p>VisIt 2.10.3 is primarily a bug fix release that resolves about twenty important issues.</p>
+
+<p>For a complete list of the changes see the 2.10.3 <a href="https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.10.3">release notes</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/06/30/mfem-3.2/">MFEM 3.2 Released</a>
+      <small class="pull-right">June 30, 2016</small>
+    </h2>
+
+    <p>Version 3.2 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: <a href="http://mfem.org">http://mfem.org</a></p>
+
+<p>The goal of MFEM is to enable high-performance scalable finite element discretization research and application development. It has many features, including:</p>
+
+<ul>
+  <li>2D and 3D, arbitrary order H1, H(curl), H(div), L2, NURBS elements.</li>
+  <li>Parallel version scalable to hundreds of thousands of MPI cores.</li>
+  <li>Conforming/nonconforming adaptive mesh refinement (AMR), including anisotropic refinement, derefenement and parallel load balancing.</li>
+  <li>Galerkin, mixed, isogeometric, discontinuous Galerkin, hybridized, and DPG discretizations.</li>
+  <li>Support for triangular, quadrilateral, tetrahedral and hexahedral elements, including arbitrary order curvilinear meshes.</li>
+  <li>Scalable algebraic multigrid, time integrators, and eigensolvers.</li>
+  <li>Lightweight interactive OpenGL visualization with the MFEM-based <a href="http://glvis.org">GLVis</a> tool.</li>
+</ul>
+
+<p>Some of the new additions in version 3.2 are:</p>
+
+<ul>
+  <li>Dynamic AMR with parallel load balancing, derefinement of non-conforming meshes.</li>
+  <li>Tensor-based high-performance finite element operator assembly and (matrix-free) evaluation.</li>
+  <li>Support for discontinuous Galerkin and hybridization methods on parallel non-conforming meshes.</li>
+  <li>Support for Gmsh and CUBIT meshes.</li>
+  <li>Secure socket communications in class socketstream based on GnuTLS.</li>
+  <li>Four new serial and parallel example codes.</li>
+</ul>
+
+<p>MFEM is being developed in CASC, LLNL and is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the <a href="http://mfem.org/examples">interactive documentation</a> and the full <a href="https://raw.githubusercontent.com/mfem/mfem/master/CHANGELOG">CHANGELOG</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/06/30/glvis-3.2/">GLVis 3.2 Released</a>
+      <small class="pull-right">June 30, 2016</small>
+    </h2>
+
+    <p>Version 3.2 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: <a href="http://glvis.org">http://glvis.org</a>.</p>
+
+<p>The goal of GLVis is to enable quick but precise visualization of general finite element meshes and functions in a wide variety of applications. It has many features, including:</p>
+
+<ul>
+  <li>Support for arbitrary high-order and NURBS meshes.</li>
+  <li>Visualization of parallel meshes and solutions.</li>
+  <li>Accurate functional representation of many finite elements.</li>
+  <li>Server mode accepting multiple socket connections.</li>
+</ul>
+
+<p>Some of the new additions in version 3.2 are:</p>
+
+<ul>
+  <li>Secure socket connections based on the GnuTLS library.</li>
+  <li>Optional plot caption support.</li>
+  <li>Various other small improvements and bug fixes.</li>
+</ul>
+
+<p>GLVis being developed in CASC, LLNL and is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the full <a href="https://raw.githubusercontent.com/glvis/glvis/master/CHANGELOG">CHANGELOG</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/06/09/hypre-2.11.1/">Hypre 2.11.1</a>
+      <small class="pull-right">June 09, 2016</small>
+    </h2>
+
+    <p>Congratulations to the Hypre team, that today released <a href="https://github.com/LLNL/hypre/releases/tag/v2.11.1">version 2.11.1</a>, now available from their GitHub project page.</p>
+
+<p>The notable changes from the <a href="https://github.com/LLNL/hypre/blob/v2.11.1/CHANGELOG">CHANGELOG</a> are:</p>
+
+<ul>
+  <li>Fixed one more bug related to SStructSetSharedPart and SetNeighborPart</li>
+  <li>Fixed a bug in PFMG red/black relaxation for 2D problems</li>
+  <li>Fixed various other bugs in ParCSR and the FEI</li>
+  <li>Fixed configure option <code class="highlighter-rouge">--without-MLI</code> and removed option <code class="highlighter-rouge">--with-examples</code></li>
+  <li>Modified code to enable compilation with a C++ compiler.</li>
+  <li>Added several missing Fortran interface routines in Struct and BoomerAMG</li>
+  <li>Updated the AME and LOBPCG interfaces to work correctly with both absolute and
+relative tolerances.</li>
+</ul>
+
+<p>Hypre is freely available under LGPL 2.1.</p>
+
+<p>For the latest version, please visit the Hypre project <a href="https://github.com/LLNL/hypre">on GitHub</a> or on the <a href="http://www.llnl.gov/casc/hypre/">LLNL Computation site</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/03/22/zfsonlinux-0.6.5.6/">OpenZFS on Linux 0.6.5.6</a>
+      <small class="pull-right">March 22, 2016</small>
+    </h2>
+
+    <p>Version 0.6.5.6 of OpenZFS on Linux, the native Linux kernel port of the ZFS filesystem, is now available at: <a href="http://zfsonlinux.org">http://zfsonlinux.org</a></p>
+
+<p>Some notable improvements in version 0.6.5.6 are:</p>
+
+<ul>
+  <li>Bugs fixes for case-insensitive filesystem support. Users running Samba servers that export ZFS filesystems will benefit from this update.</li>
+  <li>Bug fixes and improved scalability for zvols. Support for asynchronous creation of device nodes. This fixes several hangs and allows pools with many zvols to be imported quickly.</li>
+  <li>Add <code class="highlighter-rouge">-gLP</code> to zpool subcommands to print vdev names as a GUID, a real path resolving all symbolic links, and as a full path. This change enables better ZFS integration in Ubuntu’s GRUB utilities.</li>
+  <li>Fix a corruption bug where, in certain circumstances, <code class="highlighter-rouge">zfs send -i</code> (incremental send) can produce a stream which will result in incorrect sparse file contents on the target.</li>
+</ul>
+
+<p>For more details, check out the <a href="https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.6.5.6">full changelog</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/03/09/visit-2.10.1/">VisIt 2.10.1 Released</a>
+      <small class="pull-right">March 09, 2016</small>
+    </h2>
+
+    <p>Source code and prebuilt executables are available on the <a href="https://visit.llnl.gov/">VisIt web site</a>.</p>
+
+<p>VisIt 2.10.1 contains the following enhancements:</p>
+
+<ul>
+  <li>
+    <p>VisIt now permits the -socket-bridge-host command line argument to override the host name passed to compute engines when VCL starts a socket bridge. This is useful for login nodes that are attached to multiple network interfaces such as on BlueGene/Q where compute nodes may need to attach to the socket bridge host (typically the LAC node) using an alias.</p>
+  </li>
+  <li>The PF3D database plugin was enhanced so that it reads the new multi level file format.</li>
+  <li>The SPH Resample Operator now supports zone-centered data.</li>
+  <li>VTK’s higher order elements are now exposed via Libsim.</li>
+  <li>The Silo database plugin now supports all-empty multi-block objects.</li>
+  <li>The interpretation of “_meshtv_searchpath” and “_visit_searchpath” was changed in the Silo database plugin. If the search path is blank it will now be ignored instead of causing the plugin to ignore all variables located in subdirectories. The plugin will now ignore all variables located in subdirectories when the search path contains a path that doesn’t exist in the Silo file. This change in behavior was necessitated when we discovered that codes had been unintentionally outputting Silo files with blank search paths for years. Because the Silo plugin wasn’t handling a blank search path properly, this never caused a problem. When the behavior was fixed in VisIt 2.10, VisIt no longer displayed the variables in the subdirectories in its menus when it encountered such a file. Since we couldn’t fix all the existing files, we decided to change the interpretation of the search path in VisIt.</li>
+  <li>The pre-built Ubuntu distributions now contain support for reading ITAPS files.</li>
+  <li>The PDB Z File database plugin was enhanced to support marker meshes and variables.</li>
+  <li>The MFEM database plugin was updated to use MFEM 3.1, which provides support for MFEM AMR meshes. See http://mfem.org/ for more details.</li>
+  <li>The ADIOS database plugin was upgraded to use ADIOS 1.9.0.</li>
+</ul>
+
+<p>As well as the following bug fixes:</p>
+
+<ul>
+  <li>The VisItAddPlot() function in Libsim was incorrectly using the global “Apply operators to all plots” setting when creating plots. The behavior for VisItAddPlot() has been changed so new plots are not created with previously applied operators to more closely match the operation of the VisIt CLI.</li>
+  <li>Large tecplot files can now be read on Windows.</li>
+  <li>A potential memory overwrite was fixed in the Fortran visitgetenv function in Libsim.</li>
+  <li>Fixed a bug where the QT4 include and archive files were missing after doing a ‘make install’.</li>
+  <li>Re-enabled adaptive csg discretization for Windows, which was inadvertently disabled for previous release.</li>
+  <li>Fixed a bug with the PF3D database plugin where the time and cycle were reported as zero for all the time states accessed after the initial time state accessed.</li>
+  <li>Fixed a bug preventing the reading of DOS-formatted .visit files on Linux.</li>
+  <li>Fixed bug whereby setting ‘ssh command’ would not work correctly on Windows. If the path to ssh contains spaces, the full path and command need to be surrounded in double-quotes, eg “C:\Program Files (x86)\Putty\plink.exe”. If manually adding this to an .xml host profile, the quotes and path-separators should be escaped: “"C:\Program Files (x86)\Putty\plink.exe"”.</li>
+  <li>Fixed a bug opening Silo files larger than 4 Gbytes on Windows.</li>
+  <li>Fixed the tensorVectorMult bug in the SPH Resample Operator found by Cody Raskin.</li>
+  <li>Fixed a bug that prevented the SPH Resample Operator from working with the Volume Plot.</li>
+  <li>Fixed handling of buggy mmesh_name member of multi-block objects in Silo files.</li>
+</ul>
+
+<p>More information can be found on the <a href="https://wci.llnl.gov/simulation/computer-codes/visit/releases/release-notes-2.10.1">Release Notes for VisIt 2.10.1</a> page.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/02/16/mfem-3.1/">MFEM 3.1 Released</a>
+      <small class="pull-right">February 16, 2016</small>
+    </h2>
+
+    <p>Version 3.1 of MFEM, a lightweight, general, scalable C++ library for finite element methods, is now available at: <a href="http://mfem.org">http://mfem.org</a></p>
+
+<p>The goal of MFEM is to enable research and development of scalable finite element discretization and solver algorithms through general finite element abstractions, accurate and flexible visualization, and tight integration with the hypre linear solvers library. It has many features, including:</p>
+
+<ul>
+  <li>2D and 3D, arbitrary high-order H1, H(curl), H(div), L2 and NURBS elements.</li>
+  <li>Parallel version scalable to hundreds of thousands of MPI cores.</li>
+  <li>Conforming or nonconforming adaptive mesh refinement (AMR), including anisotropic refinement.</li>
+  <li>Galerkin, mixed, isogeometric, DG and DPG discretizations.</li>
+  <li>Support for triangular, quadrilateral, tetrahedral and hexahedral elements with curved boundaries.</li>
+  <li>Lightweight interactive OpenGL visualization with <a href="http://glvis.org">GLVis</a>.</li>
+</ul>
+
+<p>Some of the new additions in version 3.1 are:</p>
+
+<ul>
+  <li>Substantially improved non-conforming adaptive mesh refinement, which now works also in parallel.</li>
+  <li>General finite element spaces and solvers on surfaces and mesh skeletons.</li>
+  <li>Support for hybridization and static condensation, with a new FEM &lt;-&gt; linear system interface.</li>
+  <li>New eigensolvers and improved linear solvers and preconditioners.</li>
+  <li>Visualization of non-conforming meshes and grid functions, and vector fields on surface meshes.</li>
+  <li>Six new examples codes for parallel AMR, eigenvalue problems and DG diffusion.</li>
+  <li>Five new electromagnetic and meshing miniapps.</li>
+</ul>
+
+<p>MFEM is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the <a href="http://mfem.org/examples">interactive documentation</a> and the full description of the <a href="https://raw.githubusercontent.com/mfem/mfem/master/CHANGELOG">changes</a>.</p>
+
+  
+  <article>
+    <h2>
+      <a href="/news/2016/02/05/glvis-3.1/">GLVis 3.1 Released</a>
+      <small class="pull-right">February 05, 2016</small>
+    </h2>
+
+    <p>Version 3.1 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: <a href="http://glvis.org">http://glvis.org</a>.</p>
+
+<p>The goal of GLVis is to enable research and development of general finite element discretization algorithms through accurate OpenGL visualization, and tight integration with the <a href="http://mfem.org">MFEM</a> library. It has many features, including:</p>
+
+<ul>
+  <li>Support for arbitrary high-order and NURBS meshes.</li>
+  <li>Visualization of parallel meshes and solutions.</li>
+  <li>Accurate functional representation of many finite elements.</li>
+  <li>Server mode accepting multiple socket connections.</li>
+</ul>
+
+<p>Some of the new additions in version 3.1 are:</p>
+
+<ul>
+  <li>Support for visualization of non-conforming meshes and grid functions.</li>
+  <li>New visualization of vector fields on surface meshes.</li>
+  <li>Improved build system, command line options and PDF screenshots.</li>
+</ul>
+
+<p>GLVis is freely available under LGPL 2.1.</p>
+
+<p>For more details, see the full description of the <a href="https://raw.githubusercontent.com/glvis/glvis/master/CHANGELOG">changes</a>.</p>
+
+  
+</article></article></article></article></article></article></article></article></article></article></article></article></article></article></article></article>
+
+</div>
+
+<div id="footer-slim" class="footer">
+  <div class="container">
+
+  <hr />
+
+  <br />
+
+  <div class="row">
+    <div class="col-md-12 subfooter">
+      <p> 2018 CROSS - Center for Research in Open Source Software.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+
+<script src="/js/filter-repos.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75179431-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</body>
+</html>

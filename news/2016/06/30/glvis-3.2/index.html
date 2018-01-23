@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -14,23 +14,25 @@
   <link rel="stylesheet" href="/css/main.css" media="screen">
 
   <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>LLNL Software Catalog | UCSC Software Portal</title>
-<meta property="og:title" content="LLNL Software Catalog" />
+<title>GLVis 3.2 Released | UCSC Software Portal</title>
+<meta property="og:title" content="GLVis 3.2 Released" />
 <meta name="author" content="Sina Hamedian <sina@ucsc.edu>" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
-<meta property="og:description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Version 3.2 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: http://glvis.org." />
+<meta property="og:description" content="Version 3.2 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: http://glvis.org." />
+<link rel="canonical" href="http://localhost:4000/news/2016/06/30/glvis-3.2/" />
+<meta property="og:url" content="http://localhost:4000/news/2016/06/30/glvis-3.2/" />
 <meta property="og:site_name" content="UCSC Software Portal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-06-30T00:00:00-07:00" />
 <script type="application/ld+json">
-{"name":"UCSC Software Portal","description":"Software Portal for the Center for Research in Open Source Software (CROSS)","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"LLNL Software Catalog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":null,"description":"Version 3.2 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: http://glvis.org.","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"BlogPosting","url":"http://localhost:4000/news/2016/06/30/glvis-3.2/","publisher":null,"image":null,"headline":"GLVis 3.2 Released","dateModified":"2016-06-30T00:00:00-07:00","datePublished":"2016-06-30T00:00:00-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/news/2016/06/30/glvis-3.2/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 
-<body ng-controller="gitHubDataController">
+<body>
 
 <nav id="header-slim" class="navbar navbar-default navbar-inverse">
   <div class="container">
@@ -53,54 +55,36 @@
 </nav>
 
 <div class="container">
+  <div class="row">
+    <h2>
+      <a href="/news/2016/06/30/glvis-3.2/">GLVis 3.2 Released</a>
+      <small class="pull-right">June 30, 2016</small>
+    </h2>
 
+    <p>Version 3.2 of GLVis, a lightweight OpenGL tool for accurate and flexible finite element visualization, is now available at: <a href="http://glvis.org">http://glvis.org</a>.</p>
 
-<h2 class="page-header text-center">
-<span ng-show="repoData"> {{ repoData.length }} </span>
-Software Repositories
-</h2>
+<p>The goal of GLVis is to enable quick but precise visualization of general finite element meshes and functions in a wide variety of applications. It has many features, including:</p>
 
-<div class="container">
-    <div class="col-xs-6 col-xs-offset-3">
-        <input id="filterRepos" type="text" style="width: 100%" autofocus placeholder="Filter Repositories">
-    </div>
-</div>
+<ul>
+  <li>Support for arbitrary high-order and NURBS meshes.</li>
+  <li>Visualization of parallel meshes and solutions.</li>
+  <li>Accurate functional representation of many finite elements.</li>
+  <li>Server mode accepting multiple socket connections.</li>
+</ul>
 
-<section ng-show="repoData" id="repositories" class="flex-container">
-    <div ng-repeat="repo in repoData | filter:searchText  | orderBy:predicate:reverse" class="flex-item {{repo.name}} {{repo.owner.login}} {{repo.primaryLanguage.name}}">
-        <h4 class="text-center">
-        <a href="{{ repo.url }}" alt="View Project on GitHub" title="View Project on GitHub"> {{ repo.name }} </a>
-        <small><a href="https://github.com/{{ repo.owner.login }}" alt="View Owner on GitHub" title="View Owner on GitHub"> {{ repo.owner.login }} </a></small>
-        <small><span alt="Primary Language" title="Primary Language">{{ repo.primaryLanguage.name }}</span></small>
-        </h4>
+<p>Some of the new additions in version 3.2 are:</p>
 
-        <p class="text-justify">{{ repo.description }}</p>
+<ul>
+  <li>Secure socket connections based on the GnuTLS library.</li>
+  <li>Optional plot caption support.</li>
+  <li>Various other small improvements and bug fixes.</li>
+</ul>
 
-        <p class="stats text-center">
-            <a href="{{ repo.url }}" alt="GitHub Page" title="GitHub Page">
-                <span class="fa fa-github"></span>
-            </a>
+<p>GLVis being developed in CASC, LLNL and is freely available under LGPL 2.1.</p>
 
-            <a href="{{ repo.url }}/stargazers" alt="Stargazers" title="Stargazers">
-                <span class="fa fa-star"></span> {{ repo.stargazers.totalCount }}
-            </a>
+<p>For more details, see the full <a href="https://raw.githubusercontent.com/glvis/glvis/master/CHANGELOG">CHANGELOG</a>.</p>
 
-            <a href="{{ repo.url }}/network" alt="Forks" title="Forks">
-                <span class="fa fa-code-fork"></span> {{ repo.forks.totalCount }}
-            </a>
-
-            <a ng-if="repo.homepageUrl" href="{{ repo.homepageUrl }}" alt="Project Website" title="Project Website">
-                <span class="fa fa-globe"></span>
-            </a>
-        </p>
-    </div>
-</section>
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-<script src="js/github-dynamic.js"></script>
-
+  </div>
 </div>
 
 <div id="footer-slim" class="footer">
@@ -142,3 +126,4 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
 
 </body>
 </html>
+

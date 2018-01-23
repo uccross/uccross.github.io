@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -14,23 +14,25 @@
   <link rel="stylesheet" href="/css/main.css" media="screen">
 
   <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>LLNL Software Catalog | UCSC Software Portal</title>
-<meta property="og:title" content="LLNL Software Catalog" />
+<title>Conduit 0.2.0 Released | UCSC Software Portal</title>
+<meta property="og:title" content="Conduit 0.2.0 Released" />
 <meta name="author" content="Sina Hamedian <sina@ucsc.edu>" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
-<meta property="og:description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html" />
+<meta property="og:description" content="Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html" />
+<link rel="canonical" href="http://localhost:4000/news/2016/11/03/conduit-0.2.0/" />
+<meta property="og:url" content="http://localhost:4000/news/2016/11/03/conduit-0.2.0/" />
 <meta property="og:site_name" content="UCSC Software Portal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-11-03T00:00:00-07:00" />
 <script type="application/ld+json">
-{"name":"UCSC Software Portal","description":"Software Portal for the Center for Research in Open Source Software (CROSS)","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"LLNL Software Catalog","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":null,"description":"Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"BlogPosting","url":"http://localhost:4000/news/2016/11/03/conduit-0.2.0/","publisher":null,"image":null,"headline":"Conduit 0.2.0 Released","dateModified":"2016-11-03T00:00:00-07:00","datePublished":"2016-11-03T00:00:00-07:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/news/2016/11/03/conduit-0.2.0/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 
-<body ng-controller="gitHubDataController">
+<body>
 
 <nav id="header-slim" class="navbar navbar-default navbar-inverse">
   <div class="container">
@@ -53,54 +55,29 @@
 </nav>
 
 <div class="container">
+  <div class="row">
+    <h2>
+      <a href="/news/2016/11/03/conduit-0.2.0/">Conduit 0.2.0 Released</a>
+      <small class="pull-right">November 03, 2016</small>
+    </h2>
 
+    <p>Version 0.2.0 of Conduit is now available at: http://software.llnl.gov/conduit/releases.html</p>
 
-<h2 class="page-header text-center">
-<span ng-show="repoData"> {{ repoData.length }} </span>
-Software Repositories
-</h2>
+<p>Conduit provides APIs focused on simplifying data exchange in HPC simulations. It provides an intuitive model for describing hierarchical scientific data in C++, C, Fortran, and Python and is used for data coupling between packages in-core, serialization, and I/O tasks.</p>
 
-<div class="container">
-    <div class="col-xs-6 col-xs-offset-3">
-        <input id="filterRepos" type="text" style="width: 100%" autofocus placeholder="Filter Repositories">
-    </div>
-</div>
+<p>The 0.2.0 release includes:</p>
 
-<section ng-show="repoData" id="repositories" class="flex-container">
-    <div ng-repeat="repo in repoData | filter:searchText  | orderBy:predicate:reverse" class="flex-item {{repo.name}} {{repo.owner.login}} {{repo.primaryLanguage.name}}">
-        <h4 class="text-center">
-        <a href="{{ repo.url }}" alt="View Project on GitHub" title="View Project on GitHub"> {{ repo.name }} </a>
-        <small><a href="https://github.com/{{ repo.owner.login }}" alt="View Owner on GitHub" title="View Owner on GitHub"> {{ repo.owner.login }} </a></small>
-        <small><span alt="Primary Language" title="Primary Language">{{ repo.primaryLanguage.name }}</span></small>
-        </h4>
+<ul>
+  <li>Changes to clarify concepts in the <code class="highlighter-rouge">conduit::Node</code> API</li>
+  <li>Added <code class="highlighter-rouge">const</code> access to <code class="highlighter-rouge">conduit::Node</code>’s children and a new <code class="highlighter-rouge">NodeConstIterator</code></li>
+  <li>Added support for building on Windows</li>
+  <li>Added <code class="highlighter-rouge">conduit::blueprint</code> verify support and examples for the mcarray and mesh protocols</li>
+  <li>Added extensive HDF5 I/O support to <code class="highlighter-rouge">conduit::relay</code> for reading and writing between HDF5 files and conduit Node trees</li>
+</ul>
 
-        <p class="text-justify">{{ repo.description }}</p>
+<p>For more details, see Conduit’s <a href="http://software.llnl.gov/conduit/releases.html#v0-2-0">Release Notes</a>.</p>
 
-        <p class="stats text-center">
-            <a href="{{ repo.url }}" alt="GitHub Page" title="GitHub Page">
-                <span class="fa fa-github"></span>
-            </a>
-
-            <a href="{{ repo.url }}/stargazers" alt="Stargazers" title="Stargazers">
-                <span class="fa fa-star"></span> {{ repo.stargazers.totalCount }}
-            </a>
-
-            <a href="{{ repo.url }}/network" alt="Forks" title="Forks">
-                <span class="fa fa-code-fork"></span> {{ repo.forks.totalCount }}
-            </a>
-
-            <a ng-if="repo.homepageUrl" href="{{ repo.homepageUrl }}" alt="Project Website" title="Project Website">
-                <span class="fa fa-globe"></span>
-            </a>
-        </p>
-    </div>
-</section>
-
-
-
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-<script src="js/github-dynamic.js"></script>
-
+  </div>
 </div>
 
 <div id="footer-slim" class="footer">
@@ -142,3 +119,4 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
 
 </body>
 </html>
+

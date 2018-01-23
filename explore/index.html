@@ -1,9 +1,59 @@
----
-title: Explore
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% raw %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="http://www.iconj.com/ico/b/h/bhsk5a4k6n.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="/css/main.css" media="screen">
+
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Explore | UCSC Software Portal</title>
+<meta property="og:title" content="Explore" />
+<meta name="author" content="Sina Hamedian <sina@ucsc.edu>" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
+<meta property="og:description" content="Software Portal for the Center for Research in Open Source Software (CROSS)" />
+<link rel="canonical" href="http://localhost:4000/explore/" />
+<meta property="og:url" content="http://localhost:4000/explore/" />
+<meta property="og:site_name" content="UCSC Software Portal" />
+<script type="application/ld+json">
+{"name":null,"description":"Software Portal for the Center for Research in Open Source Software (CROSS)","author":{"@type":"Person","name":"Sina Hamedian <sina@ucsc.edu>"},"@type":"WebPage","url":"http://localhost:4000/explore/","publisher":null,"image":null,"headline":"Explore","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+<body>
+
+<nav id="header-slim" class="navbar navbar-default navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#siteNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">CROSS Software Portal</a>
+    </div>
+    <div id="siteNavbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right navbar-collapse">
+        <li id="home"><a href="/">Catalog</a></li>
+        <li id="about"><a href="https://cross.ucsc.edu/about/">About</a></li>
+        <li id="github"><a href="https://github.com/uccross"><span class="fa fa-github fa-lg"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
 
 <link rel="stylesheet" type="text/css" href="../css/graphstyle.css" />
 <h1><center>LLNL GitHub Visualizations</center></h1>
@@ -60,4 +110,46 @@ layout: default
 	draw_pie_repos("pieRepos");
 </script>
 
-{% endraw %}
+
+
+</div>
+
+<div id="footer-slim" class="footer">
+  <div class="container">
+
+  <hr />
+
+  <br />
+
+  <div class="row">
+    <div class="col-md-12 subfooter">
+      <p> 2018 CROSS - Center for Research in Open Source Software.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+
+<script src="/js/filter-repos.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75179431-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</body>
+</html>
