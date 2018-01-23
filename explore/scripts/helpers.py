@@ -50,7 +50,7 @@ def read_gql(filepath):
 def get_gitauth():
 	print("Reading authorization token...")
 	# TODO: Might not really want this at global scope
-	token = os.environ['GITHUB_API_TOKEN']
+	token = 'd923e750178109cda5ddd218d12a6e1fe9da1daa'
 	authhead = 'Authorization: bearer ' + token
 	print("Token read!")
 	return authhead

@@ -76,24 +76,24 @@
             },
             "url": "https://github.com/xiszishu/syssim"
         },
-        "Quick/Nimble": {
-            "description": "NIMBLE Environment for Statistical Computing (incubator)",
+        "nimble-dev/nimble": {
+            "description": "The base NIMBLE package for R",
             "forks": {
-                "totalCount": 319
+                "totalCount": 11
             },
-            "homepageUrl": "https://crossmembers.ucsc.edu/project/the-nimble-environment-for-statistical-computing/",
+            "homepageUrl": "http://R-nimble.org",
             "name": "Nimble",
-            "nameWithOwner": "Quick/Nimble",
+            "nameWithOwner": "nimble-dev/nimble",
             "owner": {
-                "login": "Quick"
+                "login": "nimble-dev"
             },
             "primaryLanguage": {
-                "name": "Swift"
+                "name": "C++"
             },
             "stargazers": {
-                "totalCount": 2605
+                "totalCount": 49
             },
-            "url": "https://github.com/Quick/Nimble"
+            "url": "https://github.com/nimble-dev/nimble"
         },
         "cruzdb/pg_zlog": {
             "description": "Table replication for PostgreSQL nodes with Ceph and ZLog",
@@ -190,25 +190,6 @@
             },
             "url": "https://github.com/systemslab/sirius-popper"
         },
-        "systemslab/popperci": {
-            "description": "CI server for Popperized experiments (running at http://ci.falsifiable.us).",
-            "forks": {
-                "totalCount": 0
-            },
-            "homepageUrl": "https://github.com/systemslab/popperci",
-            "name": "popperci",
-            "nameWithOwner": "systemslab/popperci",
-            "owner": {
-                "login": "systemslab"
-            },
-            "primaryLanguage": {
-                "name": "Python"
-            },
-            "stargazers": {
-                "totalCount": 1
-            },
-            "url": "https://github.com/systemslab/popperci"
-        },
         "systemslab/tcp_inigo": {
             "description": "TCP Inigo takes DCTCP's ECN based Congestion Control and uses a similar delay based CC alongside it, amongst other enhancements",
             "forks": {
@@ -265,6 +246,196 @@
                 "totalCount": 0
             },
             "url": "https://github.com/systemslab/docker-baseball"
+        },
+        "popperized/nwp-popper": {
+            "description": "Numeric Weather Prediction pipelines",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://github.com/popperized/nwp-popper",
+            "name": "nwp-popper",
+            "nameWithOwner": "popperized/nwp-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Shell"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/nwp-popper"
+        },
+        "popperized/lesson-episode-3": {
+            "description": "episode 3 of popper lesson",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://github.com/popperized/lesson-episode-3",
+            "name": "lesson-episode-3",
+            "nameWithOwner": "popperized/lesson-episode-3",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Python"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/lesson-episode-3"
+        },
+        "popperized/PopperCI_Toil": {
+            "description": "This repo shows how to leverage PopperCI and Toil to automate the process of running Cactus program reproducibly and conduct a parameter sweep thereof.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/PopperCI_Toil",
+            "name": "PopperCI_Toil",
+            "nameWithOwner": "popperized/PopperCI_Toil",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Shell"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/PopperCI_Toil"
+        },
+        "popperized/cudele-popper": {
+            "description": "Experiments for our Programmable File Systen (ProgFS). It contains ideas for Mantle, CudeleFS, Malacology, and PaulOcto.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://docs.google.com/presentation/d/1zvtOKVkC3_F_Jp0EW1UzKKmfpiY6qh3dC7TNkiwJYCE/edit",
+            "name": "cudele-popper",
+            "nameWithOwner": "popperized/cudele-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "TeX"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/cudele-popper"
+        },
+        "popperized/quiho-popper": {
+            "description": "The Popper repository for the quiho paper submission. Contains experiments, results, and manuscript.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/quiho-popper",
+            "name": "quiho-popper",
+            "nameWithOwner": "popperized/quiho-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "TeX"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/quiho-popper"
+        },
+        "popperized/parsplice-popper": {
+            "description": "HXHIM-Mantle explores the trade-offs between distribution and locality by implementing the Mantle API on HXHIM. For detailed information, see the paper.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/parsplice-popper/blob/master/paper/paper.pdf",
+            "name": "parsplice-popper",
+            "nameWithOwner": "popperized/parsplice-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Jupyter Notebook"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/parsplice-popper"
+        },
+        "popperized/zlog-popper": {
+            "description": "",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/zlog-popper",
+            "name": "zlog-popper",
+            "nameWithOwner": "popperized/zlog-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Jupyter Notebook"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/zlog-popper"
+        },
+        "popperized/zlog-popper": {
+            "description": "This repository has our experiments.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/malacology-popper",
+            "name": "zlog-popper",
+            "nameWithOwner": "popperized/zlog-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "Roff"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/malacology-popper"
+        },
+        "popperized/mantle-popper": {
+            "description": "The experiments and deployment scripts for Mantle benchmarking.",
+            "forks": {
+                "totalCount": 3
+            },
+            "homepageUrl": "https://github.com/popperized/mantle-popper",
+            "name": "mantle-popper",
+            "nameWithOwner": "popperized/mantle-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "HTML"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/mantle-popper"
+        },
+        "popperized/bams-popper": {
+            "description": "The experiments and deployment scripts for Mantle benchmarking.",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/popperized/bams-popper",
+            "name": "bams-popper",
+            "nameWithOwner": "popperized/bams-popper",
+            "owner": {
+                "login": "popperized"
+            },
+            "primaryLanguage": {
+                "name": "TeX"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/popperized/bams-popper"
         }
     }
 }

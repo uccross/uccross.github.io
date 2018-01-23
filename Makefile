@@ -10,4 +10,3 @@ build:
 
 deploy: clean build
 	chmod -R ugo+rX _site/
-	rsync -avz --delete _site/ timbl:/export/www/software-pre/html/

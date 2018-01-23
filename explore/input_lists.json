@@ -1,25 +1,25 @@
 {
     "orgs": [
-        "chaos",
-        "esgf",
-        "flux-framework",
-        "glvis",
-        "llnl",
-        "mfem",
-        "pruners",
-        "rose-compiler",
-        "spack",
-        "uv-cdat",
+        "chaos", 
+        "esgf", 
+        "flux-framework", 
+        "glvis", 
+        "llnl", 
+        "mfem", 
+        "pruners", 
+        "rose-compiler", 
+        "spack", 
+        "uv-cdat", 
         "zfsonlinux"
-    ],
+    ], 
     "repos": [
-        "ceed/laghos",
-        "dun/conman",
-        "dun/munge",
-        "frankieli/icenine",
-        "hpc/dcp",
-        "hpc/mpifileutils",
-        "hpc/openlorenz",
+        "ceed/laghos", 
+        "dun/conman", 
+        "dun/munge", 
+        "frankieli/icenine", 
+        "hpc/dcp", 
+        "hpc/mpifileutils", 
+        "hpc/openlorenz", 
         "hpc/spindle"
     ]
 }
