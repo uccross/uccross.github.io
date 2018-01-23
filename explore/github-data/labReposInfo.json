@@ -1,0 +1,118 @@
+{
+    "data": {
+        "be3short/HybridSystemsEnvironment": {
+            "description": "Strong Consistency in Dynamic Wireless Networks to Enable Safe and Efficient Navigation of Autonomous Vehicle",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/strong-consistency-autonomous-vehicle/",
+            "name": "HybridSystemsEnvironment",
+            "nameWithOwner": "be3short/HybridSystemsEnvironment",
+            "owner": {
+                "login": "be3short"
+            },
+            "primaryLanguage": {
+                "name": "Java"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/be3short/HybridSystemsEnvironment"
+        },
+        "cruzdb/zlog": {
+            "description": "ZLog: Distributed Shared-Log for Software-Defined Storage",
+            "forks": {
+                "totalCount": 9
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/zlog/",
+            "name": "zlog",
+            "nameWithOwner": "cruzdb/zlog",
+            "owner": {
+                "login": "cruzdb"
+            },
+            "primaryLanguage": {
+                "name": "C++"
+            },
+            "stargazers": {
+                "totalCount": 54
+            },
+            "url": "https://github.com/cruzdb/zlog"
+        },
+        "bnestere/nvm_buffer": {
+            "description": "Memory and Storage Coordinative Lifetime Enhancement with Near-Data Computing",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/memory-and-storage-coordinative-lifetime-enhancement-with-near-data-computing/",
+            "name": "nvm_buffer",
+            "nameWithOwner": "bnestere/nvm_buffer",
+            "owner": {
+                "login": "bnestere"
+            },
+            "primaryLanguage": {
+                "name": "C"
+            },
+            "stargazers": {
+                "totalCount": 1
+            },
+            "url": "https://github.com/bnestere/nvm_buffer"
+        },
+        "xiszishu/syssim": {
+            "description": "Memory and Storage Coordinative Lifetime Enhancement with Near-Data Computing",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/memory-and-storage-coordinative-lifetime-enhancement-with-near-data-computing/",
+            "name": "syssim",
+            "nameWithOwner": "xiszishu/syssim",
+            "owner": {
+                "login": "xiszishu"
+            },
+            "primaryLanguage": {
+                "name": "C++"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/xiszishu/syssim"
+        },
+        "Quick/Nimble": {
+            "description": "NIMBLE Environment for Statistical Computing (incubator)",
+            "forks": {
+                "totalCount": 319
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/the-nimble-environment-for-statistical-computing/",
+            "name": "Nimble",
+            "nameWithOwner": "Quick/Nimble",
+            "owner": {
+                "login": "Quick"
+            },
+            "primaryLanguage": {
+                "name": "Swift"
+            },
+            "stargazers": {
+                "totalCount": 2605
+            },
+            "url": "https://github.com/Quick/Nimble"
+        },
+        "uccross/skyhook": {
+            "description": "Skyhook: Elastic Databases for the Cloud (incubator)",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/skyhook/",
+            "name": "skyhook",
+            "nameWithOwner": "uccross/skyhook",
+            "owner": {
+                "login": "uccross"
+            },
+            "primaryLanguage": {
+                "name": "C"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/uccross/skyhook"
+        }
+    }
+}
