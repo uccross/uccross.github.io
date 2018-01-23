@@ -95,16 +95,149 @@
             },
             "url": "https://github.com/Quick/Nimble"
         },
-        "uccross/skyhook": {
-            "description": "Skyhook: Elastic Databases for the Cloud (incubator)",
+        "cruzdb/pg_zlog": {
+            "description": "Table replication for PostgreSQL nodes with Ceph and ZLog",
             "forks": {
                 "totalCount": 0
             },
-            "homepageUrl": "https://crossmembers.ucsc.edu/project/skyhook/",
-            "name": "skyhook",
-            "nameWithOwner": "uccross/skyhook",
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/zlog/",
+            "name": "pg_zlog",
+            "nameWithOwner": "cruzdb/pg_zlog",
             "owner": {
-                "login": "uccross"
+                "login": "cruzdb"
+            },
+            "primaryLanguage": {
+                "name": "C"
+            },
+            "stargazers": {
+                "totalCount": 3
+            },
+            "url": "https://github.com/cruzdb/pg_zlog"
+        },
+        "cruzdb/go-zlog": {
+            "description": "Go bindings for Zlog",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://crossmembers.ucsc.edu/project/zlog/",
+            "name": "go-zlog",
+            "nameWithOwner": "cruzdb/go-zlog",
+            "owner": {
+                "login": "cruzdb"
+            },
+            "primaryLanguage": {
+                "name": "Go"
+            },
+            "stargazers": {
+                "totalCount": 4
+            },
+            "url": "https://github.com/cruzdb/go-zlog"
+        },
+        "systemslab/popper": {
+            "description": "Practical Falsifiable Research",
+            "forks": {
+                "totalCount": 6
+            },
+            "homepageUrl": "http://falsifiable.us",
+            "name": "popper",
+            "nameWithOwner": "systemslab/popper",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "Go"
+            },
+            "stargazers": {
+                "totalCount": 37
+            },
+            "url": "https://github.com/systemslab/popper"
+        },
+        "systemslab/docker-cephdev": {
+            "description": "Docker-based Ceph development environment",
+            "forks": {
+                "totalCount": 2
+            },
+            "homepageUrl": "https://github.com/ivotron/docker-cephdev/wiki",
+            "name": "docker-cephdev",
+            "nameWithOwner": "systemslab/docker-cephdev",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "Shell"
+            },
+            "stargazers": {
+                "totalCount": 4
+            },
+            "url": "https://github.com/systemslab/docker-cephdev"
+        },
+        "systemslab/sirius-popper": {
+            "description": "Docker-based Ceph development environment",
+            "forks": {
+                "totalCount": 1
+            },
+            "homepageUrl": "https://github.com/systemslab/sirius-popper",
+            "name": "sirius-popper",
+            "nameWithOwner": "systemslab/sirius-popper",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "Shell"
+            },
+            "stargazers": {
+                "totalCount": 1
+            },
+            "url": "https://github.com/systemslab/sirius-popper"
+        },
+        "systemslab/popperci": {
+            "description": "CI server for Popperized experiments (running at http://ci.falsifiable.us).",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://github.com/systemslab/popperci",
+            "name": "popperci",
+            "nameWithOwner": "systemslab/popperci",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "Python"
+            },
+            "stargazers": {
+                "totalCount": 1
+            },
+            "url": "https://github.com/systemslab/popperci"
+        },
+        "systemslab/tcp_inigo": {
+            "description": "TCP Inigo takes DCTCP's ECN based Congestion Control and uses a similar delay based CC alongside it, amongst other enhancements",
+            "forks": {
+                "totalCount": 2
+            },
+            "homepageUrl": "https://www.soe.ucsc.edu/research/technical-reports/UCSC-SOE-14-14",
+            "name": "tcp_inigo",
+            "nameWithOwner": "systemslab/tcp_inigo",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "C"
+            },
+            "stargazers": {
+                "totalCount": 6
+            },
+            "url": "https://github.com/systemslab/tcp_inigo"
+        },
+        "systemslab/tcp_relentless_inigo": {
+            "description": "TCP variant based on Inigo and Relentless",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://github.com/systemslab/tcp_relentless_inigo",
+            "name": "tcp_relentless_inigo",
+            "nameWithOwner": "systemslab/tcp_relentless_inigo",
+            "owner": {
+                "login": "systemslab"
             },
             "primaryLanguage": {
                 "name": "C"
@@ -112,7 +245,26 @@
             "stargazers": {
                 "totalCount": 0
             },
-            "url": "https://github.com/uccross/skyhook"
+            "url": "https://github.com/systemslab/tcp_relentless_inigo"
+        },
+        "systemslab/docker-baseball": {
+            "description": "Provides all the dependencies for running Doug Terry's consistency schemes.",
+            "forks": {
+                "totalCount": 0
+            },
+            "homepageUrl": "https://github.com/systemslab/docker-baseball",
+            "name": "docker-baseball",
+            "nameWithOwner": "systemslab/docker-baseball",
+            "owner": {
+                "login": "systemslab"
+            },
+            "primaryLanguage": {
+                "name": "Shell"
+            },
+            "stargazers": {
+                "totalCount": 0
+            },
+            "url": "https://github.com/systemslab/docker-baseball"
         }
     }
 }

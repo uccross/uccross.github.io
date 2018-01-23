@@ -1,9 +1,5 @@
 ---
 
-- org: chaos
-- org: esgf
-- org: glvis
-- org: mfem
-- org: rose-compiler
-- org: flux-framework
-- org: zfsonlinux
+- org: uccross
+- org: cruzdb
+- org: systemslab

@@ -5,10 +5,6 @@ description: "Software Portal for the Center for Research in Open Source Softwar
 
 url: " http://uccross.github.io/"
 
-# Google Analytics ID
-google_analytics:
-  tracking_id: UA-75179431-1
-
 # GitHub Metadata -- https://github.com/jekyll/github-metadata
 repository: uccross/uccross.github.io
 gems:
