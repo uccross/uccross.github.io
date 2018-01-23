@@ -1,6 +1,5 @@
 name: "CROSS Software Portal"
-author: "Sina Hamedian <sina@ucsc.edu>"
-title: UCSC Software Portal
+title: CROSS Software Portal
 description: "Software Portal for the Center for Research in Open Source Software (CROSS)"
 
 url: " http://uccross.github.io/"
