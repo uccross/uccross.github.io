@@ -1,25 +1,19 @@
 {
     "orgs": [
-        "chaos", 
-        "esgf", 
-        "flux-framework", 
-        "glvis", 
-        "llnl", 
-        "mfem", 
-        "pruners", 
-        "rose-compiler", 
-        "spack", 
-        "uv-cdat", 
-        "zfsonlinux"
+        "popperized"
     ], 
     "repos": [
-        "ceed/laghos", 
-        "dun/conman", 
-        "dun/munge", 
-        "frankieli/icenine", 
-        "hpc/dcp", 
-        "hpc/mpifileutils", 
-        "hpc/openlorenz", 
-        "hpc/spindle"
+        "be3short/hybridsystemsenvironment", 
+        "bnestere/nvm_buffer", 
+        "cruzdb/go-zlog", 
+        "cruzdb/pg_zlog", 
+        "cruzdb/zlog", 
+        "nimble-dev/nimble", 
+        "systemslab/docker-baseball", 
+        "systemslab/docker-cephdev", 
+        "systemslab/popper", 
+        "systemslab/tcp_inigo", 
+        "systemslab/tcp_relentless_inigo", 
+        "xiszishu/syssim"
     ]
 }
