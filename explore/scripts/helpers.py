@@ -132,8 +132,8 @@ def query_githubrest(authhead, endpoint, requestCount=0):  # e.g. endpoint = '/u
 	requestCount += 1
 	maxRequests = 10
 
+	print(tab + "Sending REST query...")
 	bashcurl = 'curl -iH TMPauthhead https://api.github.com' + endpoint
-	print(tab + "Sending REST query...\n" + bashcurl)
 	bashcurl_list = bashcurl.split()
 	bashcurl_list[2] = authhead
 	fullResponse = subprocess.check_output(bashcurl_list).decode().split('\r\n\r\n')

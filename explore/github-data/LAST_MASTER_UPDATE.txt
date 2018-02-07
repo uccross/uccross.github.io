@@ -1,5 +1,6 @@
 2018-01-23
 Start
-Tue Jan 23 10:47:23 PST 2018
+Tue Jan 23 09:54:12 PST 2018
+FAILED - get_repos_info.py
 End
-Tue Jan 23 10:48:12 PST 2018
+Tue Jan 23 09:54:14 PST 2018
