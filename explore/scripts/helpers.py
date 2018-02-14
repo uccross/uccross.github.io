@@ -1,3 +1,4 @@
+import os
 import os.path
 import json
 import subprocess
@@ -50,7 +51,7 @@ def read_gql(filepath):
 def get_gitauth():
 	print("Reading authorization token...")
 	# TODO: Might not really want this at global scope
-	token = 'd923e750178109cda5ddd218d12a6e1fe9da1daa'
+	token = os.environ['GITHUB_API_TOKEN']
 	authhead = 'Authorization: bearer ' + token
 	print("Token read!")
 	return authhead
@@ -68,7 +69,7 @@ def query_github(authhead, gitquery, requestCount=0):
 	bashcurl_list = bashcurl.split()
 	bashcurl_list[2] = authhead
 	bashcurl_list[6] = gitquery
-	fullResponse = subprocess.check_output(bashcurl_list).decode().split('\r\n\r\n')
+	fullResponse = subprocess.check_output(bashcurl_list).decode('utf-8').split('\r\n\r\n')
 	heads = fullResponse[0].split('\r\n')
 	if len(fullResponse) > 1:
 		result = fullResponse[1]
@@ -136,7 +137,7 @@ def query_githubrest(authhead, endpoint, requestCount=0):  # e.g. endpoint = '/u
 	print(tab + "Sending REST query...\n" + bashcurl)
 	bashcurl_list = bashcurl.split()
 	bashcurl_list[2] = authhead
-	fullResponse = subprocess.check_output(bashcurl_list).decode().split('\r\n\r\n')
+	fullResponse = subprocess.check_output(bashcurl_list).decode('utf-8').split('\r\n\r\n')
 	heads = fullResponse[0].split('\r\n')
 	if len(fullResponse) > 1:
 		result = fullResponse[1]

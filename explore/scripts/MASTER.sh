@@ -21,7 +21,7 @@ function errorCheck() {
 # Basic script run procedure
 function runScript() {
 	echo "Run - $1"
-	python $1
+        python $1
 	ret=$?
 	errorCheck "$1"
 }

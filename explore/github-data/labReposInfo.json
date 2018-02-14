@@ -95,6 +95,25 @@
             }, 
             "url": "https://github.com/cruzdb/zlog"
         }, 
+        "michaelsevilla/ceph": {
+            "description": "Ceph is a distributed object, block, and file storage platform ", 
+            "forks": {
+                "totalCount": 1
+            }, 
+            "homepageUrl": "http://ceph.com", 
+            "name": "ceph", 
+            "nameWithOwner": "michaelsevilla/ceph", 
+            "owner": {
+                "login": "michaelsevilla"
+            }, 
+            "primaryLanguage": {
+                "name": "C++"
+            }, 
+            "stargazers": {
+                "totalCount": 0
+            }, 
+            "url": "https://github.com/michaelsevilla/ceph"
+        }, 
         "nimble-dev/nimble": {
             "description": "The base NIMBLE package for R", 
             "forks": {
@@ -265,6 +284,25 @@
                 "totalCount": 0
             }, 
             "url": "https://github.com/popperized/parsplice-popper"
+        }, 
+        "popperized/popper-readthedocs-examples": {
+            "description": "List of example pipelines used in Popper official documentation", 
+            "forks": {
+                "totalCount": 0
+            }, 
+            "homepageUrl": "http://popper.readthedocs.io", 
+            "name": "popper-readthedocs-examples", 
+            "nameWithOwner": "popperized/popper-readthedocs-examples", 
+            "owner": {
+                "login": "popperized"
+            }, 
+            "primaryLanguage": {
+                "name": "Jupyter Notebook"
+            }, 
+            "stargazers": {
+                "totalCount": 0
+            }, 
+            "url": "https://github.com/popperized/popper-readthedocs-examples"
         }, 
         "popperized/quiho-popper": {
             "description": "popper repository for the quiho paper", 

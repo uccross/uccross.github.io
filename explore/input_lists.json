@@ -8,6 +8,7 @@
         "cruzdb/go-zlog", 
         "cruzdb/pg_zlog", 
         "cruzdb/zlog", 
+        "michaelsevilla/ceph", 
         "nimble-dev/nimble", 
         "systemslab/docker-baseball", 
         "systemslab/docker-cephdev", 

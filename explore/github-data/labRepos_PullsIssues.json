@@ -79,27 +79,44 @@
                 "totalCount": 3
             }, 
             "pullRequests_Merged": {
-                "totalCount": 78
+                "totalCount": 79
             }, 
             "pullRequests_Open": {
                 "totalCount": 0
             }
         }, 
-        "nimble-dev/nimble": {
+        "michaelsevilla/ceph": {
             "issues_Closed": {
-                "totalCount": 321
+                "totalCount": 0
             }, 
             "issues_Open": {
-                "totalCount": 75
+                "totalCount": 0
             }, 
             "pullRequests_Closed": {
-                "totalCount": 19
+                "totalCount": 0
             }, 
             "pullRequests_Merged": {
-                "totalCount": 239
+                "totalCount": 2
             }, 
             "pullRequests_Open": {
-                "totalCount": 3
+                "totalCount": 1
+            }
+        }, 
+        "nimble-dev/nimble": {
+            "issues_Closed": {
+                "totalCount": 336
+            }, 
+            "issues_Open": {
+                "totalCount": 64
+            }, 
+            "pullRequests_Closed": {
+                "totalCount": 20
+            }, 
+            "pullRequests_Merged": {
+                "totalCount": 247
+            }, 
+            "pullRequests_Open": {
+                "totalCount": 5
             }
         }, 
         "popperized/PopperCI_Toil": {
@@ -238,6 +255,23 @@
                 "totalCount": 0
             }
         }, 
+        "popperized/popper-readthedocs-examples": {
+            "issues_Closed": {
+                "totalCount": 0
+            }, 
+            "issues_Open": {
+                "totalCount": 0
+            }, 
+            "pullRequests_Closed": {
+                "totalCount": 0
+            }, 
+            "pullRequests_Merged": {
+                "totalCount": 0
+            }, 
+            "pullRequests_Open": {
+                "totalCount": 0
+            }
+        }, 
         "popperized/quiho-popper": {
             "issues_Closed": {
                 "totalCount": 0
@@ -308,16 +342,16 @@
         }, 
         "systemslab/popper": {
             "issues_Closed": {
-                "totalCount": 152
+                "totalCount": 153
             }, 
             "issues_Open": {
-                "totalCount": 45
+                "totalCount": 52
             }, 
             "pullRequests_Closed": {
                 "totalCount": 2
             }, 
             "pullRequests_Merged": {
-                "totalCount": 11
+                "totalCount": 12
             }, 
             "pullRequests_Open": {
                 "totalCount": 0

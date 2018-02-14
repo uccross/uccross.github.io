@@ -20,9 +20,12 @@
                 "url": "http://choosealicense.com/licenses/lgpl-2.1/"
             }
         }, 
+        "michaelsevilla/ceph": {
+            "licenseInfo": null
+        }, 
         "nimble-dev/nimble": {
             "licenseInfo": {
-                "name": "BSD 3-clause \"New\" or \"Revised\" License", 
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License", 
                 "nickname": null, 
                 "spdxId": "BSD-3-Clause", 
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
@@ -50,6 +53,9 @@
             "licenseInfo": null
         }, 
         "popperized/parsplice-popper": {
+            "licenseInfo": null
+        }, 
+        "popperized/popper-readthedocs-examples": {
             "licenseInfo": null
         }, 
         "popperized/quiho-popper": {

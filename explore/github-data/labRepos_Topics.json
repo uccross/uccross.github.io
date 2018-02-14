@@ -123,6 +123,12 @@
                 "totalCount": 8
             }
         }, 
+        "michaelsevilla/ceph": {
+            "repositoryTopics": {
+                "nodes": [], 
+                "totalCount": 0
+            }
+        }, 
         "nimble-dev/nimble": {
             "repositoryTopics": {
                 "nodes": [
@@ -215,6 +221,12 @@
             }
         }, 
         "popperized/parsplice-popper": {
+            "repositoryTopics": {
+                "nodes": [], 
+                "totalCount": 0
+            }
+        }, 
+        "popperized/popper-readthedocs-examples": {
             "repositoryTopics": {
                 "nodes": [], 
                 "totalCount": 0

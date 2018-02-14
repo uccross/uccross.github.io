@@ -83,6 +83,67 @@
                 "totalCount": 6
             }
         }, 
+        "michaelsevilla/ceph": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "C++"
+                    }, 
+                    {
+                        "name": "Terra"
+                    }, 
+                    {
+                        "name": "Python"
+                    }, 
+                    {
+                        "name": "Shell"
+                    }, 
+                    {
+                        "name": "C"
+                    }, 
+                    {
+                        "name": "CMake"
+                    }, 
+                    {
+                        "name": "JavaScript"
+                    }, 
+                    {
+                        "name": "Perl"
+                    }, 
+                    {
+                        "name": "Perl 6"
+                    }, 
+                    {
+                        "name": "Java"
+                    }, 
+                    {
+                        "name": "HTML"
+                    }, 
+                    {
+                        "name": "Assembly"
+                    }, 
+                    {
+                        "name": "Roff"
+                    }, 
+                    {
+                        "name": "CSS"
+                    }, 
+                    {
+                        "name": "Ruby"
+                    }, 
+                    {
+                        "name": "DIGITAL Command Language"
+                    }, 
+                    {
+                        "name": "Lua"
+                    }, 
+                    {
+                        "name": "Makefile"
+                    }
+                ], 
+                "totalCount": 18
+            }
+        }, 
         "nimble-dev/nimble": {
             "languages": {
                 "nodes": [
@@ -267,6 +328,34 @@
                     }
                 ], 
                 "totalCount": 5
+            }
+        }, 
+        "popperized/popper-readthedocs-examples": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "Jupyter Notebook"
+                    }, 
+                    {
+                        "name": "TeX"
+                    }, 
+                    {
+                        "name": "Objective-C"
+                    }, 
+                    {
+                        "name": "Python"
+                    }, 
+                    {
+                        "name": "Matlab"
+                    }, 
+                    {
+                        "name": "Shell"
+                    }, 
+                    {
+                        "name": "Ruby"
+                    }
+                ], 
+                "totalCount": 7
             }
         }, 
         "popperized/quiho-popper": {
