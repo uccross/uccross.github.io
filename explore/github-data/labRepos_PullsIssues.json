@@ -306,23 +306,6 @@
                 "totalCount": 0
             }
         }, 
-        "systemslab/docker-baseball": {
-            "issues_Closed": {
-                "totalCount": 0
-            }, 
-            "issues_Open": {
-                "totalCount": 0
-            }, 
-            "pullRequests_Closed": {
-                "totalCount": 0
-            }, 
-            "pullRequests_Merged": {
-                "totalCount": 0
-            }, 
-            "pullRequests_Open": {
-                "totalCount": 0
-            }
-        }, 
         "systemslab/docker-cephdev": {
             "issues_Closed": {
                 "totalCount": 16
@@ -342,16 +325,16 @@
         }, 
         "systemslab/popper": {
             "issues_Closed": {
-                "totalCount": 153
+                "totalCount": 154
             }, 
             "issues_Open": {
-                "totalCount": 52
+                "totalCount": 51
             }, 
             "pullRequests_Closed": {
                 "totalCount": 2
             }, 
             "pullRequests_Merged": {
-                "totalCount": 12
+                "totalCount": 13
             }, 
             "pullRequests_Open": {
                 "totalCount": 0

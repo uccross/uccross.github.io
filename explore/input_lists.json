@@ -10,7 +10,6 @@
         "cruzdb/zlog", 
         "michaelsevilla/ceph", 
         "nimble-dev/nimble", 
-        "systemslab/docker-baseball", 
         "systemslab/docker-cephdev", 
         "systemslab/popper", 
         "systemslab/tcp_inigo", 

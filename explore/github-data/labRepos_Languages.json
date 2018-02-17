@@ -396,16 +396,6 @@
                 "totalCount": 4
             }
         }, 
-        "systemslab/docker-baseball": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Shell"
-                    }
-                ], 
-                "totalCount": 1
-            }
-        }, 
         "systemslab/docker-cephdev": {
             "languages": {
                 "nodes": [

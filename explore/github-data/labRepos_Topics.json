@@ -244,12 +244,6 @@
                 "totalCount": 0
             }
         }, 
-        "systemslab/docker-baseball": {
-            "repositoryTopics": {
-                "nodes": [], 
-                "totalCount": 0
-            }
-        }, 
         "systemslab/docker-cephdev": {
             "repositoryTopics": {
                 "nodes": [], 

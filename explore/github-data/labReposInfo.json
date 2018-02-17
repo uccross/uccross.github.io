@@ -96,11 +96,11 @@
             "url": "https://github.com/cruzdb/zlog"
         }, 
         "michaelsevilla/ceph": {
-            "description": "Ceph is a distributed object, block, and file storage platform ", 
+            "description": "Fork of Ceph with Cudele; see our cudele-popper repository for more information", 
             "forks": {
                 "totalCount": 1
             }, 
-            "homepageUrl": "http://ceph.com", 
+            "homepageUrl": "http://bit.ly/2occ18H", 
             "name": "ceph", 
             "nameWithOwner": "michaelsevilla/ceph", 
             "owner": {
@@ -342,25 +342,6 @@
             }, 
             "url": "https://github.com/popperized/zlog-popper"
         }, 
-        "systemslab/docker-baseball": {
-            "description": null, 
-            "forks": {
-                "totalCount": 0
-            }, 
-            "homepageUrl": null, 
-            "name": "docker-baseball", 
-            "nameWithOwner": "systemslab/docker-baseball", 
-            "owner": {
-                "login": "systemslab"
-            }, 
-            "primaryLanguage": {
-                "name": "Shell"
-            }, 
-            "stargazers": {
-                "totalCount": 0
-            }, 
-            "url": "https://github.com/systemslab/docker-baseball"
-        }, 
         "systemslab/docker-cephdev": {
             "description": "Docker-based Ceph development environment", 
             "forks": {
@@ -395,7 +376,7 @@
                 "name": "Go"
             }, 
             "stargazers": {
-                "totalCount": 37
+                "totalCount": 39
             }, 
             "url": "https://github.com/systemslab/popper"
         }, 
