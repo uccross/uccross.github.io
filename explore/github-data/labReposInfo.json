@@ -72,7 +72,7 @@
                 "name": "C"
             }, 
             "stargazers": {
-                "totalCount": 14
+                "totalCount": 15
             }, 
             "url": "https://github.com/cruzdb/pg_zlog"
         }, 
@@ -172,11 +172,11 @@
             "url": "https://github.com/popperized/bams-popper"
         }, 
         "popperized/cudele-popper": {
-            "description": null, 
+            "description": "Cudele: a file system with programmable consistency and durability", 
             "forks": {
                 "totalCount": 0
             }, 
-            "homepageUrl": null, 
+            "homepageUrl": "http://programmability.us", 
             "name": "cudele-popper", 
             "nameWithOwner": "popperized/cudele-popper", 
             "owner": {
@@ -210,11 +210,11 @@
             "url": "https://github.com/popperized/lesson-episode-3"
         }, 
         "popperized/malacology-popper": {
-            "description": null, 
+            "description": "Malacology: a programmable storage system", 
             "forks": {
                 "totalCount": 0
             }, 
-            "homepageUrl": null, 
+            "homepageUrl": "http://programmability.us", 
             "name": "malacology-popper", 
             "nameWithOwner": "popperized/malacology-popper", 
             "owner": {
@@ -267,11 +267,11 @@
             "url": "https://github.com/popperized/nwp-popper"
         }, 
         "popperized/parsplice-popper": {
-            "description": null, 
+            "description": "Experiments and deployment scripts for the ParSplice molecular dynamics simulation", 
             "forks": {
                 "totalCount": 0
             }, 
-            "homepageUrl": null, 
+            "homepageUrl": "", 
             "name": "parsplice-popper", 
             "nameWithOwner": "popperized/parsplice-popper", 
             "owner": {
@@ -376,7 +376,7 @@
                 "name": "Go"
             }, 
             "stargazers": {
-                "totalCount": 39
+                "totalCount": 40
             }, 
             "url": "https://github.com/systemslab/popper"
         }, 

@@ -107,13 +107,13 @@
                 "totalCount": 336
             }, 
             "issues_Open": {
-                "totalCount": 64
+                "totalCount": 65
             }, 
             "pullRequests_Closed": {
                 "totalCount": 20
             }, 
             "pullRequests_Merged": {
-                "totalCount": 247
+                "totalCount": 248
             }, 
             "pullRequests_Open": {
                 "totalCount": 5
