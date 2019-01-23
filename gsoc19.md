@@ -67,3 +67,33 @@ projects affiliated with CROSS.
 | **Description** | Description: LGraph (https://github.com/masc-ucsc/lgraph) is the open source infrastructure for Synthesis and Simulation being developed by UCSC. The LGraph goal is to have a common LLVM-like format for synthesis and simulation with a focus on being very fast (Live) and compatible across languages. RePlAce (https://github.com/abk-openroad/RePlAce) is a recently released placement tool from UCSD. The goal is to integrate LGraph with RePlAce.
 | **Difficulty**        | high
 
+
+## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Database statistics collection on partitioned data
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition into a [Ceph](https://ceph.com) object.  Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods to compute data statistics (histograms) for each object and store them in a query-able format within each storage server’s local RocksDB, then write client code to accumulate all the object-local statistics into global statistics for a given database table.
+| **Link**        | https://github.com/uccross/skyhook-ceph
+| **Difficulty**  | high
+
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Extend current processing methods with column-oriented processing via Arrow
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition into a [Ceph](https://ceph.com) object. Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods to transform on-disk Flatbuffer data (row oriented) into [Apache Arrow](https://arrow.apache.org) format (col-oriented) in memory, then work toward extending our row-oriented filters and aggregations to column oriented versions using the Arrow APIs.
+| **Link**        | https://github.com/uccross/skyhook-ceph
+| **Difficulty**  | high
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Extend current aggregations to include sort/groupby for database partitions
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition into a [Ceph](https://ceph.com) object. Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods methods to sort/group query result sets.  This requires extending the current code (select/project/basic-aggregations - min/max/sum/count) to support groupby and/or orderby.
+| **Link**        | https://github.com/uccross/skyhook-ceph
+| **Difficulty**  | medium
