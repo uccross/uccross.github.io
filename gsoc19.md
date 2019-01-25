@@ -7,22 +7,47 @@ projects affiliated with CROSS.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Automate Popper Compliance
-| **Mentor(s)**   | Ivo Jimenez
+| **Title**       | Gitlab Integration
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | Python (strong), Bash (familiar)
-| **Description** | An experimentation pipeline is Popper compliant if it complies with all the criteria define in [this document](https://zenodo.org/record/1422203/files/paper.pdf?download=1). For this project, we will implement a process to automatically verify that a pipeline is Popper compliant.
-| **Link**        | https://github.com/systemlabs/popper/projects/4
-
+| **Description** | So far, [Popper](https://github.com/systemslab/project) assumes pipelines are hosted on Github. The goal of this project is to add support to the CLI tool so it becomes possible to upload and retrieve pipelines to/from Gitlab instances.
+| **Link**        | https://github.com/systemslab/popper/projects/9
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Popper Pipeline Viewer
-| **Mentor(s)**   | Ivo Jimenez
+| **Title**       | Automate Popper Compliance Verification
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar)
+| **Description** | An experimentation pipeline is Popper compliant if it complies with all the criteria define in [this document](https://zenodo.org/record/1422203/files/paper.pdf?download=1). For this project, we will implement a process to automatically verify that a pipeline is Popper compliant.
+| **Link**        | https://github.com/systemslab/popper/projects/10
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Stage-level Features
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar), REST (familiar)
+| **Description** | Currently, the smallest shareable unit in Popper is a complete pipeline. For this project, the goal is to break this down and to make it possible to have individual stages as the smallest shareable unit. This will make it possible to create a catalog of re-usable stages that can be individually maintained.
+| **Link**        | https://github.com/systemslab/popper/projects/11
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Github Actions Integration
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | GUI development (strong), Javascript (strong)
-| **Description** | Create a javascript-based viewer of Popper pipelines.
-| **Link**        | https://github.com/systemlabs/popper/projects/4
+| **Description** | The goal of this project is to generate a Github Actions (GA) workflow automatically for one or more Popper pipelines. This will make it possible to run Popper pipelines as GA transparently, without users having to write the GA workflow themselves.
+| **Link**        | https://github.com/systemslab/popper/projects/12
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Popper Pipeline and Stages Viewer
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | GUI development (strong), Javascript (strong)
+| **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents. As part of this project, a stage catalog will also be implemented, that allows users to search for available stages on Github.
+| **Link**        | https://github.com/systemslab/popper/projects/13
+
 
 ## LGraph
+
 |                 |                                               |
 |-----------------|-----------------------------------------------|
 | **Title**       | LGraph and FIRRTL Bidirectional Bridge
