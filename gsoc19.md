@@ -33,7 +33,7 @@ projects affiliated with CROSS.
 |-----------------|-----------------------------------------------|
 | **Title**       | Github Actions Integration
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | GUI development (strong), Javascript (strong)
+| **Skills**      | Python (strong), Github Actions and HCL (familiar)
 | **Description** | The goal of this project is to generate a Github Actions (GA) workflow automatically for one or more Popper pipelines. This will make it possible to run Popper pipelines as GA transparently, without users having to write the GA workflow themselves.
 | **Link**        | https://github.com/systemslab/popper/projects/12
 
