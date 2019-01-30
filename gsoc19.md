@@ -96,7 +96,7 @@ LGraph (https://github.com/masc-ucsc/lgraph) is the open source infrastructure f
 
 
 ## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
-Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition into a [Ceph](https://ceph.com) object. Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing.
+Skyhook extends object storage in the cloud with data management functionality. Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition as an object in [Ceph](https://ceph.com) distributed storage. Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
