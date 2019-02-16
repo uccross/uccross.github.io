@@ -4,7 +4,15 @@ This is a list of summer projects for OSS incubators and research
 projects affiliated with CROSS.
 
 ## [Popper](https://github.com/systemslab/popper)
-A convention for conducting scientific explorations and writing academic articles following a DevOps approach. 
+
+Popper is a workflow execution engine based on [Github 
+actions](https://github.com/features/actions) (GHA). Popper workflows 
+are defined in a [HCL](https://github.com/hashicorp/hcl) syntax and 
+behave like GHA workflows. The main difference is that a Popper 
+workflow can execute actions in other runtimes besides Docker. The 
+workflow language is strictly a superset of GHA's workflow language so 
+Popper can run a GHA workflow locally.
+
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
@@ -24,18 +32,18 @@ A convention for conducting scientific explorations and writing academic article
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Stage-level Features
+| **Title**       | Actions Library
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | Python (strong), Bash (familiar), REST (familiar)
-| **Description** | Currently, the smallest shareable unit in Popper is a complete pipeline. For this project, the goal is to break this down and to make it possible to have individual stages as the smallest shareable unit. This will make it possible to create a catalog of re-usable stages that can be individually maintained.
+| **Description** | The goal of this project is to create a catalog of re-usable actions used in the creation of experimentation pipelines. For example: a Zenodo action that downloads a dataset to be consumed by a later stage in a pipeline; a Spack action that installs the software stack required for an exploration. This has a list of endless possibilities.
 | **Link**        | https://github.com/systemslab/popper/projects/11
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Github Actions Integration
+| **Title**       | Popper 2.0
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | Python (strong), Github Actions and HCL (familiar)
-| **Description** | The goal of this project is to generate a Github Actions (GA) workflow automatically for one or more Popper pipelines. This will make it possible to run Popper pipelines as GA transparently, without users having to write the GA workflow themselves.
+| **Description** | The goal of this project is to create a workflow execution engine based on Github actions (GHA). With this new approach, Popper workflows will be defined in a syntax similar to HCL and behave like GHA but with the difference that a workflow will be able to execute actions in other runtimes besides Docker. The workflow language is strictly a superset of GHA's workflow language so Popper can run a GHA workflow locally.
 | **Link**        | https://github.com/systemslab/popper/projects/12
 
 |                 |                                               |
@@ -43,7 +51,7 @@ A convention for conducting scientific explorations and writing academic article
 | **Title**       | Popper Pipeline and Stages Viewer
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | GUI development (strong), Javascript (strong)
-| **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents. As part of this project, a stage catalog will also be implemented, that allows users to search for available stages on Github.
+| **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents (similar to [Github's built-in](https://github.com/actions/gcloud/blob/master/.github/main.workflow) workflow editor). As part of this project, a stage catalog will also be implemented, that allows users to search for available stages on Github.
 | **Link**        | https://github.com/systemslab/popper/projects/13
 
 
@@ -127,6 +135,7 @@ Skyhook extends object storage in the cloud with data management functionality. 
 | **Difficulty**  | medium
 
 ## [Tracery and Chancery](https://github.com/galaxykate/tracery)
+
 Two little-languages and libraries for doing text expansion (used in 10,000 twitterbots, plus games and art projects) and state-based chatbots 
 
 |                 |                                               |
