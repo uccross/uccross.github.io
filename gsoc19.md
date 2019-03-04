@@ -28,6 +28,14 @@ behave like GHA workflows.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
+| **Title**       | Example Workflows
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar), Docker (familiar)
+| **Description** | The goal of this project is to create example workflows that showcase the distinct actions available for experimenters. This pipelines are relevant in multiple domains such as Genomics, Weather Prediction, Computational (Neuro/Math/etc) Science, among many other domains.
+| **Link**        | https://github.com/systemslab/popper/projects/7
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
 | **Title**       | Popper Pipeline and Stages Viewer
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | GUI development (strong), Javascript (strong)
@@ -36,11 +44,11 @@ behave like GHA workflows.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Automate Popper Compliance Verification
+| **Title**       | Extend CI capabilities of CLI tool
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Bash (familiar)
-| **Description** | An experimentation pipeline is Popper compliant if it complies with all the criteria define in [this document](https://zenodo.org/record/1422203/files/paper.pdf?download=1). For this project, we will implement a process to automatically verify that a pipeline is Popper compliant.
-| **Link**        | https://github.com/systemslab/popper/projects/10
+| **Skills**      | Python (strong), Bash (familiar), Continuous integration (familiar)
+| **Description** | Improve continuous integration aspects of the CLI tool. Currently, the `popper` command provides basic CI functionality via its `popper run` command, that allows experiment pipelines to be automatically executed on multiple CI services.
+| **Link**        | https://github.com/systemslab/popper/projects/5
 
 ## LGraph
 LGraph (https://github.com/masc-ucsc/lgraph) is the open source infrastructure for Synthesis and Simulation being developed by UCSC. The LGraph goal is to have a common LLVM-like format for synthesis and simulation with a focus on being very fast (Live) and compatible across languages.
