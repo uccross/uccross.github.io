@@ -8,43 +8,23 @@ projects affiliated with CROSS. If you have any questions, please visit our Gitt
 Popper is a workflow execution engine based on [Github 
 actions](https://github.com/features/actions) (GHA). Popper workflows 
 are defined in a [HCL](https://github.com/hashicorp/hcl) syntax and 
-behave like GHA workflows. The main difference is that a Popper 
-workflow can execute actions in other runtimes besides Docker. The 
-workflow language is strictly a superset of GHA's workflow language so 
-Popper can run a GHA workflow locally.
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Gitlab Integration
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Bash (familiar)
-| **Description** | So far, [Popper](https://github.com/systemslab/project) assumes pipelines are hosted on Github. The goal of this project is to add support to the CLI tool so it becomes possible to upload and retrieve pipelines to/from Gitlab instances.
-| **Link**        | https://github.com/systemslab/popper/projects/9
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Automate Popper Compliance Verification
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Bash (familiar)
-| **Description** | An experimentation pipeline is Popper compliant if it complies with all the criteria define in [this document](https://zenodo.org/record/1422203/files/paper.pdf?download=1). For this project, we will implement a process to automatically verify that a pipeline is Popper compliant.
-| **Link**        | https://github.com/systemslab/popper/projects/10
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Actions Library
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Bash (familiar), REST (familiar)
-| **Description** | The goal of this project is to create a catalog of re-usable actions used in the creation of experimentation pipelines. For example: a Zenodo action that downloads a dataset to be consumed by a later stage in a pipeline; a Spack action that installs the software stack required for an exploration. This has a list of endless possibilities.
-| **Link**        | https://github.com/systemslab/popper/projects/11
+behave like GHA workflows.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
 | **Title**       | Popper 2.0
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Github Actions and HCL (familiar)
-| **Description** | The goal of this project is to create a workflow execution engine based on Github actions (GHA). With this new approach, Popper workflows will be defined in a syntax similar to HCL and behave like GHA but with the difference that a workflow will be able to execute actions in other runtimes besides Docker. The workflow language is strictly a superset of GHA's workflow language so Popper can run a GHA workflow locally.
+| **Skills**      | Python (strong), Github Actions and HCL (familiar), Docker (familiar)
+| **Description** | The goal of this project is to add new features to the workflow execution engine, which is based on Github actions (GHA). Please look at the project link to see a list of associated issues.
 | **Link**        | https://github.com/systemslab/popper/projects/12
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Actions Library
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar), Docker (familiar)
+| **Description** | The goal of this project is to create a catalog of re-usable actions used in the creation of experimentation pipelines. For example: a Zenodo action that downloads a dataset to be consumed by a later stage in a pipeline; a Spack action that installs the software stack required for an exploration. This has a list of endless possibilities.
+| **Link**        | https://github.com/systemslab/popper/projects/11
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
@@ -54,6 +34,13 @@ Popper can run a GHA workflow locally.
 | **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents (similar to [Github's built-in](https://github.com/actions/gcloud/blob/master/.github/main.workflow) workflow editor). As part of this project, a stage catalog will also be implemented, that allows users to search for available stages on Github.
 | **Link**        | https://github.com/systemslab/popper/projects/13
 
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Automate Popper Compliance Verification
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar)
+| **Description** | An experimentation pipeline is Popper compliant if it complies with all the criteria define in [this document](https://zenodo.org/record/1422203/files/paper.pdf?download=1). For this project, we will implement a process to automatically verify that a pipeline is Popper compliant.
+| **Link**        | https://github.com/systemslab/popper/projects/10
 
 ## LGraph
 LGraph (https://github.com/masc-ucsc/lgraph) is the open source infrastructure for Synthesis and Simulation being developed by UCSC. The LGraph goal is to have a common LLVM-like format for synthesis and simulation with a focus on being very fast (Live) and compatible across languages.
