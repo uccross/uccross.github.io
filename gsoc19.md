@@ -58,6 +58,14 @@ behave like GHA workflows.
 | **Description** | Improve continuous integration aspects of the CLI tool. Currently, the `popper` command provides basic CI functionality via its `popper run` command, that allows experiment pipelines to be automatically executed on multiple CI services.
 | **Link**        | https://github.com/systemslab/popper/projects/5
 
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Add Support for Popper Workflows in REANA
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar), Docker (familiar), Go (familiar), Kubernetes (familiar)
+| **Description** | [REANA](https://reana.io) is a platform for running reproducible analysis. REANA currently supports CWL and Yadage workflows. The goal of this project is to add support for Popper workflows by creating a new reana workflow engine.
+| **Link**        | https://gitter.im/falsifiable-us/popper
+
 ## LGraph
 LGraph (https://github.com/masc-ucsc/lgraph) is the open source infrastructure for Synthesis and Simulation being developed by UCSC. The LGraph goal is to have a common LLVM-like format for synthesis and simulation with a focus on being very fast (Live) and compatible across languages.
 
