@@ -20,6 +20,14 @@ behave like GHA workflows.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
+| **Title**       | Popper Kubernetes Operator
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
+| **Skills**      | Python (strong), Bash (familiar), Docker (familiar), Go (Strong), Kubernetes (familiar)
+| **Description** | The goal of this project is to create a Kubernetes operator for running Popper workflows.
+| **Link**        | https://github.com/blkswanio/popper-operator/projects/1
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
 | **Title**       | Actions Library
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | Python (strong), Bash (familiar), Docker (familiar)
