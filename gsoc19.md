@@ -165,4 +165,16 @@ Two little-languages and libraries for doing text expansion (used in 10,000 twit
 | **Description** | Chancery is a state-based chatbot language (think Twine, but for the Alexa). Users write state machines that represent conversations or games. This project will build a pathfinding algorithm than can calculate which state exits or states cannot be reached (e.g., requiring 5 gems to move from one state to another, but only 4 gems can be collected). If interested, this project could also include building a visualization of that connectivity map.
 | **Link**        | https://tracery.io/chancery
 
+## [CAvSAT](https://github.com/uccross/cavsat)
 
+A comprehensive and scalable query answering system over inconsistent databases.
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | CAvSAT (Consistent Answering via Satisfiability)
+| **Mentor(s)**   | [Akhil Dixit](https://users.soe.ucsc.edu/~akadixit/), [Phokion G. Kolaitis](https://users.soe.ucsc.edu/~kolaitis/)
+| **Skills**      | Java, SQL
+| **Description** | Inconsistent relational databases are the ones that violate one or more integrity constraints defined over their schema. We are developing CAvSAT, which aims to be a scalable and comprehensive system for consistent query answering. In general, computing consistent answers over inconsistent databases is an intractable problem. However, for certain classes of queries and integrity constraints, there is an efficient algorithm to compute consistent answers. The goal of this project is two-fold. First is to get familiar with the literature and implement this algorithm. Second, the student will conduct experiments with both synthetic and real-world databases, to compare the performance of this algorithm with other methods.
+| **Link**        | https://github.com/uccross/cavsat
+| **References**  | https://dl.acm.org/citation.cfm?id=2371212, https://dl.acm.org/citation.cfm?id=303983, https://dl.acm.org/citation.cfm?id=3068334
+| **Difficulty**  | Medium
