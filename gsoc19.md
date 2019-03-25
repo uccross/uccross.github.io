@@ -44,19 +44,11 @@ behave like GHA workflows.
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Popper Pipeline and Stages Viewer
+| **Title**       | Workflow Viewer and Editor
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
 | **Skills**      | GUI development (strong), Javascript (strong)
 | **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents (similar to [Github's built-in](https://github.com/actions/gcloud/blob/master/.github/main.workflow) workflow editor). As part of this project, a stage catalog will also be implemented, that allows users to search for available stages on Github.
 | **Link**        | https://github.com/systemslab/popper/projects/13
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Extend CI capabilities of CLI tool
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)
-| **Skills**      | Python (strong), Bash (familiar), Continuous integration (familiar)
-| **Description** | Improve continuous integration aspects of the CLI tool. Currently, the `popper` command provides basic CI functionality via its `popper run` command, that allows experiment pipelines to be automatically executed on multiple CI services.
-| **Link**        | https://github.com/systemslab/popper/projects/5
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
