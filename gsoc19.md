@@ -137,26 +137,6 @@ Skyhook extends object storage in the cloud with data management functionality. 
 | **Link**        | https://github.com/uccross/skyhook-ceph
 | **Difficulty**  | medium
 
-## [Tracery and Chancery](https://github.com/galaxykate/tracery)
-
-Two little-languages and libraries for doing text expansion (used in 10,000 twitterbots, plus games and art projects) and state-based chatbots 
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Language and tutorial support for Tracery
-| **Mentor(s)**   | [Kate Compton](http://www.galaxykate.com)
-| **Skills**      | Javascript (low), Markdown (good), Language fluency and understanding of some non-English culture
-| **Description** | In my [guide to supporting opensource art tools](https://github.com/galaxykate/OSSTA-Zine), I argued that art tools need contributors with different languages and cultures to translate the tools to enable access.  This project seeks someone with expert fluency in a non-English language to write javascript "modifiers" functions for Tracery, custom to that language. In English Tracery, these are things like pluralizing words or adding "a/an" to a word). I would like to enable this support for some non-English language, as well as get culturally-relevant Tracery/twitterbot tutorials written in that language.
-| **Link**        | https://tracery.io
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Pathfinding for Chancery
-| **Mentor(s)**   | [Kate Compton](http://www.galaxykate.com)
-| **Skills**      | Javascript (high), graph analysis, pathfinding and traversal
-| **Description** | Chancery is a state-based chatbot language (think Twine, but for the Alexa). Users write state machines that represent conversations or games. This project will build a pathfinding algorithm than can calculate which state exits or states cannot be reached (e.g., requiring 5 gems to move from one state to another, but only 4 gems can be collected). If interested, this project could also include building a visualization of that connectivity map.
-| **Link**        | https://tracery.io/chancery
-
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
 A comprehensive and scalable query answering system over inconsistent databases.
