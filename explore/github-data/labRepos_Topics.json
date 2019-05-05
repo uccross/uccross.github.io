@@ -2,311 +2,338 @@
     "data": {
         "be3short/HybridSystemsEnvironment": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
         "bnestere/nvm_buffer": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
         "cruzdb/go-zlog": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
         "cruzdb/pg_zlog": {
             "repositoryTopics": {
                 "nodes": [
                     {
-                        "resourcePath": "/topics/ceph", 
+                        "resourcePath": "/topics/ceph",
                         "topic": {
                             "name": "ceph"
-                        }, 
+                        },
                         "url": "https://github.com/topics/ceph"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/zlog", 
+                        "resourcePath": "/topics/zlog",
                         "topic": {
                             "name": "zlog"
-                        }, 
+                        },
                         "url": "https://github.com/topics/zlog"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/database", 
+                        "resourcePath": "/topics/database",
                         "topic": {
                             "name": "database"
-                        }, 
+                        },
                         "url": "https://github.com/topics/database"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/replication", 
+                        "resourcePath": "/topics/replication",
                         "topic": {
                             "name": "replication"
-                        }, 
+                        },
                         "url": "https://github.com/topics/replication"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/postgresql", 
+                        "resourcePath": "/topics/postgresql",
                         "topic": {
                             "name": "postgresql"
-                        }, 
+                        },
                         "url": "https://github.com/topics/postgresql"
                     }
-                ], 
+                ],
                 "totalCount": 5
             }
-        }, 
+        },
         "cruzdb/zlog": {
             "repositoryTopics": {
                 "nodes": [
                     {
-                        "resourcePath": "/topics/log", 
+                        "resourcePath": "/topics/log",
                         "topic": {
                             "name": "log"
-                        }, 
+                        },
                         "url": "https://github.com/topics/log"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/consistency", 
+                        "resourcePath": "/topics/consistency",
                         "topic": {
                             "name": "consistency"
-                        }, 
+                        },
                         "url": "https://github.com/topics/consistency"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/transaction", 
+                        "resourcePath": "/topics/transaction",
                         "topic": {
                             "name": "transaction"
-                        }, 
+                        },
                         "url": "https://github.com/topics/transaction"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/key-value", 
+                        "resourcePath": "/topics/key-value",
                         "topic": {
                             "name": "key-value"
-                        }, 
+                        },
                         "url": "https://github.com/topics/key-value"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/database", 
+                        "resourcePath": "/topics/database",
                         "topic": {
                             "name": "database"
-                        }, 
+                        },
                         "url": "https://github.com/topics/database"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/ceph", 
+                        "resourcePath": "/topics/ceph",
                         "topic": {
                             "name": "ceph"
-                        }, 
+                        },
                         "url": "https://github.com/topics/ceph"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/lmdb", 
+                        "resourcePath": "/topics/lmdb",
                         "topic": {
                             "name": "lmdb"
-                        }, 
+                        },
                         "url": "https://github.com/topics/lmdb"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/cplusplus", 
+                        "resourcePath": "/topics/cplusplus",
                         "topic": {
                             "name": "cplusplus"
-                        }, 
+                        },
                         "url": "https://github.com/topics/cplusplus"
                     }
-                ], 
+                ],
                 "totalCount": 8
             }
-        }, 
-        "michaelsevilla/ceph": {
+        },
+        "galaxykate/tracery": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
+        "michaelsevilla/ceph": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "nimble-dev/nimble": {
             "repositoryTopics": {
                 "nodes": [
                     {
-                        "resourcePath": "/topics/bayesian-inference", 
+                        "resourcePath": "/topics/bayesian-inference",
                         "topic": {
                             "name": "bayesian-inference"
-                        }, 
+                        },
                         "url": "https://github.com/topics/bayesian-inference"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/mcmc", 
+                        "resourcePath": "/topics/mcmc",
                         "topic": {
                             "name": "mcmc"
-                        }, 
+                        },
                         "url": "https://github.com/topics/mcmc"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/hierarchical-models", 
+                        "resourcePath": "/topics/hierarchical-models",
                         "topic": {
                             "name": "hierarchical-models"
-                        }, 
+                        },
                         "url": "https://github.com/topics/hierarchical-models"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/probabilistic-programming", 
+                        "resourcePath": "/topics/probabilistic-programming",
                         "topic": {
                             "name": "probabilistic-programming"
-                        }, 
+                        },
                         "url": "https://github.com/topics/probabilistic-programming"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/bayesian-methods", 
+                        "resourcePath": "/topics/bayesian-methods",
                         "topic": {
                             "name": "bayesian-methods"
-                        }, 
+                        },
                         "url": "https://github.com/topics/bayesian-methods"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/r", 
+                        "resourcePath": "/topics/r",
                         "topic": {
                             "name": "r"
-                        }, 
+                        },
                         "url": "https://github.com/topics/r"
                     }
-                ], 
+                ],
                 "totalCount": 6
             }
-        }, 
-        "popperized/PopperCI_Toil": {
+        },
+        "popperized/ansible": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/bams-popper": {
+        },
+        "popperized/ceph": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/cudele-popper": {
+        },
+        "popperized/enos": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/lesson-episode-3": {
+        },
+        "popperized/figshare": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/malacology-popper": {
+        },
+        "popperized/geni": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/mantle-popper": {
+        },
+        "popperized/popper-examples": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/nwp-popper": {
+        },
+        "popperized/spack": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/parsplice-popper": {
+        },
+        "popperized/swc-lesson": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/popper-readthedocs-examples": {
+        },
+        "popperized/zenodo": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
-        "popperized/quiho-popper": {
-            "repositoryTopics": {
-                "nodes": [], 
-                "totalCount": 0
-            }
-        }, 
-        "popperized/zlog-popper": {
-            "repositoryTopics": {
-                "nodes": [], 
-                "totalCount": 0
-            }
-        }, 
+        },
         "systemslab/docker-cephdev": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
         "systemslab/popper": {
             "repositoryTopics": {
                 "nodes": [
                     {
-                        "resourcePath": "/topics/openscience", 
+                        "resourcePath": "/topics/openscience",
                         "topic": {
                             "name": "openscience"
-                        }, 
+                        },
                         "url": "https://github.com/topics/openscience"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/collaboration", 
-                        "topic": {
-                            "name": "collaboration"
-                        }, 
-                        "url": "https://github.com/topics/collaboration"
-                    }, 
-                    {
-                        "resourcePath": "/topics/reproducibility", 
+                        "resourcePath": "/topics/reproducibility",
                         "topic": {
                             "name": "reproducibility"
-                        }, 
+                        },
                         "url": "https://github.com/topics/reproducibility"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/science", 
+                        "resourcePath": "/topics/science",
                         "topic": {
                             "name": "science"
-                        }, 
+                        },
                         "url": "https://github.com/topics/science"
-                    }, 
+                    },
                     {
-                        "resourcePath": "/topics/scholarly-communication", 
+                        "resourcePath": "/topics/scholarly-communication",
                         "topic": {
                             "name": "scholarly-communication"
-                        }, 
+                        },
                         "url": "https://github.com/topics/scholarly-communication"
+                    },
+                    {
+                        "resourcePath": "/topics/cli",
+                        "topic": {
+                            "name": "cli"
+                        },
+                        "url": "https://github.com/topics/cli"
+                    },
+                    {
+                        "resourcePath": "/topics/devops",
+                        "topic": {
+                            "name": "devops"
+                        },
+                        "url": "https://github.com/topics/devops"
+                    },
+                    {
+                        "resourcePath": "/topics/github-actions",
+                        "topic": {
+                            "name": "github-actions"
+                        },
+                        "url": "https://github.com/topics/github-actions"
+                    },
+                    {
+                        "resourcePath": "/topics/sciops",
+                        "topic": {
+                            "name": "sciops"
+                        },
+                        "url": "https://github.com/topics/sciops"
                     }
-                ], 
-                "totalCount": 5
+                ],
+                "totalCount": 8
             }
-        }, 
+        },
         "systemslab/tcp_inigo": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
         "systemslab/tcp_relentless_inigo": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
-        }, 
+        },
+        "uccross/cavsat": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
+        "uccross/skyhook-ceph": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "xiszishu/syssim": {
             "repositoryTopics": {
-                "nodes": [], 
+                "nodes": [],
                 "totalCount": 0
             }
         }

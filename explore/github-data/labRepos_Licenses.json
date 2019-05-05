@@ -2,85 +2,138 @@
     "data": {
         "be3short/HybridSystemsEnvironment": {
             "licenseInfo": null
-        }, 
+        },
         "bnestere/nvm_buffer": {
             "licenseInfo": null
-        }, 
+        },
         "cruzdb/go-zlog": {
             "licenseInfo": null
-        }, 
+        },
         "cruzdb/pg_zlog": {
             "licenseInfo": null
-        }, 
+        },
         "cruzdb/zlog": {
             "licenseInfo": {
-                "name": "GNU Lesser General Public License v2.1", 
-                "nickname": "GNU LGPLv2.1", 
-                "spdxId": "LGPL-2.1", 
-                "url": "http://choosealicense.com/licenses/lgpl-2.1/"
+                "name": "Apache License 2.0",
+                "nickname": null,
+                "spdxId": "Apache-2.0",
+                "url": "http://choosealicense.com/licenses/apache-2.0/"
             }
-        }, 
+        },
+        "galaxykate/tracery": {
+            "licenseInfo": {
+                "name": "Apache License 2.0",
+                "nickname": null,
+                "spdxId": "Apache-2.0",
+                "url": "http://choosealicense.com/licenses/apache-2.0/"
+            }
+        },
         "michaelsevilla/ceph": {
-            "licenseInfo": null
-        }, 
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
+            }
+        },
         "nimble-dev/nimble": {
             "licenseInfo": {
-                "name": "BSD 3-Clause \"New\" or \"Revised\" License", 
-                "nickname": null, 
-                "spdxId": "BSD-3-Clause", 
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "nickname": null,
+                "spdxId": "BSD-3-Clause",
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             }
-        }, 
-        "popperized/PopperCI_Toil": {
-            "licenseInfo": null
-        }, 
-        "popperized/bams-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/cudele-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/lesson-episode-3": {
-            "licenseInfo": null
-        }, 
-        "popperized/malacology-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/mantle-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/nwp-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/parsplice-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/popper-readthedocs-examples": {
-            "licenseInfo": null
-        }, 
-        "popperized/quiho-popper": {
-            "licenseInfo": null
-        }, 
-        "popperized/zlog-popper": {
-            "licenseInfo": null
-        }, 
-        "systemslab/docker-cephdev": {
-            "licenseInfo": null
-        }, 
-        "systemslab/popper": {
+        },
+        "popperized/ansible": {
             "licenseInfo": {
-                "name": "MIT License", 
-                "nickname": null, 
-                "spdxId": "MIT", 
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
                 "url": "http://choosealicense.com/licenses/mit/"
             }
-        }, 
+        },
+        "popperized/ceph": {
+            "licenseInfo": null
+        },
+        "popperized/enos": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "popperized/figshare": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "popperized/geni": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "popperized/popper-examples": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "popperized/spack": {
+            "licenseInfo": null
+        },
+        "popperized/swc-lesson": {
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
+            }
+        },
+        "popperized/zenodo": {
+            "licenseInfo": null
+        },
+        "systemslab/docker-cephdev": {
+            "licenseInfo": null
+        },
+        "systemslab/popper": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
         "systemslab/tcp_inigo": {
             "licenseInfo": null
-        }, 
+        },
         "systemslab/tcp_relentless_inigo": {
             "licenseInfo": null
-        }, 
+        },
+        "uccross/cavsat": {
+            "licenseInfo": {
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "nickname": null,
+                "spdxId": "BSD-3-Clause",
+                "url": "http://choosealicense.com/licenses/bsd-3-clause/"
+            }
+        },
+        "uccross/skyhook-ceph": {
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
+            }
+        },
         "xiszishu/syssim": {
             "licenseInfo": null
         }

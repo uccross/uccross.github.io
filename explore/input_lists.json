@@ -1,19 +1,22 @@
 {
     "orgs": [
         "popperized"
-    ], 
+    ],
     "repos": [
-        "be3short/hybridsystemsenvironment", 
-        "bnestere/nvm_buffer", 
-        "cruzdb/go-zlog", 
-        "cruzdb/pg_zlog", 
-        "cruzdb/zlog", 
-        "michaelsevilla/ceph", 
-        "nimble-dev/nimble", 
-        "systemslab/docker-cephdev", 
-        "systemslab/popper", 
-        "systemslab/tcp_inigo", 
-        "systemslab/tcp_relentless_inigo", 
+        "be3short/hybridsystemsenvironment",
+        "bnestere/nvm_buffer",
+        "cruzdb/go-zlog",
+        "cruzdb/pg_zlog",
+        "cruzdb/zlog",
+        "galaxykate/tracery",
+        "michaelsevilla/ceph",
+        "nimble-dev/nimble",
+        "systemslab/docker-cephdev",
+        "systemslab/popper",
+        "systemslab/tcp_inigo",
+        "systemslab/tcp_relentless_inigo",
+        "uccross/cavsat",
+        "uccross/skyhook-ceph",
         "xiszishu/syssim"
     ]
 }

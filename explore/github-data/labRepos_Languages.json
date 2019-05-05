@@ -5,459 +5,504 @@
                 "nodes": [
                     {
                         "name": "Java"
-                    }, 
+                    },
                     {
                         "name": "TeX"
-                    }, 
+                    },
                     {
                         "name": "CSS"
                     }
-                ], 
+                ],
                 "totalCount": 3
             }
-        }, 
+        },
         "bnestere/nvm_buffer": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
-        }, 
+        },
         "cruzdb/go-zlog": {
             "languages": {
                 "nodes": [
                     {
                         "name": "Go"
-                    }, 
+                    },
                     {
                         "name": "Shell"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
-        }, 
+        },
         "cruzdb/pg_zlog": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "PLpgSQL"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 3
             }
-        }, 
+        },
         "cruzdb/zlog": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C++"
-                    }, 
+                    },
                     {
                         "name": "Shell"
-                    }, 
+                    },
+                    {
+                        "name": "Jupyter Notebook"
+                    },
                     {
                         "name": "CMake"
-                    }, 
+                    },
                     {
                         "name": "Java"
-                    }, 
+                    },
                     {
                         "name": "Python"
-                    }, 
+                    },
+                    {
+                        "name": "Dockerfile"
+                    },
                     {
                         "name": "C"
                     }
-                ], 
-                "totalCount": 6
+                ],
+                "totalCount": 8
             }
-        }, 
+        },
+        "galaxykate/tracery": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "CSS"
+                    }
+                ],
+                "totalCount": 3
+            }
+        },
         "michaelsevilla/ceph": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C++"
-                    }, 
+                    },
                     {
                         "name": "Terra"
-                    }, 
+                    },
                     {
                         "name": "Python"
-                    }, 
+                    },
                     {
                         "name": "Shell"
-                    }, 
+                    },
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "CMake"
-                    }, 
+                    },
                     {
                         "name": "JavaScript"
-                    }, 
+                    },
                     {
                         "name": "Perl"
-                    }, 
+                    },
                     {
                         "name": "Perl 6"
-                    }, 
+                    },
                     {
                         "name": "Java"
-                    }, 
+                    },
                     {
                         "name": "HTML"
-                    }, 
+                    },
                     {
                         "name": "Assembly"
-                    }, 
+                    },
                     {
                         "name": "Roff"
-                    }, 
+                    },
                     {
                         "name": "CSS"
-                    }, 
+                    },
                     {
                         "name": "Ruby"
-                    }, 
+                    },
                     {
                         "name": "DIGITAL Command Language"
-                    }, 
+                    },
                     {
                         "name": "Lua"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 18
             }
-        }, 
+        },
         "nimble-dev/nimble": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C++"
-                    }, 
+                    },
                     {
                         "name": "R"
-                    }, 
+                    },
+                    {
+                        "name": "HTML"
+                    },
                     {
                         "name": "Roff"
-                    }, 
+                    },
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "TeX"
-                    }, 
+                    },
                     {
                         "name": "Batchfile"
-                    }, 
+                    },
                     {
                         "name": "Shell"
-                    }, 
+                    },
                     {
                         "name": "M4"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
-                    }, 
+                    },
                     {
                         "name": "CMake"
                     }
-                ], 
-                "totalCount": 10
+                ],
+                "totalCount": 11
             }
-        }, 
-        "popperized/PopperCI_Toil": {
+        },
+        "popperized/ansible": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "Dockerfile"
+                    },
+                    {
+                        "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
+                    }
+                ],
+                "totalCount": 3
+            }
+        },
+        "popperized/ceph": {
             "languages": {
                 "nodes": [
                     {
                         "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
+                    },
+                    {
+                        "name": "Dockerfile"
                     }
-                ], 
-                "totalCount": 1
+                ],
+                "totalCount": 3
             }
-        }, 
-        "popperized/bams-popper": {
+        },
+        "popperized/enos": {
+            "languages": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
+        "popperized/figshare": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "TeX"
-                    }, 
+                        "name": "Shell"
+                    },
                     {
-                        "name": "Jupyter Notebook"
-                    }, 
+                        "name": "HCL"
+                    },
+                    {
+                        "name": "Dockerfile"
+                    }
+                ],
+                "totalCount": 3
+            }
+        },
+        "popperized/geni": {
+            "languages": {
+                "nodes": [
                     {
                         "name": "Python"
-                    }, 
+                    },
                     {
                         "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
+                    },
+                    {
+                        "name": "Dockerfile"
                     }
-                ], 
+                ],
                 "totalCount": 4
             }
-        }, 
-        "popperized/cudele-popper": {
+        },
+        "popperized/popper-examples": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "TeX"
-                    }, 
+                        "name": "Python"
+                    },
                     {
-                        "name": "Jupyter Notebook"
-                    }, 
+                        "name": "HCL"
+                    },
+                    {
+                        "name": "OpenEdge ABL"
+                    },
                     {
                         "name": "Shell"
-                    }, 
-                    {
-                        "name": "Python"
-                    }, 
-                    {
-                        "name": "Makefile"
                     }
-                ], 
-                "totalCount": 5
+                ],
+                "totalCount": 4
             }
-        }, 
-        "popperized/lesson-episode-3": {
+        },
+        "popperized/spack": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "Python"
-                    }, 
-                    {
                         "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
-        }, 
-        "popperized/malacology-popper": {
+        },
+        "popperized/swc-lesson": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "Roff"
-                    }, 
-                    {
-                        "name": "Jupyter Notebook"
-                    }, 
-                    {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Lua"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "Makefile"
-                    }
-                ], 
-                "totalCount": 6
-            }
-        }, 
-        "popperized/mantle-popper": {
-            "languages": {
-                "nodes": [
+                        "name": "Python"
+                    },
                     {
                         "name": "HTML"
-                    }, 
+                    },
                     {
-                        "name": "Jupyter Notebook"
-                    }, 
+                        "name": "CSS"
+                    },
                     {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "Python"
-                    }, 
-                    {
-                        "name": "Lua"
-                    }
-                ], 
-                "totalCount": 6
-            }
-        }, 
-        "popperized/nwp-popper": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "NCL"
-                    }
-                ], 
-                "totalCount": 2
-            }
-        }, 
-        "popperized/parsplice-popper": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Jupyter Notebook"
-                    }, 
-                    {
-                        "name": "Roff"
-                    }, 
-                    {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "Python"
-                    }
-                ], 
-                "totalCount": 5
-            }
-        }, 
-        "popperized/popper-readthedocs-examples": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Jupyter Notebook"
-                    }, 
-                    {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Objective-C"
-                    }, 
-                    {
-                        "name": "Python"
-                    }, 
-                    {
-                        "name": "Matlab"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "Ruby"
-                    }
-                ], 
-                "totalCount": 7
-            }
-        }, 
-        "popperized/quiho-popper": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Jupyter Notebook"
-                    }, 
-                    {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
-                    {
-                        "name": "Python"
-                    }
-                ], 
-                "totalCount": 4
-            }
-        }, 
-        "popperized/zlog-popper": {
-            "languages": {
-                "nodes": [
-                    {
-                        "name": "Jupyter Notebook"
-                    }, 
-                    {
-                        "name": "TeX"
-                    }, 
-                    {
-                        "name": "Shell"
-                    }, 
+                        "name": "R"
+                    },
                     {
                         "name": "Makefile"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "Ruby"
+                    },
+                    {
+                        "name": "Shell"
                     }
-                ], 
-                "totalCount": 4
+                ],
+                "totalCount": 8
             }
-        }, 
+        },
+        "popperized/zenodo": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
+                    },
+                    {
+                        "name": "Dockerfile"
+                    }
+                ],
+                "totalCount": 3
+            }
+        },
         "systemslab/docker-cephdev": {
             "languages": {
                 "nodes": [
                     {
                         "name": "Shell"
+                    },
+                    {
+                        "name": "Dockerfile"
                     }
-                ], 
-                "totalCount": 1
+                ],
+                "totalCount": 2
             }
-        }, 
+        },
         "systemslab/popper": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "Go"
-                    }, 
-                    {
                         "name": "Python"
-                    }, 
+                    },
                     {
                         "name": "Shell"
+                    },
+                    {
+                        "name": "HCL"
                     }
-                ], 
+                ],
                 "totalCount": 3
             }
-        }, 
+        },
         "systemslab/tcp_inigo": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
-        }, 
+        },
         "systemslab/tcp_relentless_inigo": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
-        }, 
+        },
+        "uccross/cavsat": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "Java"
+                    }
+                ],
+                "totalCount": 1
+            }
+        },
+        "uccross/skyhook-ceph": {
+            "languages": {
+                "nodes": [
+                    {
+                        "name": "C++"
+                    },
+                    {
+                        "name": "Terra"
+                    },
+                    {
+                        "name": "Python"
+                    },
+                    {
+                        "name": "Jupyter Notebook"
+                    },
+                    {
+                        "name": "Roff"
+                    },
+                    {
+                        "name": "Shell"
+                    },
+                    {
+                        "name": "C"
+                    },
+                    {
+                        "name": "CMake"
+                    },
+                    {
+                        "name": "Perl"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "Java"
+                    },
+                    {
+                        "name": "Assembly"
+                    },
+                    {
+                        "name": "Perl 6"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "Makefile"
+                    },
+                    {
+                        "name": "Ruby"
+                    },
+                    {
+                        "name": "DIGITAL Command Language"
+                    },
+                    {
+                        "name": "Dockerfile"
+                    },
+                    {
+                        "name": "Lua"
+                    },
+                    {
+                        "name": "Batchfile"
+                    }
+                ],
+                "totalCount": 21
+            }
+        },
         "xiszishu/syssim": {
             "languages": {
                 "nodes": [
                     {
                         "name": "C++"
-                    }, 
+                    },
                     {
                         "name": "Makefile"
                     }
-                ], 
+                ],
                 "totalCount": 2
             }
         }
