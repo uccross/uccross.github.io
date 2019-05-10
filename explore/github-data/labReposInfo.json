@@ -98,7 +98,7 @@
         "galaxykate/tracery": {
             "description": "Tracery: a story-grammar generation library for javascript",
             "forks": {
-                "totalCount": 141
+                "totalCount": 142
             },
             "homepageUrl": null,
             "name": "tracery",
@@ -110,7 +110,7 @@
                 "name": "JavaScript"
             },
             "stargazers": {
-                "totalCount": 1458
+                "totalCount": 1460
             },
             "url": "https://github.com/galaxykate/tracery"
         },
@@ -148,7 +148,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 66
+                "totalCount": 67
             },
             "url": "https://github.com/nimble-dev/nimble"
         },
@@ -355,7 +355,7 @@
                 "name": "Python"
             },
             "stargazers": {
-                "totalCount": 89
+                "totalCount": 93
             },
             "url": "https://github.com/systemslab/popper"
         },
@@ -400,7 +400,7 @@
         "uccross/cavsat": {
             "description": null,
             "forks": {
-                "totalCount": 1
+                "totalCount": 0
             },
             "homepageUrl": null,
             "name": "cavsat",
