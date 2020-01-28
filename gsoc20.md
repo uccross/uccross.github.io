@@ -51,22 +51,53 @@ This is a proposal of GSoC projects for
 
 ## [Popper](https://github.com/systemslab/popper)
 
-Popper is a workflow execution engine based on [Github 
-actions](https://github.com/features/actions) (GHA). This is a list of 
-ideas for projects related to Popper:
+[Popper](https://github.com/systemslab/popper) is a workflow execution 
+engine based on [Github actions](https://github.com/features/actions). 
+This is a list of ideas for projects related to Popper:
 
-  * Example workflows (will likely work on more than one of the 
-  following):
-      * Machine learning: [MLPerf](https://mlperf.org/), 
-      [xLearn](https://github.com/aksnzhy/xlearn), 
-      [LightGBM](https://github.com/Microsoft/LightGBM), 
-      [Wordbatch](https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c)
-      * Systems software: [SPDK](https://spdk.io/), 
-      [DPDK](https://www.dpdk.org/), [Seastar](http://seastar.io/), 
-      [Scylla](https://www.scylladb.com/).
-      * Data analytics: [Weld](https://www.weld.rs/).
-  * Add support for [Podman engine](https://podman.io).
-  * Transparently run workflows on a [Kubernetes](https://kubernetes.io) cluster.
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Example Workflows                             |
+| **Mentor(s)**   | [Ivo Jimenez](http://www.ivotron.me)          |
+| **Skills**      | Bash, Python, C++ (optional), Rust (optional) |
+| **Description** | <p>One or more the following (time permitting):</p><ul><li>Machine learning: <a href="https://mlperf.org/">MLPerf</a>, <a href="https://github.com/aksnzhy/xlearn">xLearn</a>, <a href="https://github.com/Microsoft/LightGBM">LightGBM</a>, <a href="https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c">Wordbatch</a></li><li>Systems software: <a href="https://spdk.io/">SPDK</a>, <a href="https://www.dpdk.org/">DPDK</a>, <a href="http://seastar.io/">Seastar</a>, <a href="https://www.scylladb.com/">Scylla</a>.</li><li>Data analytics: <a href="https://www.weld.rs/">Weld</a>.</li></ul> |
+| **Link**        | See repos in <https://github.com/popperized>  |
+| **Difficulty**  | High                                          |
+
+<!--
+More than one of the following:
+  * Machine learning: [MLPerf](https://mlperf.org/), [xLearn](https://github.com/aksnzhy/xlearn), [LightGBM](https://github.com/Microsoft/LightGBM), [Wordbatch](https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c)
+  * Systems software: [SPDK](https://spdk.io/), [DPDK](https://www.dpdk.org/), [Seastar](http://seastar.io/), [Scylla](https://www.scylladb.com/).
+  * Data analytics: [Weld](https://www.weld.rs/).
+-->
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Add support for additional container engines  |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | Python (strong), Go (basic), Bash (basic)    |
+| **Description** | Add support for executing workflows in one or more of the followin (time permitting): [Podman](https://podman.io), [LXD](https://lxd.readthedocs.io/en/latest/), [Vagga](https://github.com/tailhook/vagga), [Charliecloud](https://github.com/hpc/charliecloud). |
+| **Link**        | https://github.com/systemslab/popper |
+| **Difficulty**  | Medium                                          |
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Transparent run workflows in a Kubernetes cluster. |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | Python (strong), Go (basic), Kubernetes (basic) |
+| **Description** | Given a [`kubeconfig`](https://rancher.com/docs/rke/latest/en/kubeconfig/) file, allow Popper users to execute a workflow in a kubernetes cluster. This involves implementing a module that resembles a container engine (`popper run --engine kubernetes`), with the difference that containers are deployed in the cluster. |
+| **Link**        | https://github.com/systemslab/popper |
+| **Difficulty**  | High                                          |
+
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Workflow Viewer and Editor                    |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | GUI development (strong), Javascript (strong) |
+| **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents, similar to [Github's built-in](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/) (see live example [here](https://github.com/spack/spack/edit/develop/.github/workflows/minimum_python_versions.yaml)) workflow editor. As part of this project, action and workflows catalogs will also be implemented, allowing users to search from an existing list of workflows and actions. |
+| **Link**        | https://github.com/blkswanio/blackswan        |
+| **Difficulty**  | Medium                                        |
 
 
 ## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
