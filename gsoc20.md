@@ -82,7 +82,7 @@ More than one of the following:
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Transparent run workflows in a Kubernetes cluster. |
+| **Title**       | Transparently run workflows in a Kubernetes cluster. |
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
 | **Skills**      | Python (strong), Go (basic), Kubernetes (basic) |
 | **Description** | Given a [`kubeconfig`](https://rancher.com/docs/rke/latest/en/kubeconfig/) file, allow Popper users to execute a workflow in a kubernetes cluster. This involves implementing a module that resembles a container engine (`popper run --engine kubernetes`), with the difference that containers are deployed in the cluster. |
