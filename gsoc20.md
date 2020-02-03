@@ -102,7 +102,16 @@ More than one of the following:
 
 ## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
 
-Skyhook extends object storage in the cloud with data management functionality. Skyhook [formats](https://github.com/uccross/skyhook-ceph/wiki/Data-format-(flatbuffers)) database table partitions as [Flatbuffers](https://google.github.io/flatbuffers/), and stores each partition as an object in [Ceph](https://ceph.com) distributed storage. Ceph object classes mechanism allow users to define custom read/write methods for objects.  We have developed methods (C++) for data management including data processing and indexing.
+The Skyhook Data Management project extends object storage in the cloud with data management functionality. Skyhook enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  Skyhook partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Compaction of formatted database partitions within objects
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | This project will develop object class methods that will merge (or conversely split) formatted data partitions within an object.  Self-contained partitions are written (appended) to objects and over time objects may contain a sequence of independent formatted data structures.  A compaction request will invoke this method that will iterate over the data structures, combining (or splitting) them into a single larger data structure representing the complete data partition.  In essences, this methods will perform a read-modify-write operation on an object's local data.
+| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/33
+| **Difficulty**  | high
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
@@ -110,17 +119,7 @@ Skyhook extends object storage in the cloud with data management functionality. 
 | **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
 | **Skills**      | C++
 | **Description** | This project will develop object-class methods to compute data statistics (histograms) for each object and store them in a query-able format within each storage server’s local RocksDB, then write client code to accumulate all the object-local statistics into global statistics for a given database table.
-| **Link**        | https://github.com/uccross/skyhook-ceph
-| **Difficulty**  | high
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Extend current processing methods with column-oriented processing via Arrow
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | This project will develop object-class methods to transform on-disk Flatbuffer data (row oriented) into [Apache Arrow](https://arrow.apache.org) format (col-oriented) in memory, then work toward extending our row-oriented filters and aggregations to column oriented versions using the Arrow APIs.
-| **Link**        | https://github.com/uccross/skyhook-ceph
+| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/77
 | **Difficulty**  | high
 
 |                 |                                               |
@@ -129,7 +128,7 @@ Skyhook extends object storage in the cloud with data management functionality. 
 | **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
 | **Skills**      | C++
 | **Description** | We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods methods to sort/group query result sets.  This requires extending the current code (select/project/basic-aggregations - min/max/sum/count) to support groupby and/or orderby.
-| **Link**        | https://github.com/uccross/skyhook-ceph
+| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/23
 | **Difficulty**  | medium
 
 ## [CAvSAT](https://github.com/uccross/cavsat)
