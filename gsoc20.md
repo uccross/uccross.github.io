@@ -76,7 +76,7 @@ More than one of the following:
 | **Title**       | Add support for additional container engines  |
 | **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
 | **Skills**      | Python (strong), Go (basic), Bash (basic)    |
-| **Description** | Add support for executing workflows in one or more of the followin (time permitting): [Podman](https://podman.io), [LXD](https://lxd.readthedocs.io/en/latest/), [Vagga](https://github.com/tailhook/vagga), [Charliecloud](https://github.com/hpc/charliecloud). |
+| **Description** | Add support for executing workflows in one or more of the followin (time permitting): [Podman](https://podman.io), [LXD](https://lxd.readthedocs.io/en/latest/), [Vagga](https://github.com/tailhook/vagga), [Charliecloud](https://github.com/hpc/charliecloud), [SciUnit](https://sciunit.run). |
 | **Link**        | https://github.com/systemslab/popper |
 | **Difficulty**  | Medium                                          |
 
