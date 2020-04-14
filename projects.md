@@ -1,8 +1,12 @@
-# Project Ideas
+# Open Source Project Ideas
 
-This is a list of projects ideas for OSS incubators and research 
-projects affiliated with CROSS. If you have any questions, please 
-visit our Gitter channel: [![Join the chat at 
+<img src="woman-draw-a-light-bulb-in-white-board-3758105.jpg" alt="Woman draw a light bulb in white board" valign="middle" />
+
+This is a list of project ideas that can be developed into class, senior, or summer projects.
+
+If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. 
+
+If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## LiveHD
@@ -37,7 +41,6 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | **Description** | Liberty is the de-facto standard to specify ASIC/FPGA libraries. The goal is to parse a liberty file and populate LiveHD/LGraph nodes.
 | **Link**        | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#liberty
 | **Difficulty**  | Medium
-
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
