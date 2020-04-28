@@ -103,6 +103,36 @@ More than one of the following:
 | **Difficulty**  | Medium                                        |
 
 
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Create package manager for workflows          |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | Python (strong), Packaging (basic), Bash (basic) |
+| **Description** | Device and implement a system for packaging and managing versions of workflows. |
+| **Link**        | https://github.com/systemslab/popper        |
+| **Difficulty**  | High                                        |
+
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Create standalone workflow parsing library.   |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | Python (strong), Bash (basic) |
+| **Description** | Create a standalone workflow parsing library that defines 1) the spec for tasks, and 2) workflows created by chaining tasks. This can later be imported from distinct tools, one of them being Popper (the other one can be the one mentioned below) |
+| **Link**        | https://github.com/systemslab/popper        |
+| **Difficulty**  | High                                        |
+
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Breakdancer - a self-documenting CLI tool generator from YAML files. |
+| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
+| **Skills**      | Python (strong), Bash (basic) |
+| **Description** | Create a tool that takes YAML files expressed in the Popper YAML syntax but that generates command line tools from these YAML files. Similar to https://github.com/ahoy-cli/ahoy, but using Popper YAML syntax (or the standalone workflow parsing library mentioned above) . |
+| **Link**        | https://github.com/systemslab/popper        |
+| **Difficulty**  | High                                        |
+
+
 ## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
 
 The Skyhook Data Management project extends object storage in the cloud with data management functionality. Skyhook enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  Skyhook partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
