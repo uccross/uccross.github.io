@@ -2,12 +2,28 @@
 
 <img src="woman-draw-a-light-bulb-in-white-board-3758105.jpg" alt="Woman draw a light bulb in white board" valign="middle" />
 
-This is a list of project ideas that can be developed into class, senior, or summer projects.
-
-If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. 
-
-If you have any questions, please visit our Gitter channel: [![Join the chat at 
+This is a list of projects and ideas associated to each. Each of this can be developed into class, senior, or summer projects. 
+If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Table of contents:
+
+  * [LiveHD](#livehd)
+  * [Skyhook](#skyhook)
+  * [CAvSAT](#cavsat)
+  * [Popper](#popper)
+    + [CI Starter Workflows](#ci-starter-workflows)
+    + [Machine Learning Performance Validation Workflows](#machine-learning-performance-validation-workflows)
+    + [Systems Performance Validation Workflows](#systems-performance-validation-workflows)
+    + [Boombox - Container-native Task and Workflow Specification](#boombox---container-native-task-and-workflow-specification)
+    + [Breakdancer - YAML-based Task Automation](#breakdancer---yaml-based-task-automation)
+    + [Podman Container Engine](#podman-container-engine)
+    + [Kaniko support](#kaniko-support)
+    + [Port website and documentation to Hugo Docsy](#port-website-and-documentation-to-hugo-docsy)
+    + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
+    + [Computational Research Guide](#computational-research-guide)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## LiveHD
 
@@ -52,8 +68,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | **Difficulty**  | Medium
 
 
-## [Skyhook: programmable storage for 
-databases](http://www.skyhookdm.com)
+## [Skyhook](http://www.skyhookdm.com)
 
 The Skyhook Data Management project extends object storage in the cloud with data management functionality. Skyhook enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  Skyhook partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
 
