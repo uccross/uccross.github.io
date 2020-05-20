@@ -148,7 +148,7 @@ Other examples for which the same can be done are [Horovod][horovod],
 Benchmarks][ogb] or any other blog post, README, or article that you 
 find for which you would like to reproduce its results.
 
-[obg]: https://github.com/snap-stanford/ogb
+[ogb]: https://github.com/snap-stanford/ogb
 [lightgbm]: https://github.com/Microsoft/LightGBM
 [horovod]: https://github.com/horovod/horovod/blob/master/docs/benchmarks.rst
 [wordbatch]: https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c
