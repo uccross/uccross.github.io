@@ -22,6 +22,7 @@ Table of contents:
     + [Port website and documentation to Hugo Docsy](#port-website-and-documentation-to-hugo-docsy)
     + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
     + [Computational Research Guide](#computational-research-guide)
+    + [Apache Airflow Integration](#apache-airflow-integration)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -143,6 +144,8 @@ As part of this, How-To guides will be added to the documentation
 
 [ghastart]: https://github.com/actions/starter-workflows/blob/master/ci/python-app.yml
 
+-------
+
 ### Machine Learning Performance Validation Workflows
 
   - **Topics**: `example workflows`, `machine learning`
@@ -168,6 +171,8 @@ find for which you would like to reproduce its results.
 [horovod]: https://github.com/horovod/horovod/blob/master/docs/benchmarks.rst
 [wordbatch]: https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c
 
+-------
+
 ### Systems Performance Validation Workflows
 
   - **Topics**: `example workflows`, `systems research`
@@ -185,6 +190,8 @@ Other projects for which this can be done as well are
 [DPDK](https://www.dpdk.org/), [Seastar](http://seastar.io/), 
 [Scylla](https://www.scylladb.com/), or any other you would like to 
 work on.
+
+-------
 
 ### Boombox - Container-native Task and Workflow Specification
 
@@ -220,6 +227,8 @@ dictionary whereas `steps` is a list.
 [wfspec]: https://github.com/systemslab/popper/blob/e739b60/cli/popper/parser.py#L17
 [bbox]: https://github.com/getpopper/boombox
 
+-------
+
 ### Breakdancer - YAML-based Task Automation
 
   - **Topics**: `CLI tools`, `automation`, `open source project from 
@@ -247,6 +256,8 @@ bd test
 For this project, we will create a brand new repository, containing 
 all the usual elements of an open source project.
 
+-------
+
 ### Podman Container Engine
 
   - **Topics**: `podman`, `caching`
@@ -259,6 +270,8 @@ currently done for Docker (see code [here][docker-runner]).
 
 [podman-py]: https://github.com/containers/podman-py
 [docker-runner]: https://github.com/systemslab/popper/blob/ab2ee40/cli/popper/runner_host.py#L104
+
+-------
 
 ### Kaniko support
 
@@ -276,6 +289,8 @@ idea is to expose a `--kaniko` flag that enables the use of Kaniko
 when building images. For this, the user needs to specify a registry 
 account in the configuration options.
 
+-------
+
 ### Port website and documentation to Hugo Docsy
 
   - **Topics**: `documentation`, `hugo`
@@ -286,6 +301,8 @@ Consolidate the documentation and landing page of the project by
 migrating to Hugo, and use the 
 [Docsy](https://themes.gohugo.io/docsy/) template. This page will 
 reside in [its own repository](https://github.com/getpopper/website).
+
+-------
 
 ### Add Introduction Section to Documentation
 
@@ -299,6 +316,8 @@ containers, container runtimes, container engines, container-native
 workflows, and resource managers.
 
 [pp-docs]: https://github.com/systemslab/popper/tree/master/docs
+
+-------
 
 ### Computational Research Guide
 
@@ -326,6 +345,8 @@ workflow to run the distinct steps. We can create two templates, one
 for python and another for R. For example this one too: 
 https://arxiv.org/abs/1401.200. Make it so that it reads like Popper 
 as an alternative to codeocean.com
+
+-------
 
 ### Apache Airflow Integration
 
