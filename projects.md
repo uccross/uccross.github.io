@@ -52,88 +52,8 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | **Difficulty**  | Medium
 
 
-## [Popper](https://github.com/systemslab/popper)
-
-[Popper](https://github.com/systemslab/popper) is a container-native 
-workflow execution engine. This is a list of ideas for projects 
-related to this project:
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Example Workflows                             |
-| **Mentor(s)**   | [Ivo Jimenez](http://www.ivotron.me)          |
-| **Skills**      | Bash, Python, C++ (optional), Rust (optional) |
-| **Description** | <p>One or more the following (time permitting):</p><ul><li>Machine learning: <a href="https://mlperf.org/">MLPerf</a>, <a href="https://github.com/aksnzhy/xlearn">xLearn</a>, <a href="https://github.com/Microsoft/LightGBM">LightGBM</a>, <a href="https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c">Wordbatch</a></li><li>Systems software: <a href="https://spdk.io/">SPDK</a>, <a href="https://www.dpdk.org/">DPDK</a>, <a href="http://seastar.io/">Seastar</a>, <a href="https://www.scylladb.com/">Scylla</a>.</li><li>Data analytics: <a href="https://www.weld.rs/">Weld</a>.</li></ul> |
-| **Link**        | See repos in <https://github.com/popperized>  |
-| **Difficulty**  | High                                          |
-
-<!--
-More than one of the following:
-  * Machine learning: [MLPerf](https://mlperf.org/), [xLearn](https://github.com/aksnzhy/xlearn), [LightGBM](https://github.com/Microsoft/LightGBM), [Wordbatch](https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c)
-  * Systems software: [SPDK](https://spdk.io/), [DPDK](https://www.dpdk.org/), [Seastar](http://seastar.io/), [Scylla](https://www.scylladb.com/).
-  * Data analytics: [Weld](https://www.weld.rs/).
--->
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Add support for additional container engines  |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | Python (strong), Go (basic), Bash (basic)    |
-| **Description** | Add support for executing workflows in one or more of the followin (time permitting): [Podman](https://podman.io), [LXD](https://lxd.readthedocs.io/en/latest/), [Vagga](https://github.com/tailhook/vagga), [Charliecloud](https://github.com/hpc/charliecloud), [SciUnit](https://sciunit.run). |
-| **Link**        | https://github.com/systemslab/popper |
-| **Difficulty**  | Medium                                          |
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Transparently run workflows in a Kubernetes cluster. |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | Python (strong), Go (basic), Kubernetes (basic) |
-| **Description** | Given a [`kubeconfig`](https://rancher.com/docs/rke/latest/en/kubeconfig/) file, allow Popper users to execute a workflow in a kubernetes cluster. This involves implementing a module that resembles a container engine (`popper run --engine kubernetes`), with the difference that containers are deployed in the cluster. |
-| **Link**        | https://github.com/systemslab/popper |
-| **Difficulty**  | High                                          |
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Workflow Viewer and Editor                    |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | GUI development (strong), Javascript (strong) |
-| **Description** | Create a javascript-based viewer of Popper pipelines that allows users to visually explore a pipeline and its contents, similar to [Github's built-in](https://github.blog/2019-10-01-new-workflow-editor-for-github-actions/) (see live example [here](https://github.com/spack/spack/edit/develop/.github/workflows/minimum_python_versions.yaml)) workflow editor. As part of this project, action and workflows catalogs will also be implemented, allowing users to search from an existing list of workflows and actions. |
-| **Link**        | https://github.com/blkswanio/blackswan        |
-| **Difficulty**  | Medium                                        |
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Create package manager for workflows          |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | Python (strong), Packaging (basic), Bash (basic) |
-| **Description** | Device and implement a system for packaging and managing versions of workflows. |
-| **Link**        | https://github.com/systemslab/popper        |
-| **Difficulty**  | High                                        |
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Create standalone workflow parsing library.   |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | Python (strong), Bash (basic) |
-| **Description** | Create a standalone workflow parsing library that defines 1) the spec for tasks, and 2) workflows created by chaining tasks. This can later be imported from distinct tools, one of them being Popper (the other one can be the one mentioned below) |
-| **Link**        | https://github.com/systemslab/popper        |
-| **Difficulty**  | High                                        |
-
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Breakdancer - a self-documenting CLI tool generator from YAML files. |
-| **Mentor(s)**   | [Ivo Jimenez](https://ivotron.me)             |
-| **Skills**      | Python (strong), Bash (basic) |
-| **Description** | Create a tool that takes YAML files expressed in the Popper YAML syntax but that generates command line tools from these YAML files. Similar to https://github.com/ahoy-cli/ahoy, but using Popper YAML syntax (or the standalone workflow parsing library mentioned above) . |
-| **Link**        | https://github.com/systemslab/popper        |
-| **Difficulty**  | High                                        |
-
-
-## [Skyhook: programmable storage for databases](http://www.skyhookdm.com)
+## [Skyhook: programmable storage for 
+databases](http://www.skyhookdm.com)
 
 The Skyhook Data Management project extends object storage in the cloud with data management functionality. Skyhook enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  Skyhook partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
 
@@ -177,3 +97,217 @@ Inconsistent relational databases are the ones that violate one or more integrit
 | **Papers for Reference** | https://dl.acm.org/doi/10.1145/3299869.3300095, https://link.springer.com/chapter/10.1007/978-3-030-24258-9_8, https://dl.acm.org/doi/10.1145/303976.303983, https://dl.acm.org/doi/10.1145/3068334
 | **Project Link**        | https://github.com/uccross/cavsat
 | **Difficulty**  | Medium
+
+
+## [Popper](https://github.com/systemslab/popper)
+
+[Popper](https://github.com/systemslab/popper) is a container-native 
+workflow execution engine. This is a list of ideas for projects 
+related to this project is below. For any question, please visit the 
+[Gitter channel][gitter] or [Slack channel][slack].
+
+[gitter]: https://gitter.im/falsifiable-us/popper
+[slack]: https://join.slack.com/t/getpopper/shared_invite/zt-dtn0se2s-c50myMHNpeoikQXDeNbPew
+
+### CI Starter Workflows
+
+  - **Topics**: example workflows, CI, development environment
+  - **Skills**: Bash, Python, Docker
+  - **Difficulty**: High
+
+Create example workflows for using Popper for CI’ing projects in 
+distinct languages. Would create an `examples/` folder in the Popper 
+repo, and then create one YAML file per example, where every example 
+represents a distinct example for a distinct language. For example, 
+take [this example of the Github Actions starter workflow][ghastart]. 
+We would write the same but using in the syntax of Popper. In this 
+case, there would be an `examples/ci/python-app.yml` file, but the 
+syntax is not the one for Github Actions, it is the syntax for Popper. 
+As part of this, How-To guides will be added to the documentation 
+(`docs/sections/guides`) for each distinct language.
+
+[ghastart]: https://github.com/actions/starter-workflows/blob/master/ci/python-app.yml
+
+### Machine Learning Performance Validation Workflows
+
+  - **Topics**: `example workflows`, `machine learning`
+  - **Skills**: Bash, Python, Docker
+  - **Difficulty**: High
+
+Take a machine learning library and create a workflow for reproducing 
+results presented in an academic article, a blog post, or a repository 
+README file. For example, take the 
+[xLearn](https://github.com/aksnzhy/xlearn) main `README.md`, where 
+they show some charts about the performance of the library. For this 
+project, we would create a workflow that obtains data, installs the 
+library, runs the benchmarks, and produces the charts in PDF/PNG 
+format.
+
+Other examples for which the same can be done are [Horovod][horovod], 
+[Light GBM][lightgbm], [Wordbatch][wordbatch], [Open Graph 
+Benchmarks][ogb] or any other blog post, README, or article that you 
+find for which you would like to reproduce its results.
+
+[obg]: https://github.com/snap-stanford/ogb
+[lightgbm]: https://github.com/Microsoft/LightGBM
+[horovod]: https://github.com/horovod/horovod/blob/master/docs/benchmarks.rst
+[wordbatch]: https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c
+
+### Systems Performance Validation Workflows
+
+  - **Topics**: `example workflows`, `systems research`
+  - **Skills**: Bash, Python, Docker
+  - **Difficulty**: High
+
+Same as above but for reproducing performance reports for 
+high-performance systems frameworks. For example, we can take the 
+performance report that is periodically generated for 
+[SPDK](https://spdk.io/), and create a workflow that builds SPDK, 
+prepares the storage drives (SSDs), runs the performance benchmarks, 
+and lastly creates a PDF containing the resulting charts.
+
+Other projects for which this can be done as well are 
+[DPDK](https://www.dpdk.org/), [Seastar](http://seastar.io/), 
+[Scylla](https://www.scylladb.com/), or any other you would like to 
+work on.
+
+### Boombox - Container-native Task and Workflow Specification
+
+  - **Topics**: `example workflows`, `systems research`
+  - **Skills**: Bash, Python, YAML
+  - **Difficulty**: Medium
+
+Extract the [Workflow Spec][wfspec] from the Popper repository and 
+place it in a [standalone repository][bbox]. As part of this, we will 
+also extend the definition so that it can also be used to define 
+generic, container-native tasks. For example:
+
+```yaml
+tasks:
+  install-deps:
+    uses: docker://node:12-alpine
+    runs: [yarn, install]
+  build:
+    uses: docker://node:12-alpine
+    runs: [yarn, build]
+  test:
+    uses: docker://node:12-alpine
+    runs: [yarn, test]
+```
+
+A task has the same structure as a [Popper Workflow step][pp-step], 
+with the difference there is no ordering implied in its definition. In 
+other words, a workflow YAML file represents a sequence of steps, 
+whereas a task definition file doesn't. In YAML terms, `tasks` is a 
+dictionary whereas `steps` is a list.
+
+[ppstep]: https://popper.readthedocs.io/en/latest/sections/cn_workflows.html#syntax
+[wfspec]: https://github.com/systemslab/popper/blob/e739b60/cli/popper/parser.py#L17
+[bbox]: https://github.com/getpopper/boombox
+
+### Breakdancer - YAML-based Task Automation
+
+  - **Topics**: `CLI tools`, `automation`, `open source project from 
+    scratch`
+  - **Skills**: Go, Docker
+  - **Difficulty**: High
+
+Create a tool called `breakdancer` (installed as `bd`) in Go that 
+takes a YAML file containing Boombox task definitions (see above), and 
+executes them on-demand. This allows users to easily automate tasks 
+without having to code them in a programming language, as they only 
+need to provide a YAML file describing which images to run, what 
+arguments to pass, and define Bash scripts inline if needed. Another 
+way of looking at this: breakdancer is as a CLI on-the-fly tool.
+
+Given a YAML file with tasks like the one shown above, assuming it is 
+stored in a `tasks.yml` file, the following runs the `install-deps` 
+task:
+
+```bash
+bd install-deps
+bd test
+```
+
+For this project, we will create a brand new repository, containing 
+all the usual elements of an open source project.
+
+### Podman Container Engine
+
+  - **Topics**: `podman`, `caching`
+  - **Skills**: Bash, Python, Podman, Docker
+  - **Difficulty**: High
+
+Using the [Podman Python API][podman-py], add support for building and 
+running containers on the Podman engine. Similarly to how it is 
+currently done for Docker (see code [here][docker-runner]).
+
+[podman-py]: https://github.com/containers/podman-py
+[docker-runner]: https://github.com/systemslab/popper/blob/ab2ee40/cli/popper/runner_host.py#L104
+
+### Kaniko support
+
+  - **Topics**: `docker`, `image caching`
+  - **Skills**: Bash, Docker
+  - **Difficulty**: High
+
+[Kaniko](https://github.com/GoogleContainerTools/kaniko) is a tool 
+that makes it possible to maintain a cache of docker images to speed 
+up the build of images in scenarios where the Docker cache is cold 
+(e.g. in CI systems).
+
+This project consists of adding support for Kaniko in Popper. The main 
+idea is to expose a `--kaniko` flag that enables the use of Kaniko 
+when building images. For this, the user needs to specify a registry 
+account in the configuration options.
+
+### Port website and documentation to Hugo Docsy
+
+  - **Topics**: `documentation`, `hugo`
+  - **Skills**: Hugo, Docker
+  - **Difficulty**: Medium
+
+Consolidate the documentation and landing page of the project by 
+migrating to Hugo, and use the 
+[Docsy](https://themes.gohugo.io/docsy/) template. This page will 
+reside in [its own repository](https://github.com/getpopper/website).
+
+### Add Introduction Section to Documentation
+
+  - **Topics**: `documentation`, `workflows`
+  - **Skills**: Workflows, Docker
+  - **Difficulty**: Medium
+
+Add an introduction section to [the documentation][pp-docs]. With the 
+aid of diagrams, this section will explain the concepts of: workflows, 
+containers, container runtimes, container engines, container-native 
+workflows, and resource managers.
+
+[pp-docs]: https://github.com/systemslab/popper/tree/master/docs
+
+### Computational Research Guide
+
+  - **Topics**: `documentation`, `workflows`, `computational research`
+  - **Skills**: Workflows, Docker, Bash
+  - **Difficulty**: High
+
+Create a guide on how to run python- and R-based computational 
+projects using Docker, Popper, Travis and Zenodo in order to address 
+the “long tail” of computational research. One way in which we can 
+guide this work is by looking at codeocean.com and how they address 
+these issues of usability. We would have a list of predefined 
+workflows that someone using Jupyter (R or Python) for computational 
+science research can copy to their projects so that they can launch a 
+jupyter notebook in interactive mode and also run it in 
+non-interactive mode. This guide would explain how to download/upload 
+datasets to Zenodo as well.
+
+You can think of computational projects like R or Python code, that 
+make use of Jupyter and that download data from Zenodo. For example, 
+we can create a github repository template like this one 
+https://drivendata.github.io/cookiecutter-data-science/ that people 
+can checkout. We would modify that one so that it includes a Popper 
+workflow to run the distinct steps. We can create two templates, one 
+for python and another for R. For example this one too: 
+https://arxiv.org/abs/1401.200. Make it so that it reads like Popper 
+as an alternative to codeocean.com
