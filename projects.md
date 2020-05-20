@@ -210,7 +210,7 @@ tasks:
     runs: [yarn, test]
 ```
 
-A task has the same structure as a [Popper Workflow step][pp-step], 
+A task has the same structure as a [Popper Workflow step][ppstep], 
 with the difference there is no ordering implied in its definition. In 
 other words, a workflow YAML file represents a sequence of steps, 
 whereas a task definition file doesn't. In YAML terms, `tasks` is a 
@@ -326,3 +326,21 @@ workflow to run the distinct steps. We can create two templates, one
 for python and another for R. For example this one too: 
 https://arxiv.org/abs/1401.200. Make it so that it reads like Popper 
 as an alternative to codeocean.com
+
+### Apache Airflow Integration
+
+  - **Topics**: `workflows`, `ui`, `airflow`
+  - **Skills**: Python, Docker, Bash
+  - **Difficulty**: High
+
+Add support for translating a Popper workflow to [Airflow][airflow] 
+syntax, with the option of triggering the execution on an airflow 
+engine instance. This project entails the creation of a pluggable 
+design for integration other workflow engines, so that we can 
+integrate others in the future. An example of how this is done can [be 
+found in Dagster's repository][dagster-to-airflow], where they 
+translate from [Dagster][dagster] syntax to Airflow.
+
+[airflow]: http://airflow.apache.org/
+[dagster]: http://dagster.io/
+[dagster-to-airflow]: https://github.com/dagster-io/dagster/blob/548d0ba/python_modules/libraries/dagster-airflow/dagster_airflow/factory.py#L226
