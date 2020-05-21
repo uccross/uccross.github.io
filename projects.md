@@ -23,6 +23,7 @@ Table of contents:
     + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
     + [Computational Research Guide](#computational-research-guide)
     + [Apache Airflow Integration](#apache-airflow-integration)
+    + [Dockerfile Generator Application](#dockerfile-generator-application)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -350,7 +351,7 @@ as an alternative to codeocean.com
 
 ### Apache Airflow Integration
 
-  - **Topics**: `workflows`, `ui`, `airflow`
+  - **Topics**: `workflows`, `web gui`, `airflow`
   - **Skills**: Python, Docker, Bash
   - **Difficulty**: High
 
@@ -365,3 +366,18 @@ translate from [Dagster][dagster] syntax to Airflow.
 [airflow]: http://airflow.apache.org/
 [dagster]: http://dagster.io/
 [dagster-to-airflow]: https://github.com/dagster-io/dagster/blob/548d0ba/python_modules/libraries/dagster-airflow/dagster_airflow/factory.py#L226
+
+-------
+
+### Dockerfile Generator Application
+
+  * **Topics**: `gui`, `widgets`
+  * **Skills**: Python, GUI, Docker
+  * **Difficulty**: Medium
+
+Create a cross-platform GUI to aid in the generation of Dockerfiles. 
+Similar to what <https://phpdocker.io/generator> but for creating 
+images that are based on Debian (or Ubuntu) or Python, with support 
+for specifying a list of `apt` and `pip` packages to include in the 
+Dockerfile. To implement this in a cross-platform manner, a library 
+such as [Kivy](https://kivy.org) can be used.
