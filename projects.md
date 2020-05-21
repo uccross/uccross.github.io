@@ -22,7 +22,6 @@ Table of contents:
     + [Port website and documentation to Hugo Docsy](#port-website-and-documentation-to-hugo-docsy)
     + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
     + [Computational Research Guide](#computational-research-guide)
-    + [Apache Airflow Integration](#apache-airflow-integration)
     + [Dockerfile Generator Application](#dockerfile-generator-application)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -346,26 +345,6 @@ workflow to run the distinct steps. We can create two templates, one
 for python and another for R. For example this one too: 
 https://arxiv.org/abs/1401.200. Make it so that it reads like Popper 
 as an alternative to codeocean.com
-
--------
-
-### Apache Airflow Integration
-
-  - **Topics**: `workflows`, `web gui`, `airflow`
-  - **Skills**: Python, Docker, Bash
-  - **Difficulty**: High
-
-Add support for translating a Popper workflow to [Airflow][airflow] 
-syntax, with the option of triggering the execution on an airflow 
-engine instance. This project entails the creation of a pluggable 
-design for integration other workflow engines, so that we can 
-integrate others in the future. An example of how this is done can [be 
-found in Dagster's repository][dagster-to-airflow], where they 
-translate from [Dagster][dagster] syntax to Airflow.
-
-[airflow]: http://airflow.apache.org/
-[dagster]: http://dagster.io/
-[dagster-to-airflow]: https://github.com/dagster-io/dagster/blob/548d0ba/python_modules/libraries/dagster-airflow/dagster_airflow/factory.py#L226
 
 -------
 
