@@ -8,11 +8,11 @@ Each listed project idea includes a mentor (usually the project fellow or associ
 
 ## Research Experience Opportunities: ##
 
+**Summer Projects.** Project ideas can also be the basis for summer project proposals. For the summer of 2020, CROSS announced its first Summer Undergraduate Research Program in Open Source Projects at UCSC -- which plans to provide stipends for undergraduate summer programs. [Read this for more information.](https://cross.ucsc.edu/programs/summerprogam2020.html)  Similar to the Google Summer of Code, students should coordinate with associated mentors. For past examples of GSoC summer projects at CROSS, see [ the ones from 2018 and 2019.](https://cross.ucsc.edu/programs/gsoc_cross.html)
+
 **Senior Thesis and Capstone Projects.** Upper division students can select a project idea as the basis for their final projects in both Senior Thesis and Capstone coursework. Students should reach out to project mentors early in the thesis or capstone design process to assure the selected activity is appropriate for the student's ability level and the project's overall needs.
 
 **Class Projects.** Students at all levels are encouraged to use project ideas for courses throughout their time as undergraduates. A class project proposal should coincide with a student's class requirement as well as make a valuable contribution. The mentor associated with a project idea can provide some guidance on what makes a contribution valuable.
-
-**Summer Projects.** Project ideas can also be the basis for summer project proposals. Students should coordinate with associated mentors who might also be able to identify sources of funding, including Google Summer of Code, national and international fellowships. For past examples of GSoC summer projects at CROSS, see [ the ones from 2018 and 2019.](https://cross.ucsc.edu/programs/gsoc_cross.html)
 
 **Independent Student Contributors.** Students generally interested in open source can also contribute in order to build experience working on open source projects and interacting in open source communities. Students who are interested in particular project ideas should propose a scope of work to associated mentors.
 
