@@ -6,7 +6,7 @@ This is a list of projects and ideas associated to each. Each of this can be dev
 If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-ANNOUNCING - [Summer Undergraduate Research Program in Open Source Projects at UCSC] (https://cross.ucsc.edu/programs/summerprogam2020.html). 
+ANNOUNCING - [Summer Undergraduate Research Program in Open Source Projects at UCSC](https://cross.ucsc.edu/programs/summerprogam2020.html). 
 
 Table of contents:
 
