@@ -25,7 +25,7 @@ Table of contents:
     + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
     + [Computational Research Guide](#computational-research-guide)
     + [Dockerfile Generator Application](#dockerfile-generator-application)
-    + [Improve Presentation of Underlying Concepts in Documentation](#improve-presentation-of underlying-concepts-in-documentation)
+    + [Improve Presentation of Underlying Concepts in Documentation](#improve-presentation-of-underlying-concepts-in-documentation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -370,6 +370,8 @@ images that are based on Debian (or Ubuntu) or Python, with support
 for specifying a list of `apt` and `pip` packages to include in the 
 Dockerfile. To implement this in a cross-platform manner, a library 
 such as [Kivy](https://kivy.org) can be used.
+
+-------
 
 ### Improve Presentation of Underlying Concepts in Documentation
 
