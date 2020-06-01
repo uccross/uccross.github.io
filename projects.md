@@ -25,6 +25,7 @@ Table of contents:
     + [Add Introduction Section to Documentation](#add-introduction-section-to-documentation)
     + [Computational Research Guide](#computational-research-guide)
     + [Dockerfile Generator Application](#dockerfile-generator-application)
+    + [Improve Presentation of Underlying Concepts in Documentation](#improve-presentation-of underlying-concepts-in-documentation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -101,6 +102,13 @@ The Skyhook Data Management project extends object storage in the cloud with dat
 | **Description** | We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods methods to sort/group query result sets.  This requires extending the current code (select/project/basic-aggregations - min/max/sum/count) to support groupby and/or orderby.
 | **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/23
 | **Difficulty**  | medium
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Port wiki to ReadTheDocs or other documentation platform |
+| **Mentor(s)**   | [Jeff LeFevre](https://users.soe.ucsc.edu/~jlefevre)          |
+| **Description** | Skyhook's documentation is currently written as Github Wiki pages. We would like to move it to another platform such as <https://readthedocs.org>, to reorganize it and rewrite some sections as part of this effort. |
+| **Link**        | <https://github.com/uccross/skyhookdm-ceph>  |
 
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
@@ -362,3 +370,18 @@ images that are based on Debian (or Ubuntu) or Python, with support
 for specifying a list of `apt` and `pip` packages to include in the 
 Dockerfile. To implement this in a cross-platform manner, a library 
 such as [Kivy](https://kivy.org) can be used.
+
+### Improve Presentation of Underlying Concepts in Documentation
+
+  * **Topics**: `documentation`, `containers`
+  * **Skills**: Technical writing, Docker, Containers, Workflows
+  * **Difficulty**: Medium
+
+Provide introductory material that serves as an overview to the 
+different concepts and technologies involved in executing 
+container-native workflows: Operating System (Linux), Language 
+Runtimes (e.g. Python), Containers (Docker, Singularity), Resource 
+Managers (Kubernetes, SLURM). The goal being to explain clearly what 
+Popper does and what can users accomplish by using it. Currently, the 
+documentation assumes expertise in all those topics but we would like 
+to lower the entry barrier for new users.
