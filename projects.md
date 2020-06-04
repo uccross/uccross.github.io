@@ -110,6 +110,15 @@ The Skyhook Data Management project extends object storage in the cloud with dat
 | **Description** | Skyhook's documentation is currently written as Github Wiki pages. We would like to move it to another platform such as <https://readthedocs.org>, to reorganize it and rewrite some sections as part of this effort. |
 | **Link**        | <https://github.com/uccross/skyhookdm-ceph>  |
 
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Augment SkyhookDM with in-storage support for a relevant subset of Awkward Array operations
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | Awkward arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside Skyhook.  This project will investigate and implement a small subset of [awkard array](https://github.com/scikit-hep/awkward-array) operations that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer.  
+| **Link**        | https://github.com/uccross/skyhookdm-ceph-cls/issues/38
+| **Difficulty**  | hard
+
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
 Inconsistent relational databases are the ones that violate one or more integrity constraints defined over their schema. We are developing CAvSAT, which aims to be a scalable and comprehensive system for query answering over inconsistent databases.
