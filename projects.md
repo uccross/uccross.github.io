@@ -144,11 +144,14 @@ related to this project is below. For any question, please visit the
 [gitter]: https://gitter.im/falsifiable-us/popper
 [slack]: https://join.slack.com/t/getpopper/shared_invite/zt-dtn0se2s-c50myMHNpeoikQXDeNbPew
 
+-------------------
+
 ### CI Starter Workflows
 
-  - **Topics**: example workflows, CI, development environment
+  - **Topics**: `example workflows`, `CI`, `development environment`
   - **Skills**: Bash, Python, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Create example workflows for using Popper for CI’ing projects in 
 distinct languages. Would create an `examples/` folder in the Popper 
@@ -170,6 +173,7 @@ As part of this, How-To guides will be added to the documentation
   - **Topics**: `example workflows`, `machine learning`
   - **Skills**: Bash, Python, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Take a machine learning library and create a workflow for reproducing 
 results presented in an academic article, a blog post, or a repository 
@@ -197,6 +201,7 @@ find for which you would like to reproduce its results.
   - **Topics**: `example workflows`, `systems research`
   - **Skills**: Bash, Python, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Same as above but for reproducing performance reports for 
 high-performance systems frameworks. For example, we can take the 
@@ -217,6 +222,7 @@ work on.
   - **Topics**: `example workflows`, `systems research`
   - **Skills**: Bash, Python, YAML
   - **Difficulty**: Medium
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Extract the [Workflow Spec][wfspec] from the Popper repository and 
 place it in a [standalone repository][bbox]. As part of this, we will 
@@ -254,6 +260,7 @@ dictionary whereas `steps` is a list.
     scratch`
   - **Skills**: Go, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Create a tool called `breakdancer` (installed as `bd`) in Go that 
 takes a YAML file containing Boombox task definitions (see above), and 
@@ -279,9 +286,10 @@ all the usual elements of an open source project.
 
 ### Podman Container Engine
 
-  - **Topics**: `podman`, `caching`
+  - **Topics**: `podman`, `container engine`
   - **Skills**: Bash, Python, Podman, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Using the [Podman Python API][podman-py], add support for building and 
 running containers on the Podman engine. Similarly to how it is 
@@ -294,14 +302,17 @@ currently done for Docker (see code [here][docker-runner]).
 
 ### Kaniko support
 
-  - **Topics**: `docker`, `image caching`
+  - **Topics**: `docker`, `container images`
   - **Skills**: Bash, Docker
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 [Kaniko](https://github.com/GoogleContainerTools/kaniko) is a tool 
-that makes it possible to maintain a cache of docker images to speed 
-up the build of images in scenarios where the Docker cache is cold 
-(e.g. in CI systems).
+that makes it possible to build docker images without root privileges. 
+The Kaniko builder runs inside a docker container as a normal 
+container and pushes images directly to a container registry. In 
+addition, it can be used to speed up the build of images in scenarios 
+where the Docker cache is cold (e.g. in CI systems).
 
 This project consists of adding support for Kaniko in Popper. The main 
 idea is to expose a `--kaniko` flag that enables the use of Kaniko 
@@ -315,6 +326,7 @@ account in the configuration options.
   - **Topics**: `documentation`, `hugo`
   - **Skills**: Hugo, Docker
   - **Difficulty**: Medium
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Consolidate the documentation and landing page of the project by 
 migrating to Hugo, and use the 
@@ -328,6 +340,7 @@ reside in [its own repository](https://github.com/getpopper/website).
   - **Topics**: `documentation`, `workflows`
   - **Skills**: Workflows, Docker
   - **Difficulty**: Medium
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Add an introduction section to [the documentation][pp-docs]. With the 
 aid of diagrams, this section will explain the concepts of: workflows, 
@@ -343,6 +356,7 @@ workflows, and resource managers.
   - **Topics**: `documentation`, `workflows`, `computational research`
   - **Skills**: Workflows, Docker, Bash
   - **Difficulty**: High
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Create a guide on how to run python- and R-based computational 
 projects using Docker, Popper, Travis and Zenodo in order to address 
@@ -372,6 +386,7 @@ as an alternative to codeocean.com
   * **Topics**: `gui`, `widgets`
   * **Skills**: Python, GUI, Docker
   * **Difficulty**: Medium
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Create a cross-platform GUI to aid in the generation of Dockerfiles. 
 Similar to what <https://phpdocker.io/generator> but for creating 
@@ -387,6 +402,7 @@ such as [Kivy](https://kivy.org) can be used.
   * **Topics**: `documentation`, `containers`
   * **Skills**: Technical writing, Docker, Containers, Workflows
   * **Difficulty**: Medium
+  * **Mentor**: Ivo Jimenez <mailto:ivotron@ucsc.edu>
 
 Provide introductory material that serves as an overview to the 
 different concepts and technologies involved in executing 
