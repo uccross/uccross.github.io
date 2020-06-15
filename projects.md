@@ -11,7 +11,7 @@ ANNOUNCING - [Summer Undergraduate Research Program in Open Source Projects at U
 Table of contents:
 
   * [LiveHD](#livehd)
-  * [Skyhook](#skyhook)
+  * [SkyhookDM](#skyhookdm)
   * [CAvSAT](#cavsat)
   * [Popper](#popper)
     + [CI Starter Workflows](#ci-starter-workflows)
@@ -72,9 +72,9 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | **Difficulty**  | Medium
 
 
-## [Skyhook](http://www.skyhookdm.com)
+## [SkyhookDM](http://www.skyhookdm.com)
 
-The Skyhook Data Management project extends object storage in the cloud with data management functionality. Skyhook enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  Skyhook partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
+The Skyhook Data Management project extends object storage in the cloud with data management functionality. SkyhookDM enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  SkyhookDM partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
@@ -107,7 +107,7 @@ The Skyhook Data Management project extends object storage in the cloud with dat
 |-----------------|-----------------------------------------------|
 | **Title**       | Port wiki to ReadTheDocs or other documentation platform |
 | **Mentor(s)**   | [Jeff LeFevre](https://users.soe.ucsc.edu/~jlefevre)          |
-| **Description** | Skyhook's documentation is currently written as Github Wiki pages. We would like to move it to another platform such as <https://readthedocs.org>, to reorganize it and rewrite some sections as part of this effort. |
+| **Description** | SkyhookDM's documentation is currently written as Github Wiki pages. We would like to move it to another platform such as <https://readthedocs.org>, to reorganize it and rewrite some sections as part of this effort. |
 | **Link**        | <https://github.com/uccross/skyhookdm-ceph>  |
 
 |                 |                                               |
@@ -115,7 +115,7 @@ The Skyhook Data Management project extends object storage in the cloud with dat
 | **Title**       | Augment SkyhookDM with in-storage support for a relevant subset of Awkward Array operations
 | **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
 | **Skills**      | C++
-| **Description** | Awkward arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside Skyhook.  This project will investigate and implement a small subset of [awkard array](https://github.com/scikit-hep/awkward-array) operations that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer.  
+| **Description** | Awkward arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside SkyhookDM.  This project will investigate and implement a small subset of [awkard array](https://github.com/scikit-hep/awkward-array) operations that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer.  
 | **Link**        | https://github.com/uccross/skyhookdm-ceph-cls/issues/38
 | **Difficulty**  | hard
 
