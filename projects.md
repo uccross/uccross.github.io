@@ -1,3 +1,5 @@
+<img src="HiRes-Vector.png" alt="Logo of the Center for Research in Open Source Software" valign="middle" />
+
 # Open Source Project Ideas
 
 <img src="woman-draw-a-light-bulb-in-white-board-3758105.jpg" alt="Woman draw a light bulb in white board" valign="middle" />
