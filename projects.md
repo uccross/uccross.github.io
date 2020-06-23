@@ -114,12 +114,30 @@ The Skyhook Data Management project extends object storage in the cloud with dat
 
 |                 |                                               |
 |-----------------|-----------------------------------------------|
-| **Title**       | Augment SkyhookDM with in-storage support for a relevant subset of Awkward Array operations
+| **Title**       | Augment SkyhookDM with in-storage support for a relevant subset of operations on List data types
 | **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
 | **Skills**      | C++
-| **Description** | Awkward arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside SkyhookDM.  This project will investigate and implement a small subset of [awkard array](https://github.com/scikit-hep/awkward-array) operations that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer.  
+| **Description** | Arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside SkyhookDM.  This project will investigate and implement a small subset of operations on list data types that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods (min, max, first, in) will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer. We can look to [awkward array](https://github.com/scikit-hep/awkward-array) for reference of common operations on scientific array data. 
 | **Link**        | https://github.com/uccross/skyhookdm-ceph-cls/issues/38
 | **Difficulty**  | hard
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Add support for SQL query syntax in Python 
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | This project will add a Python 3 client that can accept and interpret standard SQL queries (e.g., "SELECT A,B FROM T WHERE A=5") to be executed in SkyhookDM.  This will require an SQL parser library in Python, and will issue queries via SkyhookDM's run-query interface, for which we are developing as a Python library.    
+| **Link**        | https://github.com/uccross/skyhookdm-ceph-cls/issues/16, 
+| **Difficulty**  | medium
+
+|                 |                                               |
+|-----------------|-----------------------------------------------|
+| **Title**       | Read raw data with Python, convert to pyarrow tables, horizontally partition and write to SkyhookDM.
+| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
+| **Skills**      | C++
+| **Description** | Read raw input data in CSV and JSON form (no nested data), convert to pyarrow tables, partition pyarrow tables horizontally (creating an individual Arrow table for each partition) and write each partition to SkyhookDM as an object, formatted with our [Flatbuffer metadata wrapper](https://github.com/uccross/skyhookdm-ceph-cls/blob/master/src/cls/fb_meta.fbs).  Partitioning should be done with [JumpConsistentHash](https://arxiv.org/pdf/1406.2294.pdf) on the specified key columns, and will be added to our [Python client writer](https://github.com/uccross/skyhookdm-pythonclient) that currently performs vertical (column) based partitioning.  
+| **Link**        | https://github.com/uccross/skyhookdm-pythonclient/issues/16
+| **Difficulty**  | medium
 
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
