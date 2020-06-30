@@ -74,62 +74,6 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | **Difficulty**  | Medium
 
 
-## [SkyhookDM](http://www.skyhookdm.com)
-
-The Skyhook Data Management project extends object storage in the cloud with data management functionality. SkyhookDM enables storing and query database tables in Ceph distributed object storage, and supports multiple data formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) and [Apache Arrow](https://arrow.apache.org) as well as text and scientific file formats.  SkyhookDM partitions and formats data as objects, and we utilize Ceph's object class extension mechanism to develop custom read/write and processing methods that can be executed directly within storage.  
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Compaction of formatted database partitions within objects
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | This project will develop object class methods that will merge (or conversely split) formatted data partitions within an object.  Self-contained partitions are written (appended) to objects and over time objects may contain a sequence of independent formatted data structures.  A compaction request will invoke this method that will iterate over the data structures, combining (or splitting) them into a single larger data structure representing the complete data partition.  In essences, this methods will perform a read-modify-write operation on an object's local data.
-| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/33
-| **Difficulty**  | high
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Database statistics collection on partitioned data
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | This project will develop object-class methods to compute data statistics (histograms) for each object and store them in a query-able format within each storage server’s local RocksDB, then write client code to accumulate all the object-local statistics into global statistics for a given database table.
-| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/77
-| **Difficulty**  | high
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Extend current aggregations to include sort/groupby for database partitions
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | We have developed methods (C++) for data management including data processing and indexing. This project will develop object-class methods methods to sort/group query result sets.  This requires extending the current code (select/project/basic-aggregations - min/max/sum/count) to support groupby and/or orderby.
-| **Link**        | https://github.com/uccross/skyhookdm-ceph/issues/23
-| **Difficulty**  | medium
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Port wiki to ReadTheDocs or other documentation platform |
-| **Mentor(s)**   | [Jeff LeFevre](https://users.soe.ucsc.edu/~jlefevre)          |
-| **Description** | SkyhookDM's documentation is currently written as Github Wiki pages. We would like to move it to another platform such as <https://readthedocs.org>, to reorganize it and rewrite some sections as part of this effort. |
-| **Link**        | <https://github.com/uccross/skyhookdm-ceph>  |
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Augment SkyhookDM with in-storage support for a relevant subset of operations on List data types
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | Arrays are currently stored as [lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) inside SkyhookDM.  This project will investigate and implement a small subset of operations on list data types that can be offloaded ("pushed down") into storage for query processing. Common list manipulations that perform data reduction such as filters or summary/agg methods (min, max, first, in) will be most useful to apply withing storage, since these will reduce network IO transferred back to the client from the storage layer. We can look to [awkward array](https://github.com/scikit-hep/awkward-array) for reference of common operations on scientific array data. 
-| **Link**        | https://github.com/uccross/skyhookdm-ceph-cls/issues/38
-| **Difficulty**  | hard
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Ingest data via Python, convert to pyarrow tables, horizonally partition and write to SkyhookDM
-| **Mentor(s)**   | [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre)
-| **Skills**      | C++
-| **Description** | This project will create a Python client to read raw input data in CSV and JSON form (no nested data), convert to pyarrow tables, partition pyarrow tables horizontally (creating an individual Arrow table for each partition) and write each partition to SkyhookDM as an independent object, formatted with our [Flatbuffer metadata wrapper](https://github.com/uccross/skyhookdm-ceph-cls/blob/master/src/cls/fb_meta.fbs).  Partitioning should be done with [JumpConsistentHash](https://arxiv.org/pdf/1406.2294.pdf) on the specified key columns, and will augment to our [Python client writer](https://github.com/uccross/skyhookdm-pythonclient) that currently performs vertical (column) based partitioning.  
-| **Link**        | https://github.com/uccross/skyhookdm-pythonclient/issues/16
-| **Difficulty**  | medium
-
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
 Inconsistent relational databases are the ones that violate one or more integrity constraints defined over their schema. We are developing CAvSAT, which aims to be a scalable and comprehensive system for query answering over inconsistent databases.
@@ -143,6 +87,118 @@ Inconsistent relational databases are the ones that violate one or more integrit
 | **Papers for Reference** | https://dl.acm.org/doi/10.1145/3299869.3300095, https://link.springer.com/chapter/10.1007/978-3-030-24258-9_8, https://dl.acm.org/doi/10.1145/303976.303983, https://dl.acm.org/doi/10.1145/3068334
 | **Project Link**        | https://github.com/uccross/cavsat
 | **Difficulty**  | Medium
+
+
+## [SkyhookDM](http://www.skyhookdm.com)
+
+[SkyhookDM]The Skyhook Data Management project extends object storage with data 
+management functionality for tabular data. SkyhookDM enables storing and query 
+database tables in Ceph distributed object storage, and supports multiple data 
+formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) 
+and [Apache Arrow](https://arrow.apache.org).  SkyhookDM partitions and formats 
+data as objects, and we utilize Ceph's object class extension mechanism 'cls' 
+to develop data management methods that can be executed directly within storage.  
+Methods include offloading processing to storage (e.g., SELECT, PROJECT) as well 
+as physical design methods including indexing and data layouts.
+Please see current project ideas listed below.
+[SkyhookDM on Github](https://github.com/uccross/skyhookdm-ceph-cls).
+
+-------------------
+
+### Ingest data via Python, convert to pyarrow tables, horizonally partition and write to SkyhookDM
+
+  - **Topics**: `PyArrow`, `Data partitioning`, `data loading`
+  - **Skills**: C++, Python, Flatbuffers
+  - **Difficulty**: Medium
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+
+This project will create a Python client to read raw input data 
+in CSV and JSON form (no nested data), convert to 
+[PyArrow tables](https://arrow.apache.org/docs/python/), 
+partition pyarrow tables horizontally (creating an individual Arrow 
+table for each partition) and write each partition to SkyhookDM as 
+an independent object, formatted with our 
+[Flatbuffer metadata wrapper](https://github.com/uccross/skyhookdm-ceph-cls/blob/master/src/cls/fb_meta.fbs).  
+Partitioning should be done with 
+[JumpConsistentHash](https://arxiv.org/pdf/1406.2294.pdf) 
+on the specified key columns, and will augment to our 
+[Python client writer](https://github.com/uccross/skyhookdm-pythonclient) 
+that currently performs vertical (column) based partitioning. 
+[Github issue](https://github.com/uccross/skyhookdm-pythonclient/issues/16).
+
+
+-------
+
+### Compaction of formatted database partitions within objects
+
+  - **Topics**: `Arrow`, `Data partitioning`, `compaction`
+  - **Skills**: C++
+  - **Difficulty**: High
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+
+This project will develop object class methods that will merge (or conversely split) 
+formatted data partitions within an object.  Self-contained partitions are written 
+(appended) to objects and over time objects may contain a sequence of independent 
+formatted data structures e.g., a sequence of 
+[Arrow](https://arrow.apache.org/) 
+tables each representing a sub-partition.  A compaction request will invoke this 
+method that will iterate over the data structures, combining (or splitting) them 
+into a single larger data structure representing the complete data partition.
+In essence, this methods will perform a read-modify-write 
+operation on an object's local data. 
+[Github issue](https://github.com/uccross/skyhookdm-ceph/issues/33).
+
+-------
+
+### Port wiki to ReadTheDocs or other documentation platform
+
+  - **Topics**: `Documentation`, `wiki`, `markdown`
+  - **Skills**: Markdown, documentation, html
+  - **Difficulty**: Easy
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+
+SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
+as Github Wiki pages. We would like to move it to another platform such as 
+[ReadTheDocs](https://readthedocs.org), 
+to reorganize it and rewrite some sections as part of this effort. 
+[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/42).
+
+-------
+
+### Database statistics collection on partitioned data
+
+  - **Topics**: `Statistics`, `histograms`, `data partitioning`
+  - **Skills**: C++
+  - **Difficulty**: Medium
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+This project will develop object-class methods to compute data statistics 
+stored as histogram for each object and store them in a query-able format within 
+each storage server’s local RocksDB, then accumulate all 
+the object-local statistics into global statistics for a given database table.
+[Github issue](https://github.com/uccross/skyhookdm-ceph/issues/77).
+
+-------
+
+### Add support for a relevant subset of operations on List data types
+
+  - **Topics**: `Array data`, `Arrow`, `Awkward Array`
+  - **Skills**: C++
+  - **Difficulty**: Hard
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+  
+Array data is currently stored as 
+[lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) 
+inside SkyhookDM.  This project will investigate and implement a small subset 
+of operations on list data types that can be offloaded ("pushed down") into 
+storage for query processing. Common list manipulations that perform data 
+reduction such as filters or summary/agg methods (min, max, first, in) will 
+be most useful to apply withing storage, since these will reduce network IO 
+transferred back to the client from the storage layer.
+We can look to [awkward array](https://github.com/scikit-hep/awkward-array) 
+for reference of common operations on scientific array data.
+[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/38).
+
+-------
 
 
 ## [Popper](https://github.com/systemslab/popper)
