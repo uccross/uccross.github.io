@@ -48,45 +48,95 @@ Table of contents:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Parallel Mockturtle with LiveHD
-| **Mentor(s)**   | [Jose Renau](https://www.soe.ucsc.edu/~renau)
-| **Skills**      | C++
-| **Description** | Mockturtle is being integrated with LiveHD. The goal of this project is to create a parallel version where each partition is "mockturtled" in parallel. This requires to create a regression testting.
-| **Link**        | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#mockturtle-qian-chen
-| **Difficulty**  | high
+|   |   |
+|---|---|
+| Title | Floorplaner for LiveHD  |
+| Description | Implement some state-of-the-art floorplaner with hierarchy and regularity for LiveHD. The goal is to typically target 10-1000 blocks. | 
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#floorplaner |
 
+|   |   |
+|---|---|
+| Title | LNAST Syntax Check Pass  |
+| Description |LiveHD pass to check that the LNAST tree structure is valid. | 
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://masc.soe.ucsc.edu/lnast-doc/#introduction |
 
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Tree-sitter Pyrope
-| **Mentor(s)**   | [Jose Renau](https://www.soe.ucsc.edu/~renau)
-| **Skills**      | Javascript
-| **Description** | Tree-sitter allows incremental parsers. Pyrope is the in-house HDL. We have a javascript (pegjs) Pyrope grammar, the goal is to have an equivalent tree-sitter that also incrementally update CFGs.
-| **Link**        | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#tree-sitter-pyrope
-| **Difficulty**  | high
+|   |   |
+|---|---|
+| Title | CHISEL/FIRRTL Checks  |
+| Description | Create tests and sample CHISEL tests to test the FIRRTL passes in LiveHD | 
+| Mentor(s) | Jose Renau|
+| Skills | CHISEL, scala, C++17 |
+| Difficulty | Medium |
+| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#firrtl-2-lnast-hunter-coffman |
 
+|   |   |
+|---|---|
+| Title | Mockturtle Synthesis  |
+| Description | Add more blocks to the Mockturtle pass, testing cases, parallize calls | 
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#parallel-and-hierarchical-synthesis-with-mockturtle |
 
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Liberty with LiveHD
-| **Mentor(s)**   | [Jose Renau](https://www.soe.ucsc.edu/~renau)
-| **Skills**      | C++
-| **Description** | Liberty is the de-facto standard to specify ASIC/FPGA libraries. The goal is to parse a liberty file and populate LiveHD/LGraph nodes.
-| **Link**        | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#liberty
-| **Difficulty**  | Medium
+|   |   |
+|---|---|
+| Title | Tree-sitter Pyrope Grammar  |
+| Description | Build a tree-sitter Pyrope grammar | 
+| Mentor(s) | Jose Renau |
+| Skills | javascript, C |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#tree-sitter-pyrope |
 
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | Pyrope Format
-| **Mentor(s)**   | [Jose Renau](https://www.soe.ucsc.edu/~renau)
-| **Skills**      | C++
-| **Description** | Improve the Pyrope code generation with LNAST to support alignment, comments
-| **Link**        | https://github.com/masc-ucsc/livehd/tree/master/inou/cgen
-| **Difficulty**  | Medium
+|   |   |
+|---|---|
+| Title | Pyrope Language Server (vim/atom interface) |
+| Description | Language Server is the new standard for editors feedback. The goal is to implement a language server for Pyrope | 
+| Mentor(s) | Jose Renau |
+| Skills | javascript, C++17 |
+| Difficulty | Medium |
+| Link | https://langserver.org/ |
 
+|   |   |
+|---|---|
+| Title | Graph partition/coloring  |
+| Description | Traverse Lgraph and interface with kahypar to partition graphs | 
+| Mentor(s) | Jose Renau |
+| Skills | javascript, C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#lgraph-partitiondecompositioncoloring,  https://github.com/SebastianSchlag/kahypar |
 
+|   |   |
+|---|---|
+| Title | Competitive Analysis vivado, altera, ABC, mockturtle  |
+| Description | Create a test suite and scripts to benchmark synthesis results | 
+| Mentor(s) | Jose Renau |
+| Skills | javascript, TCL |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#synthesis-asicfpga-competitive-analysis |
+
+|   |   |
+|---|---|
+| Title | Useful LGraph Passes  |
+| Description | Create several typical useful netlist checks like detect combinational loops, cross-clock checks, LGraph consistency checks | 
+| Mentor(s) | Jose Renau |
+| Skills | C++17 |
+| Difficulty | Low |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#useful-lgraph-passes |
+
+|   |   |
+|---|---|
+| Title | Performance Regression Infrastructure |
+| Description | Website and reporting system using prometheous.io to monitor performance | 
+| Mentor(s) | Jose Renau |
+| Skills | javascript |
+| Difficulty | Low |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#performance-monitoring-infrastructure |
 
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
