@@ -36,93 +36,98 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 
 |   |   |
 |---|---|
-| Title | Floorplaner for LiveHD  |
-| Description | Implement some state-of-the-art floorplaner with hierarchy and regularity for LiveHD. The goal is to typically target 10-1000 blocks. | 
+| Title | Tree-sitter Pyrope  |
+| Description | Work on a tree-sitter grammar for Pyrope |
+| Mentor(s) | Jose Renau|
+| Skills | C++17, Parsing |
+| Difficulty | Medium |
+| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope |
+
+
+|   |   |
+|---|---|
+| Title | Mockturtle |
+| Description | Perform synthesis for graph in LiveHD using Mockturtle |
+| Mentor(s) | Jose Renau|
+| Skills | C++17, synthesis |
+| Difficulty | Medium |
+| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle |
+
+
+|   |   |
+|---|---|
+| Title | Query Shell |
+| Description | Create a console app that interacts with LiveHD to query parameters about designs |
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#floorplaner |
+| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs |
 
 |   |   |
 |---|---|
-| Title | LNAST Syntax Check Pass  |
-| Description |LiveHD pass to check that the LNAST tree structure is valid. | 
+| Title | Lgraph and LNAST check pass |
+| Description | Create a pass that check the integrity/correctness of Lgraph and LNAST |
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://masc.soe.ucsc.edu/lnast-doc/#introduction |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass |
+
 
 |   |   |
 |---|---|
-| Title | CHISEL/FIRRTL Checks  |
-| Description | Create tests and sample CHISEL tests to test the FIRRTL passes in LiveHD | 
-| Mentor(s) | Jose Renau|
-| Skills | CHISEL, scala, C++17 |
-| Difficulty | Medium |
-| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#firrtl-2-lnast-hunter-coffman |
-
-|   |   |
-|---|---|
-| Title | Mockturtle Synthesis  |
-| Description | Add more blocks to the Mockturtle pass, testing cases, parallize calls | 
+| Title | Terminal record/replay |
+| Description | Record terminal commands and have the capacity to replay for testing and performance |
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#parallel-and-hierarchical-synthesis-with-mockturtle |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting |
+
 
 |   |   |
 |---|---|
-| Title | Tree-sitter Pyrope Grammar  |
-| Description | Build a tree-sitter Pyrope grammar | 
-| Mentor(s) | Jose Renau |
-| Skills | javascript, C |
-| Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#tree-sitter-pyrope |
-
-|   |   |
-|---|---|
-| Title | Pyrope Language Server (vim/atom interface) |
-| Description | Language Server is the new standard for editors feedback. The goal is to implement a language server for Pyrope | 
-| Mentor(s) | Jose Renau |
-| Skills | javascript, C++17 |
-| Difficulty | Medium |
-| Link | https://langserver.org/ |
-
-|   |   |
-|---|---|
-| Title | Graph partition/coloring  |
-| Description | Traverse Lgraph and interface with kahypar to partition graphs | 
-| Mentor(s) | Jose Renau |
-| Skills | javascript, C++17 |
-| Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#lgraph-partitiondecompositioncoloring,  https://github.com/SebastianSchlag/kahypar |
-
-|   |   |
-|---|---|
-| Title | Competitive Analysis vivado, altera, ABC, mockturtle  |
-| Description | Create a test suite and scripts to benchmark synthesis results | 
-| Mentor(s) | Jose Renau |
-| Skills | javascript, TCL |
-| Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#synthesis-asicfpga-competitive-analysis |
-
-|   |   |
-|---|---|
-| Title | Useful LGraph Passes  |
-| Description | Create several typical useful netlist checks like detect combinational loops, cross-clock checks, LGraph consistency checks | 
-| Mentor(s) | Jose Renau |
+| Title | OS X, Alpine Linux Support |
+| Description | LiveHD has issues with non-linux setups like OS X and Alpine Linux |
+| Mentor(s) | Jose Renau|
 | Skills | C++17 |
-| Difficulty | Low |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#useful-lgraph-passes |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support |
 
 |   |   |
 |---|---|
-| Title | Performance Regression Infrastructure |
-| Description | Website and reporting system using prometheous.io to monitor performance | 
-| Mentor(s) | Jose Renau |
-| Skills | javascript |
-| Difficulty | Low |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/projects.md#performance-monitoring-infrastructure |
+| Title | Random CHISEL/Verilog/Pyrope generator |
+| Description | Create a random program generator that generates the same program for multiple languages |
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator |
+
+|   |   |
+|---|---|
+| Title | unbitwidth |
+| Description | Not all the variables need bitwidth information. Find the small subset |
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth |
+
+|   |   |
+|---|---|
+| Title | gRPC Client |
+| Description | Allow LiveHD to submit gRPC (bazel) jobs to distributed computing |
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client |
+
+|   |   |
+|---|---|
+| Title | LNAST Opt |
+| Description | Perform copy propagation, constant folding, and dce at LNAST level |
+| Mentor(s) | Jose Renau|
+| Skills | C++17 |
+| Difficulty | Medium |
+| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt |
+
 
 ## [CAvSAT](https://github.com/uccross/cavsat)
 
