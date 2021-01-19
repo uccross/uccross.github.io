@@ -4,11 +4,10 @@
 
 <img src="woman-draw-a-light-bulb-in-white-board-3758105.jpg" alt="Woman draw a light bulb in white board" valign="middle" />
 
-This is a list of projects and ideas associated to each. Each of this can be developed into class, senior, or summer projects. 
-If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
+This list of projects are meant for student and other up-and-coming developers interested in contributing to any of the CROSS supported projects. The list below notes the CROSS project and ideas associated to each that were submitted by a CROSS mentor. If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-ANNOUNCING - [Summer Undergraduate Research Program in Open Source Projects at UCSC](https://cross.ucsc.edu/programs/summerprogram2020.html). 
+CROSS will be applying for Google Summer of Code 2021; we also support student work through our [Summer Undergraduate Research Program in Open Source Projects at UCSC](https://cross.ucsc.edu/programs/summerprogram2020.html). More on both of these Summer 2021 programs will be available in late February.
 
 Table of contents:
 
