@@ -2,7 +2,7 @@
 
 # Open Source Project Ideas
 
-<img src="woman-draw-a-light-bulb-in-white-board-3758105.jpg" alt="Woman draw a light bulb in white board" valign="middle" />
+<img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
 This list of projects are meant for student and other up-and-coming developers interested in contributing to any of the CROSS supported projects. The list below notes the CROSS project and ideas associated to each that were submitted by a CROSS mentor. If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
