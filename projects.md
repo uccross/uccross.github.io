@@ -12,7 +12,6 @@ CROSS will be applying for Google Summer of Code 2021; we also support student w
 Table of contents:
 
   - [LiveHD](#livehd)
-- [CAvSAT](#-cavsat--https---githubcom-uccross-cavsat-)
 - [SkyhookDM](#-skyhookdm--http---wwwskyhookdmcom-)
   * [Ingest data via Python, convert to pyarrow tables, horizonally partition and write to SkyhookDM](#ingest-data-via-python--convert-to-pyarrow-tables--horizonally-partition-and-write-to-skyhookdm)
   * [Compaction of formatted database partitions within objects](#compaction-of-formatted-database-partitions-within-objects)
@@ -127,21 +126,6 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Skills | C++17 |
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt |
-
-
-## [CAvSAT](https://github.com/uccross/cavsat)
-
-Inconsistent relational databases are the ones that violate one or more integrity constraints defined over their schema. We are developing CAvSAT, which aims to be a scalable and comprehensive system for query answering over inconsistent databases.
-
-|                 |                                               |
-|-----------------|-----------------------------------------------|
-| **Title**       | CAvSAT (Consistent Answers via Satisfiability Solving)
-| **Mentors**   | [Akhil Dixit](https://users.soe.ucsc.edu/~akadixit/), [Phokion G. Kolaitis](https://users.soe.ucsc.edu/~kolaitis/)
-| **Skills**      | Java and SQL (required), Node.js and React (optional)
-| **Description** | In general, computing consistent answers over inconsistent databases is an intractable problem. However, for certain classes of SQL queries and integrity constraints, there is an efficient algorithm to compute consistent answers. The first task of this project is to make the student familiar with the literature and implement this algorithm. Second, the student will conduct experiments with both synthetic and real-world datasets, to compare the performance of this algorithm with other methods. If the student is interested in front-end or full-stack development, they may work on developing some of CAvSAT's user interface components using technologies such as React and write code that connects to CAvSAT's backend via RESTful APIs.
-| **Papers for Reference** | https://dl.acm.org/doi/10.1145/3299869.3300095, https://link.springer.com/chapter/10.1007/978-3-030-24258-9_8, https://dl.acm.org/doi/10.1145/303976.303983, https://dl.acm.org/doi/10.1145/3068334
-| **Project Link**        | https://github.com/uccross/cavsat
-| **Difficulty**  | Medium
 
 
 ## [SkyhookDM](http://www.skyhookdm.com)
