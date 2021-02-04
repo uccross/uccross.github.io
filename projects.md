@@ -11,21 +11,32 @@ CROSS will be applying for Google Summer of Code 2021; we also support student w
 
 Table of contents:
 
-  - [LiveHD](#livehd)
+- [LiveHD](#livehd)
+  * [Tree-sitter Pyrope](#tree---sitter-pyrope)
+  * [Mockturtle](#mockturtle)
+  * [Query Shell](#query-shell)
+  * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
+  * [Terminal record replay](#terminal-record-replay)
+  * [OS X Alpine Linux Support](#os-x-alpine-linux-support)
+  * [Random CHISEL Verilog Pyrope generator](#random-chisel-verilog-pyrope-generator)
+  * [unbitwidth](#unbitwidth)
+  * [gRPC Client](#grpc-client)
+  * [LNAST Opt](#lnast-opt)
+  
 - [SkyhookDM](#-skyhookdm--http---wwwskyhookdmcom-)
-  * [Ingest data via Python, convert to pyarrow tables, horizonally partition and write to SkyhookDM](#ingest-data-via-python--convert-to-pyarrow-tables--horizonally-partition-and-write-to-skyhookdm)
+  * [Ingest data via Python convert to pyarrow tables horizonally partition and write to SkyhookDM](#ingest-data-via-python-convert-to-pyarrow-tables-horizonally-partition-and-write-to-skyhookdm)
   * [Compaction of formatted database partitions within objects](#compaction-of-formatted-database-partitions-within-objects)
   * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
   * [Database statistics collection on partitioned data](#database-statistics-collection-on-partitioned-data)
   * [Add support for a relevant subset of operations on List data types](#add-support-for-a-relevant-subset-of-operations-on-list-data-types)
 - [SkyhookDM/HDF5](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
   * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
-  * [HDF5 - Ceph/RADOS Integration](#hdf5---ceph-rados-integration)
+  * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
   * [Column-storage in HDF5](#column-storage-in-hdf5)
   * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
   * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
 - [SkyhookDM/Proactive Data Containers (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
-  * [PDC - Ceph/RADOS Integration](#pdc---ceph-rados-integration)
+  * [PDC - Ceph RADOS Integration](#pdc---ceph-rados-integration)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -33,6 +44,7 @@ Table of contents:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 
+### Tree - sitter Pyrope
 |   |   |
 |---|---|
 | Title | Tree-sitter Pyrope  |
@@ -42,7 +54,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope |
 
-
+### Mockturtle
 |   |   |
 |---|---|
 | Title | Mockturtle |
@@ -52,7 +64,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle |
 
-
+### Query Shell
 |   |   |
 |---|---|
 | Title | Query Shell |
@@ -62,6 +74,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs |
 
+### Lgraph and LNAST check pass
 |   |   |
 |---|---|
 | Title | Lgraph and LNAST check pass |
@@ -71,7 +84,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass |
 
-
+### Terminal record replay
 |   |   |
 |---|---|
 | Title | Terminal record/replay |
@@ -81,7 +94,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting |
 
-
+### OS X Alpine Linux Support
 |   |   |
 |---|---|
 | Title | OS X, Alpine Linux Support |
@@ -91,6 +104,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support |
 
+### Random CHISEL Verilog Pyrope generator
 |   |   |
 |---|---|
 | Title | Random CHISEL/Verilog/Pyrope generator |
@@ -100,6 +114,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator |
 
+### unbitwidth
 |   |   |
 |---|---|
 | Title | unbitwidth |
@@ -109,6 +124,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth |
 
+### gRPC Client
 |   |   |
 |---|---|
 | Title | gRPC Client |
@@ -118,6 +134,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Difficulty | Medium |
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client |
 
+### LNAST Opt
 |   |   |
 |---|---|
 | Title | LNAST Opt |
@@ -268,7 +285,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
 
 -------
 
-### HDF5 - Ceph/RADOS Integration
+### HDF5 - Ceph RADOS Integration
 
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
@@ -331,7 +348,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 -------------------
 
-### PDC - Ceph/RADOS Integration
+### PDC - Ceph RADOS Integration
 
   * **Topics**: `PDC`, `Ceph`, `object storage`
   * **Skills**: C, PDC, Ceph / RADOS
