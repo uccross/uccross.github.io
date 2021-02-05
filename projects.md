@@ -12,7 +12,7 @@ CROSS will be applying for Google Summer of Code 2021; we also support student w
 Table of contents:
 
 - [LiveHD](#livehd)
-  * [Tree-sitter Pyrope](#tree---sitter-pyrope)
+  * [Tree-sitter Pyrope](#tree-sitter-pyrope)
   * [Mockturtle](#mockturtle)
   * [Query Shell](#query-shell)
   * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
@@ -44,7 +44,8 @@ Table of contents:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 
-### Tree - sitter Pyrope
+### Tree sitter Pyrope
+
 |   |   |
 |---|---|
 | Title | Tree-sitter Pyrope  |
@@ -55,6 +56,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope |
 
 ### Mockturtle
+
 |   |   |
 |---|---|
 | Title | Mockturtle |
@@ -65,6 +67,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle |
 
 ### Query Shell
+
 |   |   |
 |---|---|
 | Title | Query Shell |
@@ -75,6 +78,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs |
 
 ### Lgraph and LNAST check pass
+
 |   |   |
 |---|---|
 | Title | Lgraph and LNAST check pass |
@@ -85,6 +89,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass |
 
 ### Terminal record replay
+
 |   |   |
 |---|---|
 | Title | Terminal record/replay |
@@ -95,6 +100,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting |
 
 ### OS X Alpine Linux Support
+
 |   |   |
 |---|---|
 | Title | OS X, Alpine Linux Support |
@@ -105,6 +111,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support |
 
 ### Random CHISEL Verilog Pyrope generator
+
 |   |   |
 |---|---|
 | Title | Random CHISEL/Verilog/Pyrope generator |
@@ -115,6 +122,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator |
 
 ### unbitwidth
+
 |   |   |
 |---|---|
 | Title | unbitwidth |
@@ -125,6 +133,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth |
 
 ### gRPC Client
+
 |   |   |
 |---|---|
 | Title | gRPC Client |
@@ -135,6 +144,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
 | Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client |
 
 ### LNAST Opt
+
 |   |   |
 |---|---|
 | Title | LNAST Opt |
