@@ -23,11 +23,11 @@ Table of contents:
   * [gRPC Client](#grpc-client)
   * [LNAST Opt](#lnast-opt)
 
-- Open Source Autonomous Vehicle Controller
-  * Vehicle/Craft sensor driver development
-  * IMU calibration algorithm development
-  * State estimation/sensor fusion algorithm development
-  * Vehicle dynamic model development
+- [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
+  * [Vehicle/Craft sensor driver development](#vehicle-craft-sensor-driver-development)
+  * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
+  * [State estimation/sensor fusion algorithm development](#state-estimation-sensor-fusion-algorithm-development)
+  * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
   
 - [SkyhookDM](#-skyhookdm--http---wwwskyhookdmcom-)
   * [Ingest data via Python convert to pyarrow tables horizonally partition and write to SkyhookDM](#ingest-data-via-python-convert-to-pyarrow-tables-horizonally-partition-and-write-to-skyhookdm)
