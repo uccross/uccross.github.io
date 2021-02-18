@@ -48,7 +48,7 @@ Table of contents:
 
 ## LiveHD
 
-Projects for [LiveHD](https://github.com/masc-ucsc/livehd).
+Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
 ### Tree sitter Pyrope
 
@@ -290,6 +290,8 @@ elimination in LNAST. There are several reasons:
 
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
+
+Lead mentor: Aaron Hunter <mailto:aamuhunt@ucsc.edu>
 
 Projects for the OSAVC:
 
