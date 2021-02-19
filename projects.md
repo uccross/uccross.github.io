@@ -297,21 +297,21 @@ As storage devices get faster, data management tasks rob the host of CPU cycles 
 
 ### Evaluating user space networking stacks on SmartNICs
 
-**Skills:** C, Bash, performance evaluation tools (Linux perf, SystemTap, etc.)
-**Difficulty:** Easy
-**Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+- **Skills:** C, Bash, performance evaluation tools (Linux perf, SystemTap, etc.)
+- **Difficulty:** Easy
+- **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
 
 The BlueField DPU as an example of SmartNICs is available nowadays. However, the performance of the kernel networking stack on this device is known to involve expensive overhead. The alternatives are to use some user-space solutions such as DPDK (for TCP and RDMA) and libvma (for RDMA). Therefore, it would be interesting to evaluate the performance differences between the kernel and these user-space alternatives, especially focusing on characterizing the benefits for SmartNICs.
-References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
+- References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
 
 ### Demonstrating a composable storage system accelerated by memory semantic technologies
 
-**Skills:** C/C++, Bash, Python, System architecture, Network fabrics
-**Difficulty:** Challenging
-**Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+- **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
+- **Difficulty:** Challenging
+- **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
 
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
-References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
+- References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
 
 
 ## Open Source Autonomous Vehicle Controller
