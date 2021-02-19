@@ -310,6 +310,7 @@ The BlueField DPU as an example of SmartNICs is available nowadays. However, the
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
  - **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+
 Recent research reveals that the compaction process in RocksDB can be altered to optimize future data access by changing the data layout in compaction levels. The benefit of this approach can be extended to different data layout optimization based on application access patterns and requirements. In this project, we want to create an interface that would allow users to dynamically inject layout optimization functions to RockDB, using containerization technologies such as Webassembly.
  - Reference: Saxena, Hemant, et al. "Real-Time LSM-Trees for HTAP Workloads." arXiv preprint arXiv:2101.06801 (2021).
 
