@@ -29,6 +29,11 @@ Table of contents:
   * [State estimation/sensor fusion algorithm development](#state-estimation-sensor-fusion-algorithm-development)
   * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
   
+- [Eusocial Storage Devices](#eusocial-storage-devices)
+  * [Evaluating user-space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
+  * [Demonstrating a composable storage system accelerated by memory-semantic technologies](#demonstrating-a-composable-storage-system-accelerated-bymemory-semantic-technologies)
+
+
 - [SkyhookDM](#-skyhookdm--http---wwwskyhookdmcom-)
   * [Ingest data via Python convert to pyarrow tables horizonally partition and write to SkyhookDM](#ingest-data-via-python-convert-to-pyarrow-tables-horizonally-partition-and-write-to-skyhookdm)
   * [Compaction of formatted database partitions within objects](#compaction-of-formatted-database-partitions-within-objects)
@@ -285,6 +290,29 @@ elimination in LNAST. There are several reasons:
 
 * Doing code simplification early (LNAST is the earliest) reduces workload/steps in successive passes.
 * The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
+
+## Eusocial Storage Devices
+
+As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The Eusocial project (https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
+
+### Evaluating user space networking stacks on SmartNICs
+
+**Skills:** C, Bash, performance evaluation tools (Linux perf, SystemTap, etc.)
+**Difficulty:** Easy
+**Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+
+The BlueField DPU as an example of SmartNICs is available nowadays. However, the performance of the kernel networking stack on this device is known to involve expensive overhead. The alternatives are to use some user-space solutions such as DPDK (for TCP and RDMA) and libvma (for RDMA). Therefore, it would be interesting to evaluate the performance differences between the kernel and these user-space alternatives, especially focusing on characterizing the benefits for SmartNICs.
+References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
+
+### Demonstrating a composable storage system accelerated by memory semantic technologies
+
+**Skills:** C/C++, Bash, Python, System architecture, Network fabrics
+**Difficulty:** Challenging
+**Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+
+Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
+References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
+
 
 ## Open Source Autonomous Vehicle Controller
 
