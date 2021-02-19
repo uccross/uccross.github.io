@@ -31,6 +31,7 @@ Table of contents:
   
 - [Eusocial Storage Devices](#eusocial-storage-devices)
   * [Evaluating user-space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
+  * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
   * [Demonstrating a composable storage system accelerated by memory-semantic technologies](#demonstrating-a-composable-storage-system-accelerated-bymemory-semantic-technologies)
 
 
@@ -303,6 +304,15 @@ As storage devices get faster, data management tasks rob the host of CPU cycles 
 
 The BlueField DPU as an example of SmartNICs is available nowadays. However, the performance of the kernel networking stack on this device is known to involve expensive overhead. The alternatives are to use some user-space solutions such as DPDK (for TCP and RDMA) and libvma (for RDMA). Therefore, it would be interesting to evaluate the performance differences between the kernel and these user-space alternatives, especially focusing on characterizing the benefits for SmartNICs.
  - References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
+
+### Dynamic function injection for RocksDB
+
+ - **Skills:** C/C++, Java
+ - **Difficulty:** Challenging
+ - **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+Recent research reveals that the compaction process in RocksDB can be altered to optimize future data access by changing the data layout in compaction levels. The benefit of this approach can be extended to different data layout optimization based on application access patterns and requirements. In this project, we want to create an interface that would allow users to dynamically inject layout optimization functions to RockDB, using containerization technologies such as Webassembly.
+ - Reference: Saxena, Hemant, et al. "Real-Time LSM-Trees for HTAP Workloads." arXiv preprint arXiv:2101.06801 (2021).
+
 
 ### Demonstrating a composable storage system accelerated by memory semantic technologies
 
