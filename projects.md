@@ -122,7 +122,7 @@ The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| [Link]	(https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs)
 
 * Based on replxx (like lgshell)
 * Query bits, ports...  like
