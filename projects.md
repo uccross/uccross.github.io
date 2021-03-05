@@ -35,7 +35,8 @@ Table of contents:
   * [Demonstrating a composable storage system accelerated by memory-semantic technologies](#demonstrating-a-composable-storage-system-accelerated-bymemory-semantic-technologies)
 
 
-- [SkyhookDM](#-skyhookdm--http---wwwskyhookdmcom-)
+
+- [SkyhookDM](#skyhookdm)
   * [Ingest data via Python convert to pyarrow tables horizonally partition and write to SkyhookDM](#ingest-data-via-python-convert-to-pyarrow-tables-horizonally-partition-and-write-to-skyhookdm)
   * [Compaction of formatted database partitions within objects](#compaction-of-formatted-database-partitions-within-objects)
   * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
@@ -65,10 +66,10 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose R
 | Mentor(s) | Jose Renau|
 | Skills | C++17, Parsing |
 | Difficulty | Medium |
-| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope)
 
-Using https://github.com/tekinengin/tree-sitter-pyrope as a starting point, complete the Pyrope grammar
-to correctly parse the Pyrope grammar (https://masc.soe.ucsc.edu/pyrope.html), interface with LiveHD
+Using [https://github.com/tekinengin/tree-sitter-pyrope](https://github.com/tekinengin/tree-sitter-pyrope) as a starting point, complete the Pyrope grammar
+to correctly parse the [Pyrope grammar](https://masc.soe.ucsc.edu/pyrope.html), interface with LiveHD
 and third party tools.
 
 Main features:
@@ -94,7 +95,7 @@ In addition to the packages, there should be an iterator that use the incrementa
 | Mentor(s) | Jose Renau|
 | Skills | C++17, synthesis |
 | Difficulty | Medium |
-| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle)
 
 There are some issues with Mockturtle integration (new cells) and it is not using the latest Mockturtle library versions.
 The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD. The main characteristics:
@@ -121,7 +122,7 @@ The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | 	https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs |
+| [Link]	(https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs
 
 * Based on replxx (like lgshell)
 * Query bits, ports...  like
@@ -148,7 +149,7 @@ easily and allow to build functions/libraries.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass)
 
 Create a pass that checks that the Lgraph (and/or LNAST) is semantically
 correct. The LNAST already has quite a few tests (pass.semantic), but it can be
@@ -172,7 +173,7 @@ further expanded. Some checks:
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting)
 
 Use automatic asciinema generation. Compare the test speed and summarize the
 performance difference from "a user" point of view. The results should allow to
@@ -192,7 +193,7 @@ Maybe expand tmt_test and main_test to be a more stand-alone testing setup.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support)
 
 LiveHD compiles (it did) with OS X, but there are some issues with the mmap
 infrastructure inside mmap_lib. The code functionality should be able to run
@@ -213,7 +214,7 @@ them all.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator)
 
 Create a python/ruby/C++ program that generates pseudo-random programs in
 several languages (CHISEL/Verilog/Pyrope). The idea is that the same program
@@ -229,7 +230,7 @@ can be implemented in multiple ways but all should have the same result
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth)
 
 This pass is needed to create less verbose CHISEL and Pyrope code generation.
 
@@ -264,7 +265,7 @@ outside.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client)
 
 Leverage the gRPC client in liveHD to allow the submission of work to remote servers.
 
@@ -280,7 +281,7 @@ pass API to have a gRPC call for each of the main steps.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
-| Link | https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt |
+| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt)
 
 In LiveHD, LGraph has the cprop pass that performs constant folding, copy
 propagation, strength reduction... and many other optimizations.
@@ -371,9 +372,11 @@ Implement an optimal state estimation algorithm from a model.  This model can be
 
 Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
-## [SkyhookDM](http://www.skyhookdm.com)
+## SkyhookDM
 
-[SkyhookDM]The Skyhook Data Management project extends object storage with data 
+[SkyhookDM](http://www.skyhookdm.com)
+
+The Skyhook Data Management project extends object storage with data 
 management functionality for tabular data. SkyhookDM enables storing and query 
 database tables in Ceph distributed object storage, and supports multiple data 
 formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) 
