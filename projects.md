@@ -378,60 +378,45 @@ Help develop the library of models for autonomous vehicles. Develop a dynamic mo
 
 The Skyhook Data Management project extends object storage with data 
 management functionality for tabular data. SkyhookDM enables storing and query 
-database tables in Ceph distributed object storage, and supports multiple data 
-formats including [Google Flatbuffers](https://google.github.io/flatbuffers/) 
-and [Apache Arrow](https://arrow.apache.org).  SkyhookDM partitions and formats 
-data as objects, and we utilize Ceph's object class extension mechanism 'cls' 
-to develop data management methods that can be executed directly within storage.  
-Methods include offloading processing to storage (e.g., SELECT, PROJECT) as well 
-as physical design methods including indexing and data layouts.
-Please see current project ideas listed below.
-[SkyhookDM on Github](https://github.com/uccross/skyhookdm-ceph-cls).
+database tables in Ceph distributed object storage.  SkyhookDM is an 
+[Apache Arrow](https://arrow.apache.org) native 
+storage system that utilizes the Arrow Dataset API to store and query data,
+and our Ceph extensions support server-side data processing. For example, 
+pushing down SELECT, PROJECT and other functionality into storage to reduce 
+data returned to the client.
 
 -------------------
 
-### Ingest data via Python, convert to pyarrow tables, horizonally partition and write to SkyhookDM
+### Add Ability to create and save views from Datasets
 
-  - **Topics**: `PyArrow`, `Data partitioning`, `data loading`
-  - **Skills**: C++, Python, Flatbuffers
+  - **Topics**: `Arrow`, `Database views`, `virtual datasets`
+  - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
-This project will create a Python client to read raw input data 
-in CSV and JSON form (no nested data), convert to 
-[PyArrow tables](https://arrow.apache.org/docs/python/), 
-partition pyarrow tables horizontally (creating an individual Arrow 
-table for each partition) and write each partition to SkyhookDM as 
-an independent object, formatted with our 
-[Flatbuffer metadata wrapper](https://github.com/uccross/skyhookdm-ceph-cls/blob/master/src/cls/fb_meta.fbs).  
-Partitioning should be done with 
-[JumpConsistentHash](https://arxiv.org/pdf/1406.2294.pdf) 
-on the specified key columns, and will augment to our 
-[Python client writer](https://github.com/uccross/skyhookdm-pythonclient) 
-that currently performs vertical (column) based partitioning. 
-[Github issue](https://github.com/uccross/skyhookdm-pythonclient/issues/16).
+Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.  
+Saving previous computation in the form of materialized views can provide benefit for future
+workload processing. 
+Solution - Add a method to the Dataset API to create views from queries and save the view as an object in a separate pool with some object key that can be generated from the query that created it. 
 
+Reference:
+https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 
 -------
 
-### Compaction of formatted database partitions within objects
+### Ability to Push back query execution to the Client in case of overloaded OSDs
 
-  - **Topics**: `Arrow`, `Data partitioning`, `compaction`
+  - **Topics**: `Arrow`, `query opererators`, `push down computation`
   - **Skills**: C++
   - **Difficulty**: High
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+   
+Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.  
+Solution - We can modify the Dataset API by adding a method to check the resource utilization on the Storage side periodically and if the CPU and Memory usage passes a user-defined threshold or some other metrice, the Datasets API silently shifts to client side query execution for a while and then tries to push down again.  This method could also be applied dynamically at the OSD, allowing the OSD to reject certain operations, returning metadata concerning which operations have not yet been applied.
+				
+Reference:	
+https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/cls_tabular.h#L1104
 
-This project will develop object class methods that will merge (or conversely split) 
-formatted data partitions within an object.  Self-contained partitions are written 
-(appended) to objects and over time objects may contain a sequence of independent 
-formatted data structures e.g., a sequence of 
-[Arrow](https://arrow.apache.org/) 
-tables each representing a sub-partition.  A compaction request will invoke this 
-method that will iterate over the data structures, combining (or splitting) them 
-into a single larger data structure representing the complete data partition.
-In essence, this methods will perform a read-modify-write 
-operation on an object's local data. 
-[Github issue](https://github.com/uccross/skyhookdm-ceph/issues/33).
 
 -------
 
@@ -440,7 +425,7 @@ operation on an object's local data.
   - **Topics**: `Documentation`, `wiki`, `markdown`
   - **Skills**: Markdown, documentation, html
   - **Difficulty**: Easy
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
 SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
 as Github Wiki pages. We would like to move it to another platform such as 
@@ -450,40 +435,58 @@ to reorganize it and rewrite some sections as part of this effort.
 
 -------
 
-### Database statistics collection on partitioned data
+### Integrating Delta Lake on top of SkyhookDM
 
-  - **Topics**: `Statistics`, `histograms`, `data partitioning`
+  - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
-This project will develop object-class methods to compute data statistics 
-stored as histogram for each object and store them in a query-able format within 
-each storage server’s local RocksDB, then accumulate all 
-the object-local statistics into global statistics for a given database table.
-[Github issue](https://github.com/uccross/skyhookdm-ceph/issues/77).
-
--------
-
-### Add support for a relevant subset of operations on List data types
-
-  - **Topics**: `Array data`, `Arrow`, `Awkward Array`
-  - **Skills**: C++
-  - **Difficulty**: Hard
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
   
-Array data is currently stored as 
-[lists within Arrow tables](https://arrow.apache.org/docs/cpp/api/datatype.html#classarrow_1_1_list_type) 
-inside SkyhookDM.  This project will investigate and implement a small subset 
-of operations on list data types that can be offloaded ("pushed down") into 
-storage for query processing. Common list manipulations that perform data 
-reduction such as filters or summary/agg methods (min, max, first, in) will 
-be most useful to apply withing storage, since these will reduce network IO 
-transferred back to the client from the storage layer.
-We can look to [awkward array](https://github.com/scikit-hep/awkward-array) 
-for reference of common operations on scientific array data.
-[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/38).
+[Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
+An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
+This project will further build upon our current work connecting Spark to SkyhookDM through the Arrow Dataset API.
+This would allow us to run some of the TPC-DS queries (popular set of SQL queries for benchmarking databases) on SkyhookDM easily.
+
+Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020/08/p975-armbrust.pdf)
 
 -------
+
+
+### Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes
+
+  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
+  - **Skills**: C++
+  - **Difficulty**: Medium
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  
+Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
+
+Solution - We can write Helm charts to easily deploy this end-to-end system on Kubernetes with just a few Helm commands. The goal is to deploy ServiceX, SkyhookDM, and Dask workers and ensure they can communicate with one another. We can expose the system to the end-users via a Jupyter notebook with some getting started code/guide.
+				
+Reference:
+https://www.youtube.com/watch?v=Zzwq9FmZdsU&t=2s
+https://arxiv.org/pdf/2103.01871.pdf
+
+
+-------
+### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
+
+  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
+  - **Skills**: C++
+  - **Difficulty**: Medium
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  
+ 
+Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time. 
+
+Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own. 
+
+Reference : 
+https://arxiv.org/pdf/1812.03149.pdf
+
+
+-------
+
 
 ## [SkyhookDM](http://www.skyhookdm.com)/[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5)
 
@@ -495,6 +498,8 @@ The HDF5 technology suite includes:
 * A software library that runs on a range of computational platforms, from laptops to massively parallel systems, and implements a high-level API with C, C++, Fortran 90, and Java interfaces.
 * A rich set of integrated performance features that allow for access time and storage space optimizations.
 * Tools and applications for managing, manipulating, viewing, and analyzing the data in the collection.
+
+
 
 -------------------
 
