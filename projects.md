@@ -37,11 +37,12 @@ Table of contents:
 
 
 - [SkyhookDM](#skyhookdm)
-  * [Ingest data via Python convert to pyarrow tables horizonally partition and write to SkyhookDM](#ingest-data-via-python-convert-to-pyarrow-tables-horizonally-partition-and-write-to-skyhookdm)
-  * [Compaction of formatted database partitions within objects](#compaction-of-formatted-database-partitions-within-objects)
+  * [Add Ability to create and save views from Datasets](#)
+  * [Ability to Push back query execution to the Client in case of overloaded OSDs](#)
   * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
-  * [Database statistics collection on partitioned data](#database-statistics-collection-on-partitioned-data)
-  * [Add support for a relevant subset of operations on List data types](#add-support-for-a-relevant-subset-of-operations-on-list-data-types)
+  * [Integrating Delta Lake on top of SkyhookDM](#)
+  * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#)
+  * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#)
 - [SkyhookDM/HDF5](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
   * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
   * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
