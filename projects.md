@@ -7,7 +7,7 @@
 This list of projects are meant for student and other up-and-coming developers interested in contributing to any of the CROSS supported projects. The list below notes the CROSS project and ideas associated to each that were submitted by a CROSS mentor. If you are interested in any of these projects, please [read this](https://uccross.github.io/getinvolved) on how to get involved. If you have any questions, please visit our Gitter channel: [![Join the chat at 
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-CROSS will be applying for Google Summer of Code 2021; we also support student work through our [Summer Undergraduate Research Program in Open Source Projects at UCSC](https://cross.ucsc.edu/programs/summerprogram2020.html). More on both of these Summer 2021 programs will be available in late February.
+CROSS was chosen to be a Mentor Organization for the Google Summer of Code (GSoC) 2021; we also support student work through the UCSC sponsored [Summer Undergraduate Research Program in Open Source Projects at UCSC](https://cross.ucsc.edu/programs/summerprogram2020.html). 
 
 Table of contents:
 
