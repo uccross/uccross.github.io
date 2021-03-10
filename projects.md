@@ -26,6 +26,7 @@ Table of contents:
 - [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
   * [Vehicle/Craft sensor driver development](#vehicle-craft-sensor-driver-development)
   * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
+  * [Path finding algorithm using OpenCV](#path-finding-algorithm-using-OpenCV)
   * [State estimation/sensor fusion algorithm development](#state-estimation-sensor-fusion-algorithm-development)
   * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
   
@@ -354,6 +355,16 @@ Help develop a sensor library for use in autonomnous vehicles.  Possible sensors
 
 
 The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
+
+### Path finding algorithm using OpenCV
+ - **Topics**: Computer vision, blob detection 
+ - **Skills**: C/Python, OpenCV
+ - **Difficulty** Medium
+ - **Mentor** Aaron Hunter
+
+
+Use OpenCV to identify a track for an autonomous vehicle to follow.  For example, a closed circuit course for an autonomous race car might be demarcated by different colored cones indicating the left and right boundaries of the track.  Use OpenCV to find and track the location of these cones as the car navigates the course. Implement initially on a laptop using video frames.  Ideally, transfer the algorithm to a Raspberry Pi and test on a real track.
+
 
 ### State estimation/sensor fusion algorithm development
  - **Topics**: Kalman filtering, Mahoney 
