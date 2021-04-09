@@ -39,13 +39,13 @@ Table of contents:
   * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
   * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm--dask---servicex-stack-on-kubernetes)
   * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarking-regression-testing-for-the-critical-components-of-skyhookdm)
-- [[SkyhookDM](http://www.skyhookdm.com)/[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5)](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
+- [SkyhookDM/HDF5](#skyhookdm-hdf5)
   * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
   * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
   * [Column-storage in HDF5](#column-storage-in-hdf5)
   * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
   * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
-- [[SkyhookDM](http://www.skyhookdm.com)/[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
+- [SkyhookDM/Proactive Data Containers (PDC)](#skyhookdm-proactive-data-containers--pdc-)
   * [PDC - Ceph RADOS Integration](#pdc---ceph-rados-integration)
 - [CephFS](#cephfs)
   * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
@@ -53,6 +53,7 @@ Table of contents:
   * [Popper / Drone workflow translation](#popper---drone-workflow-translation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## LiveHD
 
