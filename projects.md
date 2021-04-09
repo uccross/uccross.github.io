@@ -616,7 +616,9 @@ within Ceph is an ideal target for storing PDC objects.  This project would exte
   * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
+
 The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS. 
+
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
 ## Popper
@@ -631,3 +633,21 @@ Once the basic functionality is implemented, this project can be expanded to add
   * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
 
 [Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
+
+### Event Based Job Scheduler
+
+  * **Topics**: `workflow`, `data processing`, `machine learning`
+  * **Skills**: YAML, Python, Docker, Kubernetes
+  * **Difficulty**: Medium
+  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>, James Norman
+
+The defacto industry standard for scheduling and reacting to updates in Data Processing is [Airflow](https://airflow.apache.org). However there are many use cases that can be solved with much simpler tools. The goal of the project is to build a prototype for this. This could be a component of a larger toolset for Data Processing in the enterprise.
+
+### Simple Write-Once-Read-Many Feature Store
+
+  * **Topics**: `data processing`, `key/value store`, `machine learning`, `data serving`
+  * **Skills**: SQLite, RocksDB, Java, Scala
+  * **Difficulty**: Medium
+  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>, James Norman
+
+A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
