@@ -39,17 +39,17 @@ Table of contents:
   * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
   * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm--dask---servicex-stack-on-kubernetes)
   * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarking-regression-testing-for-the-critical-components-of-skyhookdm)
-- [SkyhookDM/HDF5](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
+- [[SkyhookDM](http://www.skyhookdm.com)/[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5)](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
   * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
   * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
   * [Column-storage in HDF5](#column-storage-in-hdf5)
   * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
   * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
-- [SkyhookDM/Proactive Data Containers (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
+- [[SkyhookDM](http://www.skyhookdm.com)/[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
   * [PDC - Ceph RADOS Integration](#pdc---ceph-rados-integration)
-- [CephFS](#-cephfs--https---docscephcom-en-latest-cephfs--)
+- [CephFS](#cephfs)
   * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
-- [Popper](#-popper--https---getpopperio-)
+- [Popper](#popper)
   * [Popper / Drone workflow translation](#popper---drone-workflow-translation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -604,9 +604,8 @@ The [Ceph](https://ceph.io) distributed storage system provides object, block, a
 PDC has plugabble storage mechanisms and the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer
 within Ceph is an ideal target for storing PDC objects.  This project would extend PDC to store its objects in RADOS pools.
 
-## [CephFS](https://docs.ceph.com/en/latest/cephfs/)
-
-CephFS is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
+## CephFS
+[CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
 
@@ -619,9 +618,9 @@ The frequency of metadata service (MDS) requests relative to the amount of data 
 The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS. 
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
-## [Popper](https://getpopper.io)
+## Popper
 
-A container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
+[Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 
 ### Popper / Drone workflow translation
 
