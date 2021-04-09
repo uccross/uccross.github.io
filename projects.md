@@ -499,7 +499,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 -------
 
 
-## [SkyhookDM](http://www.skyhookdm.com)/[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5)
+## SkyhookDM/HDF5
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
  
@@ -586,7 +586,7 @@ Instead of adding index and query operations directly to HDF5, this project woul
 [RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
 database and array-oriented I/O with HDF5.
 
-## [SkyhookDM](http://www.skyhookdm.com)/[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC)
+## SkyhookDM/Proactive Data Containers (PDC)
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and 
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
