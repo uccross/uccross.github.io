@@ -605,3 +605,30 @@ The [Ceph](https://ceph.io) distributed storage system provides object, block, a
 PDC has plugabble storage mechanisms and the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer
 within Ceph is an ideal target for storing PDC objects.  This project would extend PDC to store its objects in RADOS pools.
 
+## [CephFS](https://docs.ceph.com/en/latest/cephfs/)
+
+CephFS is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
+
+### CephFS namespace traversal offloading
+
+  * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
+  * **Skills**: C++, Ceph / MDS
+  * **Difficulty**: Medium
+  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
+
+The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
+The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS. 
+Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
+
+## [Popper](https://getpopper.io)
+
+A container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
+
+### Popper / Drone workflow translation
+
+  * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
+  * **Skills**: YAML, Python, Docker
+  * **Difficulty**: Easy
+  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
+
+[Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
