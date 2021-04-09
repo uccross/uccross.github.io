@@ -51,9 +51,10 @@ Table of contents:
   * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
 - [Popper](#popper)
   * [Popper / Drone workflow translation](#popper---drone-workflow-translation)
+  * [Event Based Job Scheduler](#event-based-job-scheduler)
+  * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## LiveHD
 
