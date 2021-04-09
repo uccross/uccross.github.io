@@ -12,7 +12,7 @@ CROSS was chosen to be a Mentor Organization for the Google Summer of Code (GSoC
 Table of contents:
 
 - [LiveHD](#livehd)
-  * [Tree-sitter Pyrope](#tree-sitter-pyrope)
+  * [Tree sitter Pyrope](#tree-sitter-pyrope)
   * [Mockturtle](#mockturtle)
   * [Query Shell](#query-shell)
   * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
@@ -22,36 +22,35 @@ Table of contents:
   * [unbitwidth](#unbitwidth)
   * [gRPC Client](#grpc-client)
   * [LNAST Opt](#lnast-opt)
-
+- [Eusocial Storage Devices](#eusocial-storage-devices)
+  * [Evaluating user space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
+  * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
+  * [Demonstrating a composable storage system accelerated by memory semantic technologies](#demonstrating-a-composable-storage-system-accelerated-by-memory-semantic-technologies)
 - [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
   * [Vehicle/Craft sensor driver development](#vehicle-craft-sensor-driver-development)
   * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
-  * [Path finding algorithm using OpenCV](#path-finding-algorithm-using-OpenCV)
+  * [Path finding algorithm using OpenCV](#path-finding-algorithm-using-opencv)
   * [State estimation/sensor fusion algorithm development](#state-estimation-sensor-fusion-algorithm-development)
   * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
-  
-- [Eusocial Storage Devices](#eusocial-storage-devices)
-  * [Evaluating user-space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
-  * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
-  * [Demonstrating a composable storage system accelerated by memory-semantic technologies](#demonstrating-a-composable-storage-system-accelerated-bymemory-semantic-technologies)
-
-
-
 - [SkyhookDM](#skyhookdm)
-  * [Add Ability to create and save views from Datasets](#)
-  * [Ability to Push back query execution to the Client in case of overloaded OSDs](#)
+  * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
+  * [Ability to Push back query execution to the Client in case of overloaded OSDs](#ability-to-push-back-query-execution-to-the-client-in-case-of-overloaded-osds)
   * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
-  * [Integrating Delta Lake on top of SkyhookDM](#)
-  * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#)
-  * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#)
-- [SkyhookDM/HDF5](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
+  * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
+  * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm--dask---servicex-stack-on-kubernetes)
+  * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarking-regression-testing-for-the-critical-components-of-skyhookdm)
+- [[SkyhookDM](http://www.skyhookdm.com)/[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5)](#-skyhookdm--http---wwwskyhookdmcom---hdf5--https---portalhdfgrouporg-display-knowledge-what-is-hdf5-)
   * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
   * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
   * [Column-storage in HDF5](#column-storage-in-hdf5)
   * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
   * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
-- [SkyhookDM/Proactive Data Containers (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
+- [[SkyhookDM](http://www.skyhookdm.com)/[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC)](#-skyhookdm--http---wwwskyhookdmcom---proactive-data-containers--https---sdmlblgov-pdc-abouthtml---pdc-)
   * [PDC - Ceph RADOS Integration](#pdc---ceph-rados-integration)
+- [[CephFS](https://docs.ceph.com/en/latest/cephfs/)](#-cephfs--https---docscephcom-en-latest-cephfs--)
+  * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
+- [[Popper](https://getpopper.io)](#-popper--https---getpopperio-)
+  * [Popper / Drone workflow translation](#popper---drone-workflow-translation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
