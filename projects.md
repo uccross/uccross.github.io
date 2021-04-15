@@ -616,7 +616,7 @@ within Ceph is an ideal target for storing PDC objects.  This project would exte
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
   * **Difficulty**: Medium
-  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
+  * **Mentor**: Farid Zakaria, [Carlos Maltzahn](https://people.ucsc.edu/carlosm)
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
 
@@ -633,7 +633,7 @@ Once the basic functionality is implemented, this project can be expanded to add
   * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
   * **Skills**: YAML, Python, Docker
   * **Difficulty**: Easy
-  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm)
 
 [Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
 
@@ -642,7 +642,7 @@ Once the basic functionality is implemented, this project can be expanded to add
   * **Topics**: `workflow`, `data processing`, `machine learning`
   * **Skills**: YAML, Python, Docker, Kubernetes
   * **Difficulty**: Medium
-  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>, James Norman
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), James Norman
 
 The defacto industry standard for scheduling and reacting to updates in Data Processing is [Airflow](https://airflow.apache.org). However there are many use cases that can be solved with much simpler tools. The goal of the project is to build a prototype for this. This could be a component of a larger toolset for Data Processing in the enterprise.
 
@@ -651,6 +651,6 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
   * **Topics**: `data processing`, `key/value store`, `machine learning`, `data serving`
   * **Skills**: SQLite, RocksDB, Java, Scala
   * **Difficulty**: Medium
-  * **Mentor**: Carlos Maltzahn <mailto:carlosm@ucsc.edu>, James Norman
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), James Norman
 
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
