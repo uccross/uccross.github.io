@@ -3,12 +3,13 @@
         "popperized"
     ],
     "repos": [
-        "be3short/hybridsystemsenvironment",
         "bnestere/nvm_buffer",
         "cruzdb/go-zlog",
         "cruzdb/pg_zlog",
         "cruzdb/zlog",
-        "galaxykate/tracery",
+        "galaxykate/tracery2",
+        "galaxykate/artbotclub",
+        "galaxykate/traceryeditor",
         "michaelsevilla/ceph",
         "nimble-dev/nimble",
         "systemslab/docker-cephdev",
@@ -17,6 +18,7 @@
         "systemslab/tcp_relentless_inigo",
         "uccross/cavsat",
         "uccross/skyhook-ceph",
-        "xiszishu/syssim"
+        "xiszishu/syssim",
+        "masc-ucsc/livehd"
     ]
 }
