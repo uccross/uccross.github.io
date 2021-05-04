@@ -1,7 +1,5 @@
 {
-    "orgs": [
-        "popperized"
-    ],
+    "orgs": [],
     "repos": [
         "bnestere/nvm_buffer",
         "cruzdb/go-zlog",
@@ -19,6 +17,8 @@
         "uccross/cavsat",
         "uccross/skyhook-ceph",
         "xiszishu/syssim",
-        "masc-ucsc/livehd"
+        "masc-ucsc/livehd",
+        "getpopper/popper",
+        "getpopper/popper-examples"
     ]
 }
