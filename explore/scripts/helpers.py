@@ -110,16 +110,17 @@ def query_github(authhead, gitquery, requestCount=0):
 		h = aHead.split(': ')
 		headdict[h[0]] = h[1]
 	api = {}
-	api["limit"] = int(headdict["X-RateLimit-Limit"])
-	api["remaining"] = int(headdict["X-RateLimit-Remaining"])
-	api["reset"] = int(headdict["X-RateLimit-Reset"])
-	# Make sure the limit didn't run out
-	print(tab + json.dumps(api))
-	if not api["remaining"] > 0:
-		print(tab + "Limit reached during query.")
-		awaitReset(api["reset"])
-		print(tab + "Repeating query...")
-		return query_github(authhead, gitquery)
+	if "X-RateLimit-Limit" in headdict:
+		api["limit"] = int(headdict["X-RateLimit-Limit"])
+		api["remaining"] = int(headdict["X-RateLimit-Remaining"])
+		api["reset"] = int(headdict["X-RateLimit-Reset"])
+		# Make sure the limit didn't run out
+		print(tab + json.dumps(api))
+		if not api["remaining"] > 0:
+			print(tab + "Limit reached during query.")
+			awaitReset(api["reset"])
+			print(tab + "Repeating query...")
+			return query_github(authhead, gitquery)
 
 	if outObj:
 		outObj["errors"] = apiError
@@ -179,16 +180,17 @@ def query_githubrest(authhead, endpoint, requestCount=0):  # e.g. endpoint = '/u
 		linkDict = parseRestLink(headdict["Link"])
 		print(tab + json.dumps(linkDict))
 	api = {}
-	api["limit"] = int(headdict["X-RateLimit-Limit"])
-	api["remaining"] = int(headdict["X-RateLimit-Remaining"])
-	api["reset"] = int(headdict["X-RateLimit-Reset"])
-	# Make sure the limit didn't run out
-	print(tab + json.dumps(api))
-	if not api["remaining"] > 0:
-		print(tab + "Limit reached during query.")
-		awaitReset(api["reset"])
-		print(tab + "Repeating query...")
-		return query_githubrest(authhead, endpoint)
+	if "X-RateLimit-Limit" in headdict:
+		api["limit"] = int(headdict["X-RateLimit-Limit"])
+		api["remaining"] = int(headdict["X-RateLimit-Remaining"])
+		api["reset"] = int(headdict["X-RateLimit-Reset"])
+		# Make sure the limit didn't run out
+		print(tab + json.dumps(api))
+		if not api["remaining"] > 0:
+			print(tab + "Limit reached during query.")
+			awaitReset(api["reset"])
+			print(tab + "Repeating query...")
+			return query_githubrest(authhead, endpoint)
 
 	if result:
 		result = '{ "data": ' + result + ' }'
