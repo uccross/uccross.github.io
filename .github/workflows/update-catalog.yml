@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: update
+        run: |
+          cd explore/scripts/
+          GITHUB_API_TOKEN="${{ secrets.GITHUB_TOKEN }}" ./MASTER.sh
