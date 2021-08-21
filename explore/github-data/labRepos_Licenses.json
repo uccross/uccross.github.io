@@ -1,8 +1,5 @@
 {
     "data": {
-        "be3short/HybridSystemsEnvironment": {
-            "licenseInfo": null
-        },
         "bnestere/nvm_buffer": {
             "licenseInfo": null
         },
@@ -20,12 +17,47 @@
                 "url": "http://choosealicense.com/licenses/apache-2.0/"
             }
         },
-        "galaxykate/tracery": {
+        "galaxykate/artbotclub": {
+            "licenseInfo": null
+        },
+        "galaxykate/tracery2": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "galaxykate/traceryeditor": {
             "licenseInfo": {
                 "name": "Apache License 2.0",
                 "nickname": null,
                 "spdxId": "Apache-2.0",
                 "url": "http://choosealicense.com/licenses/apache-2.0/"
+            }
+        },
+        "getpopper/popper": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "getpopper/popper-examples": {
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            }
+        },
+        "masc-ucsc/livehd": {
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
             }
         },
         "michaelsevilla/ceph": {
@@ -44,73 +76,8 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             }
         },
-        "popperized/ansible": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
-        },
-        "popperized/ceph": {
-            "licenseInfo": null
-        },
-        "popperized/enos": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
-        },
-        "popperized/figshare": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
-        },
-        "popperized/geni": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
-        },
-        "popperized/popper-examples": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
-        },
-        "popperized/spack": {
-            "licenseInfo": null
-        },
-        "popperized/swc-lesson": {
-            "licenseInfo": {
-                "name": "Other",
-                "nickname": null,
-                "spdxId": "NOASSERTION",
-                "url": "http://choosealicense.com/licenses/other/"
-            }
-        },
-        "popperized/zenodo": {
-            "licenseInfo": null
-        },
         "systemslab/docker-cephdev": {
             "licenseInfo": null
-        },
-        "systemslab/popper": {
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            }
         },
         "systemslab/tcp_inigo": {
             "licenseInfo": null
@@ -126,7 +93,7 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             }
         },
-        "uccross/skyhook-ceph": {
+        "uccross/skyhookdm-ceph": {
             "licenseInfo": {
                 "name": "Other",
                 "nickname": null,

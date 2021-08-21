@@ -2736,6 +2736,14 @@
             "firstCommitAt": "2014-05-15T16:33:20Z",
             "initBeforeGitHubRepo": true
         },
+        "galaxykate/artbotclub": {
+            "createdAt": "2018-10-02T05:19:16Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2018-09-28T02:31:33Z",
+            "initBeforeGitHubRepo": true
+        },
         "galaxykate/tracery": {
             "createdAt": "2014-11-04T18:50:39Z",
             "defaultBranchRef": {
@@ -2743,6 +2751,38 @@
             },
             "firstCommitAt": "2014-11-04T18:47:48Z",
             "initBeforeGitHubRepo": true
+        },
+        "galaxykate/tracery2": {
+            "createdAt": "2019-08-21T00:07:22Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2019-05-02T18:45:23Z",
+            "initBeforeGitHubRepo": true
+        },
+        "galaxykate/traceryeditor": {
+            "createdAt": "2020-03-10T21:32:53Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2020-02-04T18:00:21Z",
+            "initBeforeGitHubRepo": true
+        },
+        "getpopper/popper": {
+            "createdAt": "2015-10-02T20:58:39Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2015-10-02T20:58:39Z",
+            "initBeforeGitHubRepo": true
+        },
+        "getpopper/popper-examples": {
+            "createdAt": "2018-01-29T08:10:15Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2018-05-31T19:23:31Z",
+            "initBeforeGitHubRepo": false
         },
         "hpc/OpenLorenz": {
             "createdAt": "2013-11-20T01:35:12Z",
@@ -2775,6 +2815,14 @@
             },
             "firstCommitAt": "2011-10-06T20:21:00Z",
             "initBeforeGitHubRepo": true
+        },
+        "masc-ucsc/livehd": {
+            "createdAt": "2018-04-23T20:44:49Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "firstCommitAt": "2021-07-29T17:39:46Z",
+            "initBeforeGitHubRepo": false
         },
         "mfem/PyMFEM": {
             "createdAt": "2017-03-01T16:16:48Z",
@@ -3126,6 +3174,14 @@
                 "name": "skyhook-luminous"
             },
             "firstCommitAt": "2001-04-29T10:23:23Z",
+            "initBeforeGitHubRepo": true
+        },
+        "uccross/skyhookdm-ceph": {
+            "createdAt": "2017-03-09T22:53:47Z",
+            "defaultBranchRef": {
+                "name": "skyhook-luminous"
+            },
+            "firstCommitAt": "2017-03-08T10:51:32Z",
             "initBeforeGitHubRepo": true
         },
         "xiszishu/syssim": {
