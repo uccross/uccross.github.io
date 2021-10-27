@@ -172,6 +172,9 @@
                         "name": "Shell"
                     },
                     {
+                        "name": "JavaScript"
+                    },
+                    {
                         "name": "Starlark"
                     },
                     {
@@ -184,16 +187,16 @@
                         "name": "Makefile"
                     },
                     {
-                        "name": "JavaScript"
+                        "name": "Scala"
                     },
                     {
-                        "name": "Scala"
+                        "name": "HTML"
                     },
                     {
                         "name": "Roff"
                     }
                 ],
-                "totalCount": 10
+                "totalCount": 11
             }
         },
         "michaelsevilla/ceph": {

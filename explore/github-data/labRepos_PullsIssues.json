@@ -130,10 +130,10 @@
                 "totalCount": 80
             },
             "pullRequests_Merged": {
-                "totalCount": 319
+                "totalCount": 324
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 7
             }
         },
         "getpopper/popper-examples": {
@@ -161,10 +161,10 @@
                 "totalCount": 0
             },
             "pullRequests_Closed": {
-                "totalCount": 13
+                "totalCount": 17
             },
             "pullRequests_Merged": {
-                "totalCount": 43
+                "totalCount": 45
             },
             "pullRequests_Open": {
                 "totalCount": 0
@@ -189,19 +189,19 @@
         },
         "nimble-dev/nimble": {
             "issues_Closed": {
-                "totalCount": 510
+                "totalCount": 530
             },
             "issues_Open": {
-                "totalCount": 75
+                "totalCount": 64
             },
             "pullRequests_Closed": {
-                "totalCount": 55
+                "totalCount": 59
             },
             "pullRequests_Merged": {
-                "totalCount": 500
+                "totalCount": 520
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 5
             }
         },
         "systemslab/docker-cephdev": {

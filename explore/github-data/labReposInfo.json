@@ -72,7 +72,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 108
+                "totalCount": 107
             },
             "url": "https://github.com/cruzdb/zlog"
         },
@@ -110,7 +110,7 @@
                 "name": "JavaScript"
             },
             "stargazers": {
-                "totalCount": 38
+                "totalCount": 40
             },
             "url": "https://github.com/galaxykate/tracery2"
         },
@@ -148,7 +148,7 @@
                 "name": "Python"
             },
             "stargazers": {
-                "totalCount": 235
+                "totalCount": 240
             },
             "url": "https://github.com/getpopper/popper"
         },
@@ -174,7 +174,7 @@
         "masc-ucsc/livehd": {
             "description": "Live Hardware Development (LiveHD), a productive infrastructure for Synthesis and Simulation",
             "forks": {
-                "totalCount": 34
+                "totalCount": 36
             },
             "homepageUrl": "",
             "name": "livehd",
@@ -186,7 +186,7 @@
                 "name": "Verilog"
             },
             "stargazers": {
-                "totalCount": 120
+                "totalCount": 124
             },
             "url": "https://github.com/masc-ucsc/livehd"
         },
@@ -224,7 +224,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 107
+                "totalCount": 108
             },
             "url": "https://github.com/nimble-dev/nimble"
         },
@@ -307,7 +307,7 @@
         "uccross/skyhookdm-ceph": {
             "description": "Skyhook Data Management: programmable storage for databases.  This repo contains the Ceph extensions to support data management in storage.",
             "forks": {
-                "totalCount": 10
+                "totalCount": 9
             },
             "homepageUrl": "",
             "name": "skyhookdm-ceph",
