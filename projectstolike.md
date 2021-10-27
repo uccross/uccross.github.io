@@ -57,7 +57,7 @@ Table of contents:
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## LiveHD
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like LiveHD   &body=Dear OSRE22 Staff, I like LiveHD   )
+:heart:[Like me](mailto:cross-info@ucsc.edu?subject=OSRE22: I like LiveHD   &body=Dear OSRE22 Staff, I like LiveHD   )
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
