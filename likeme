@@ -1,0 +1,13 @@
+#!/usr/bin/awk -f
+
+BEGIN {
+  ZARGV[1]=ARGV[1]
+  ARGV[1]=""
+}
+
+{
+  print $0
+}
+/^## / {
+  print "[Like me :heart:](mailto:cross-info@ucsc.edu?subject="ZARGV[1]": I like "$2" "$3" "$4" "$5"&body=Dear "ZARGV[1]" Staff, I like "$2" "$3" "$4" "$5")"
+}
