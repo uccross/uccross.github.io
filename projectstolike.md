@@ -58,7 +58,7 @@ Table of contents:
 
 ## LiveHD
 
-:heart: [Like me](mailto:cross-info@ucsc.edu?subject=OSRE22: I like LiveHD   &body=Dear OSRE22 Staff, I like LiveHD   )
+[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: I like LiveHD   &body=Dear OSRE22 Staff, I like LiveHD   ) :gift_heart:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
