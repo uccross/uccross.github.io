@@ -5,10 +5,18 @@ BEGIN {
   ARGV[1]=""
 }
 
-{
+/^[^💝]/ {
   print $0
 }
+
 /^## / {
-  print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject="ZARGV[1]": Sponsoring "$2" "$3" "$4" "$5"&body=Dear "ZARGV[1]" Staff, I am interested in sponsoring "$2" "$3" "$4" "$5")"
+  ZORS=ORS; ORS=""
+  $1 = ""
+  print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?"
+  print "subject="ZARGV[1]": Sponsoring "$0
+  print "&body=Dear "ZARGV[1]" Staff, "
+  print "I am interested in sponsoring summer student internships ($9,500/student)"
+  ORS=ZORS
+  print " for"$0".)"
   print ""
 }
