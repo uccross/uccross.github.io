@@ -10,11 +10,7 @@ Table of contents:
   * [Mockturtle](#mockturtle)
   * [Query Shell](#query-shell)
   * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
-  * [Terminal record replay](#terminal-record-replay)
-  * [OS X Alpine Linux Support](#os-x-alpine-linux-support)
-  * [Random CHISEL Verilog Pyrope generator](#random-chisel-verilog-pyrope-generator)
   * [unbitwidth](#unbitwidth)
-  * [gRPC Client](#grpc-client)
   * [LNAST Opt](#lnast-opt)
 - [Eusocial Storage Devices](#eusocial-storage-devices)
   * [Evaluating user space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
@@ -49,7 +45,7 @@ Table of contents:
   * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ## LiveHD
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for LiveHD.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 ### Tree sitter Pyrope
@@ -137,51 +133,6 @@ further expanded. Some checks:
 * Transformations stages should not drop names if same net is preserved
 * No writes in LNAST that are never read
 * All the edges are possible. E.g: no pin 'C' in Sum_op
-### Terminal record replay
-|   |   |
-|---|---|
-| Title | Terminal record/replay |
-| Description | Record terminal commands and have the capacity to replay for testing and performance |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting)
-Use automatic asciinema generation. Compare the test speed and summarize the
-performance difference from "a user" point of view. The results should allow to
-track performance changes. These are integration tests that should be used for
-overall performance and correctness. The same tests can be used as "demo" to
-explain how to use the flow.
-Maybe expand tmt_test and main_test to be a more stand-alone testing setup.
-### OS X Alpine Linux Support
-|   |   |
-|---|---|
-| Title | OS X, Alpine Linux Support |
-| Description | LiveHD has issues with non-linux setups like OS X and Alpine Linux |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support)
-LiveHD compiles (it did) with OS X, but there are some issues with the mmap
-infrastructure inside mmap_lib. The code functionality should be able to run
-(the mmap_remap does not exist in OS X, but a more costly alternative is
-implemented for OS X, just not tested
-and it seems faulty).
-There are different set of issues with the alpine Linux distribution. Alpine
-Linux does not use libc, and there are some failures. It would be good to fix
-them all.
-### Random CHISEL Verilog Pyrope generator
-|   |   |
-|---|---|
-| Title | Random CHISEL/Verilog/Pyrope generator |
-| Description | Create a random program generator that generates the same program for multiple languages |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator)
-Create a python/ruby/C++ program that generates pseudo-random programs in
-several languages (CHISEL/Verilog/Pyrope). The idea is that the same program
-can be implemented in multiple ways but all should have the same result
-(simulation and LEC).
 ### unbitwidth
 |   |   |
 |---|---|
@@ -210,18 +161,6 @@ This means that a module could have no bitwidth information at all. We start
 from the leave nodes. If all the bits can be inferred given the inputs, the
 module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
-### gRPC Client
-|   |   |
-|---|---|
-| Title | gRPC Client |
-| Description | Allow LiveHD to submit gRPC (bazel) jobs to distributed computing |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client)
-Leverage the gRPC client in liveHD to allow the submission of work to remote servers.
-Once we can submit gRPC from inside LiveHD, we should have to re-structure the
-pass API to have a gRPC call for each of the main steps.
 ### LNAST Opt
 |   |   |
 |---|---|
@@ -238,7 +177,7 @@ elimination in LNAST. There are several reasons:
 * Doing code simplification early (LNAST is the earliest) reduces workload/steps in successive passes.
 * The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 ## Eusocial Storage Devices
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for Eusocial Storage Devices.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Eusocial Storage Devices.)
 
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 ### Evaluating user space networking stacks on SmartNICs
@@ -260,7 +199,7 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
  - References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
 ## Open Source Autonomous Vehicle Controller
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for Open Source Autonomous Vehicle Controller.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
 Lead mentor: Aaron Hunter <mailto:aamuhunt@ucsc.edu>
@@ -296,7 +235,7 @@ Implement an optimal state estimation algorithm from a model.  This model can be
  - **Mentor** Aaron Hunter
 Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 ## SkyhookDM
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for SkyhookDM.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
 
 [SkyhookDM](http://www.skyhookdm.com)
 The Skyhook Data Management project extends object storage with data 
@@ -381,7 +320,7 @@ Reference :
 https://arxiv.org/pdf/1812.03149.pdf
 -------
 ## SkyhookDM/HDF5
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for SkyhookDM/HDF5.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/HDF5.)
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
  
@@ -446,7 +385,7 @@ Instead of adding index and query operations directly to HDF5, this project woul
 [RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
 database and array-oriented I/O with HDF5.
 ## SkyhookDM/Proactive Data Containers (PDC)
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/Proactive Data Containers (PDC)&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for SkyhookDM/Proactive Data Containers (PDC).)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/Proactive Data Containers&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/Proactive Data Containers.)
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and 
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
@@ -460,7 +399,7 @@ The [Ceph](https://ceph.io) distributed storage system provides object, block, a
 PDC has plugabble storage mechanisms and the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer
 within Ceph is an ideal target for storing PDC objects.  This project would extend PDC to store its objects in RADOS pools.
 ## CephFS
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  CephFS&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for CephFS.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  CephFS&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project CephFS.)
 
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 ### CephFS namespace traversal offloading
@@ -472,7 +411,7 @@ The frequency of metadata service (MDS) requests relative to the amount of data 
 The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS. 
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 ## Popper
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Popper&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships ($9,500/student) for Popper.)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Popper&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Popper.)
 
 [Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 ### Popper / Drone workflow translation
