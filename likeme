@@ -9,5 +9,6 @@ BEGIN {
   print $0
 }
 /^## / {
-  print "[Like me :heart:](mailto:cross-info@ucsc.edu?subject="ZARGV[1]": I like "$2" "$3" "$4" "$5"&body=Dear "ZARGV[1]" Staff, I like "$2" "$3" "$4" "$5")"
+  print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject="ZARGV[1]": Sponsoring "$2" "$3" "$4" "$5"&body=Dear "ZARGV[1]" Staff, I am interested in sponsoring "$2" "$3" "$4" "$5")"
+  print ""
 }

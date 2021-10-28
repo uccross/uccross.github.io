@@ -57,7 +57,8 @@ Table of contents:
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## LiveHD
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like LiveHD   &body=Dear OSRE22 Staff, I like LiveHD   )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring LiveHD   &body=Dear OSRE22 Staff, I am interested in sponsoring LiveHD   )
+
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
@@ -298,7 +299,8 @@ elimination in LNAST. There are several reasons:
 * The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 
 ## Eusocial Storage Devices
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like Eusocial Storage Devices &body=Dear OSRE22 Staff, I like Eusocial Storage Devices )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring Eusocial Storage Devices &body=Dear OSRE22 Staff, I am interested in sponsoring Eusocial Storage Devices )
+
 
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 
@@ -332,7 +334,8 @@ Since the last decade, the slowing down in the performance improvement of genera
 
 
 ## Open Source Autonomous Vehicle Controller
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like Open Source Autonomous Vehicle&body=Dear OSRE22 Staff, I like Open Source Autonomous Vehicle)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring Open Source Autonomous Vehicle&body=Dear OSRE22 Staff, I am interested in sponsoring Open Source Autonomous Vehicle)
+
 
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
@@ -389,7 +392,8 @@ Implement an optimal state estimation algorithm from a model.  This model can be
 Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
 ## SkyhookDM
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like SkyhookDM   &body=Dear OSRE22 Staff, I like SkyhookDM   )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring SkyhookDM   &body=Dear OSRE22 Staff, I am interested in sponsoring SkyhookDM   )
+
 
 [SkyhookDM](http://www.skyhookdm.com)
 
@@ -506,7 +510,8 @@ https://arxiv.org/pdf/1812.03149.pdf
 
 
 ## SkyhookDM/HDF5
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like SkyhookDM/HDF5   &body=Dear OSRE22 Staff, I like SkyhookDM/HDF5   )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring SkyhookDM/HDF5   &body=Dear OSRE22 Staff, I am interested in sponsoring SkyhookDM/HDF5   )
+
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
  
@@ -594,7 +599,8 @@ Instead of adding index and query operations directly to HDF5, this project woul
 database and array-oriented I/O with HDF5.
 
 ## SkyhookDM/Proactive Data Containers (PDC)
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like SkyhookDM/Proactive Data Containers (PDC)&body=Dear OSRE22 Staff, I like SkyhookDM/Proactive Data Containers (PDC))
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring SkyhookDM/Proactive Data Containers (PDC)&body=Dear OSRE22 Staff, I am interested in sponsoring SkyhookDM/Proactive Data Containers (PDC))
+
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and 
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
@@ -613,7 +619,8 @@ PDC has plugabble storage mechanisms and the [RADOS](https://ceph.io/geen-catego
 within Ceph is an ideal target for storing PDC objects.  This project would extend PDC to store its objects in RADOS pools.
 
 ## CephFS
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like CephFS   &body=Dear OSRE22 Staff, I like CephFS   )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring CephFS   &body=Dear OSRE22 Staff, I am interested in sponsoring CephFS   )
+
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
@@ -630,7 +637,8 @@ The key idea of this project is to reduce the frequency of MDS requests by offlo
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
 ## Popper
-[Like me :heart:](mailto:cross-info@ucsc.edu?subject=OSRE22: I like Popper   &body=Dear OSRE22 Staff, I like Popper   )
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring Popper   &body=Dear OSRE22 Staff, I am interested in sponsoring Popper   )
+
 
 [Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 
