@@ -16,11 +16,7 @@ Table of contents:
   * [Mockturtle](#mockturtle)
   * [Query Shell](#query-shell)
   * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
-  * [Terminal record replay](#terminal-record-replay)
-  * [OS X Alpine Linux Support](#os-x-alpine-linux-support)
-  * [Random CHISEL Verilog Pyrope generator](#random-chisel-verilog-pyrope-generator)
   * [unbitwidth](#unbitwidth)
-  * [gRPC Client](#grpc-client)
   * [LNAST Opt](#lnast-opt)
 - [Eusocial Storage Devices](#eusocial-storage-devices)
   * [Evaluating user space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
@@ -167,63 +163,6 @@ further expanded. Some checks:
 * All the edges are possible. E.g: no pin 'C' in Sum_op
 
 
-### Terminal record replay
-
-|   |   |
-|---|---|
-| Title | Terminal record/replay |
-| Description | Record terminal commands and have the capacity to replay for testing and performance |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#term-recordreplay-for-benchmarkingtesting)
-
-Use automatic asciinema generation. Compare the test speed and summarize the
-performance difference from "a user" point of view. The results should allow to
-track performance changes. These are integration tests that should be used for
-overall performance and correctness. The same tests can be used as "demo" to
-explain how to use the flow.
-
-Maybe expand tmt_test and main_test to be a more stand-alone testing setup.
-
-
-### OS X Alpine Linux Support
-
-|   |   |
-|---|---|
-| Title | OS X, Alpine Linux Support |
-| Description | LiveHD has issues with non-linux setups like OS X and Alpine Linux |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#os-x-alpine-linux-support)
-
-LiveHD compiles (it did) with OS X, but there are some issues with the mmap
-infrastructure inside mmap_lib. The code functionality should be able to run
-(the mmap_remap does not exist in OS X, but a more costly alternative is
-implemented for OS X, just not tested
-and it seems faulty).
-
-There are different set of issues with the alpine Linux distribution. Alpine
-Linux does not use libc, and there are some failures. It would be good to fix
-them all.
-
-### Random CHISEL Verilog Pyrope generator
-
-|   |   |
-|---|---|
-| Title | Random CHISEL/Verilog/Pyrope generator |
-| Description | Create a random program generator that generates the same program for multiple languages |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#random-chiselverilogpyrope-generator)
-
-Create a python/ruby/C++ program that generates pseudo-random programs in
-several languages (CHISEL/Verilog/Pyrope). The idea is that the same program
-can be implemented in multiple ways but all should have the same result
-(simulation and LEC).
-
 ### unbitwidth
 
 |   |   |
@@ -258,22 +197,6 @@ This means that a module could have no bitwidth information at all. We start
 from the leave nodes. If all the bits can be inferred given the inputs, the
 module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
-
-### gRPC Client
-
-|   |   |
-|---|---|
-| Title | gRPC Client |
-| Description | Allow LiveHD to submit gRPC (bazel) jobs to distributed computing |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#grpc-client)
-
-Leverage the gRPC client in liveHD to allow the submission of work to remote servers.
-
-Once we can submit gRPC from inside LiveHD, we should have to re-structure the
-pass API to have a gRPC call for each of the main steps.
 
 ### LNAST Opt
 
