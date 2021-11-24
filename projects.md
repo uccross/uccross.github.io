@@ -518,16 +518,15 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 -------------------
 
-### PDC - Ceph RADOS Integration
+### Python interface to an object-centric data management system
 
-  * **Topics**: `PDC`, `Ceph`, `object storage`
-  * **Skills**: C, PDC, Ceph / RADOS
+  * **Topics**: `Python`, `object-centric data management`, `PDC`
+  * **Skills**: Python, C, PDC
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>, Houjun Tang <mailto:htang4@lbl.gov>
 
-The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
-PDC has plugabble storage mechanisms and the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer
-within Ceph is an ideal target for storing PDC objects.  This project would extend PDC to store its objects in RADOS pools.
+[Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it. 
+
 
 ## CephFS
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
