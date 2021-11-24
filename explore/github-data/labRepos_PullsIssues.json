@@ -164,7 +164,7 @@
                 "totalCount": 17
             },
             "pullRequests_Merged": {
-                "totalCount": 45
+                "totalCount": 46
             },
             "pullRequests_Open": {
                 "totalCount": 0
@@ -189,19 +189,19 @@
         },
         "nimble-dev/nimble": {
             "issues_Closed": {
-                "totalCount": 530
+                "totalCount": 531
             },
             "issues_Open": {
-                "totalCount": 64
+                "totalCount": 65
             },
             "pullRequests_Closed": {
                 "totalCount": 59
             },
             "pullRequests_Merged": {
-                "totalCount": 520
+                "totalCount": 521
             },
             "pullRequests_Open": {
-                "totalCount": 5
+                "totalCount": 6
             }
         },
         "systemslab/docker-cephdev": {

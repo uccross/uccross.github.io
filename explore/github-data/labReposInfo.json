@@ -136,7 +136,7 @@
         "getpopper/popper": {
             "description": "Container-native task automation engine.",
             "forks": {
-                "totalCount": 60
+                "totalCount": 61
             },
             "homepageUrl": "https://getpopper.io",
             "name": "popper",
@@ -148,7 +148,7 @@
                 "name": "Python"
             },
             "stargazers": {
-                "totalCount": 240
+                "totalCount": 247
             },
             "url": "https://github.com/getpopper/popper"
         },
@@ -186,7 +186,7 @@
                 "name": "Verilog"
             },
             "stargazers": {
-                "totalCount": 124
+                "totalCount": 125
             },
             "url": "https://github.com/masc-ucsc/livehd"
         },
@@ -212,7 +212,7 @@
         "nimble-dev/nimble": {
             "description": "The base NIMBLE package for R",
             "forks": {
-                "totalCount": 18
+                "totalCount": 19
             },
             "homepageUrl": "http://R-nimble.org",
             "name": "nimble",
@@ -224,7 +224,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 108
+                "totalCount": 109
             },
             "url": "https://github.com/nimble-dev/nimble"
         },
