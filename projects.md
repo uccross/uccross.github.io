@@ -574,3 +574,10 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
   * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), James Norman
 
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
+
+### In-store processing on Computational Storage Devices using DASK(A distributed python library)
+  * **Topics**: `data processing`, `distributed computing`, `Computational storage devices`
+  * **Skills**: Python, Linux, Docker
+  * **Difficulty**: Medium
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), Saheed Adepoju
+Barbalace and Do outline various computational models in their paper “Computational Storage: Where are we today”. One of such models is the use of the client-server paradigm as a programming model. Using a client-server model, a network channel between the host and the CSD CPUs is what is required. The proposed solution is the use of DASK, a python library for writing distributed programs, for communication between hosts and several CSDs. The project will build APIs that runs on DASK which will involve opening files across multiple CSDs, carrying parallelized  data-processing like filtering on individual CSDs. 
