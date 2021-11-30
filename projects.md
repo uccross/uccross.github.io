@@ -49,6 +49,16 @@ Table of contents:
   * [Popper / Drone workflow translation](#popper---drone-workflow-translation)
   * [Event Based Job Scheduler](#event-based-job-scheduler)
   * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
+- [OpenROAD- A Complete, Automated VLSI Design flow from RTL-GDSII ](https://github.com/The-OpenROAD-Project)
+  *  Static RAM Generator for OpenROAD-flow-scripts
+  *  VLSI Power Planning and Analysis
+  *  Enhanced Web development for OpenROAD Projects
+  *  Development of Demos and Tutorials for OpenROAD-flow-scripts
+  *  Comprehensive testing of OpenROAD-flow-scripts
+  *  OpenROAD GUI Visualization
+  *  OpenDB Code Generation
+  *  Implementation of an NLP based AI bot for OpenROAD Project Analytics
+
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -574,3 +584,31 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
   * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), James Norman
 
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
+
+### OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
+##[ OpenROAD](https://github.com/The-OpenROAD-Project) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy acess of design kits and software access for VLSI designers. 
+
+OpenROAD's flow  cuts across cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results. 
+
+OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored EFabless [Efabless](efabless.com) that has made possible >140 successful tapeouts across a world wide and broad user community.
+
+### Static RAM Generator for OpenROAD-flow-scripts
+
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
+  * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
+  * **Difficulty**: Medium
+  * **Mentor**: Mehdi Saligane Matt Liberty
+
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers reduce the design time significantly by allowing designers to configure and explore multiple variants and hence select a design that is optimal. This project requires the support of memory compilers to the OpenROAD flow based on popular PDKS. See link for details: https://openram.soe.ucsc.edu/
+
+### VLSI Power Planning and Analysis- Implement C++ from tcl
+
+  * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
+  * **Skills**: C++, tcl, VLSI Layout
+  * **Difficulty**: Medium
+  * **Mentor**: Mehdi Saligane/Ming-Hung
+
+Take the pdngen.tcl module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
+
+
+
