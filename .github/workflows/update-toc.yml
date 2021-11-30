@@ -1,6 +1,6 @@
 on:
   push:
-    paths: ['projects.md']
+    # paths: ['projects.md']
       # branches:
       #     - master
             
