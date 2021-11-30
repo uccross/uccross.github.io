@@ -20,4 +20,5 @@ jobs:
 
             - name: generate-toc
               run: |
+                  pwd
                   ./gh-md-toc ../../projects.md
