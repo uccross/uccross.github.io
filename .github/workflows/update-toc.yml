@@ -22,3 +22,7 @@ jobs:
           - name: generate-toc
             run: |
                 ./gh-md-toc --insert --no-backup projects.md
+
+          - uses: stefanzweifel/git-auto-commit-action@v4
+            with:
+              commit_message: Auto update markdown TOC
