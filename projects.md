@@ -50,11 +50,11 @@ Table of contents:
   * [Event Based Job Scheduler](#event-based-job-scheduler)
   * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
 - [OpenROAD- A Complete, Automated VLSI Design flow from RTL-GDSII ](https://github.com/The-OpenROAD-Project)
-  *  Static RAM Generator for OpenROAD-flow-scripts
+  *  Static RAM Generator for [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
   *  VLSI Power Planning and Analysis
   *  Enhanced Web development for OpenROAD Projects
-  *  Development of Demos and Tutorials for OpenROAD-flow-scripts
-  *  Comprehensive testing of OpenROAD-flow-scripts
+  *  Development of Demos and Tutorials for [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+  *  Comprehensive testing of [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
   *  OpenROAD GUI Visualization
   *  OpenDB Code Generation
   *  Implementation of an NLP based AI bot for OpenROAD Project Analytics
@@ -586,29 +586,88 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
 
 ### OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
-##[ OpenROAD](https://github.com/The-OpenROAD-Project) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy acess of design kits and software access for VLSI designers. 
+[OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy acess of design kits and software access for VLSI designers. 
 
-OpenROAD's flow  cuts across cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results. 
+OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results. 
 
-OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored EFabless [Efabless](efabless.com) that has made possible >140 successful tapeouts across a world wide and broad user community.
+OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored EFabless [Efabless](efabless.com) that has made possible >140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is (https://github.com/The-OpenROAD-Project/OpenROAD).
 
-### Static RAM Generator for OpenROAD-flow-scripts
+### Static RAM Generator for [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
-  * **Mentor**: Mehdi Saligane Matt Liberty
+  * **Mentor**: Mehdi Saligane, Matt Liberty
 
-Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers reduce the design time significantly by allowing designers to configure and explore multiple variants and hence select a design that is optimal. This project requires the support of memory compilers to the OpenROAD flow based on popular PDKS. See link for details: https://openram.soe.ucsc.edu/
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to the OpenROAD flow based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
 
 ### VLSI Power Planning and Analysis- Implement C++ from tcl
 
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
   * **Difficulty**: Medium
-  * **Mentor**: Mehdi Saligane/Ming-Hung
+  * **Mentor**: Mehdi Saligane, Ming-Hung
 
-Take the pdngen.tcl module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
+Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
+
+###  Enhance OpenROAD project website to update features and enable easy access of information
+
+  * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
+  * **Skills**: Web development experience
+  * **Difficulty**: Easy
+  * **Mentor**: Vitor Bandeira, Indira Iyer Almeida
+
+The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
+
+###  Develop Demos and Tutorials to highlight key flows and features for [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+
+  * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
+  * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
+  * **Difficulty**: Medium
+  * **Mentor**: Indira Iyer Almeida, Vitor Bandeira
+
+Details Develop demos showing:
+The basic usage of OpenROAD features and flow
+GUI visualizations
+Different options and how they impact the results
+Different design styles and particular challenges
+
+### Comprehensive testing of [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+flow using new designs
+
+  * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
+  * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
+  * **Difficulty**: Medium
+  * **Mentor**: Tom Spyrou, Indira Iyer Almeida
+
+Add open sourced designs to existing test suite for the OpenROAD flow to expand coverage and technology capabilities. This includes design specification, configuration and creation of all necessary files for regression testing. Souruggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
+
+### Enhance GUI features for [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)
+
+  * **Topics**: `GUI`, `Visualization`, `User Interfaces`
+  * **Skills**:  C++, Qt
+  * **Difficulty**: Medium
+  * **Mentor**: Matt Liberty, Vitor Bandeira
+  * 
+Develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
+
+### [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automate the Generation of EDA Database Code From a Schema Description
+
+  * **Topics**: `Database`, `EDA`
+  * **Skills**:  C++, Python, JSON, Jinja templating
+  * **Difficulty**: Medium
+  * **Mentor**: Matt Liberty, Tom Spyrou
+
+Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
+
+### Implement an NLP based AI bot for [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) Project Analytics
+
+  * **Topics**: `AI`, `ML`, `Analytics`
+  * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
+  * **Difficulty**: Medium
+  * **Mentor**: Vitor Bandeira, Indira Iyer Almeida
+  
+The OpenROAD project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
 
 
 
