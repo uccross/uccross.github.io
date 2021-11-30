@@ -9,11 +9,8 @@ https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](http
 
 The Open Source Research Experience Program (https://cross.ucsc.edu/2022-osre/index.html) will be accepting student project application in February/March 2022. We will have exact deadlines published by January 2022. Connected to that CROSS will be applying to be a mentor organization under the Google Summer of Code for 2022 and hope to be part of that program again. The project ideas below can be utilized in applying for either of these programs.
 
-Table of Contents
-=================
 <!--ts-->
 * [Open Source Project Ideas](#open-source-project-ideas)
-* [Table of Contents](#table-of-contents)
    * [LiveHD](#livehd)
       * [Tree sitter Pyrope](#tree-sitter-pyrope)
       * [Mockturtle](#mockturtle)
@@ -53,7 +50,7 @@ Table of Contents
       * [Event Based Job Scheduler](#event-based-job-scheduler)
       * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
 
-<!-- Added by: runner, at: Tue Nov 30 06:19:38 UTC 2021 -->
+<!-- Added by: runner, at: Tue Nov 30 06:23:34 UTC 2021 -->
 
 <!--te-->
 
