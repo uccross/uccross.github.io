@@ -13,6 +13,7 @@ Table of Contents
 =================
 <!--ts-->
 * [Open Source Project Ideas](#open-source-project-ideas)
+* [Table of Contents](#table-of-contents)
    * [LiveHD](#livehd)
       * [Tree sitter Pyrope](#tree-sitter-pyrope)
       * [Mockturtle](#mockturtle)
@@ -52,7 +53,7 @@ Table of Contents
       * [Event Based Job Scheduler](#event-based-job-scheduler)
       * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
 
-<!-- Added by: runner, at: Tue Nov 30 06:14:56 UTC 2021 -->
+<!-- Added by: runner, at: Tue Nov 30 06:19:38 UTC 2021 -->
 
 <!--te-->
 
