@@ -4,7 +4,7 @@
 
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
-This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a Open Source Research Experience (OSRE) mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at 
+This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a Open Source Research Experience (OSRE) mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The Open Source Research Experience Program (https://cross.ucsc.edu/2022-osre/index.html) will be accepting student project application in February/March 2022. We will have exact deadlines published by January 2022. Connected to that CROSS will be applying to be a mentor organization under the Google Summer of Code for 2022 and hope to be part of that program again. The project ideas below can be utilized in applying for either of these programs.
@@ -273,10 +273,10 @@ Projects for the OSAVC:
  - **Mentor** Aaron Hunter
 
 
-Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller. 
+Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller.
 
 ### IMU calibration algorithm development
- - **Topics**: Least Squares, DCM, 
+ - **Topics**: Least Squares, DCM,
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
@@ -285,7 +285,7 @@ Help develop a sensor library for use in autonomnous vehicles.  Possible sensors
 The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
 
 ### Path finding algorithm using OpenCV
- - **Topics**: Computer vision, blob detection 
+ - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
@@ -295,7 +295,7 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  For example
 
 
 ### State estimation/sensor fusion algorithm development
- - **Topics**: Kalman filtering, Mahoney 
+ - **Topics**: Kalman filtering, Mahoney
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Challenging
  - **Mentor** Aaron Hunter
@@ -316,13 +316,13 @@ Help develop the library of models for autonomous vehicles. Develop a dynamic mo
 
 [SkyhookDM](http://www.skyhookdm.com)
 
-The Skyhook Data Management project extends object storage with data 
-management functionality for tabular data. SkyhookDM enables storing and query 
-database tables in Ceph distributed object storage.  SkyhookDM is an 
-[Apache Arrow](https://arrow.apache.org) native 
+The Skyhook Data Management project extends object storage with data
+management functionality for tabular data. SkyhookDM enables storing and query
+database tables in Ceph distributed object storage.  SkyhookDM is an
+[Apache Arrow](https://arrow.apache.org) native
 storage system that utilizes the Arrow Dataset API to store and query data,
-and our Ceph extensions support server-side data processing. For example, 
-pushing down SELECT, PROJECT and other functionality into storage to reduce 
+and our Ceph extensions support server-side data processing. For example,
+pushing down SELECT, PROJECT and other functionality into storage to reduce
 data returned to the client.
 
 -------------------
@@ -336,8 +336,8 @@ data returned to the client.
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.  
 Saving previous computation in the form of materialized views can provide benefit for future
-workload processing. 
-Solution - Add a method to the Dataset API to create views from queries and save the view as an object in a separate pool with some object key that can be generated from the query that created it. 
+workload processing.
+Solution - Add a method to the Dataset API to create views from queries and save the view as an object in a separate pool with some object key that can be generated from the query that created it.
 
 Reference:
 https://docs.dremio.com/working-with-datasets/virtual-datasets.html
@@ -350,11 +350,11 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Skills**: C++
   - **Difficulty**: High
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-   
+
 Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.  
 Solution - We can modify the Dataset API by adding a method to check the resource utilization on the Storage side periodically and if the CPU and Memory usage passes a user-defined threshold or some other metrice, the Datasets API silently shifts to client side query execution for a while and then tries to push down again.  This method could also be applied dynamically at the OSD, allowing the OSD to reject certain operations, returning metadata concerning which operations have not yet been applied.
-				
-Reference:	
+
+Reference:
 https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/cls_tabular.h#L1104
 
 
@@ -368,9 +368,9 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
 SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
-as Github Wiki pages. We would like to move it to another platform such as 
-[ReadTheDocs](https://readthedocs.org), 
-to reorganize it and rewrite some sections as part of this effort. 
+as Github Wiki pages. We would like to move it to another platform such as
+[ReadTheDocs](https://readthedocs.org),
+to reorganize it and rewrite some sections as part of this effort.
 [Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/42).
 
 -------
@@ -381,7 +381,7 @@ to reorganize it and rewrite some sections as part of this effort.
   - **Skills**: C++
   - **Difficulty**: Medium
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-  
+
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
 This project will further build upon our current work connecting Spark to SkyhookDM through the Arrow Dataset API.
@@ -398,11 +398,11 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
   - **Skills**: C++
   - **Difficulty**: Medium
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-  
+
 Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
 
 Solution - We can write Helm charts to easily deploy this end-to-end system on Kubernetes with just a few Helm commands. The goal is to deploy ServiceX, SkyhookDM, and Dask workers and ensure they can communicate with one another. We can expose the system to the end-users via a Jupyter notebook with some getting started code/guide.
-				
+
 Reference:
 https://www.youtube.com/watch?v=Zzwq9FmZdsU&t=2s
 https://arxiv.org/pdf/2103.01871.pdf
@@ -415,13 +415,13 @@ https://arxiv.org/pdf/2103.01871.pdf
   - **Skills**: C++
   - **Difficulty**: Medium
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-  
- 
-Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time. 
 
-Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own. 
 
-Reference : 
+Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time.
+
+Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own.
+
+Reference :
 https://arxiv.org/pdf/1812.03149.pdf
 
 
@@ -431,7 +431,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 ## SkyhookDM/HDF5
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
- 
+
 The HDF5 technology suite includes:
 * A versatile data model that can represent very complex data objects and a wide variety of metadata.
 * A completely portable file format with no limit on the number or size of data objects in the collection.
@@ -517,7 +517,7 @@ database and array-oriented I/O with HDF5.
 
 ## SkyhookDM/Proactive Data Containers (PDC)
 
-[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and 
+[Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
 
 -------------------
@@ -529,7 +529,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Difficulty**: Medium
   * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>, Houjun Tang <mailto:htang4@lbl.gov>
 
-[Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it. 
+[Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it.
 
 
 ## CephFS
@@ -544,7 +544,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
 
-The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS. 
+The key idea of this project is to reduce the frequency of MDS requests by offloading namespace traversal, i.e. the need to open a directory, list its entries, open each subdirectory, etc. Each of these operations usually require a separate MDS request. Offloading namespace traversal refers to a client’s ability to request the metadata (and associated read-only capabilities) of an entire subtree with one request, thereby offloading the traversal work for tree discovery to the MDS.
 
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
@@ -578,3 +578,86 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
   * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm), James Norman
 
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
+
+## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
+[OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy acess of design kits and software access for VLSI designers.
+
+OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
+
+OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored EFabless [Efabless](efabless.com) that has made possible >140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is (https://github.com/The-OpenROAD-Project/OpenROAD).
+
+### Static RAM Generator
+
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
+  * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
+  * **Difficulty**: Medium
+  * **Mentor**: Mehdi Saligane <mailto:mehdi@umich.edu>, Matt Liberty <mailto:mliberty@eng.ucsd.edu>
+
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+
+### VLSI Power Planning and Analysis
+
+  * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
+  * **Skills**: C++, tcl, VLSI Layout
+  * **Difficulty**: Medium
+  * **Mentor**: Mehdi Saligane <mailto:mehdi@umich.edu>, Ming-Hung  <mailto:minghung@umich.edu>
+
+Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
+
+###  Enhance project website
+
+  * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
+  * **Skills**: Web development experience
+  * **Difficulty**: Easy
+  * **Mentor**: Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+
+The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
+
+###  Demos and Tutorials
+
+  * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
+  * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
+  * **Difficulty**: Medium
+  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>, Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>
+
+For [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts), develop demos showing:
+The basic usage of OpenROAD features and flow
+GUI visualizations
+Different options and how they impact the results
+Different design styles and particular challenges
+
+### Comprehensive flow testing
+
+  * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
+  * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
+  * **Difficulty**: Medium
+  * **Mentor**: Tom Spyrou <mailto:aspyrou@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+
+Add open sourced designs to existing test suite for the OpenROAD flow to expand coverage and technology capabilities. This includes design specification, configuration and creation of all necessary files for regression testing. Souruggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
+
+### Enhance GUI features
+
+  * **Topics**: `GUI`, `Visualization`, `User Interfaces`
+  * **Skills**:  C++, Qt
+  * **Difficulty**: Medium
+  * **Mentor**: Matt Liberty <mailto:<mailto:mliberty@eng.ucsd.edu>>, Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>
+
+For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
+
+### Automate OpenDB code Generation
+
+  * **Topics**: `Database`, `EDA`
+  * **Skills**:  C++, Python, JSON, Jinja templating
+  * **Difficulty**: Medium
+  * **Mentor**: Matt Liberty <mailto:mliberty@eng.ucsd.edu>, Tom Spyrou <mailto:aspyrou@eng.ucsd.edu>
+
+For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
+
+### Implement an NLP based AI bot
+
+  * **Topics**: `AI`, `ML`, `Analytics`
+  * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
+  * **Difficulty**: Medium
+  * **Mentor**: Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+
+The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
