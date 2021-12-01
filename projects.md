@@ -593,9 +593,9 @@ A very common problem in ML (or generic data) Serving is exporting companion :Ke
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
 [OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy access of design kits and software access for VLSI designers.
 
-OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
+OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (less than 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
 
-OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored EFabless [Efabless](efabless.com) that has made possible >140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is (https://github.com/The-OpenROAD-Project/OpenROAD).
+OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
 ### Static RAM Generator
 
