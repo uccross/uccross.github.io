@@ -5,7 +5,7 @@
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
 This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a Open Source Research Experience (OSRE) mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
-https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *UC-affiliated mentors interested in OSRE'22 can add project ideas to this page. See instructions on our [READ ME](https://github.com/uccross/uccross.github.io/blob/master/README.md) file. If you have questions about being a mentor, go to the [Mentor Info Page](https://cross.ucsc.edu/2022-osre/osre2022mentor.html)*
 
@@ -591,7 +591,7 @@ The defacto industry standard for scheduling and reacting to updates in Data Pro
 A very common problem in ML (or generic data) Serving is exporting companion :KeyValue" data from the lake and consuming this data at serving/inference/request time. Often this pattern is called a "Feature Store" but in has many other use cases. In general this data goes to Dynamo or some other full fledged database, which is overkill for the use case, as the data always follows a Write Once Read Many (WORM) pattern. This project attempts to solve the problem by, at training/processing time, taking the dataset or Spark Dataframe and mapping it into shards of embeddable databases (ie Sqlite or RocksDB) then just load the database files into a service when they're needed.
 
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
-[OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy acess of design kits and software access for VLSI designers.
+[OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy access of design kits and software access for VLSI designers.
 
 OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (< 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
 
