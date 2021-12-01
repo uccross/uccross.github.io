@@ -51,8 +51,17 @@ Table of Contents:
       * [Popper / Drone workflow translation](#popper--drone-workflow-translation)
       * [Event Based Job Scheduler](#event-based-job-scheduler)
       * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
+   * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
+      * [Static RAM Generator](#static-ram-generator)
+      * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
+      * [Enhance project website](#enhance-project-website)
+      * [Demos and Tutorials](#demos-and-tutorials)
+      * [Comprehensive flow testing](#comprehensive-flow-testing)
+      * [Enhance GUI features](#enhance-gui-features)
+      * [Automate OpenDB code Generation](#automate-opendb-code-generation)
+      * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
 
-<!-- Added by: runner, at: Wed Dec  1 04:15:55 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  1 04:47:42 UTC 2021 -->
 
 <!--te-->
 
