@@ -5,7 +5,9 @@
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
 This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a Open Source Research Experience (OSRE) mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
-https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+
+*UC-affiliated mentors interested in OSRE'22 can add project ideas to this page. See instructions on our [READ ME](https://github.com/uccross/uccross.github.io/blob/master/README.md) file. If you have questions about being a mentor, go to the [Mentor Info Page](https://cross.ucsc.edu/2022-osre/osre2022mentor.html)*
 
 The Open Source Research Experience Program (https://cross.ucsc.edu/2022-osre/index.html) will be accepting student project application in February/March 2022. We will have exact deadlines published by January 2022. Connected to that CROSS will be applying to be a mentor organization under the Google Summer of Code for 2022 and hope to be part of that program again. The project ideas below can be utilized in applying for either of these programs.
 
@@ -51,8 +53,17 @@ Table of Contents:
       * [Popper / Drone workflow translation](#popper--drone-workflow-translation)
       * [Event Based Job Scheduler](#event-based-job-scheduler)
       * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
+   * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
+      * [Static RAM Generator](#static-ram-generator)
+      * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
+      * [Enhance project website](#enhance-project-website)
+      * [Demos and Tutorials](#demos-and-tutorials)
+      * [Comprehensive flow testing](#comprehensive-flow-testing)
+      * [Enhance GUI features](#enhance-gui-features)
+      * [Automate OpenDB code Generation](#automate-opendb-code-generation)
+      * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
 
-<!-- Added by: runner, at: Wed Dec  1 04:15:55 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  1 20:31:38 UTC 2021 -->
 
 <!--te-->
 
