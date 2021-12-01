@@ -618,7 +618,7 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
   * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
   * **Skills**: Web development experience
   * **Difficulty**: Easy
-  * **Mentor**: Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+  * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
 
 The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
 
@@ -627,7 +627,7 @@ The [OpenROAD](https://theopenroadproject.org/) project serves a wide user commu
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
   * **Difficulty**: Medium
-  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>, Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>
+  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>, Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>
 
 For [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts), develop demos showing:
 The basic usage of OpenROAD features and flow
@@ -649,7 +649,7 @@ Add open sourced designs to existing test suite for the OpenROAD flow to expand 
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
   * **Difficulty**: Medium
-  * **Mentor**: Matt Liberty <mailto:<mailto:mliberty@eng.ucsd.edu>>, Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>
+  * **Mentor**: Matt Liberty <mailto:<mailto:mliberty@eng.ucsd.edu>>, Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
 
@@ -667,6 +667,6 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
   * **Difficulty**: Medium
-  * **Mentor**: Vitor Bandeira <mailto:vbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+  * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
