@@ -551,7 +551,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
   * **Difficulty**: Medium
-  * **Mentor**: Farid Zakaria, [Carlos Maltzahn](https://people.ucsc.edu/carlosm)
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
 
