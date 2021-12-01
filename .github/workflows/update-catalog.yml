@@ -1,7 +1,7 @@
 on:
   push:
-    branches:
-      - master
+    paths: ['explore/input_lists.json']
+    branches: ['master']
 
 jobs:
   update-catalog:
