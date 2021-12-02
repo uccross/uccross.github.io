@@ -1,5 +1,5 @@
 on:
-  commit:
+  page_build:
     paths: ['projects.md']
     
 jobs:
