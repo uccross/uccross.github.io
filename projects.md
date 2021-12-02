@@ -389,7 +389,7 @@ to reorganize it and rewrite some sections as part of this effort.
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
