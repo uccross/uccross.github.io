@@ -51,8 +51,6 @@ Table of Contents:
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [Popper](#popper)
       * [Popper / Drone workflow translation](#popper--drone-workflow-translation)
-      * [Event Based Job Scheduler](#event-based-job-scheduler)
-      * [Simple Write-Once-Read-Many Feature Store](#simple-write-once-read-many-feature-store)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
       * [Static RAM Generator](#static-ram-generator)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
@@ -63,7 +61,7 @@ Table of Contents:
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
       * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
 
-<!-- Added by: runner, at: Wed Dec  1 21:07:29 UTC 2021 -->
+<!-- Added by: runner, at: Thu Dec  2 03:16:27 UTC 2021 -->
 
 <!--te-->
 
