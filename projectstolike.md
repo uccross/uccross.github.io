@@ -66,6 +66,8 @@ Table of Contents:
 <!--te-->
 
 ## LiveHD
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
@@ -233,6 +235,8 @@ elimination in LNAST. There are several reasons:
 * The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 
 ## Eusocial Storage Devices
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Eusocial Storage Devices.)
+
 
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 
@@ -266,6 +270,8 @@ Since the last decade, the slowing down in the performance improvement of genera
 
 
 ## Open Source Autonomous Vehicle Controller
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
 
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
@@ -322,6 +328,8 @@ Implement an optimal state estimation algorithm from a model.  This model can be
 Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
 ## SkyhookDM
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
 [SkyhookDM](http://www.skyhookdm.com)
 
@@ -438,6 +446,8 @@ https://arxiv.org/pdf/1812.03149.pdf
 
 
 ## SkyhookDM/HDF5
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/HDF5.)
+
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
 
@@ -525,6 +535,8 @@ Instead of adding index and query operations directly to HDF5, this project woul
 database and array-oriented I/O with HDF5.
 
 ## SkyhookDM/Proactive Data Containers (PDC)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/Proactive Data Containers&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/Proactive Data Containers.)
+
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
@@ -542,6 +554,8 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 
 ## CephFS
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  CephFS&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project CephFS.)
+
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
@@ -558,6 +572,8 @@ The key idea of this project is to reduce the frequency of MDS requests by offlo
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
 ## Popper
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Popper&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Popper.)
+
 
 [Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 
@@ -571,6 +587,8 @@ Once the basic functionality is implemented, this project can be expanded to add
 [Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
 
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 [OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy access of design kits and software access for VLSI designers.
 
 OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (less than 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
