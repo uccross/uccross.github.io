@@ -1,7 +1,7 @@
 on:
   commit:
     paths: ['projects.md']
-    
+
 jobs:
   update-projectstoc:
     runs-on: ubuntu-20.04
@@ -18,7 +18,7 @@ jobs:
           rm gh-md-toc
       - name: generate-like-links
         run: |
-          ./likeme projects.md > projectstolike.md
+          cat projects.md | ./likeme OSRE22 > projectstolike.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Auto update TOC and projectstolike
