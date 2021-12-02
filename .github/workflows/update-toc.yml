@@ -1,5 +1,5 @@
 on:
-  page_build:
+  pull_request:
     paths: ['projects.md']
     
 jobs:
