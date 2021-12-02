@@ -568,7 +568,7 @@ Once the basic functionality is implemented, this project can be expanded to add
   * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
   * **Skills**: YAML, Python, Docker
   * **Difficulty**: Easy
-  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm)
+  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
 
 [Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
 
