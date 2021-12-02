@@ -1,8 +1,7 @@
 on:
-  push:
+  commit:
     paths: ['projects.md']
-    branches: ['master']
-
+    
 jobs:
   update-projectstoc:
     runs-on: ubuntu-20.04
