@@ -656,7 +656,7 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 
 ## Polyphorm / PolyPhy
 
-[Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based methodology and software for reconstructing and visualizing optimal transport networks defined over sparse data. Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html).
+[Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing optimal transport networks defined over sparse data. Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html).
 
 **PolyPhy** is a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wider audience: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy.
 
