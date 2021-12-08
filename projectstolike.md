@@ -39,13 +39,13 @@ Table of Contents:
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
       * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
-   * [SkyhookDM/HDF5](#skyhookdmhdf5)
+   * [HDF5](#hdf5)
       * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
       * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
       * [Column-storage in HDF5](#column-storage-in-hdf5)
       * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
       * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
-   * [SkyhookDM/Proactive Data Containers (PDC)](#skyhookdmproactive-data-containers-pdc)
+   * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
@@ -65,7 +65,7 @@ Table of Contents:
          * [The goals of this project are:](#the-goals-of-this-project-are)
          * [Machine Learning Integration](#machine-learning-integration)
 
-<!-- Added by: runner, at: Wed Dec  8 06:23:07 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  8 06:53:51 UTC 2021 -->
 
 <!--te-->
 
@@ -449,8 +449,8 @@ https://arxiv.org/pdf/1812.03149.pdf
 -------
 
 
-## SkyhookDM/HDF5
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/HDF5.)
+## HDF5
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
 
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
@@ -538,8 +538,8 @@ Instead of adding index and query operations directly to HDF5, this project woul
 [RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
 database and array-oriented I/O with HDF5.
 
-## SkyhookDM/Proactive Data Containers (PDC)
-💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM/Proactive Data Containers&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM/Proactive Data Containers.)
+## Proactive Data Containers (PDC)
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Proactive Data Containers&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Proactive Data Containers.)
 
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
