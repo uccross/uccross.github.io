@@ -441,7 +441,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 -------
 
 
-## SkyhookDM/HDF5
+## HDF5
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
 
