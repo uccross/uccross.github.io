@@ -64,8 +64,10 @@ Table of Contents:
       * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
          * [The goals of this project are:](#the-goals-of-this-project-are)
          * [Machine Learning Integration](#machine-learning-integration)
+   * [FasTensor](#fastensor)
+      * [Continuous Integration](#continuous-integration)
 
-<!-- Added by: runner, at: Wed Dec  8 06:53:51 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  8 17:38:03 UTC 2021 -->
 
 <!--te-->
 
@@ -76,6 +78,8 @@ Table of Contents:
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
 ### Tree sitter Pyrope
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -105,6 +109,8 @@ In addition to the packages, there should be an iterator that use the incrementa
 
 
 ### Mockturtle
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -132,6 +138,8 @@ The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD.
     * memories, luts
 
 ### Query Shell
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -159,6 +167,8 @@ As an interesting extension would be to have some simple embedded language (TCL 
 easily and allow to build functions/libraries.
 
 ### Lgraph and LNAST check pass
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -183,6 +193,8 @@ further expanded. Some checks:
 
 
 ### unbitwidth
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -218,6 +230,8 @@ module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
 
 ### LNAST Opt
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  LiveHD&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project LiveHD.)
+
 
 |   |   |
 |---|---|
@@ -245,6 +259,8 @@ elimination in LNAST. There are several reasons:
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 
 ### Evaluating user space networking stacks on SmartNICs
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Eusocial Storage Devices.)
+
 
  - **Skills:** C, Bash, performance evaluation tools (Linux perf, SystemTap, etc.)
  - **Difficulty:** Easy
@@ -254,6 +270,8 @@ The BlueField DPU as an example of SmartNICs is available nowadays. However, the
  - References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
 
 ### Dynamic function injection for RocksDB
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Eusocial Storage Devices.)
+
 
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
@@ -264,6 +282,8 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
 
 ### Demonstrating a composable storage system accelerated by memory semantic technologies
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Eusocial Storage Devices&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Eusocial Storage Devices.)
+
 
  - **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
  - **Difficulty:** Challenging
@@ -286,6 +306,8 @@ Projects for the OSAVC:
 
 
 ### Vehicle/Craft sensor driver development
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
  - **Topics**: Driver code to integrate sensor to a microcontroller
  - **Skills**: C, I2C, SPI, UART interfaces
  - **Difficulty** Easy
@@ -295,6 +317,8 @@ Projects for the OSAVC:
 Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller.
 
 ### IMU calibration algorithm development
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
  - **Topics**: Least Squares, DCM,
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Medium
@@ -304,6 +328,8 @@ Help develop a sensor library for use in autonomnous vehicles.  Possible sensors
 The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
 
 ### Path finding algorithm using OpenCV
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
  - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
  - **Difficulty** Medium
@@ -314,6 +340,8 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  For example
 
 
 ### State estimation/sensor fusion algorithm development
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
  - **Topics**: Kalman filtering, Mahoney
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Challenging
@@ -323,6 +351,8 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  For example
 Implement an optimal state estimation algorithm from a model.  This model can be derived from a Kalman filter or some other state estimation filter (e.g., Mahoney filter).  THe model takes sensor readings as input and provides an estimate of the state of a vehicle. Finally, convert the model to standard C using the Simulink code generation or implement in Python (for use on a single board computer, e.g., Raspberry Pi)
 
 ### Vehicle dynamic model development
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Open Source Autonomous Vehicle Controller&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Open Source Autonomous Vehicle Controller.)
+
  - **Topics**: Dynamic modeling, control theory
  - **Skills**: C, Matlab/Simulink
  - **Difficulty** Challenging
@@ -349,6 +379,8 @@ data returned to the client.
 -------------------
 
 ### Add Ability to create and save views from Datasets
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++
@@ -366,6 +398,8 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 -------
 
 ### Ability to Push back query execution to the Client in case of overloaded OSDs
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `Arrow`, `query opererators`, `push down computation`
   - **Skills**: C++
@@ -382,6 +416,8 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
 -------
 
 ### Port wiki to ReadTheDocs or other documentation platform
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `Documentation`, `wiki`, `markdown`
   - **Skills**: Markdown, documentation, html
@@ -397,6 +433,8 @@ to reorganize it and rewrite some sections as part of this effort.
 -------
 
 ### Integrating Delta Lake on top of SkyhookDM
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
@@ -414,6 +452,8 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 
 
 ### Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
@@ -431,6 +471,8 @@ https://arxiv.org/pdf/2103.01871.pdf
 
 -------
 ### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  SkyhookDM&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project SkyhookDM.)
+
 
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
@@ -467,6 +509,8 @@ The HDF5 technology suite includes:
 -------------------
 
 ### HDF5 - Apache Arrow Integration
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
+
 
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
@@ -483,6 +527,8 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
 -------
 
 ### HDF5 - Ceph RADOS Integration
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
+
 
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
@@ -498,6 +544,8 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
 -------
 
 ### Column-storage in HDF5
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
+
 
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
@@ -511,6 +559,8 @@ primarily access subsets of the fields in an HDF5 dataset.
 -------
 
 ### Sparse data storage in HDF5
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
+
 
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
@@ -525,6 +575,8 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
 -------
 
 ### Metadata search in HDF5 with Database Solutions
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  HDF5&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project HDF5.)
+
 
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
@@ -548,6 +600,8 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 -------------------
 
 ### Python interface to an object-centric data management system
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Proactive Data Containers&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Proactive Data Containers.)
+
 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
   * **Skills**: Python, C, PDC
@@ -563,6 +617,8 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  CephFS&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project CephFS.)
+
 
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
@@ -582,6 +638,8 @@ Once the basic functionality is implemented, this project can be expanded to add
 [Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 
 ### Popper / Drone workflow translation
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Popper&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Popper.)
+
 
   * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
   * **Skills**: YAML, Python, Docker
@@ -600,6 +658,8 @@ OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and en
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
 ### Static RAM Generator
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
@@ -609,6 +669,8 @@ OpenROAD is the key enabler of successful Chip initiatives like the Google-spons
 Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
 
 ### VLSI Power Planning and Analysis
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
@@ -618,6 +680,8 @@ Design of  static RAMs in VLSI designs for good performance and area is generall
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
 ###  Enhance project website
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
   * **Skills**: Web development experience
@@ -627,6 +691,8 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
 The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
 
 ###  Demos and Tutorials
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
@@ -640,6 +706,8 @@ Different options and how they impact the results
 Different design styles and particular challenges
 
 ### Comprehensive flow testing
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
@@ -649,6 +717,8 @@ Different design styles and particular challenges
 Add open sourced designs to existing test suite for the OpenROAD flow to expand coverage and technology capabilities. This includes design specification, configuration and creation of all necessary files for regression testing. Souruggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
 
 ### Enhance GUI features
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
@@ -658,6 +728,8 @@ Add open sourced designs to existing test suite for the OpenROAD flow to expand 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
 
 ### Automate OpenDB code Generation
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `Database`, `EDA`
   * **Skills**:  C++, Python, JSON, Jinja templating
@@ -667,6 +739,8 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
 
 ### Implement an NLP based AI bot
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+
 
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
@@ -682,6 +756,8 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 AsterixDB is an open source parallel big-data management system [http://asterixdb.apache.org/]. AsterixDB is a well-established Apache project that has been active in research for more than 10 years. It provides a flexible data model that supports modern NoSQL applications with a powerful query processor that can scale to billions of records and terabytes of data. Users can interact with AsterixDB through a power and easy to use declarative query language, SQL++, which provides a rich set of data types including timestamps, time intervals, text, and geospatial, in addition to traditional numerical and Boolean data types.
 
 ### Geospatial Data Science on AsterixDB
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Apache AsterixDB&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Apache AsterixDB.)
+
 
 - *Topics*: Data science, SQL++, documentation
 - *Skills*: Writing, Spreadsheets
@@ -704,4 +780,23 @@ Build a data science project using AsterixDB that analyzes geospatial data among
 
 #### Machine Learning Integration
 As a bonus task, and depending on the progress of the project, we can explore the integration of machine learning with AsterixDB through Python UDFs. We will utilize the AsterixDB Python integration through [user-defined functions](https://asterixdb.apache.org/docs/0.9.7/udf.html) to connect AsterixDB backend with [scikit-learn](https://scikit-learn.org/stable/index.html) to build some unsupervised and supervised models for the data. For example, we can cluster the crimes based on their location and other attributes to find interesting patterns or hotspots.
+
+## FasTensor
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  FasTensor&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project FasTensor.)
+
+[FasTensor](https://sdm.lbl.gov/fastensor/) is a parallel execution engine for user-defined functions on multidimensional arrays.  The user-defined functions follow the stencil metaphor used for scientific computing and is effective for expressing a wide range of computations for data analyses, including common aggregation operations from database management systems and advanced machine learning pipelines.  FasTensor execution engine exploits the structural-locality in the multidimensional arrays to automate data management operations such as file I/O, data partitioning, communication, parallel execution, and so on.
+
+### Continuous Integration
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  FasTensor&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project FasTensor.)
+
+
+  * **Topics**: `Data Management`, `Analytics`
+  * **Skills**:   C++, github
+  * **Difficulty**: Easy
+  * **Mentor**: [John Wu](mailto:kwu@lbl.gov), [Bin Dong](mailto:dbin@lbl.gov), [Suren Byna](mailto:sbyna@lbl.gov)
+ 
+- Develop a test suite for the public API of FasTensor
+- Automate execution of the test suite
+- Document the continuous integration process
+- Develop performance testing suite
 

@@ -64,8 +64,10 @@ Table of Contents:
       * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
          * [The goals of this project are:](#the-goals-of-this-project-are)
          * [Machine Learning Integration](#machine-learning-integration)
+   * [FasTensor](#fastensor)
+      * [Continuous Integration](#continuous-integration)
 
-<!-- Added by: runner, at: Wed Dec  8 06:53:51 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  8 17:38:03 UTC 2021 -->
 
 <!--te-->
 
