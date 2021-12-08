@@ -14,7 +14,7 @@ jobs:
           chmod a+x gh-md-toc
       - name: generate-toc
         run: |
-          ./gh-md-toc --insert --no-backup --maxdepth 3 projects.md
+          ./gh-md-toc --insert --no-backup projects.md
           rm gh-md-toc
       - name: generate-like-links
         run: |
