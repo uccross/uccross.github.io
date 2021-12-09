@@ -666,7 +666,7 @@ AsterixDB is an open source parallel big-data management system [http://asterixd
 ### Geospatial Data Science on AsterixDB
 
 - *Topics*: Data science, SQL++, documentation
-- *Skills*: Writing, Spreadsheets
+- *Skills*: SQL, Writing, Spreadsheets
 - *Difficulty*: Medium
 - *Mentors*: [Ahmed Eldawy](mailto:eldawy@ucr.edu), [Akil Sevim](mailto:asevi006@ucr.edu)
 
