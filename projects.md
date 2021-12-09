@@ -723,24 +723,42 @@ Specific tasks:
 ### Continuous Delivery
 
 - **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
-- **Skills:** experience with CI/CD, Github, Python package deployment
+- **Skills:** experience with CI/CD, GitHub, Python package deployment
 - **Difficulty:** Medium
 
 The objective is to setup a CI/CD pipeline that automates the build testing and deployment of the software. The resulting process needs to be robust to contributor errors and work in the distributed conditions of a diverse contributor base.
 
 Specific tasks:
-- Implement and configure continuous building, testing, merging and deployment for PolyPhy. Tailor the pipeline to the GitHub reposity and the project webpage.
+- Automate continuous building, testing, merging and deployment for PolyPhy in GitHub.
+- Publish the CI/CD metrics and build assets to the project webpage.
 - Work with other contributors in educating them about the best practices of using the developed CI/CD pipeline.
 - Add support for automated packaging using common management systems (pip, Anaconda).
 
-### XXX
+### Data Visualization
 
-- **Topics:** 
-- **Skills:**
-- **Difficulty:**
+- **Topics:** `Interactive Visualization` `Data Analytics` `3D Rendering`
+- **Skills:** basic graphics theory and math, Python, GPU programming, (previous experience visualizing novel datasets)
+- **Difficulty:** Hard
 
-### XXX
+Data visualization is one of the core components of PolyPhy, as it provides a real-time overview of the underlying MCPM simulation. Through the feedback provided by the visualization, PolyPhy users can adjust the simulation model and make new findings about the dataset. Various operations over the reconstructed data (e.g. spatial searching) as well as important statistical summaries also benefit from clear visual presentation.
 
-- **Topics:** 
-- **Skills:**
-- **Difficulty:**
+Specific tasks:
+- Develop novel ways of visualizing data in PolyPhy.
+- Work with different data modalities - point clouds, graphs, scalar and vector fields.
+- Add support for visualizing metadata, such as annotations and labels.
+- Create UI elements for plotting statistical summaries computed in real-time.
+
+### Graph Extraction
+
+- **Topics:** `Graph Theory` `Data Science`
+- **Skills:** familiarity with discrete math and graph theory, Python, (GPU programming)
+- **Difficulty:** Hard
+
+Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces structures with network-like characteristics, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field.
+
+Specific tasks:
+- Become familiar with different algorithms for graph growing and skeleton extraction.
+- Implement the most suitable method in PolyPhy, interpreting the source scalar field as a throughput (transport) network. The weights of the resulting graph need to reflect the source throughputs between the respective node locations.
+- Implement common graph operations, e.g. hierarchical clustering and reduction, shortest path between two nodes, range queries.
+- Optimize the runtime of the implemented methods.
+- Work with the visualization developer (see above) to visualize the resulting graphs.
