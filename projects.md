@@ -688,13 +688,22 @@ Develop visual content for the project using its main themes: nature-inspired co
 Specific tasks:
 - Work with mentors on understanding the context of the project.
 - Design imagery and other graphical elements to visually (re-)present PolyPhy.
+- Work with the technical writer (see below) in designing a coherent story.
 - Work with the web developer (see above) in creating a coherent and organic presentation.
 
 ### Technical Writing
 
-- **Topics:** 
-- **Skills:**
-- **Difficulty:**
+- **Topics:** `Writing` `Documentation` `Storytelling`
+- **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
+- **Difficulty:** Easy-Hard
+
+Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story. The difficulty of the project is scalable.
+
+Specific tasks:
+- Work with mentors on understanding the context of the project.
+- Write different pages of the project website.
+- Write and/or edit PolyPhy's documentation.
+- Work with the visual designer (see above) in designing a coherent story.
 
 ### XXX
 
