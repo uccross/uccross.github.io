@@ -697,7 +697,7 @@ Specific tasks:
 - **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
 - **Difficulty:** Easy-Hard
 
-Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story. The difficulty of the project is scalable.
+Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story, as well as its informative content. The difficulty of the project is scalable.
 
 Specific tasks:
 - Work with mentors on understanding the context of the project.
@@ -705,11 +705,20 @@ Specific tasks:
 - Write and/or edit PolyPhy's documentation.
 - Work with the visual designer (see above) in designing a coherent story.
 
-### XXX
+### Data I/O
 
-- **Topics:** 
-- **Skills:**
-- **Difficulty:**
+- **Topics:** `I/O Operations` `File Conversion` `Numerics`
+- **Skills:** Python, experience working with scientific or statistical data, good debugging skills
+- **Difficulty:** Medium-Hard
+
+By default, PolyPhy operates with an unordered set of points as an input and scalar fields (float ndarrays) as an output, but others are applicable as well. Design and implement interfaces to load and export different data formats (CSV, OBJ, HDF5, FITS...) and modalities (points, meshes, density fields). The difficulty of the project can be scaled based on contributor's interest.
+
+Specific tasks:
+- Research which modalities are used by members of the target communities.
+- Implement modular loaders for the inputs and an interface to PolyPhy core.
+- Implement exporters for simulation datasets and visualization captures.
+- Write testing code for the above.
+- Integrate external packages as necessary.
 
 ### XXX
 
