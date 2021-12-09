@@ -656,12 +656,66 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 
 ## Polyphorm / PolyPhy
 
-[Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing optimal transport networks defined over sparse data. Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html).
+[Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing *optimal transport networks* defined over sparse data. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html). Under the hood, Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh.
 
-**PolyPhy** is a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wider audience: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy.
+**PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research.
 
 **Primary mentor:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
-### 
+### Develop Project Website
 
+- **Topics:** `Web Development` `Dynamic Updates` `UX`
+- **Skills:** web development experience, good communicator, (HTML/CSS), (Javascript)
+- **Difficulty:** Medium
 
+Develop a clean and welcoming website for the project. The organization needs to reflect the needs of PolyPhy users, but also provide a convenient entry point for interested project contributors. No excessive pop-ups or webjunk.
+
+Specific tasks:
+- Work with mentors on understanding the context of the project.
+- Port the contents of the [repository page](https://github.com/CreativeCodingLab/Polyphorm) to a dedicated website.
+- Design the structure of the website according to best OS practices.
+- Work with the visual designer (see below) in creating a coherent and organic presentation.
+- Interatively link important metrics from the project dev environment as well as documentation.
+
+### Visual Design and Experience
+
+- **Topics:** `Design` `Art` `UX`
+- **Skills:** vector and bitmap drawing, sense for spatial symmetry and framing, (interactive content creation), (animation)
+- **Difficulty:** Medium
+
+Develop visual content for the project using its main themes: nature-inspired computation, biomimetics, interconnected structures. Aid in designing visual structure of the website as well as other public-facing artifacts.
+
+Specific tasks:
+- Work with mentors on understanding the context of the project.
+- Design imagery and other graphical elements to visually (re-)present PolyPhy.
+- Work with the web developer (see above) in creating a coherent and organic presentation.
+
+### Technical Writing
+
+- **Topics:** 
+- **Skills:**
+- **Difficulty:**
+
+### XXX
+
+- **Topics:** 
+- **Skills:**
+- **Difficulty:**
+
+### XXX
+
+- **Topics:** 
+- **Skills:**
+- **Difficulty:**
+
+### XXX
+
+- **Topics:** 
+- **Skills:**
+- **Difficulty:**
+
+### XXX
+
+- **Topics:** 
+- **Skills:**
+- **Difficulty:**
