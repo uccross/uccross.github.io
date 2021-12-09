@@ -660,13 +660,12 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 
 **PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research.
 
-**Primary mentor:** [Oskar Elek](mailto:oelek@ucsc.edu)
-
-### Develop Project Website
+### Develop website for PolyPhy
 
 - **Topics:** `Web Development` `Dynamic Updates` `UX`
 - **Skills:** web development experience, good communicator, (HTML/CSS), (Javascript)
-- **Difficulty:** Medium
+- **Difficulty:** Moderate
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Develop a clean and welcoming website for the project. The organization needs to reflect the needs of PolyPhy users, but also provide a convenient entry point for interested project contributors. No excessive pop-ups or webjunk.
 
@@ -675,13 +674,14 @@ Specific tasks:
 - Port the contents of the [repository page](https://github.com/CreativeCodingLab/Polyphorm) to a dedicated website.
 - Design the structure of the website according to best OS practices.
 - Work with the visual designer (see below) in creating a coherent and organic presentation.
-- Interatively link important metrics from the project dev environment as well as documentation.
+- Interactively link important metrics from the project dev environment as well as documentation.
 
-### Visual Design and Experience
+### Design visual experience for PolyPhy's website and presentations
 
 - **Topics:** `Design` `Art` `UX`
 - **Skills:** vector and bitmap drawing, sense for spatial symmetry and framing, (interactive content creation), (animation)
-- **Difficulty:** Medium
+- **Difficulty:** Moderate
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Develop visual content for the project using its main themes: nature-inspired computation, biomimetics, interconnected structures. Aid in designing visual structure of the website as well as other public-facing artifacts.
 
@@ -691,25 +691,27 @@ Specific tasks:
 - Work with the technical writer (see below) in designing a coherent story.
 - Work with the web developer (see above) in creating a coherent and organic presentation.
 
-### Technical Writing
+### Write PolyPhy's technical story and content
 
 - **Topics:** `Writing` `Documentation` `Storytelling`
 - **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
-- **Difficulty:** Easy-Hard
+- **Difficulty:** Easy-Challenging
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story, as well as its informative content. The difficulty of the project is scalable.
 
 Specific tasks:
 - Work with mentors on understanding the context of the project.
 - Write different pages of the project website.
-- Write and/or edit PolyPhy's documentation.
+- Write and edit PolyPhy's documentation.
 - Work with the visual designer (see above) in designing a coherent story.
 
-### Data I/O
+### Implement heterogeneous data I/O ops
 
 - **Topics:** `I/O Operations` `File Conversion` `Numerics`
 - **Skills:** Python, experience working with scientific or statistical data, good debugging skills
-- **Difficulty:** Medium-Hard
+- **Difficulty:** Moderate-Challenging
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 By default, PolyPhy operates with an unordered set of points as an input and scalar fields (float ndarrays) as an output, but others are applicable as well. Design and implement interfaces to load and export different data formats (CSV, OBJ, HDF5, FITS...) and modalities (points, meshes, density fields). The difficulty of the project can be scaled based on contributor's interest.
 
@@ -720,11 +722,12 @@ Specific tasks:
 - Write testing code for the above.
 - Integrate external packages as necessary.
 
-### Continuous Delivery
+### Setup CI/CD for PolyPhy
 
 - **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
 - **Skills:** experience with CI/CD, GitHub, Python package deployment
-- **Difficulty:** Medium
+- **Difficulty:** Moderate
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 The objective is to setup a CI/CD pipeline that automates the build testing and deployment of the software. The resulting process needs to be robust to contributor errors and work in the distributed conditions of a diverse contributor base.
 
@@ -734,27 +737,29 @@ Specific tasks:
 - Work with other contributors in educating them about the best practices of using the developed CI/CD pipeline.
 - Add support for automated packaging using common management systems (pip, Anaconda).
 
-### Data Visualization
+### Create new data visualization regimes
 
 - **Topics:** `Interactive Visualization` `Data Analytics` `3D Rendering`
 - **Skills:** basic graphics theory and math, Python, GPU programming, (previous experience visualizing novel datasets)
-- **Difficulty:** Hard
+- **Difficulty:** Challenging
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Data visualization is one of the core components of PolyPhy, as it provides a real-time overview of the underlying MCPM simulation. Through the feedback provided by the visualization, PolyPhy users can adjust the simulation model and make new findings about the dataset. Various operations over the reconstructed data (e.g. spatial searching) as well as important statistical summaries also benefit from clear visual presentation.
 
 Specific tasks:
-- Develop novel ways of visualizing data in PolyPhy.
-- Work with different data modalities - point clouds, graphs, scalar and vector fields.
+- Develop novel ways of visualizing scientific data in PolyPhy.
+- Work with diverse data modalities - point clouds, graphs, scalar and vector fields.
 - Add support for visualizing metadata, such as annotations and labels.
 - Create UI elements for plotting statistical summaries computed in real-time.
 
-### Graph Extraction
+### Discrete graph extraction from simulated scalar fields
 
 - **Topics:** `Graph Theory` `Data Science`
 - **Skills:** familiarity with discrete math and graph theory, Python, (GPU programming)
-- **Difficulty:** Hard
+- **Difficulty:** Challenging
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
-Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces structures with network-like characteristics, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field.
+Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces structures with latent network-like characteristics, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field.
 
 Specific tasks:
 - Become familiar with different algorithms for graph growing and skeleton extraction.
