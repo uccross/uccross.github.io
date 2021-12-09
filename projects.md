@@ -720,11 +720,18 @@ Specific tasks:
 - Write testing code for the above.
 - Integrate external packages as necessary.
 
-### XXX
+### Continuous Delivery
 
-- **Topics:** 
-- **Skills:**
-- **Difficulty:**
+- **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
+- **Skills:** experience with CI/CD, Github, Python package deployment
+- **Difficulty:** Medium
+
+The objective is to setup a CI/CD pipeline that automates the build testing and deployment of the software. The resulting process needs to be robust to contributor errors and work in the distributed conditions of a diverse contributor base.
+
+Specific tasks:
+- Implement and configure continuous building, testing, merging and deployment for PolyPhy. Tailor the pipeline to the GitHub reposity and the project webpage.
+- Work with other contributors in educating them about the best practices of using the developed CI/CD pipeline.
+- Add support for automated packaging using common management systems (pip, Anaconda).
 
 ### XXX
 
