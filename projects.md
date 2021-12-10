@@ -658,7 +658,7 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 
 [Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing *optimal transport networks* defined over sparse data. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html). Under the hood, Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh.
 
-**PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research.
+**PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research. Ultimately, PolyPhy will become a tool for discovering connections between different disciplines by creating quantitatively comparable structural analytics.
 
 ### Develop website for PolyPhy
 
@@ -711,15 +711,17 @@ Specific tasks:
 
 - **Topics:** `Video Presentation` `Tutorials` `Didactics`
 - **Skills:** video editing, creating educational content, communication, (native or fluent in another language)
-- **Difficulty:** Moderate
+- **Difficulty:** Easy-Moderate
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+
+Create a public face for PolyPhy that reflects its history, context, and teaches its functionality to users in different degrees of familiarity.
 
 Specific tasks:
 - Work with mentors on understanding the context and history of the project.
 - Interview diverse project contributors.
 - Create a video documenting PolyPhy's history, with roots in astronomy, complex systems, fractals.
 - Create a set of tutorial videos for starting and intermediate PolyPhy users.
-
+- Create an accessible template for future tutorials.
 
 ### Implement heterogeneous data I/O ops
 
@@ -751,6 +753,21 @@ Specific tasks:
 - Publish the CI/CD metrics and build assets to the project webpage.
 - Work with other contributors in educating them about the best practices of using the developed CI/CD pipeline.
 - Add support for automated packaging using common management systems (pip, Anaconda).
+
+### Refine PolyPhy's UI and develop new functional elements
+
+- **Topics:** `UI/UX` `Visual Experience`
+- **Skills:** Python programming, UI/UX development experience, (knowledge of graphics)
+- **Difficulty:** Moderate
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+
+The key feature of PolyPhy is its interactivity. By interacting with the underlying simulation model, the user can adjust its parameters in real time and respond to its behavior. For instance, an astrophysics expert can load a dataset of 100k galaxies and reconstruct the large-scale structure of the intergalactic medium. A responsive UI combined with real-time visualization allows them to judge the fidelity of the reconstruction and make necessary changes.
+
+Specific tasks:
+- Implement a platform-agnostic UI to house PolyPhy's main rendering context as well as secondary analytics.
+- Work with the visualization developer (see below) to integrate the rendering functionality.
+- Optimize to UI's performance.
+- Test the implementation on different OS platforms.
 
 ### Create new data visualization regimes
 
