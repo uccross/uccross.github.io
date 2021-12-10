@@ -695,23 +695,24 @@ Specific tasks:
 
 - **Topics:** `Writing` `Documentation` `Storytelling`
 - **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
-- **Difficulty:** Easy-Challenging
+- **Difficulty:** Moderate-Challenging
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
-Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story, as well as its informative content. The difficulty of the project is scalable.
+Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story, as well as major portions of technical documentation that matches it. The difficulty of the project is scalable.
 
 Specific tasks:
 - Work with mentors on understanding the context of the project.
 - Write different pages of the project website.
-- Write and edit PolyPhy's documentation.
+- Work with mentors to improve project's written community practices (diversity, communication).
+- Write and edit narrative and explanatory parts of PolyPhy's documentation.
 - Work with the visual designer (see above) in designing a coherent story.
 
 ### Implement heterogeneous data I/O ops
 
-- **Topics:** `I/O Operations` `File Conversion` `Numerics`
+- **Topics:** `I/O Operations` `File Conversion` `Numerics` `Testing`
 - **Skills:** Python, experience working with scientific or statistical data, good debugging skills
 - **Difficulty:** Moderate-Challenging
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Anisha Goel](mailto:anishagoel14@gmail.com)
 
 By default, PolyPhy operates with an unordered set of points as an input and scalar fields (float ndarrays) as an output, but others are applicable as well. Design and implement interfaces to load and export different data formats (CSV, OBJ, HDF5, FITS...) and modalities (points, meshes, density fields). The difficulty of the project can be scaled based on contributor's interest.
 
@@ -727,7 +728,7 @@ Specific tasks:
 - **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
 - **Skills:** experience with CI/CD, GitHub, Python package deployment
 - **Difficulty:** Moderate
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Anisha Goel](mailto:anishagoel14@gmail.com)
 
 The objective is to setup a CI/CD pipeline that automates the build testing and deployment of the software. The resulting process needs to be robust to contributor errors and work in the distributed conditions of a diverse contributor base.
 
@@ -755,11 +756,11 @@ Specific tasks:
 ### Discrete graph extraction from simulated scalar fields
 
 - **Topics:** `Graph Theory` `Data Science`
-- **Skills:** familiarity with discrete math and graph theory, Python, (GPU programming)
+- **Skills:** good understanding of discrete math and graph theory, Python, (GPU programming)
 - **Difficulty:** Challenging
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
-Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces structures with latent network-like characteristics, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field.
+Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces network-like structures, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field by navigating the 1D ridges of the scalar field.
 
 Specific tasks:
 - Become familiar with different algorithms for graph growing and skeleton extraction.
