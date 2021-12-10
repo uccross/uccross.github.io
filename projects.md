@@ -707,6 +707,20 @@ Specific tasks:
 - Write and edit narrative and explanatory parts of PolyPhy's documentation.
 - Work with the visual designer (see above) in designing a coherent story.
 
+### Video tutorials and presentation for PolyPhy
+
+- **Topics:** `Video Presentation` `Tutorials` `Didactics`
+- **Skills:** video editing, creating educational content, communication, (native or fluent in another language)
+- **Difficulty:** Moderate
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+
+Specific tasks:
+- Work with mentors on understanding the context and history of the project.
+- Interview diverse project contributors.
+- Create a video documenting PolyPhy's history, with roots in astronomy, complex systems, fractals.
+- Create a set of tutorial videos for starting and intermediate PolyPhy users.
+
+
 ### Implement heterogeneous data I/O ops
 
 - **Topics:** `I/O Operations` `File Conversion` `Numerics` `Testing`
