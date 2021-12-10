@@ -8,14 +8,7 @@ BEGIN {
 function email_link(project){
   print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?"
   print "subject="ZARGV[1]": Interested in "project
-  print "&body=Dear "ZARGV[1]" Staff,%0d%0d"
-  print "I am interested in the project"project".%0d%0d"
-  print "In total I would like to sponsor [remove lines that don't apply]:%0d%0d"
-  print "1 student at $9,500%0d%0d"
-  print "2 students at $18,500 [$9,250/student]%0d"
-  print "3 students at $27,000 [$9,000/student]%0d"
-  print "4 students at $35,000 [$8,750/student]%0d"
-  print ")\n"
+  print "&body=I am interested in sponsoring -- particularly the project"project".)\n"
 }
 
 /^[^💝]/ || // {
