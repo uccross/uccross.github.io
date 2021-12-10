@@ -5,6 +5,12 @@ BEGIN {
   ARGV[1]=""
 }
 
+function email_link(project){
+  print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?"
+  print "subject="ZARGV[1]": Interested in "project
+  print "&body=I am interested in sponsoring -- particularly the project"project".)\n"
+}
+
 /^[^💝]/ || // {
   print $0
 }
@@ -13,11 +19,13 @@ BEGIN {
   ZORS=ORS; ORS=""
   $1 = ""
   gsub(/ \(.*\)/, "")
-  print "💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?"
-  print "subject="ZARGV[1]": Sponsoring "$0
-  print "&body=Dear "ZARGV[1]" Staff, "
-  print "I am interested in sponsoring summer student internships at $9,500 per student"
+  project = $0
+  email_link(project)
   ORS=ZORS
-  print " for the project"$0".)"
-  print ""
+}
+
+/^### / {
+  ZORS=ORS; ORS=""
+  email_link(project)
+  ORS=ZORS
 }
