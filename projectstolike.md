@@ -67,7 +67,7 @@ Table of Contents:
    * [FasTensor](#fastensor)
       * [Continuous Integration](#continuous-integration)
 
-<!-- Added by: runner, at: Fri Dec 10 05:19:57 UTC 2021 -->
+<!-- Added by: runner, at: Fri Dec 10 05:23:03 UTC 2021 -->
 
 <!--te-->
 
@@ -581,7 +581,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 ## CephFS
 💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Interested in  CephFS&body=Dear OSRE22 Staff,%0d%0dI am interested in the project CephFS.%0d%0dIn total I would like to sponsor [remove lines that don't apply]:%0d%0d1 student at $9,500%0d%0d2 students at $18,500 [$9,250/student]%0d3 students at $27,000 [$9,000/student]%0d4 students at $35,000 [$8,750/student]%0d)
-[CephFS](https://docs.ceph.com/en/latest/cephfs/) is a distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
+[CephFS](https://docs.ceph.com/en/latest/cephfs/) is the distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
 💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Interested in  CephFS&body=Dear OSRE22 Staff,%0d%0dI am interested in the project CephFS.%0d%0dIn total I would like to sponsor [remove lines that don't apply]:%0d%0d1 student at $9,500%0d%0d2 students at $18,500 [$9,250/student]%0d3 students at $27,000 [$9,000/student]%0d4 students at $35,000 [$8,750/student]%0d)
