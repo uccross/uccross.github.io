@@ -66,8 +66,18 @@ Table of Contents:
          * [Machine Learning Integration](#machine-learning-integration)
    * [FasTensor](#fastensor)
       * [Continuous Integration](#continuous-integration)
+   * [Polyphorm / PolyPhy](#polyphorm--polyphy)
+      * [Develop website for PolyPhy](#develop-website-for-polyphy)
+      * [Design visual experience for PolyPhy's website and presentations](#design-visual-experience-for-polyphys-website-and-presentations)
+      * [Write PolyPhy's technical story and content](#write-polyphys-technical-story-and-content)
+      * [Video tutorials and presentation for PolyPhy](#video-tutorials-and-presentation-for-polyphy)
+      * [Implement heterogeneous data I/O ops](#implement-heterogeneous-data-io-ops)
+      * [Setup CI/CD for PolyPhy](#setup-cicd-for-polyphy)
+      * [Refine PolyPhy's UI and develop new functional elements](#refine-polyphys-ui-and-develop-new-functional-elements)
+      * [Create new data visualization regimes](#create-new-data-visualization-regimes)
+      * [Discrete graph extraction from simulated scalar fields](#discrete-graph-extraction-from-simulated-scalar-fields)
 
-<!-- Added by: runner, at: Fri Dec 10 05:35:14 UTC 2021 -->
+<!-- Added by: runner, at: Fri Dec 10 21:09:25 UTC 2021 -->
 
 <!--te-->
 
