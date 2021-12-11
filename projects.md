@@ -858,3 +858,25 @@ Specific tasks:
 - Optimize the runtime of the implemented methods.
 - Work with the visualization developer (see above) to visualize the resulting graphs.
 
+## DirtViz
+
+DirtViz is a project to visualize data collected from
+sensors deployed in sensor networks. We have deployed a number of
+sensors measuring qualities like soil moisture, temperature, current
+and voltage in outdoor settings. This project involves extending (or
+replacing) our existing plotting scripts to create a fully-feledged
+dataviz tool tailored to the types of data collected from embedded
+systems sensor networks.
+
+### Visualize Sensor Data
+
+  * **Topics**: `Data Visualization`, `Analytics`
+  * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
+  * **Difficulty**: Easy/Moderate
+  * **Mentor**: [Colleen Josephson](mailto:cjosephson@ucsc.edu)
+
+- Develop set of visualization tools (ideally web based) that easily allows users to zoom in on date ranges, change axes, etc.
+- Document the tool thoroughly for future maintenance
+- If interested, we are also interested in investigating correlations between different data streams
+- ????
+- PROFIT!!
