@@ -76,8 +76,10 @@ Table of Contents:
       * [Refine PolyPhy's UI and develop new functional elements](#refine-polyphys-ui-and-develop-new-functional-elements)
       * [Create new data visualization regimes](#create-new-data-visualization-regimes)
       * [Discrete graph extraction from simulated scalar fields](#discrete-graph-extraction-from-simulated-scalar-fields)
+   * [DirtViz](#dirtviz)
+      * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Fri Dec 10 21:09:25 UTC 2021 -->
+<!-- Added by: runner, at: Sat Dec 11 22:14:00 UTC 2021 -->
 
 <!--te-->
 
