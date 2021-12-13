@@ -9,7 +9,7 @@ How to update project ideas:
       - Your research projects are on section level 2 (titles start with `## `)
       - Your project ideas are on section level 3 (titles start with `### `)
       - Make sure that mentor names include `mailto:` links
-  3. Create a pull request in this repository (not your forked one) and ask for a review on cross-info@ucsc.edu
+  3. Create a pull request in this repository (not your forked one) and ask for a review on ospo-info-group@ucsc.edu
 
 # CROSS Software Portal
 
