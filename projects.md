@@ -254,15 +254,6 @@ elimination in LNAST. There are several reasons:
 
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 
-### Evaluating user space networking stacks on SmartNICs
-
- - **Skills:** C, Bash, performance evaluation tools (Linux perf, SystemTap, etc.)
- - **Difficulty:** Easy
- - **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
-
-The BlueField DPU as an example of SmartNICs is available nowadays. However, the performance of the kernel networking stack on this device is known to involve expensive overhead. The alternatives are to use some user-space solutions such as DPDK (for TCP and RDMA) and libvma (for RDMA). Therefore, it would be interesting to evaluate the performance differences between the kernel and these user-space alternatives, especially focusing on characterizing the benefits for SmartNICs.
- - References: Tork, Maroun, Lina Maudlej, and Mark Silberstein. "Lynx: A SmartNIC-driven accelerator-centric architecture for network servers." Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems. 2020.
-
 ### Dynamic function injection for RocksDB
 
  - **Skills:** C/C++, Java
@@ -281,6 +272,29 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
  - References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
+
+
+## SmartNICs
+
+SmartNICs have become one of important components in heterogeneous system architectures for offloading computing to accelerate particular host functions that mostly found in networking, storage, security, and management services. Generally speaking, a SmartNIC is programmable, and therefore it is "smart." Though the programmability can have different definitions or implementations by different vendors, the hardware blocks of a SmartNIC that enables programmability are highly specialized (e.g., compression engine and encryption engine). Therefore, SmartNICs can be more efficient than host CPUs on particular jobs. The fundamental problem for SmartNICs for applications is how we can gain performance benefits by leveraging this new hardware.
+
+### Employ kernel-bypass techniques in Apache Arrow Flight
+
+  * **Topics**: `Apache Arrow`, `RPC`, `networking`, `RDMA`, `dpdk`
+  * **Skills**: C, C++, python, Linux, RDMA / dpdk
+  * **Difficulty**: Challenging
+  * **Mentor**: [Jianshen Liu] <mailto:jliu120@ucsc.edu>, [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
+
+Apache Arrow provides a set of tools to allow efficient in-memory analytics/processing columnar data. Arrow Flight is a data transport framework for streaming Arrow data across different services in a cluster. It is built based on gRPC, Google's popular [HTTP/2-based](https://github.com/grpc/grpc/blob/v1.43.0/doc/PROTOCOL-HTTP2.md) RPC library. The most common deployment of Arrow Flight is to run on top of the kernel TCP/IP stack. This kernel stack is known to be much slower than kernel-bypass stacks such as DPDK and RDMA. Given that there are already solutions for RPC over these kernel-bypass stacks (e.g., [eRPC](https://github.com/erpc-io/eRPC), and [Seastar](https://github.com/scylladb/seastar)), the goal of this project is to allow Arrow Flight to leverage the higher performance of these stacks instead of the traditional gRPC.
+
+### Arrow data filtering using regular expression accelerator
+
+  * **Topics**: `SmartNIC`, `regex`, `networking`, `Apache Arrow`
+  * **Skills**: C, C++, python, Linux, dpdk
+  * **Difficulty**: Challenging
+  * **Mentor**: [Jianshen Liu] <mailto:jliu120@ucsc.edu>, [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
+
+The current implementation of the row-based data filtering in Apache Arrow uses host CPUs. Offloading this filtering function to SmartNICs can save the host CPU cycles and return to user applications while potentially gaining better performance. [BlueField-2 DPU] (https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/documents/datasheet-nvidia-bluefield-2-dpu.pdf) provides a built-in RegEx accelerator for network Ethernet packets. This project is to develop the connection to allow Apache Arrow to leverage this accelerator, and eventually characterize the performance benefits in throughput, latency, and energy consumption.
 
 
 ## Open Source Autonomous Vehicle Controller
@@ -361,7 +375,7 @@ data returned to the client.
   - **Difficulty**: Medium
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
-Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.  
+Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
 Saving previous computation in the form of materialized views can provide benefit for future
 workload processing.
 Solution - Add a method to the Dataset API to create views from queries and save the view as an object in a separate pool with some object key that can be generated from the query that created it.
@@ -378,7 +392,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Difficulty**: High
   * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
-Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.  
+Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.
 Solution - We can modify the Dataset API by adding a method to check the resource utilization on the Storage side periodically and if the CPU and Memory usage passes a user-defined threshold or some other metrice, the Datasets API silently shifts to client side query execution for a while and then tries to push down again.  This method could also be applied dynamically at the OSD, allowing the OSD to reject certain operations, returning metadata concerning which operations have not yet been applied.
 
 Reference:
@@ -708,7 +722,7 @@ As a bonus task, and depending on the progress of the project, we can explore th
   * **Skills**:   C++, github
   * **Difficulty**: Easy
   * **Mentor**: [John Wu](mailto:kwu@lbl.gov), [Bin Dong](mailto:dbin@lbl.gov), [Suren Byna](mailto:sbyna@lbl.gov)
- 
+
 - Develop a test suite for the public API of FasTensor
 - Automate execution of the test suite
 - Document the continuous integration process
