@@ -23,9 +23,11 @@ Table of Contents:
       * [unbitwidth](#unbitwidth)
       * [LNAST Opt](#lnast-opt)
    * [Eusocial Storage Devices](#eusocial-storage-devices)
-      * [Evaluating user space networking stacks on SmartNICs](#evaluating-user-space-networking-stacks-on-smartnics)
       * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
       * [Demonstrating a composable storage system accelerated by memory semantic technologies](#demonstrating-a-composable-storage-system-accelerated-by-memory-semantic-technologies)
+   * [SmartNICs](#smartnics)
+      * [Employ kernel-bypass techniques in Apache Arrow Flight](#employ-kernel-bypass-techniques-in-apache-arrow-flight)
+      * [Arrow data filtering using regular expression accelerator](#arrow-data-filtering-using-regular-expression-accelerator)
    * [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
       * [Vehicle/Craft sensor driver development](#vehiclecraft-sensor-driver-development)
       * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
@@ -79,7 +81,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Wed Dec 22 23:30:14 UTC 2021 -->
+<!-- Added by: runner, at: Tue Jan 11 23:26:06 UTC 2022 -->
 
 <!--te-->
 
