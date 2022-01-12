@@ -62,6 +62,8 @@ Table of Contents:
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
       * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+   * [Package Management &amp; Reproducibility](#package-management--reproducibility)
+      * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
       * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
          * [The goals of this project are:](#the-goals-of-this-project-are)
@@ -81,7 +83,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Tue Jan 11 23:26:06 UTC 2022 -->
+<!-- Added by: runner, at: Wed Jan 12 18:01:21 UTC 2022 -->
 
 <!--te-->
 

@@ -62,6 +62,8 @@ Table of Contents:
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
       * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+   * [Package Management &amp; Reproducibility](#package-management--reproducibility)
+      * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
       * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
          * [The goals of this project are:](#the-goals-of-this-project-are)
@@ -81,17 +83,17 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Tue Jan 11 23:26:06 UTC 2022 -->
+<!-- Added by: runner, at: Wed Jan 12 18:01:21 UTC 2022 -->
 
 <!--te-->
 
 ## LiveHD
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in LiveHD.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in LiveHD.)
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
 ### Tree sitter Pyrope
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in Tree sitter Pyrope.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in Tree sitter Pyrope.)
 
 |   |   |
 |---|---|
@@ -121,7 +123,7 @@ In addition to the packages, there should be an iterator that use the incrementa
 
 
 ### Mockturtle
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in Mockturtle.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in Mockturtle.)
 
 |   |   |
 |---|---|
@@ -149,7 +151,7 @@ The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD.
     * memories, luts
 
 ### Query Shell
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in Query Shell.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in Query Shell.)
 
 |   |   |
 |---|---|
@@ -177,7 +179,7 @@ As an interesting extension would be to have some simple embedded language (TCL 
 easily and allow to build functions/libraries.
 
 ### Lgraph and LNAST check pass
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in Lgraph and LNAST check pass.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in Lgraph and LNAST check pass.)
 
 |   |   |
 |---|---|
@@ -202,7 +204,7 @@ further expanded. Some checks:
 
 
 ### unbitwidth
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in unbitwidth.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in unbitwidth.)
 
 |   |   |
 |---|---|
@@ -238,7 +240,7 @@ module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
 
 ### LNAST Opt
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  LiveHD&body=I am interested in LNAST Opt.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in LNAST Opt.)
 
 |   |   |
 |---|---|
@@ -260,12 +262,12 @@ elimination in LNAST. There are several reasons:
 * The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 
 ## Eusocial Storage Devices
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Eusocial Storage Devices&body=I am interested in Eusocial Storage Devices.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Eusocial Storage Devices&body=I am a potential OSRE22 sponsor and I am interested in Eusocial Storage Devices.)
 
 As storage devices get faster, data management tasks rob the host of CPU cycles and main memory bandwidth. The [Eusocial project](https://cross.ucsc.edu/projects/eusocialpage.html) aims to create a new interface to storage devices that can leverage existing and new CPU and main memory resources to take over data management tasks like availability, recovery, and migrations. The project refers to these storage devices as “eusocial” because we are inspired by eusocial insects like ants, termites, and bees, which as individuals are primitive but collectively accomplish amazing things.
 
 ### Dynamic function injection for RocksDB
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Eusocial Storage Devices&body=I am interested in Dynamic function injection for RocksDB.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Eusocial Storage Devices&body=I am a potential OSRE22 sponsor and I am interested in Dynamic function injection for RocksDB.)
 
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
@@ -276,7 +278,7 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
 
 ### Demonstrating a composable storage system accelerated by memory semantic technologies
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Eusocial Storage Devices&body=I am interested in Demonstrating a composable storage system accelerated by memory semantic technologies.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Eusocial Storage Devices&body=I am a potential OSRE22 sponsor and I am interested in Demonstrating a composable storage system accelerated by memory semantic technologies.)
 
  - **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
  - **Difficulty:** Challenging
@@ -287,12 +289,12 @@ Since the last decade, the slowing down in the performance improvement of genera
 
 
 ## SmartNICs
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SmartNICs&body=I am interested in SmartNICs.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SmartNICs&body=I am a potential OSRE22 sponsor and I am interested in SmartNICs.)
 
 SmartNICs have become one of important components in heterogeneous system architectures for offloading computing to accelerate particular host functions that mostly found in networking, storage, security, and management services. Generally speaking, a SmartNIC is programmable, and therefore it is "smart." Though the programmability can have different definitions or implementations by different vendors, the hardware blocks of a SmartNIC that enables programmability are highly specialized (e.g., compression engine and encryption engine). Therefore, SmartNICs can be more efficient than host CPUs on particular jobs. The fundamental problem for SmartNICs for applications is how we can gain performance benefits by leveraging this new hardware.
 
 ### Employ kernel-bypass techniques in Apache Arrow Flight
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SmartNICs&body=I am interested in Employ kernel-bypass techniques in Apache Arrow Flight.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SmartNICs&body=I am a potential OSRE22 sponsor and I am interested in Employ kernel-bypass techniques in Apache Arrow Flight.)
 
   * **Topics**: `Apache Arrow`, `RPC`, `networking`, `RDMA`, `dpdk`
   * **Skills**: C, C++, python, Linux, RDMA / dpdk
@@ -302,7 +304,7 @@ SmartNICs have become one of important components in heterogeneous system archit
 Apache Arrow provides a set of tools to allow efficient in-memory analytics/processing columnar data. Arrow Flight is a data transport framework for streaming Arrow data across different services in a cluster. It is built based on gRPC, Google's popular [HTTP/2-based](https://github.com/grpc/grpc/blob/v1.43.0/doc/PROTOCOL-HTTP2.md) RPC library. The most common deployment of Arrow Flight is to run on top of the kernel TCP/IP stack. This kernel stack is known to be much slower than kernel-bypass stacks such as DPDK and RDMA. Given that there are already solutions for RPC over these kernel-bypass stacks (e.g., [eRPC](https://github.com/erpc-io/eRPC), and [Seastar](https://github.com/scylladb/seastar)), the goal of this project is to allow Arrow Flight to leverage the higher performance of these stacks instead of the traditional gRPC.
 
 ### Arrow data filtering using regular expression accelerator
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SmartNICs&body=I am interested in Arrow data filtering using regular expression accelerator.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SmartNICs&body=I am a potential OSRE22 sponsor and I am interested in Arrow data filtering using regular expression accelerator.)
 
   * **Topics**: `SmartNIC`, `regex`, `networking`, `Apache Arrow`
   * **Skills**: C, C++, python, Linux, dpdk
@@ -313,7 +315,7 @@ The current implementation of the row-based data filtering in Apache Arrow uses 
 
 
 ## Open Source Autonomous Vehicle Controller
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in Open Source Autonomous Vehicle Controller.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in Open Source Autonomous Vehicle Controller.)
 
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
@@ -324,7 +326,7 @@ Projects for the OSAVC:
 
 
 ### Vehicle/Craft sensor driver development
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in Vehicle/Craft sensor driver development.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in Vehicle/Craft sensor driver development.)
  - **Topics**: Driver code to integrate sensor to a microcontroller
  - **Skills**: C, I2C, SPI, UART interfaces
  - **Difficulty** Easy
@@ -334,7 +336,7 @@ Projects for the OSAVC:
 Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller.
 
 ### IMU calibration algorithm development
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in IMU calibration algorithm development.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in IMU calibration algorithm development.)
  - **Topics**: Least Squares, DCM,
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Medium
@@ -344,7 +346,7 @@ Help develop a sensor library for use in autonomnous vehicles.  Possible sensors
 The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
 
 ### Path finding algorithm using OpenCV
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in Path finding algorithm using OpenCV.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in Path finding algorithm using OpenCV.)
  - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
  - **Difficulty** Medium
@@ -355,7 +357,7 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  For example
 
 
 ### State estimation/sensor fusion algorithm development
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in State estimation/sensor fusion algorithm development.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in State estimation/sensor fusion algorithm development.)
  - **Topics**: Kalman filtering, Mahoney
  - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
  - **Difficulty** Challenging
@@ -365,7 +367,7 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  For example
 Implement an optimal state estimation algorithm from a model.  This model can be derived from a Kalman filter or some other state estimation filter (e.g., Mahoney filter).  THe model takes sensor readings as input and provides an estimate of the state of a vehicle. Finally, convert the model to standard C using the Simulink code generation or implement in Python (for use on a single board computer, e.g., Raspberry Pi)
 
 ### Vehicle dynamic model development
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Open Source Autonomous Vehicle Controller&body=I am interested in Vehicle dynamic model development.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Open Source Autonomous Vehicle Controller&body=I am a potential OSRE22 sponsor and I am interested in Vehicle dynamic model development.)
  - **Topics**: Dynamic modeling, control theory
  - **Skills**: C, Matlab/Simulink
  - **Difficulty** Challenging
@@ -375,7 +377,7 @@ Implement an optimal state estimation algorithm from a model.  This model can be
 Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
 ## SkyhookDM
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in SkyhookDM.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in SkyhookDM.)
 
 [SkyhookDM](http://www.skyhookdm.com)
 
@@ -391,7 +393,7 @@ data returned to the client.
 -------------------
 
 ### Add Ability to create and save views from Datasets
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Add Ability to create and save views from Datasets.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Add Ability to create and save views from Datasets.)
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++
@@ -409,7 +411,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 -------
 
 ### Ability to Push back query execution to the Client in case of overloaded OSDs
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Ability to Push back query execution to the Client in case of overloaded OSDs.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Ability to Push back query execution to the Client in case of overloaded OSDs.)
 
   - **Topics**: `Arrow`, `query opererators`, `push down computation`
   - **Skills**: C++
@@ -426,7 +428,7 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
 -------
 
 ### Port wiki to ReadTheDocs or other documentation platform
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Port wiki to ReadTheDocs or other documentation platform.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Port wiki to ReadTheDocs or other documentation platform.)
 
   - **Topics**: `Documentation`, `wiki`, `markdown`
   - **Skills**: Markdown, documentation, html
@@ -442,7 +444,7 @@ to reorganize it and rewrite some sections as part of this effort.
 -------
 
 ### Integrating Delta Lake on top of SkyhookDM
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Integrating Delta Lake on top of SkyhookDM.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Integrating Delta Lake on top of SkyhookDM.)
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
@@ -460,7 +462,7 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 
 
 ### Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes.)
 
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
@@ -478,7 +480,7 @@ https://arxiv.org/pdf/2103.01871.pdf
 
 -------
 ### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  SkyhookDM&body=I am interested in Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM.)
 
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
@@ -498,7 +500,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 
 
 ## HDF5
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in HDF5.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in HDF5.)
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
 
@@ -514,7 +516,7 @@ The HDF5 technology suite includes:
 -------------------
 
 ### HDF5 - Apache Arrow Integration
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in HDF5 - Apache Arrow Integration.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in HDF5 - Apache Arrow Integration.)
 
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
@@ -531,7 +533,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
 -------
 
 ### HDF5 - Ceph RADOS Integration
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in HDF5 - Ceph RADOS Integration.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in HDF5 - Ceph RADOS Integration.)
 
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
@@ -547,7 +549,7 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
 -------
 
 ### Column-storage in HDF5
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in Column-storage in HDF5.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in Column-storage in HDF5.)
 
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
@@ -561,7 +563,7 @@ primarily access subsets of the fields in an HDF5 dataset.
 -------
 
 ### Sparse data storage in HDF5
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in Sparse data storage in HDF5.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in Sparse data storage in HDF5.)
 
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
@@ -576,7 +578,7 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
 -------
 
 ### Metadata search in HDF5 with Database Solutions
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  HDF5&body=I am interested in Metadata search in HDF5 with Database Solutions.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in Metadata search in HDF5 with Database Solutions.)
 
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
@@ -591,7 +593,7 @@ Instead of adding index and query operations directly to HDF5, this project woul
 database and array-oriented I/O with HDF5.
 
 ## Proactive Data Containers (PDC)
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Proactive Data Containers&body=I am interested in Proactive Data Containers.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Proactive Data Containers&body=I am a potential OSRE22 sponsor and I am interested in Proactive Data Containers.)
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
@@ -599,7 +601,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 -------------------
 
 ### Python interface to an object-centric data management system
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Proactive Data Containers&body=I am interested in Python interface to an object-centric data management system.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Proactive Data Containers&body=I am a potential OSRE22 sponsor and I am interested in Python interface to an object-centric data management system.)
 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
   * **Skills**: Python, C, PDC
@@ -610,11 +612,11 @@ transformations, and storage mechanisms that take advantage of the deep storage 
 
 
 ## CephFS
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  CephFS&body=I am interested in CephFS.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  CephFS&body=I am a potential OSRE22 sponsor and I am interested in CephFS.)
 [CephFS](https://docs.ceph.com/en/latest/cephfs/) is a distributed file system on top of [Ceph](https://ceph.io). It is implemented as a distributed metadata service (MDS) that uses dynamic subtree balancing to trade parallelism for locality during a continually changing workloads. Clients that mount a CephFS file system connect to the MDS and acquire capabilities as they traverse the file namespace. Capabilities not only convey metadata but can also implement strong consistency semantics by granting and revoking the ability of clients to cache data locally.
 
 ### CephFS namespace traversal offloading
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  CephFS&body=I am interested in CephFS namespace traversal offloading.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  CephFS&body=I am a potential OSRE22 sponsor and I am interested in CephFS namespace traversal offloading.)
 
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
@@ -628,12 +630,12 @@ The key idea of this project is to reduce the frequency of MDS requests by offlo
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
 ## Popper
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Popper&body=I am interested in Popper.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Popper&body=I am a potential OSRE22 sponsor and I am interested in Popper.)
 
 [Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
 
 ### Popper / Drone workflow translation
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Popper&body=I am interested in Popper / Drone workflow translation.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Popper&body=I am a potential OSRE22 sponsor and I am interested in Popper / Drone workflow translation.)
 
   * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
   * **Skills**: YAML, Python, Docker
@@ -643,7 +645,7 @@ Once the basic functionality is implemented, this project can be expanded to add
 [Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
 
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
 [OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy access of design kits and software access for VLSI designers.
 
 OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (less than 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
@@ -651,7 +653,7 @@ OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and en
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
 ### Static RAM Generator
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Static RAM Generator.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Static RAM Generator.)
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
@@ -661,7 +663,7 @@ OpenROAD is the key enabler of successful Chip initiatives like the Google-spons
 Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
 
 ### VLSI Power Planning and Analysis
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in VLSI Power Planning and Analysis.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in VLSI Power Planning and Analysis.)
 
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
@@ -671,7 +673,7 @@ Design of  static RAMs in VLSI designs for good performance and area is generall
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
 ###  Enhance project website
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Enhance project website.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Enhance project website.)
 
   * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
   * **Skills**: Web development experience
@@ -681,7 +683,7 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
 The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
 
 ###  Demos and Tutorials
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Demos and Tutorials.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Demos and Tutorials.)
 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
@@ -695,7 +697,7 @@ Different options and how they impact the results
 Different design styles and particular challenges
 
 ### Comprehensive flow testing
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Comprehensive flow testing.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Comprehensive flow testing.)
 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
@@ -705,7 +707,7 @@ Different design styles and particular challenges
 Add open sourced designs to existing test suite for the OpenROAD flow to expand coverage and technology capabilities. This includes design specification, configuration and creation of all necessary files for regression testing. Souruggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
 
 ### Enhance GUI features
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Enhance GUI features.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Enhance GUI features.)
 
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
@@ -715,7 +717,7 @@ Add open sourced designs to existing test suite for the OpenROAD flow to expand 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
 
 ### Automate OpenDB code Generation
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Automate OpenDB code Generation.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Automate OpenDB code Generation.)
 
   * **Topics**: `Database`, `EDA`
   * **Skills**:  C++, Python, JSON, Jinja templating
@@ -725,7 +727,7 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
 
 ### Implement an NLP based AI bot
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am interested in Implement an NLP based AI bot.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Implement an NLP based AI bot.)
 
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
@@ -734,13 +736,35 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
 
+## Package Management & Reproducibility
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Package Management & Reproducibility&body=I am a potential OSRE22 sponsor and I am interested in Package Management & Reproducibility.)
+
+Projects related to reproducibility and package management, especially as it relates to _store type package managers_ ([NixOS](http://nixos.org/), [Guix](https://guix.gnu.org/) or [Spack](https://spack.io/)).
+
+Lead Mentor: [Farid Zakaria](https://users.soe.ucsc.edu/~fmzakari) <mailto:fmzakari@ucsc.edu>
+### Investigate the dynamic linking landscape
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Package Management & Reproducibility&body=I am a potential OSRE22 sponsor and I am interested in Investigate the dynamic linking landscape.)
+
+- **Topics:** `Operating Systems` `Compilers` `Linux` `Package Management` `NixOS`
+- **Skills:** Experience with systems programming and Linux familiarity
+- **Difficulty:** Moderate to Challenging
+- **Mentors:** [Farid Zakaria](mailto:fmzakari@ucsc.edu) & [Tom Scogland](https://people.llnl.gov/scogland1) <mailto:scogland1@llnl.gov>
+
+Dynamic linking as specified in the ELF file format has gone unchallenged since it's invention. With many new package management models that eschew the filesystem hierarchy standard (i.e. Nix, Guix and Spack), many of the idiosyncrasies that define the way in which libraries are discovered are no longer useful and potentially harmful.
+
+Specific tasks:
+- Continue development on [Shrinkwrap](https://github.com/fzakaria/shrinkwrap) a tool to make dynamic library loading simpler and more robust.
+- Evaluate it's effectiveness across a wide range of binaries.
+- Upstream contributions to [NixOS](http://nixos.org/) or [Guix](https://guix.gnu.org/) to leverage the improvement when suitable.
+- Investigate alternative improvements to dynamic linking by writing a dynamic linker "loadder wrapper" to explore new ideas.
+
 ## Apache AsterixDB
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Apache AsterixDB&body=I am interested in Apache AsterixDB.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Apache AsterixDB&body=I am a potential OSRE22 sponsor and I am interested in Apache AsterixDB.)
 
 AsterixDB is an open source parallel big-data management system [http://asterixdb.apache.org/]. AsterixDB is a well-established Apache project that has been active in research for more than 10 years. It provides a flexible data model that supports modern NoSQL applications with a powerful query processor that can scale to billions of records and terabytes of data. Users can interact with AsterixDB through a power and easy to use declarative query language, SQL++, which provides a rich set of data types including timestamps, time intervals, text, and geospatial, in addition to traditional numerical and Boolean data types.
 
 ### Geospatial Data Science on AsterixDB
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Apache AsterixDB&body=I am interested in Geospatial Data Science on AsterixDB.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Apache AsterixDB&body=I am a potential OSRE22 sponsor and I am interested in Geospatial Data Science on AsterixDB.)
 
 - *Topics*: Data science, SQL++, documentation
 - *Skills*: SQL, Writing, Spreadsheets
@@ -765,11 +789,11 @@ Build a data science project using AsterixDB that analyzes geospatial data among
 As a bonus task, and depending on the progress of the project, we can explore the integration of machine learning with AsterixDB through Python UDFs. We will utilize the AsterixDB Python integration through [user-defined functions](https://asterixdb.apache.org/docs/0.9.7/udf.html) to connect AsterixDB backend with [scikit-learn](https://scikit-learn.org/stable/index.html) to build some unsupervised and supervised models for the data. For example, we can cluster the crimes based on their location and other attributes to find interesting patterns or hotspots.
 
 ## FasTensor
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  FasTensor&body=I am interested in FasTensor.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  FasTensor&body=I am a potential OSRE22 sponsor and I am interested in FasTensor.)
 [FasTensor](https://sdm.lbl.gov/fastensor/) is a parallel execution engine for user-defined functions on multidimensional arrays.  The user-defined functions follow the stencil metaphor used for scientific computing and is effective for expressing a wide range of computations for data analyses, including common aggregation operations from database management systems and advanced machine learning pipelines.  FasTensor execution engine exploits the structural-locality in the multidimensional arrays to automate data management operations such as file I/O, data partitioning, communication, parallel execution, and so on.
 
 ### Continuous Integration
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  FasTensor&body=I am interested in Continuous Integration.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  FasTensor&body=I am a potential OSRE22 sponsor and I am interested in Continuous Integration.)
 
   * **Topics**: `Data Management`, `Analytics`
   * **Skills**:   C++, github
@@ -782,14 +806,14 @@ As a bonus task, and depending on the progress of the project, we can explore th
 - Develop performance testing suite
 
 ## Polyphorm / PolyPhy
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Polyphorm / PolyPhy.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Polyphorm / PolyPhy.)
 
 [Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing *optimal transport networks* defined over sparse data. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html). Under the hood, Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh.
 
 **PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research. Ultimately, PolyPhy will become a tool for discovering connections between different disciplines by creating quantitatively comparable structural analytics.
 
 ### Develop website for PolyPhy
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Develop website for PolyPhy.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Develop website for PolyPhy.)
 
 - **Topics:** `Web Development` `Dynamic Updates` `UX`
 - **Skills:** web development experience, good communicator, (HTML/CSS), (Javascript)
@@ -806,7 +830,7 @@ Specific tasks:
 - Interactively link important metrics from the project dev environment as well as documentation.
 
 ### Design visual experience for PolyPhy's website and presentations
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Design visual experience for PolyPhy's website and presentations.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Design visual experience for PolyPhy's website and presentations.)
 
 - **Topics:** `Design` `Art` `UX`
 - **Skills:** vector and bitmap drawing, sense for spatial symmetry and framing, (interactive content creation), (animation)
@@ -822,7 +846,7 @@ Specific tasks:
 - Work with the web developer (see above) in creating a coherent and organic presentation.
 
 ### Write PolyPhy's technical story and content
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Write PolyPhy's technical story and content.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Write PolyPhy's technical story and content.)
 
 - **Topics:** `Writing` `Documentation` `Storytelling`
 - **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
@@ -839,7 +863,7 @@ Specific tasks:
 - Work with the visual designer (see above) in designing a coherent story.
 
 ### Video tutorials and presentation for PolyPhy
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Video tutorials and presentation for PolyPhy.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Video tutorials and presentation for PolyPhy.)
 
 - **Topics:** `Video Presentation` `Tutorials` `Didactics`
 - **Skills:** video editing, creating educational content, communication, (native or fluent in another language)
@@ -856,7 +880,7 @@ Specific tasks:
 - Create an accessible template for future tutorials.
 
 ### Implement heterogeneous data I/O ops
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Implement heterogeneous data I/O ops.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Implement heterogeneous data I/O ops.)
 
 - **Topics:** `I/O Operations` `File Conversion` `Numerics` `Testing`
 - **Skills:** Python, experience working with scientific or statistical data, good debugging skills
@@ -873,7 +897,7 @@ Specific tasks:
 - Integrate external packages as necessary.
 
 ### Setup CI/CD for PolyPhy
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Setup CI/CD for PolyPhy.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Setup CI/CD for PolyPhy.)
 
 - **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
 - **Skills:** experience with CI/CD, GitHub, Python package deployment
@@ -889,7 +913,7 @@ Specific tasks:
 - Add support for automated packaging using common management systems (pip, Anaconda).
 
 ### Refine PolyPhy's UI and develop new functional elements
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Refine PolyPhy's UI and develop new functional elements.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Refine PolyPhy's UI and develop new functional elements.)
 
 - **Topics:** `UI/UX` `Visual Experience`
 - **Skills:** Python programming, UI/UX development experience, (knowledge of graphics)
@@ -905,7 +929,7 @@ Specific tasks:
 - Test the implementation on different OS platforms.
 
 ### Create new data visualization regimes
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Create new data visualization regimes.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Create new data visualization regimes.)
 
 - **Topics:** `Interactive Visualization` `Data Analytics` `3D Rendering`
 - **Skills:** basic graphics theory and math, Python, GPU programming, (previous experience visualizing novel datasets)
@@ -921,7 +945,7 @@ Specific tasks:
 - Create UI elements for plotting statistical summaries computed in real-time.
 
 ### Discrete graph extraction from simulated scalar fields
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  Polyphorm / PolyPhy&body=I am interested in Discrete graph extraction from simulated scalar fields.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Polyphorm / PolyPhy&body=I am a potential OSRE22 sponsor and I am interested in Discrete graph extraction from simulated scalar fields.)
 
 - **Topics:** `Graph Theory` `Data Science`
 - **Skills:** good understanding of discrete math and graph theory, Python, (GPU programming)
@@ -938,7 +962,7 @@ Specific tasks:
 - Work with the visualization developer (see above) to visualize the resulting graphs.
 
 ## DirtViz
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  DirtViz&body=I am interested in DirtViz.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  DirtViz&body=I am a potential OSRE22 sponsor and I am interested in DirtViz.)
 
 DirtViz is a project to visualize data collected from
 sensors deployed in sensor networks. We have deployed a number of
@@ -949,7 +973,7 @@ dataviz tool tailored to the types of data collected from embedded
 systems sensor networks.
 
 ### Visualize Sensor Data
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22: Interested in  DirtViz&body=I am interested in Visualize Sensor Data.)
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  DirtViz&body=I am a potential OSRE22 sponsor and I am interested in Visualize Sensor Data.)
 
   * **Topics**: `Data Visualization`, `Analytics`
   * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
