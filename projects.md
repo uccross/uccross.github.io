@@ -686,7 +686,7 @@ Lead Mentor: [Farid Zakaria](https://users.soe.ucsc.edu/~fmzakari) <mailto:fmzak
 Dynamic linking as specified in the ELF file format has gone unchallenged since it's invention. With many new package management models that eschew the filesystem hierarchy standard (i.e. Nix, Guix and Spack), many of the idiosyncrasies that define the way in which libraries are discovered are no longer useful and potentially harmful.
 
 Specific tasks:
-- Continue development on [Shrinkwra](https://github.com/fzakaria/shrinkwrap) a tool to make dynamic library loading simpler and more robust.
+- Continue development on [Shrinkwrap](https://github.com/fzakaria/shrinkwrap) a tool to make dynamic library loading simpler and more robust.
 - Evaluate it's effectiveness across a wide range of binaries.
 - Upstream contributions to [NixOS](http://nixos.org/) or [Guix](https://guix.gnu.org/) to leverage the improvement when suitable.
 - Investigate alternative improvements to dynamic linking by writing a dynamic linker "loadder wrapper" to explore new ideas (could itself be a complete project)
