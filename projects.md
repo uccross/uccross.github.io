@@ -675,7 +675,7 @@ The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and sev
 
 Projects related to reproducibility and package management, especially as it relates to _store type package managers_ ([NixOS](http://nixos.org/), [Guix](https://guix.gnu.org/) or [Spack](https://spack.io/)).
 
-Lead Mentor: [Farid Zakaria](https://users.soe.ucsc.edu/~fmzakari) <mailto:renau@ucsc.edu>
+Lead Mentor: [Farid Zakaria](https://users.soe.ucsc.edu/~fmzakari) <mailto:fmzakari@ucsc.edu>
 ### Investigate the dynamic linking landscape
 
 - **Topics:** `Operating Systems` `Compilers` `Linux` `Package Management` `NixOS`
