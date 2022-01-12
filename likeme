@@ -7,8 +7,8 @@ BEGIN {
 
 function email_link(project, subproject){
   print "💝 [Interested?](mailto:ospo-info-group@ucsc.edu?"
-  print "subject="ZARGV[1]": Interested in "project
-  print "&body=I am interested in"subproject".)\n"
+  print "subject="ZARGV[1]" Sponsor: Interested in "project
+  print "&body=I am a potential "ZARGV[1]" sponsor and I am interested in"subproject".)\n"
 }
 
 /^[^💝]/ || // {
