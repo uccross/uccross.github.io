@@ -37,11 +37,9 @@ Table of Contents:
    * [SkyhookDM](#skyhookdm)
       * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
       * [Ability to Push back query execution to the Client in case of overloaded OSDs](#ability-to-push-back-query-execution-to-the-client-in-case-of-overloaded-osds)
-      * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
-      * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
-   * [HDF5](#hdf5)
+    * [HDF5](#hdf5)
       * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
       * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
       * [Column-storage in HDF5](#column-storage-in-hdf5)
@@ -427,29 +425,13 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
 
 -------
 
-### Port wiki to ReadTheDocs or other documentation platform
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Port wiki to ReadTheDocs or other documentation platform.)
-
-  - **Topics**: `Documentation`, `wiki`, `markdown`
-  - **Skills**: Markdown, documentation, html
-  - **Difficulty**: Easy
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-
-SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
-as Github Wiki pages. We would like to move it to another platform such as
-[ReadTheDocs](https://readthedocs.org),
-to reorganize it and rewrite some sections as part of this effort.
-[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/42).
-
--------
-
 ### Integrating Delta Lake on top of SkyhookDM
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Integrating Delta Lake on top of SkyhookDM.)
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)<mailto:jayjeetc@ucsc.edu>
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
@@ -467,7 +449,8 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)<mailto:jayjeetc@ucsc.edu>
+
 
 Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
 
@@ -479,23 +462,6 @@ https://arxiv.org/pdf/2103.01871.pdf
 
 
 -------
-### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM.)
-
-  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
-  - **Skills**: C++
-  - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-
-
-Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time.
-
-Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own.
-
-Reference :
-https://arxiv.org/pdf/1812.03149.pdf
-
-
 -------
 
 
@@ -521,7 +487,7 @@ The HDF5 technology suite includes:
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
 Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
@@ -538,7 +504,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
 A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
@@ -554,7 +520,7 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
 records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
@@ -568,7 +534,7 @@ primarily access subsets of the fields in an HDF5 dataset.
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
 Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
@@ -583,7 +549,7 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
 HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
