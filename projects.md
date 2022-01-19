@@ -91,33 +91,35 @@ Table of Contents:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
-### Tree sitter Pyrope
+### HIF Tooling
 
 |   |   |
 |---|---|
-| Title | Tree-sitter Pyrope  |
-| Description | Work on a tree-sitter grammar for Pyrope |
+| Title | HIF tooling  |
+| Description | Tools around Hardware Interchange Format (HIF) files |
 | Mentor(s) | Jose Renau|
-| Skills | C++17, Parsing |
+| Skills | C++17 |
 | Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope)
+| [Link](https://github.com/masc-ucsc/hif)
 
-Using [https://github.com/tekinengin/tree-sitter-pyrope](https://github.com/tekinengin/tree-sitter-pyrope) as a starting point, complete the Pyrope grammar
-to correctly parse the [Pyrope grammar](https://masc.soe.ucsc.edu/pyrope.html), interface with LiveHD
-and third party tools.
+HIF (https://github.com/masc-ucsc/hif) stands for Hardware Interchange Format.
+It is designed to be a efficient binary representation with simple API that
+allows to have generic graph and tree representations commonly used by hardware
+tools. It is not designer to be a universal format, but rather a storate and
+traversal format for hardware tools.
 
-Main features:
+LiveHD has 2 HIF interfaces, the tree (LNAST) and the graph (Lgraph). Both can
+read/write HIF format. The idea of this project is to expand the hif repository
+to create some small but useful tools around hif. Some projects:
 
-* Pyrope tree-sitter grammar
-* tree-sitter to LNAST generation (Comparable to https://github.com/masc-ucsc/livehd/tree/master/inou/pyrope)
-* Atom and neovim integration
-* Atom go definition, highlight, and attribute
-* Atom capacity to query LNAST/Lgraph generated grammar for bit-width. The incremental grammar passed to LNAST, passed to Lgraph,
-  and incremental bit-width inference.
-* neovim highlight, indent, fold support
-* Integrate with atom-hide as extra language
+* hif_diff + hif_patch: Create the equivalent of the diff/patch commands that
+  exist for text but for HIF files. Since the HIF files have a more clear
+  structure, some patches changes are more constrained or better understood
+  (IOs and dependences are explicit).
 
-In addition to the packages, there should be an iterator that use the incremental builder to support incremental changes.
+* hif_tree: Print the HIF hierarchy, somewhat similar to GNU tree but showing the HIF hieararchy.
+
+* hif_grep: capacity to grep for some tokens and outout a hif file only with those. Thena hif_tree/hif_cat can show the contents.
 
 
 ### Mockturtle
@@ -232,27 +234,6 @@ This means that a module could have no bitwidth information at all. We start
 from the leave nodes. If all the bits can be inferred given the inputs, the
 module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
-
-### LNAST Opt
-
-|   |   |
-|---|---|
-| Title | LNAST Opt |
-| Description | Perform copy propagation, constant folding, and dce at LNAST level |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt)
-
-In LiveHD, LGraph has the cprop pass that performs constant folding, copy
-propagation, strength reduction... and many other optimizations.
-
-
-It may be useful to have a copy propagation, constant folding, and dead code
-elimination in LNAST. There are several reasons:
-
-* Doing code simplification early (LNAST is the earliest) reduces workload/steps in successive passes.
-* The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 
 ## Eusocial Storage Devices
 
