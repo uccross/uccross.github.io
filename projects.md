@@ -41,12 +41,6 @@ Table of Contents:
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
       * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
-   * [HDF5](#hdf5)
-      * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
-      * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
-      * [Column-storage in HDF5](#column-storage-in-hdf5)
-      * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
-      * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
@@ -472,7 +466,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 
 -------
 
-
+<!---
 ## HDF5
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
@@ -559,6 +553,7 @@ has been performed in a [git branch](https://bitbucket.hdfgroup.org/projects/HDF
 Instead of adding index and query operations directly to HDF5, this project would instead connect a database package, such as
 [RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
 database and array-oriented I/O with HDF5.
+-->
 
 ## Proactive Data Containers (PDC)
 
