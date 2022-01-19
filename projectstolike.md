@@ -16,12 +16,11 @@ Table of Contents:
 <!--ts-->
 * [Open Source Project Ideas](#open-source-project-ideas)
    * [LiveHD](#livehd)
-      * [Tree sitter Pyrope](#tree-sitter-pyrope)
+      * [HIF Tooling](#hif-tooling)
       * [Mockturtle](#mockturtle)
       * [Query Shell](#query-shell)
       * [Lgraph and LNAST check pass](#lgraph-and-lnast-check-pass)
       * [unbitwidth](#unbitwidth)
-      * [LNAST Opt](#lnast-opt)
    * [Eusocial Storage Devices](#eusocial-storage-devices)
       * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
       * [Demonstrating a composable storage system accelerated by memory semantic technologies](#demonstrating-a-composable-storage-system-accelerated-by-memory-semantic-technologies)
@@ -37,9 +36,11 @@ Table of Contents:
    * [SkyhookDM](#skyhookdm)
       * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
       * [Ability to Push back query execution to the Client in case of overloaded OSDs](#ability-to-push-back-query-execution-to-the-client-in-case-of-overloaded-osds)
+      * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
-    * [HDF5](#hdf5)
+      * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
+   * [HDF5](#hdf5)
       * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
       * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
       * [Column-storage in HDF5](#column-storage-in-hdf5)
@@ -81,7 +82,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Wed Jan 12 18:01:21 UTC 2022 -->
+<!-- Added by: runner, at: Wed Jan 19 23:40:19 UTC 2022 -->
 
 <!--te-->
 
@@ -90,34 +91,36 @@ Table of Contents:
 
 Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
 
-### Tree sitter Pyrope
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in Tree sitter Pyrope.)
+### HIF Tooling
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in HIF Tooling.)
 
 |   |   |
 |---|---|
-| Title | Tree-sitter Pyrope  |
-| Description | Work on a tree-sitter grammar for Pyrope |
+| Title | HIF tooling  |
+| Description | Tools around Hardware Interchange Format (HIF) files |
 | Mentor(s) | Jose Renau|
-| Skills | C++17, Parsing |
+| Skills | C++17 |
 | Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#tree-sitter-pyrope)
+| [Link](https://github.com/masc-ucsc/hif)
 
-Using [https://github.com/tekinengin/tree-sitter-pyrope](https://github.com/tekinengin/tree-sitter-pyrope) as a starting point, complete the Pyrope grammar
-to correctly parse the [Pyrope grammar](https://masc.soe.ucsc.edu/pyrope.html), interface with LiveHD
-and third party tools.
+HIF (https://github.com/masc-ucsc/hif) stands for Hardware Interchange Format.
+It is designed to be a efficient binary representation with simple API that
+allows to have generic graph and tree representations commonly used by hardware
+tools. It is not designer to be a universal format, but rather a storate and
+traversal format for hardware tools.
 
-Main features:
+LiveHD has 2 HIF interfaces, the tree (LNAST) and the graph (Lgraph). Both can
+read/write HIF format. The idea of this project is to expand the hif repository
+to create some small but useful tools around hif. Some projects:
 
-* Pyrope tree-sitter grammar
-* tree-sitter to LNAST generation (Comparable to https://github.com/masc-ucsc/livehd/tree/master/inou/pyrope)
-* Atom and neovim integration
-* Atom go definition, highlight, and attribute
-* Atom capacity to query LNAST/Lgraph generated grammar for bit-width. The incremental grammar passed to LNAST, passed to Lgraph,
-  and incremental bit-width inference.
-* neovim highlight, indent, fold support
-* Integrate with atom-hide as extra language
+* hif_diff + hif_patch: Create the equivalent of the diff/patch commands that
+  exist for text but for HIF files. Since the HIF files have a more clear
+  structure, some patches changes are more constrained or better understood
+  (IOs and dependences are explicit).
 
-In addition to the packages, there should be an iterator that use the incremental builder to support incremental changes.
+* hif_tree: Print the HIF hierarchy, somewhat similar to GNU tree but showing the HIF hieararchy.
+
+* hif_grep: capacity to grep for some tokens and outout a hif file only with those. Thena hif_tree/hif_cat can show the contents.
 
 
 ### Mockturtle
@@ -236,28 +239,6 @@ This means that a module could have no bitwidth information at all. We start
 from the leave nodes. If all the bits can be inferred given the inputs, the
 module should have no bitwidth. In that case the bitwidth can be inferred from
 outside.
-
-### LNAST Opt
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  LiveHD&body=I am a potential OSRE22 sponsor and I am interested in LNAST Opt.)
-
-|   |   |
-|---|---|
-| Title | LNAST Opt |
-| Description | Perform copy propagation, constant folding, and dce at LNAST level |
-| Mentor(s) | Jose Renau|
-| Skills | C++17 |
-| Difficulty | Medium |
-| [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lnast-opt)
-
-In LiveHD, LGraph has the cprop pass that performs constant folding, copy
-propagation, strength reduction... and many other optimizations.
-
-
-It may be useful to have a copy propagation, constant folding, and dead code
-elimination in LNAST. There are several reasons:
-
-* Doing code simplification early (LNAST is the earliest) reduces workload/steps in successive passes.
-* The simulation saves checkpoints, a LNAST Opt without dead code elimination would be useful to create the intermediate values for debugging.
 
 ## Eusocial Storage Devices
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Eusocial Storage Devices&body=I am a potential OSRE22 sponsor and I am interested in Eusocial Storage Devices.)
@@ -425,13 +406,29 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
 
 -------
 
+### Port wiki to ReadTheDocs or other documentation platform
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Port wiki to ReadTheDocs or other documentation platform.)
+
+  - **Topics**: `Documentation`, `wiki`, `markdown`
+  - **Skills**: Markdown, documentation, html
+  - **Difficulty**: Easy
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+
+SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
+as Github Wiki pages. We would like to move it to another platform such as
+[ReadTheDocs](https://readthedocs.org),
+to reorganize it and rewrite some sections as part of this effort.
+[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/42).
+
+-------
+
 ### Integrating Delta Lake on top of SkyhookDM
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Integrating Delta Lake on top of SkyhookDM.)
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)<mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
@@ -449,8 +446,7 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)<mailto:jayjeetc@ucsc.edu>
-
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
 
 Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
 
@@ -462,6 +458,23 @@ https://arxiv.org/pdf/2103.01871.pdf
 
 
 -------
+### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM.)
+
+  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
+  - **Skills**: C++
+  - **Difficulty**: Medium
+  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+
+
+Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time.
+
+Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own.
+
+Reference :
+https://arxiv.org/pdf/1812.03149.pdf
+
+
 -------
 
 
@@ -487,7 +500,7 @@ The HDF5 technology suite includes:
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
 
 [Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
 Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
@@ -504,7 +517,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
 
 The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
 A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
@@ -520,7 +533,7 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
 
 [Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
 records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
@@ -534,7 +547,7 @@ primarily access subsets of the fields in an HDF5 dataset.
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
 
 [Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
 Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
@@ -549,7 +562,7 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
 
 [Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
 HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
