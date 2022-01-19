@@ -40,12 +40,6 @@ Table of Contents:
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
       * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
-   * [HDF5](#hdf5)
-      * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
-      * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
-      * [Column-storage in HDF5](#column-storage-in-hdf5)
-      * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
-      * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
@@ -82,7 +76,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Wed Jan 19 23:40:19 UTC 2022 -->
+<!-- Added by: runner, at: Wed Jan 19 23:41:55 UTC 2022 -->
 
 <!--te-->
 
@@ -477,7 +471,7 @@ https://arxiv.org/pdf/1812.03149.pdf
 
 -------
 
-
+<!---
 ## HDF5
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in HDF5.)
 
@@ -570,6 +564,7 @@ has been performed in a [git branch](https://bitbucket.hdfgroup.org/projects/HDF
 Instead of adding index and query operations directly to HDF5, this project would instead connect a database package, such as
 [RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
 database and array-oriented I/O with HDF5.
+-->
 
 ## Proactive Data Containers (PDC)
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Proactive Data Containers&body=I am a potential OSRE22 sponsor and I am interested in Proactive Data Containers.)
