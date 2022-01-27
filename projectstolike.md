@@ -44,8 +44,6 @@ Table of Contents:
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
-   * [Popper](#popper)
-      * [Popper / Drone workflow translation](#popper--drone-workflow-translation)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
       * [Static RAM Generator](#static-ram-generator)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
@@ -76,7 +74,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Wed Jan 19 23:41:55 UTC 2022 -->
+<!-- Added by: runner, at: Thu Jan 27 23:41:50 UTC 2022 -->
 
 <!--te-->
 
@@ -371,7 +369,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
 Saving previous computation in the form of materialized views can provide benefit for future
@@ -406,7 +404,8 @@ https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/
   - **Topics**: `Documentation`, `wiki`, `markdown`
   - **Skills**: Markdown, documentation, html
   - **Difficulty**: Easy
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
+
 
 SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
 as Github Wiki pages. We would like to move it to another platform such as
@@ -422,7 +421,7 @@ to reorganize it and rewrite some sections as part of this effort.
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
@@ -440,7 +439,8 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
+
 
 Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
 
@@ -458,8 +458,7 @@ https://arxiv.org/pdf/2103.01871.pdf
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
-
+  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
 
 Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time.
 
@@ -494,7 +493,7 @@ The HDF5 technology suite includes:
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
 Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
@@ -511,7 +510,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
 A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
@@ -527,7 +526,7 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
 records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
@@ -541,7 +540,7 @@ primarily access subsets of the fields in an HDF5 dataset.
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
 Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
@@ -556,7 +555,7 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
   * **Difficulty**: Medium
-  * **Mentor**: Quincey Koziol <mailto:koziol@lbl.gov>, Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
 
 [Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
 HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
@@ -603,20 +602,6 @@ The key idea of this project is to reduce the frequency of MDS requests by offlo
 
 Once the basic functionality is implemented, this project can be expanded to address optimization opportunities, e.g. describing regular tree structures as a closed form expression in the tree’s root, shortcutting tree discovery.
 
-## Popper
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Popper&body=I am a potential OSRE22 sponsor and I am interested in Popper.)
-
-[Popper](https://getpopper.io) is a container-native task automation engine that runs on distinct container engines, orchestration frameworks and CI services. Write simple YAML files, run everywhere.
-
-### Popper / Drone workflow translation
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Popper&body=I am a potential OSRE22 sponsor and I am interested in Popper / Drone workflow translation.)
-
-  * **Topics**: `Popper`, `drone.io`, `workflow`, `reproducibility`, `containers`, `cloud native`
-  * **Skills**: YAML, Python, Docker
-  * **Difficulty**: Easy
-  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
-
-[Drone](https://github.com/drone) is a Container-Native, Continuous Delivery Platform with a similar functionality as Popper. In some areas Drone is more mature than Popper, but Popper is easier to debug. Both specify workflows in easy-to-read YAML files. The goal of this project is to be able to easily switch between Popper and Drone, e.g. to debug Drone workflows with Popper. This can be accomplished by implementing a translator that converts a Popper workflow into a Drone workflow and vice versa.
 
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs.)
