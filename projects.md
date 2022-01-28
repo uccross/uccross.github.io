@@ -360,38 +360,6 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 
 -------
 
-### Ability to Push back query execution to the Client in case of overloaded OSDs
-
-  - **Topics**: `Arrow`, `query opererators`, `push down computation`
-  - **Skills**: C++
-  - **Difficulty**: High
-  * **Mentor**:  Jayjeet Chakraboorty<mailto:jayjeetc@ucsc.edu>
-
-Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.
-Solution - We can modify the Dataset API by adding a method to check the resource utilization on the Storage side periodically and if the CPU and Memory usage passes a user-defined threshold or some other metrice, the Datasets API silently shifts to client side query execution for a while and then tries to push down again.  This method could also be applied dynamically at the OSD, allowing the OSD to reject certain operations, returning metadata concerning which operations have not yet been applied.
-
-Reference:
-https://github.com/uccross/skyhookdm-ceph/blob/skyhook-luminous/src/cls/tabular/cls_tabular.h#L1104
-
-
--------
-
-### Port wiki to ReadTheDocs or other documentation platform
-
-  - **Topics**: `Documentation`, `wiki`, `markdown`
-  - **Skills**: Markdown, documentation, html
-  - **Difficulty**: Easy
-  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
-
-
-SkyhookDM's documentation is [currently written](https://github.com/uccross/skyhookdm-ceph/wiki)
-as Github Wiki pages. We would like to move it to another platform such as
-[ReadTheDocs](https://readthedocs.org),
-to reorganize it and rewrite some sections as part of this effort.
-[Github issue](https://github.com/uccross/skyhookdm-ceph-cls/issues/42).
-
--------
-
 ### Integrating Delta Lake on top of SkyhookDM
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
@@ -408,27 +376,7 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 
 -------
 
-
-### Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes
-
-  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
-  - **Skills**: C++
-  - **Difficulty**: Medium
-  * **Mentor**: Jayjeet Chakraboorty <mailto:jayjeetc@ucsc.edu>
-
-
-Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
-
-Solution - We can write Helm charts to easily deploy this end-to-end system on Kubernetes with just a few Helm commands. The goal is to deploy ServiceX, SkyhookDM, and Dask workers and ensure they can communicate with one another. We can expose the system to the end-users via a Jupyter notebook with some getting started code/guide.
-
-Reference:
-https://www.youtube.com/watch?v=Zzwq9FmZdsU&t=2s
-https://arxiv.org/pdf/2103.01871.pdf
-
--------
-
-<!---
-## HDF5
+## SkyhookDM/HDF5
 
 [HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
 
