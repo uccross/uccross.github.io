@@ -39,7 +39,6 @@ Table of Contents:
       * [Port wiki to ReadTheDocs or other documentation platform](#port-wiki-to-readthedocs-or-other-documentation-platform)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
       * [Write Helm charts for easy deployment of the SkyhookDM, Dask , ServiceX stack on Kubernetes](#write-helm-charts-for-easy-deployment-of-the-skyhookdm-dask--servicex-stack-on-kubernetes)
-      * [Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM](#facilitate-continuous-benchmarkingregression-testing-for-the-critical-components-of-skyhookdm)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
@@ -74,7 +73,7 @@ Table of Contents:
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
 
-<!-- Added by: runner, at: Thu Jan 27 23:41:50 UTC 2022 -->
+<!-- Added by: runner, at: Fri Jan 28 00:42:14 UTC 2022 -->
 
 <!--te-->
 
@@ -369,7 +368,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: Jayjeet Chakraboorty<mailto:jayjeetc@ucsc.edu>
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
 Saving previous computation in the form of materialized views can provide benefit for future
@@ -387,7 +386,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Topics**: `Arrow`, `query opererators`, `push down computation`
   - **Skills**: C++
   - **Difficulty**: High
-  * **Mentor**: [Jeff LeFevre](https://www.soe.ucsc.edu/people/jlefevre) <mailto:jlefevre@ucsc.edu>, [Ivo Jimenez](https://ivotron.me/) [Jayjeet Chakraboorty](https://iris-hep.org/fellows/JayjeetChakraborty.html)
+  * **Mentor**:  Jayjeet Chakraboorty<mailto:jayjeetc@ucsc.edu>
 
 Problem - Currently, SkyhookDM v0.1.0 just allows pushing down Compute operations such as selection and projection into the Storage layer (i.e the Ceph Object Storage Devices). With a large number of clients trying to push down computation into the OSDs at a time, the CPU and Memory pressure of the OSDs may quickly increase causing run-time side effects such as blocked and slow OSD operations.
 Solution - We can modify the Dataset API by adding a method to check the resource utilization on the Storage side periodically and if the CPU and Memory usage passes a user-defined threshold or some other metrice, the Datasets API silently shifts to client side query execution for a while and then tries to push down again.  This method could also be applied dynamically at the OSD, allowing the OSD to reject certain operations, returning metadata concerning which operations have not yet been applied.
@@ -421,7 +420,7 @@ to reorganize it and rewrite some sections as part of this effort.
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: Jayjeet Chakraboorty <mailto:jayjeetc@ucsc.edu>
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
@@ -439,7 +438,7 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
   - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: Jayjeet Chakraboorty <mailto:jayjeetc@ucsc.edu>
 
 
 Problem - In the IRIS-HEP DOMA project, SkyhookDM will be used to act as a lake house where data will be ingested from ServiceX. The Data stored in SkyhookDM will be processed by Coffea through several Dask workers. The deployment of this 3 layered end-to-end system is quite cumbersome and inefficient if done manually. Most importantly, it's a blockage to someone who would like to test out the entire system very quickly.
@@ -449,24 +448,6 @@ Solution - We can write Helm charts to easily deploy this end-to-end system on K
 Reference:
 https://www.youtube.com/watch?v=Zzwq9FmZdsU&t=2s
 https://arxiv.org/pdf/2103.01871.pdf
-
-
--------
-### Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Facilitate continuous benchmarking/regression testing for the critical components of SkyhookDM.)
-
-  - **Topics**: `helm charts lakes`, `deployment`, `Dask`, `Kubernetes`
-  - **Skills**: C++
-  - **Difficulty**: Medium
-  * **Mentor**: [Jayjeet Chakraboorty]<mailto:jayjeetc@ucsc.edu>
-
-Problem - SkyhookDM,  which is a computational storage system built by embedding Apache Arrow is a performance critical distributed storage system. Often small changes in the performance critical parts of the source code can cause significant performance changes. It is very important to properly track these performance changes in order to allow the project to evolve more performant and prevent silent degradation in performance over time.
-
-Solution - We can use the Google benchmark framework to create benchmarks (very similar to unit tests) for all the performance critical parts of the source code. These benchmarks would be run on CI via Github workflows and would allow us to track the performance changes caused by every commit/pull request. We can also create a nice little web dashboard to visualize the performance results uploaded from the CI. But maybe this is another project on it’s own.
-
-Reference :
-https://arxiv.org/pdf/1812.03149.pdf
-
 
 -------
 
