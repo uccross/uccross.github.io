@@ -75,8 +75,13 @@ Table of Contents:
       * [Discrete graph extraction from simulated scalar fields](#discrete-graph-extraction-from-simulated-scalar-fields)
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
+   * [OpenRAM](#openram)
+      * [Replace logging framework with library](#replace-logging-framework-with-library)
+      * [ROM generator](#rom-generator)
+      * [Register File generator](#register-file-generator)
+      * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
 
-<!-- Added by: runner, at: Fri Jan 28 18:32:43 UTC 2022 -->
+<!-- Added by: runner, at: Mon Feb 14 18:26:15 UTC 2022 -->
 
 <!--te-->
 
