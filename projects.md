@@ -648,7 +648,6 @@ As a bonus task, and depending on the progress of the project, we can explore th
 - Develop performance testing suite
 
 ## Polyphorm / PolyPhy
-
 [Polyphorm](https://github.com/CreativeCodingLab/Polyphorm) is an agent-based system for reconstructing and visualizing *optimal transport networks* defined over sparse data. Rooted in astronomy and inspired by nature, we have used Polyphorm to reconstruct the Cosmic web structure, but also to discover network-like patterns in natural language data. You can find more details about our research [here](https://elek.pub/research.html). Under the hood, Polyphorm uses a richer 3D scalar field representation of the reconstructed network, instead of a discrete representation like a graph or a mesh.
 
 **PolyPhy** will be a Python-centric redesigned version of Polyphorm, currently in the beginning of its development cycle. PolyPhy will be a multi-platform toolkit meant for a wide audience across different disciplines: astronomers, neuroscientists, data scientists and even artists and designers. All of the offered projects focus on PolyPhy, with a variety of topics including design, coding, and even research. Ultimately, PolyPhy will become a tool for discovering connections between different disciplines by creating quantitatively comparable structural analytics.
@@ -815,3 +814,47 @@ systems sensor networks.
 - If interested, we are also interested in investigating correlations between different data streams
 - ????
 - PROFIT!!
+
+## OpenRAM
+
+[OpenRAM](https://github.com/VLSIDA/OpenRAM) is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design. OpenRAM supports integration in both commercial and open-source flows with both predictive and fabricable technologies. Most recently, it has created memories that are included on all of the [eFabless/Google/Skywater MPW tape-outs](https://efabless.com/open_shuttle_program/).
+
+### Replace logging framework with library
+
+- **Topics:** `User Interfaces`, `Python APIs`
+- **Skills:** Python
+- **Difficulty:* Easy
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+
+Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
+
+### ROM generator
+
+- **Topics:** `VLSI Design Basics`, `Memories`, `Python`
+- **Skills:** Python, VLSI
+- **Difficulty:* Medium/Difficult
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+
+Use the OpenRAM API to generate a Read-Only Memory (ROM) file from an input hex file. Project
+will automatically generate a Spice netlist, layout, Verilog model and timing characterization.
+
+### Register File generator
+
+- **Topics:** `VLSI Design Basics`, `Memories`, `Python`
+- **Skills:** Python, VLSI
+- **Difficulty:* Medium/Difficult
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+
+Use the OpenRAM API to generate a Register File from standard library cells. Project
+will automatically generate a Spice netlist, layout, Verilog model and timing characterization.
+
+### Built-In Self Test and Repair
+
+- **Topics:** `VLSI Design Basics`, `Python`, `Testing`
+- **Skills:** Python, VLSI
+- **Difficulty:* Medium/Difficult
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+
+Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
+of OpenRAM memories using spare rows and columns in OpenRAM memories. 
+
