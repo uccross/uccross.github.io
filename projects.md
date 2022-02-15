@@ -824,7 +824,7 @@ systems sensor networks.
 - **Topics:** `User Interfaces`, `Python APIs`
 - **Skills:** Python
 - **Difficulty:* Easy
-- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
 
@@ -832,7 +832,7 @@ Replace the custom logging framework in OpenRAM with [Python logging](https://do
 
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:* Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Read-Only Memory (ROM) file from an input hex file. Project
@@ -842,7 +842,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:* Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Register File from standard library cells. Project
@@ -852,9 +852,18 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 
 - **Topics:** `VLSI Design Basics`, `Python`, `Testing`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:* Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
 of OpenRAM memories using spare rows and columns in OpenRAM memories. 
+
+### Layout verses Schematic (LVS) visualization
+
+- **Topics:** `VLSI Design Basics`, `Python`
+- **Skills:** Python, VLSI, JSON
+- **Difficulty:* Easy/Medium
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
+
+Create a visualization interface to debug layout verses schematic mismatches in [Magic](https://github.com/RTimothyEdwards/magic) layout editor. Results will be parsed from a JSON output of [Netgen](https://github.com/RTimothyEdwards/netgen).
 
