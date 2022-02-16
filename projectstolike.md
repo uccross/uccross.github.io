@@ -48,7 +48,6 @@ Table of Contents:
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
       * [OpenLane Memory Design Macro Floorplanning](#openlane-memory-design-macro-floorplanning)
-      * [OpenLane Memory Design Macro Floorplanning](#openlane-memory-design-macro-floorplanning-1)
       * [OpenLane Memory Design Timing Analysis](#openlane-memory-design-timing-analysis)
       * [OpenLane Memory Macro PDK Support](#openlane-memory-macro-pdk-support)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
@@ -84,7 +83,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Wed Feb 16 20:22:54 UTC 2022 -->
+<!-- Added by: runner, at: Wed Feb 16 20:28:25 UTC 2022 -->
 
 <!--te-->
 
@@ -546,10 +545,6 @@ Once the basic functionality is implemented, this project can be expanded to add
 Our mission is to democratize and advance design automation of semiconductor devices through leadership, innovation, and collaboration.
 
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
-
-### OpenLane Memory Design Macro Floorplanning
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in OpenLane Memory Design Macro Floorplanning.)
-
 
 Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
 
