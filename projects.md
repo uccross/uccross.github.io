@@ -47,7 +47,9 @@ Table of Contents:
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
-      * [Static RAM Generator](#static-ram-generator)
+      * [OpenLane Memory Design Macro Floorplanning](#openlane-memory-design-macro-floorplanning)
+      * [OpenLane Memory Design Timing Analysis](#openlane-memory-design-timing-analysis)
+      * [OpenLane Memory Macro PDK Support](#openlane-memory-macro-pdk-support)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
       * [Enhance project website](#enhance-project-website)
       * [Demos and Tutorials](#demos-and-tutorials)
@@ -80,8 +82,9 @@ Table of Contents:
       * [ROM generator](#rom-generator)
       * [Register File generator](#register-file-generator)
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
+      * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Mon Feb 14 18:26:15 UTC 2022 -->
+<!-- Added by: runner, at: Wed Feb 16 19:19:21 UTC 2022 -->
 
 <!--te-->
 
