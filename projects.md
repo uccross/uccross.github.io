@@ -49,12 +49,11 @@ Table of Contents:
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
       * [Static RAM Generator](#static-ram-generator)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
-      * [Enhance project website](#enhance-project-website)
       * [Demos and Tutorials](#demos-and-tutorials)
-      * [Comprehensive flow testing](#comprehensive-flow-testing)
+      * [Comprehensive Flow Testing](#comprehensive-flow-testing)
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
-      * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledgebase)
    * [Package Management &amp; Reproducibility](#package-management--reproducibility)
       * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
@@ -81,7 +80,7 @@ Table of Contents:
       * [Register File generator](#register-file-generator)
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
 
-<!-- Added by: runner, at: Wed Feb 16 01:01:29 UTC 2022 -->
+<!-- Added by: runner, at: Wed Feb 16 02:06:40 UTC 2022 -->
 
 <!--te-->
 
