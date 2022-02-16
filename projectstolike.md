@@ -81,8 +81,10 @@ Table of Contents:
       * [ROM generator](#rom-generator)
       * [Register File generator](#register-file-generator)
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
+      * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Wed Feb 16 20:07:53 UTC 2022 -->
+
+<!-- Added by: runner, at: Wed Feb 16 19:19:21 UTC 2022 -->
 
 <!--te-->
 
@@ -548,12 +550,17 @@ OpenROAD is the key enabler of successful Chip initiatives like the Google-spons
 ### OpenLane Memory Design Macro Floorplanning
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in OpenLane Memory Design Macro Floorplanning.)
 
+
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+
+### OpenLane Memory Design Macro Floorplanning
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in OpenLane Memory Design Macro Floorplanning.)
+
+
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
-
-Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu).
 
 Improve and verify OpenLane design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
 
@@ -575,7 +582,7 @@ Improve and verify OpenLane Static Timing Analysis using OpenRAM generated libra
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
 
-Integrate and verify FreePDK45 OpenRAM memories with an OpenLane FreePDK45 design flow. OpenLane currently supports Skywater 130nm, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow.
+Integrate and verify FreePDK45 OpenRAM memories with an OpenLane FreePDK45 design flow. Specifically, OpenLane has been restricted to Skywater 130nm, but OpenRoad supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the new OpenLane flow.
 
 ### VLSI Power Planning and Analysis
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in VLSI Power Planning and Analysis.)
@@ -901,7 +908,7 @@ systems sensor networks.
 - **Topics:** `User Interfaces`, `Python APIs`
 - **Skills:** Python
 - **Difficulty:* Easy
-- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
 
@@ -910,7 +917,7 @@ Replace the custom logging framework in OpenRAM with [Python logging](https://do
 
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:** Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Read-Only Memory (ROM) file from an input hex file. Project
@@ -921,7 +928,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:** Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Register File from standard library cells. Project
@@ -932,9 +939,19 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 
 - **Topics:** `VLSI Design Basics`, `Python`, `Testing`
 - **Skills:** Python, VLSI
-- **Difficulty:* Medium/Difficult
+- **Difficulty:** Medium/Challenging
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
 of OpenRAM memories using spare rows and columns in OpenRAM memories. 
+
+### Layout verses Schematic (LVS) visualization
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenRAM&body=I am a potential OSRE22 sponsor and I am interested in Layout verses Schematic visualization.)
+
+- **Topics:** `VLSI Design Basics`, `Python`
+- **Skills:** Python, VLSI, JSON
+- **Difficulty:** Easy/Medium
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
+
+Create a visualization interface to debug layout verses schematic mismatches in [Magic](https://github.com/RTimothyEdwards/magic) layout editor. Results will be parsed from a JSON output of [Netgen](https://github.com/RTimothyEdwards/netgen).
 
