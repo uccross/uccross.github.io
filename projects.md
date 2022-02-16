@@ -47,14 +47,15 @@ Table of Contents:
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
-      * [Static RAM Generator](#static-ram-generator)
+      * [OpenLane Memory Design Macro Floorplanning](#openlane-memory-design-macro-floorplanning)
+      * [OpenLane Memory Design Timing Analysis](#openlane-memory-design-timing-analysis)
+      * [OpenLane Memory Macro PDK Support](#openlane-memory-macro-pdk-support)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
-      * [Enhance project website](#enhance-project-website)
       * [Demos and Tutorials](#demos-and-tutorials)
-      * [Comprehensive flow testing](#comprehensive-flow-testing)
+      * [Comprehensive Flow Testing](#comprehensive-flow-testing)
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
-      * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledgebase)
    * [Package Management &amp; Reproducibility](#package-management--reproducibility)
       * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
@@ -75,8 +76,14 @@ Table of Contents:
       * [Discrete graph extraction from simulated scalar fields](#discrete-graph-extraction-from-simulated-scalar-fields)
    * [DirtViz](#dirtviz)
       * [Visualize Sensor Data](#visualize-sensor-data)
+   * [OpenRAM](#openram)
+      * [Replace logging framework with library](#replace-logging-framework-with-library)
+      * [ROM generator](#rom-generator)
+      * [Register File generator](#register-file-generator)
+      * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
+      * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Fri Jan 28 18:32:43 UTC 2022 -->
+<!-- Added by: runner, at: Wed Feb 16 20:28:25 UTC 2022 -->
 
 <!--te-->
 
@@ -502,11 +509,10 @@ Once the basic functionality is implemented, this project can be expanded to add
 
 
 ## OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs
-[OpenROAD](https://theopenroadproject.org) is a DARPA supported initiative through the IDEA program, that delivers an open sourced ecosystem of a complete and autonomous VLSI design flow from from RTL-GDSII, that fosters innovation and easy access of design kits and software access for VLSI designers.
+[OpenROAD](https://theopenroadproject.org) is a front-runner in open-source semiconductor design automation tools and know-how. OpenROAD reduces barriers of access and tool costs to democratize system and product innovation in silicon. The OpenROAD tool and flow provide an autonomous, no-human-in-the-loop, 24-hour RTL-GDSII capability to support low-overhead design exploration and implementation through tapeout. We welcome a diverse community of designers, researchers, enthusiasts and entrepreneurs who use and contribute to OpenROAD to make a far-reaching impact. 
+Our mission is to democratize and advance design automation of semiconductor devices through leadership, innovation, and collaboration.
 
-OpenROAD's flow reduces cost and uncertainty barriers of commercial tools and enables a collaborative and democratized approach to learning and sharing of leading edge VLSI design and software methodologies. The OpenROAD flow aims at a rapid (less than 24 hour) design  turnaround time  with minimal human intervention. This is made possible through key innovations like the usage of distributed processing using Cloud resources, an adaptive ML based auto-tuning capability that allows the flow to self-adjust key design parameters for rapid convergence to good results.
-
-OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 140 successful tapeouts across a world wide and broad user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
+OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
 Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS such as those provided by [OpenRAM](https://github.com/vlsida/openram). 
 
@@ -546,15 +552,6 @@ Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://githu
 
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
-###  Enhance project website
-
-  * **Topics**: `Web Development`, `Dynamic updates`, `AI bot`
-  * **Skills**: Web development experience
-  * **Difficulty**: Easy
-  * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
-
-The [OpenROAD](https://theopenroadproject.org/) project serves a wide user community by providing free access and learning of open sourced VLSI design tools and a knowledge base. The project website needs to be updated to enhance information access, useful resources and links with analytics to provide useful information for enhanced user engagement.
-
 ###  Demos and Tutorials
 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
@@ -562,20 +559,20 @@ The [OpenROAD](https://theopenroadproject.org/) project serves a wide user commu
   * **Difficulty**: Medium
   * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>, Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>
 
-For [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts), develop demos showing:
-The basic usage of OpenROAD features and flow
+For [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane), develop demos showing:
+The OpenLane flow and highight key features
 GUI visualizations
-Different options and how they impact the results
+Design Explorations and Experiments
 Different design styles and particular challenges
 
-### Comprehensive flow testing
+### Comprehensive Flow Testing
 
-  * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
+  * **Topics**: `Testing`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
   * **Difficulty**: Medium
-  * **Mentor**: Tom Spyrou <mailto:aspyrou@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
 
-Add open sourced designs to existing test suite for the OpenROAD flow to expand coverage and technology capabilities. This includes design specification, configuration and creation of all necessary files for regression testing. Souruggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
+Develop detailed test plans to test the OpenLane flow to expand coverage and advanced features. Add open source designs to the regression test suite to improve tool quality and robustness. This includes design specification, configuration and creation of all necessary files for regression testing. Suggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
 
 ### Enhance GUI features
 
@@ -595,14 +592,14 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
 
-### Implement an NLP based AI bot
+### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase
 
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
   * **Difficulty**: Medium
   * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
 
-The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
+The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project contains a storehouse of knowledge in it's Github repositories within Issues and Pull requests. Additionally, project related slack channels also hold useful information in the form of questions and answers, problems and solutions in conversation threads. Implement an AI analytics bot that filters, selects relevant discussions and classifies/records them into useful documentation and actionable issues. This should also directly track, increase project usage and report outcome metrics.
 
 ## Package Management & Reproducibility
 
