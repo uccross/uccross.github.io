@@ -515,9 +515,6 @@ Our mission is to democratize and advance design automation of semiconductor dev
 
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
-### OpenLane Memory Design Macro Floorplanning
-
-
 Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
 
 ### OpenLane Memory Design Macro Floorplanning
