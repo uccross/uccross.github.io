@@ -47,7 +47,9 @@ Table of Contents:
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
-      * [Static RAM Generator](#static-ram-generator)
+      * [Improve and verify OpenLane Design planning with OpenRAM memories](#improve-and-verify-openlane-design-planning-with-openram-memories)
+      * [Improve and verify OpenLane Static Timing Analysis using OpenRAM memories](#improve-and-verify-openlane-static-timing-analysis-using-openram-memories)
+      * [Improve and verify FreePDK45 OpenRAM Memories in OpenLane](#improve-and-verify-freepdk45-openram-memories-in-openlane)
       * [VLSI Power Planning and Analysis](#vlsi-power-planning-and-analysis)
       * [Demos and Tutorials](#demos-and-tutorials)
       * [Comprehensive Flow Testing](#comprehensive-flow-testing)
@@ -80,7 +82,7 @@ Table of Contents:
       * [Register File generator](#register-file-generator)
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
 
-<!-- Added by: runner, at: Wed Feb 16 02:06:40 UTC 2022 -->
+<!-- Added by: runner, at: Wed Feb 16 02:45:38 UTC 2022 -->
 
 <!--te-->
 
@@ -543,15 +545,37 @@ Our mission is to democratize and advance design automation of semiconductor dev
 
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
-### Static RAM Generator
-💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Static RAM Generator.)
+### Improve and verify OpenLane Design planning with OpenRAM memories
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Improve and verify OpenLane Design planning with OpenRAM memories.)
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
 
-Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+
+Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
+
+### Improve and verify OpenLane Static Timing Analysis using OpenRAM memories
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Improve and verify OpenLane Static Timing Analysis using OpenRAM memories.)
+
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `Timing Analysis`
+  * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
+  * **Difficulty**: Medium
+  * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
+
+Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
+
+### Improve and verify FreePDK45 OpenRAM Memories in OpenLane
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Improve and verify FreePDK45 OpenRAM Memories in OpenLane.)
+
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `FreePDK45`
+  * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
+  * **Difficulty**: Medium
+  * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
+
+Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) FreePDK45 design flow. OpenLane currently supports only Skywater 130nm PDK, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow using FreePDK45.
 
 ### VLSI Power Planning and Analysis
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in VLSI Power Planning and Analysis.)
