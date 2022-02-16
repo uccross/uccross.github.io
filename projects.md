@@ -513,34 +513,34 @@ Our mission is to democratize and advance design automation of semiconductor dev
 
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
-### Improve and verify OpenLane Design planning with OpenRAM memories
+### OpenLane Memory Design Macro Floorplanning
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
 
-Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu).
 
-Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
+Improve and verify OpenLane design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
 
-### Improve and verify OpenLane Static Timing Analysis using OpenRAM memories
+### OpenLane Memory Design Timing Analysis
 
-  * **Topics**: `Memory Compilers`, `OpenRAM`, `Timing Analysis`
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
 
-Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
+Improve and verify OpenLane Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
 
-### Improve and verify FreePDK45 OpenRAM Memories in OpenLane
+### OpenLane Memory Macro PDK Support
 
-  * **Topics**: `Memory Compilers`, `OpenRAM`, `FreePDK45`
+  * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
   * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
 
-Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) FreePDK45 design flow. OpenLane currently supports only Skywater 130nm PDK, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow using FreePDK45.
+Integrate and verify FreePDK45 OpenRAM memories with an OpenLane FreePDK45 design flow. OpenLane currently supports Skywater 130nm, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow.
 
 ### VLSI Power Planning and Analysis
 
