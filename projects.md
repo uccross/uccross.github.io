@@ -89,7 +89,7 @@ Table of Contents:
 
 ## LiveHD
 
-Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: Jose Renau <mailto:renau@ucsc.edu> and Sheng-Hong Wang <mailto:swang203@ucsc.edu>
+Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: [Jose Renau](mailto:renau@ucsc.edu) and [Sheng-Hong Wang](mailto:swang203@ucsc.edu)
 
 ### HIF Tooling
 
@@ -243,7 +243,7 @@ As storage devices get faster, data management tasks rob the host of CPU cycles 
 
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
- - **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+ - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Recent research reveals that the compaction process in RocksDB can be altered to optimize future data access by changing the data layout in compaction levels. The benefit of this approach can be extended to different data layout optimization based on application access patterns and requirements. In this project, we want to create an interface that would allow users to dynamically inject layout optimization functions to RockDB, using containerization technologies such as Webassembly.
  - Reference: Saxena, Hemant, et al. "Real-Time LSM-Trees for HTAP Workloads." arXiv preprint arXiv:2101.06801 (2021).
@@ -253,7 +253,7 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
  - **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
  - **Difficulty:** Challenging
- - **Mentor:** Jianshen Liu <mailto:jliu120@ucsc.edu>
+ - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
  - References: Gen-Z: An Open Memory Fabric for Future Data Processing Needs: https://www.youtube.com/watch?v=JLb9nojNS8E, Pekon Gupta, SMART Modular; Gen-Z subsystem for Linux, https://github.com/linux-genz
@@ -268,7 +268,7 @@ SmartNICs have become one of important components in heterogeneous system archit
   * **Topics**: `Apache Arrow`, `RPC`, `networking`, `RDMA`, `dpdk`
   * **Skills**: C, C++, python, Linux, RDMA / dpdk
   * **Difficulty**: Challenging
-  * **Mentor**: [Jianshen Liu] <mailto:jliu120@ucsc.edu>, [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
+  * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
 Apache Arrow provides a set of tools to allow efficient in-memory analytics/processing columnar data. Arrow Flight is a data transport framework for streaming Arrow data across different services in a cluster. It is built based on gRPC, Google's popular [HTTP/2-based](https://github.com/grpc/grpc/blob/v1.43.0/doc/PROTOCOL-HTTP2.md) RPC library. The most common deployment of Arrow Flight is to run on top of the kernel TCP/IP stack. This kernel stack is known to be much slower than kernel-bypass stacks such as DPDK and RDMA. Given that there are already solutions for RPC over these kernel-bypass stacks (e.g., [eRPC](https://github.com/erpc-io/eRPC), and [Seastar](https://github.com/scylladb/seastar)), the goal of this project is to allow Arrow Flight to leverage the higher performance of these stacks instead of the traditional gRPC.
 
@@ -277,7 +277,7 @@ Apache Arrow provides a set of tools to allow efficient in-memory analytics/proc
   * **Topics**: `SmartNIC`, `regex`, `networking`, `Apache Arrow`
   * **Skills**: C, C++, python, Linux, dpdk
   * **Difficulty**: Challenging
-  * **Mentor**: [Jianshen Liu] <mailto:jliu120@ucsc.edu>, [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
+  * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
 The current implementation of the row-based data filtering in Apache Arrow uses host CPUs. Offloading this filtering function to SmartNICs can save the host CPU cycles and return to user applications while potentially gaining better performance. [BlueField-2 DPU] (https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/documents/datasheet-nvidia-bluefield-2-dpu.pdf) provides a built-in RegEx accelerator for network Ethernet packets. This project is to develop the connection to allow Apache Arrow to leverage this accelerator, and eventually characterize the performance benefits in throughput, latency, and energy consumption.
 
@@ -287,7 +287,7 @@ The current implementation of the row-based data filtering in Apache Arrow uses 
 
 The OSAVC is a vehicle-agnostic open source hardware and software project.  This project is designed to provide a real-time hardware controller adaptable to any vehicle type, suitable for aerial, terrestrial, marine, or extraterrestrial vehicles. It allows control researchers to develop state estimation algorithms, sensor calibration algorithms, and vehicle control models in a modular fashion such that once the hardware set has been developed switching algorithms requires only modifying one C function and recompiling.
 
-Lead mentor: Aaron Hunter <mailto:aamuhunt@ucsc.edu>
+Lead mentor: [Aaron Hunter](mailto:aamuhunt@ucsc.edu)
 
 Projects for the OSAVC:
 
@@ -358,7 +358,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: Jayjeet Chakraboorty<mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
 Saving previous computation in the form of materialized views can provide benefit for future
@@ -375,7 +375,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **Difficulty**: Medium
-  * **Mentor**: Jayjeet Chakraboorty <mailto:jayjeetc@ucsc.edu>
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
 An important benefit of this integration will be to provide an SQL interface for SkyhookDM functionality, through Spark SQL.
@@ -406,7 +406,7 @@ The HDF5 technology suite includes:
   * **Topics**: `VOL connector`, `streaming data`, `column store`
   * **Skills**: C, HDF5, Apache Arrow
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
 
 [Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
 Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
@@ -422,7 +422,7 @@ that allows applications to make HDF5 calls to access Apache Arrow data.
   * **Topics**: `VOL connector`, `Ceph`, `object storage`
   * **Skills**: C, HDF5, Ceph / RADOS
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
 
 The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
 A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
@@ -437,7 +437,7 @@ of this VOL connector, enabling HDF5 applications to store data directly in RADO
   * **Topics**: `HDF5`, `column-store`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
 
 [Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
 records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
@@ -450,7 +450,7 @@ primarily access subsets of the fields in an HDF5 dataset.
   * **Topics**: `HDF5`, `sparse data`
   * **Skills**: C, HDF5
   * **Difficulty**: High
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
 
 [Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
 Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
@@ -464,7 +464,7 @@ access sparse data.  This could extend beyond sparse matrices proper, and includ
   * **Topics**: `HDF5`, `search`, `index`, `database`
   * **Skills**: HDF5, Database Integration
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
 
 [Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
 HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
@@ -486,7 +486,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
   * **Skills**: Python, C, PDC
   * **Difficulty**: Medium
-  * **Mentor**: Suren Byna <mailto:sbyna@lbl.gov>, Houjun Tang <mailto:htang4@lbl.gov>
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov), [Houjun Tang](mailto:htang4@lbl.gov)
 
 [Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it.
 
@@ -499,7 +499,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
   * **Difficulty**: Medium
-  * **Mentor**: [Carlos Maltzahn](https://people.ucsc.edu/carlosm) <mailto:carlosm@ucsc.edu>
+  * **Mentor**: [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
 
@@ -514,41 +514,41 @@ Our mission is to democratize and advance design automation of semiconductor dev
 
 OpenROAD is the key enabler of successful Chip initiatives like the Google-sponsored [Efabless](efabless.com) that has made possible more than 150 successful tapeouts by a diverse and global user community. The OpenROAD project repository is https://github.com/The-OpenROAD-Project/OpenROAD.
 
-Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS. See link for details:[OpenRAM](https://openram.soe.ucsc.edu)
+Design of  static RAMs in VLSI designs for good performance and area is generally time-consuming. Memory compilers significantly reduce design time for complex analog and mixed-signal designs by allowing designers to explore, verify and configure multiple variants and hence select a design that is optimal for area and performance. This project requires the support of memory compilers to [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) based on popular PDKS such as those provided by [OpenRAM](https://github.com/vlsida/openram). 
 
 ### OpenLane Memory Design Macro Floorplanning
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
-  * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
+  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
-Improve and verify OpenLane design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
+Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
 
 ### OpenLane Memory Design Timing Analysis
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
-  * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
+  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
-Improve and verify OpenLane Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
+Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
 
 ### OpenLane Memory Macro PDK Support
 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
-  * **Mentor**: Matthew Guthaus  <mailto:mrg@ucsc.edu>, Mehdi Saligane <mailto:mehdi@umich.edu>
+  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
-Integrate and verify FreePDK45 OpenRAM memories with an OpenLane FreePDK45 design flow. Specifically, OpenLane has been restricted to Skywater 130nm, but OpenRoad supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the new OpenLane flow.
+Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) FreePDK45 design flow. OpenLane currently supports only Skywater 130nm PDK, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow using FreePDK45.
 
 ### VLSI Power Planning and Analysis
 
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
   * **Difficulty**: Medium
-  * **Mentor**: Mehdi Saligane <mailto:mehdi@umich.edu>, Ming-Hung  <mailto:minghung@umich.edu>
+  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
@@ -557,7 +557,7 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
   * **Difficulty**: Medium
-  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>, Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>
+  * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane), develop demos showing:
 The OpenLane flow and highight key features
@@ -570,7 +570,7 @@ Different design styles and particular challenges
   * **Topics**: `Testing`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
   * **Difficulty**: Medium
-  * **Mentor**: Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+  * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 Develop detailed test plans to test the OpenLane flow to expand coverage and advanced features. Add open source designs to the regression test suite to improve tool quality and robustness. This includes design specification, configuration and creation of all necessary files for regression testing. Suggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
 
@@ -579,7 +579,7 @@ Develop detailed test plans to test the OpenLane flow to expand coverage and adv
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
   * **Difficulty**: Medium
-  * **Mentor**: Matt Liberty <mailto:<mailto:mliberty@eng.ucsd.edu>>, Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>
+  * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
 
@@ -588,7 +588,7 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
   * **Topics**: `Database`, `EDA`
   * **Skills**:  C++, Python, JSON, Jinja templating
   * **Difficulty**: Medium
-  * **Mentor**: Matt Liberty <mailto:mliberty@eng.ucsd.edu>, Tom Spyrou <mailto:aspyrou@eng.ucsd.edu>
+  * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Tom Spyrou](mailto:aspyrou@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
 
@@ -597,7 +597,7 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
   * **Difficulty**: Medium
-  * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
+  * **Mentor**: [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu), [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project contains a storehouse of knowledge in it's Github repositories within Issues and Pull requests. Additionally, project related slack channels also hold useful information in the form of questions and answers, problems and solutions in conversation threads. Implement an AI analytics bot that filters, selects relevant discussions and classifies/records them into useful documentation and actionable issues. This should also directly track, increase project usage and report outcome metrics.
 
@@ -840,7 +840,7 @@ systems sensor networks.
 
 - **Topics:** `User Interfaces`, `Python APIs`
 - **Skills:** Python
-- **Difficulty:* Easy
+- **Difficulty:** Easy
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
@@ -867,10 +867,10 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 
 ### Built-In Self Test and Repair
 
-- **Topics:** `VLSI Design Basics`, `Python`, `Testing`
-- **Skills:** Python, VLSI
+- **Topics:** `VLSI Design Basics`, `Python`, `Verilog`, `Testing`
+- **Skills:** Python, Verilog
 - **Difficulty:** Medium/Challenging
-- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
+- **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu), [Bugra Onal](mailto:bonal@ucsc.edu)
 
 Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
 of OpenRAM memories using spare rows and columns in OpenRAM memories. 
