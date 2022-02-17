@@ -34,6 +34,8 @@ Table of Contents:
       * [State estimation/sensor fusion algorithm development](#state-estimationsensor-fusion-algorithm-development)
       * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
    * [SkyhookDM](#skyhookdm)
+      * [Support reading from Skyhook in Dask/Ray using the Arrow Dataset API](#support-reading-from-skyhook-in-daskray-using-the-arrow-dataset-api)
+      * [Implement Gandiva based query executor in SkyhookDM](#implement-gandiva-based-query-executor-in-skyhookdm)
       * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
    * [SkyhookDM/HDF5](#skyhookdmhdf5)
@@ -83,7 +85,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Wed Feb 16 20:55:23 UTC 2022 -->
+<!-- Added by: runner, at: Thu Feb 17 07:37:30 UTC 2022 -->
 
 <!--te-->
 
@@ -352,6 +354,27 @@ pushing down SELECT, PROJECT and other functionality into storage to reduce
 data returned to the client.
 
 -------------------
+
+### Support reading from Skyhook in Dask/Ray using the Arrow Dataset API
+  - **Topics**: `Arrow`, `Dask/Ray` 
+  - **Skills**: C++ 
+  - **Difficulty**: Medium 
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
+
+**Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
+
+### Implement Gandiva based query executor in SkyhookDM 
+  - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
+  - **Skills**: C++ 
+  - **Difficulty**: Hard 
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
+
+**Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
+
+**References:** 
+- https://arrow.apache.org/blog/2018/12/05/gandiva-donation/
+- https://www.dremio.com/subsurface/increasing-performance-with-arrow-and-gandiva/
+- https://github.com/apache/arrow/tree/master/cpp/src/gandiva
 
 ### Add Ability to create and save views from Datasets
 
