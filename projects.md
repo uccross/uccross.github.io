@@ -353,6 +353,15 @@ data returned to the client.
 
 -------------------
 
+### Implement Gandiva based query executor in SkyhookDM 
+  - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
+  - **Skills**: C++ 
+  - **Difficulty**: Hard 
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
+
+**Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
+
+
 ### Add Ability to create and save views from Datasets
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
