@@ -84,7 +84,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Thu Feb 17 06:29:53 UTC 2022 -->
+<!-- Added by: runner, at: Thu Feb 17 06:39:02 UTC 2022 -->
 
 <!--te-->
 
@@ -382,6 +382,10 @@ data returned to the client.
 
 **Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
 
+**References:** 
+- https://arrow.apache.org/blog/2018/12/05/gandiva-donation/
+- https://www.dremio.com/subsurface/increasing-performance-with-arrow-and-gandiva/
+- https://github.com/apache/arrow/tree/master/cpp/src/gandiva
 
 ### Add Ability to create and save views from Datasets
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SkyhookDM&body=I am a potential OSRE22 sponsor and I am interested in Add Ability to create and save views from Datasets.)
