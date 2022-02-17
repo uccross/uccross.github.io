@@ -354,6 +354,14 @@ data returned to the client.
 
 -------------------
 
+### Support reading from Skyhook in Dask/Ray using the Arrow Dataset API
+  - **Topics**: `Arrow`, `Dask/Ray` 
+  - **Skills**: C++ 
+  - **Difficulty**: Medium 
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
+
+**Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
+
 ### Implement Gandiva based query executor in SkyhookDM 
   - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
   - **Skills**: C++ 
