@@ -82,7 +82,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Fri Feb 18 21:26:04 UTC 2022 -->
+<!-- Added by: runner, at: Fri Feb 18 22:04:28 UTC 2022 -->
 
 <!--te-->
 
@@ -905,6 +905,7 @@ systems sensor networks.
   * **Topics**: `Data Visualization`, `Analytics`
   * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
   * **Difficulty**: Easy/Moderate
+  * **Size** MEDIUM+ (about 18-20 hrs/week) 
   * **Mentor**: [Colleen Josephson](mailto:cjosephson@ucsc.edu)
 
 - Develop set of visualization tools (ideally web based) that easily allows users to zoom in on date ranges, change axes, etc.
