@@ -844,6 +844,7 @@ systems sensor networks.
   * **Topics**: `Data Visualization`, `Analytics`
   * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
   * **Difficulty**: Easy/Moderate
+  * **Size** MEDIUM+ (about 18-20 hrs/week) 
   * **Mentor**: [Colleen Josephson](mailto:cjosephson@ucsc.edu)
 
 - Develop set of visualization tools (ideally web based) that easily allows users to zoom in on date ranges, change axes, etc.
