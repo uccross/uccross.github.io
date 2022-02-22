@@ -26,10 +26,8 @@ Table of Contents:
       * [Arrow data filtering using regular expression accelerator](#arrow-data-filtering-using-regular-expression-accelerator)
    * [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
       * [Vehicle/Craft sensor driver development](#vehiclecraft-sensor-driver-development)
-      * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
-      * [Path finding algorithm using OpenCV](#path-finding-algorithm-using-opencv)
+      * [Path finding algorithm using OpenCV and machine learning](#path-finding-algorithm-using-opencv-and-machine-learning)
       * [State estimation/sensor fusion algorithm development](#state-estimationsensor-fusion-algorithm-development)
-      * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
    * [SkyhookDM](#skyhookdm)
       * [Support reading from Skyhook in Dask/Ray using the Arrow Dataset API](#support-reading-from-skyhook-in-daskray-using-the-arrow-dataset-api)
       * [Implement Gandiva based query executor in SkyhookDM](#implement-gandiva-based-query-executor-in-skyhookdm)
@@ -82,7 +80,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Tue Feb 22 18:23:07 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 22 18:26:54 UTC 2022 -->
 
 <!--te-->
 
