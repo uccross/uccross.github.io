@@ -294,48 +294,34 @@ Projects for the OSAVC:
 ### Vehicle/Craft sensor driver development
  - **Topics**: Driver code to integrate sensor to a microcontroller
  - **Skills**: C, I2C, SPI, UART interfaces
- - **Difficulty** Easy
+ - **Size** Part time
+ - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
 
 Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller.
 
-### IMU calibration algorithm development
- - **Topics**: Least Squares, DCM,
- - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
- - **Difficulty** Medium
- - **Mentor** Aaron Hunter
 
-
-The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
-
-### Path finding algorithm using OpenCV
+### Path finding algorithm using OpenCV and machine learning
  - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
+ - **Size** Medium or Large
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
 
-Use OpenCV to identify a track for an autonomous vehicle to follow.  For example, a closed circuit course for an autonomous race car might be demarcated by different colored cones indicating the left and right boundaries of the track.  Use OpenCV to find and track the location of these cones as the car navigates the course. Implement initially on a laptop using video frames.  Ideally, transfer the algorithm to a Raspberry Pi and test on a real track.
+Use OpenCV to identify a track for an autonomous vehicle to follow.  Build on previous work by developing a new model using EfficientDet and an existing training set of images. Port the model to TFlite and implement on the Coral USB Accelerator. Evaluate its performance against our previous efforts. 
 
 
 ### State estimation/sensor fusion algorithm development
  - **Topics**: Kalman filtering, Mahoney
- - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
+ - **Skills**: C/Python, Matlab/Simulink, numerical optimization algorithms
+ - **Size** Large
  - **Difficulty** Challenging
  - **Mentor** Aaron Hunter
 
 
 Implement an optimal state estimation algorithm from a model.  This model can be derived from a Kalman filter or some other state estimation filter (e.g., Mahoney filter).  THe model takes sensor readings as input and provides an estimate of the state of a vehicle. Finally, convert the model to standard C using the Simulink code generation or implement in Python (for use on a single board computer, e.g., Raspberry Pi)
-
-### Vehicle dynamic model development
- - **Topics**: Dynamic modeling, control theory
- - **Skills**: C, Matlab/Simulink
- - **Difficulty** Challenging
- - **Mentor** Aaron Hunter
-
-
-Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
 ## SkyhookDM
 
