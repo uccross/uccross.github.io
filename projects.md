@@ -292,7 +292,7 @@ Projects for the OSAVC:
 ### Vehicle/Craft sensor driver development
  - **Topics**: Driver code to integrate sensor to a microcontroller
  - **Skills**: C, I2C, SPI, UART interfaces
- - **Size** Part time
+ - **Size** 175 hours
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
@@ -303,7 +303,7 @@ Help develop a sensor library for use in autonomnous vehicles.  Possible sensors
 ### Path finding algorithm using OpenCV and machine learning
  - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
- - **Size** Medium or Large
+ - **Size** 175 or 350 hours 
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
@@ -314,7 +314,7 @@ Use OpenCV to identify a track for an autonomous vehicle to follow.  Build on pr
 ### State estimation/sensor fusion algorithm development
  - **Topics**: Kalman filtering, Mahoney
  - **Skills**: C/Python, Matlab/Simulink, numerical optimization algorithms
- - **Size** Large
+ - **Size** 350 hours
  - **Difficulty** Challenging
  - **Mentor** Aaron Hunter
 
@@ -339,7 +339,7 @@ data returned to the client.
 ### Support reading from Skyhook in Dask/Ray using the Arrow Dataset API
   - **Topics**: `Arrow`, `Dask/Ray` 
   - **Skills**: C++ 
-  - **No. of Hours**: 175 
+  - **Size**: 175 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 **Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
@@ -347,7 +347,7 @@ data returned to the client.
 ### Implement Gandiva based query executor in SkyhookDM 
   - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
   - **Skills**: C++ 
-  - **No. of Hours**: 350 
+  - **Size**: 350 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
 
 **Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
@@ -361,7 +361,7 @@ data returned to the client.
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++ 
-  - **No. of Hours**: 175
+  - **Size**: 175 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
@@ -378,7 +378,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
-  - **No. of Hours**: 175 or 350
+  - **NSize**: 175 or 350 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
@@ -833,7 +833,7 @@ systems sensor networks.
   * **Topics**: `Data Visualization`, `Analytics`
   * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
   * **Difficulty**: Easy/Moderate
-  * **Size** MEDIUM+ (about 18-20 hrs/week) 
+  * **Size** 175 hours
   * **Mentor**: [Colleen Josephson](mailto:cjosephson@ucsc.edu)
 
 - Develop set of visualization tools (ideally web based) that easily allows users to zoom in on date ranges, change axes, etc.
