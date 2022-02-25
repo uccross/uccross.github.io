@@ -33,12 +33,6 @@ Table of Contents:
       * [Implement Gandiva based query executor in SkyhookDM](#implement-gandiva-based-query-executor-in-skyhookdm)
       * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
-   * [SkyhookDM/HDF5](#skyhookdmhdf5)
-      * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
-      * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
-      * [Column-storage in HDF5](#column-storage-in-hdf5)
-      * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
-      * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
@@ -390,94 +384,6 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 
 -------
 
-## SkyhookDM/HDF5
-
-[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
-
-The HDF5 technology suite includes:
-* A versatile data model that can represent very complex data objects and a wide variety of metadata.
-* A completely portable file format with no limit on the number or size of data objects in the collection.
-* A software library that runs on a range of computational platforms, from laptops to massively parallel systems, and implements a high-level API with C, C++, Fortran 90, and Java interfaces.
-* A rich set of integrated performance features that allow for access time and storage space optimizations.
-* Tools and applications for managing, manipulating, viewing, and analyzing the data in the collection.
-
-
-
--------------------
-
-### HDF5 - Apache Arrow Integration
-
-  * **Topics**: `VOL connector`, `streaming data`, `column store`
-  * **Skills**: C, HDF5, Apache Arrow
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
-Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
-data streams, such as realtime data from high-speed scientific instruments and cameras.  Bridging the gap between
-science applications and analytics tools that use HDF5 and Apache Arrow data streams could bring new kinds of tools
-and data together.  This project will create a standalone HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer)
-that allows applications to make HDF5 calls to access Apache Arrow data.
-
--------
-
-### HDF5 - Ceph RADOS Integration
-
-  * **Topics**: `VOL connector`, `Ceph`, `object storage`
-  * **Skills**: C, HDF5, Ceph / RADOS
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
-A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
-to access the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer, enabling
-HDF5 objects (datasets, groups, etc) to be directly stored as RADOS objects.  This project would expand the capabilities
-of this VOL connector, enabling HDF5 applications to store data directly in RADOS pools.
-
--------
-
-### Column-storage in HDF5
-
-  * **Topics**: `HDF5`, `column-store`
-  * **Skills**: C, HDF5
-  * **Difficulty**: High
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
-records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
-primarily access subsets of the fields in an HDF5 dataset.
-
--------
-
-### Sparse data storage in HDF5
-
-  * **Topics**: `HDF5`, `sparse data`
-  * **Skills**: C, HDF5
-  * **Difficulty**: High
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
-Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
-Adding efficient storage of sparse data in HDF5 would dramatically improve performance for applications that wish to store and
-access sparse data.  This could extend beyond sparse matrices proper, and include any form of sparsely populated array or table.
-
--------
-
-### Metadata search in HDF5 with Database Solutions
-
-  * **Topics**: `HDF5`, `search`, `index`, `database`
-  * **Skills**: HDF5, Database Integration
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
-HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
-has been performed in a [git branch](https://bitbucket.hdfgroup.org/projects/HDFFV/repos/hdf5/branches?base=feature%2Findexing).
-Instead of adding index and query operations directly to HDF5, this project would instead connect a database package, such as
-[RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
-database and array-oriented I/O with HDF5.
--->
-
 ## Proactive Data Containers (PDC)
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
@@ -490,6 +396,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
   * **Skills**: Python, C, PDC
   * **Difficulty**: Medium
+  * **Size**: Large (350 hours)
   * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov), [Houjun Tang](mailto:htang4@lbl.gov)
 
 [Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it.
