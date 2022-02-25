@@ -389,8 +389,6 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
 
--------------------
-
 ### Python interface to an object-centric data management system
 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
