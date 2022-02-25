@@ -360,8 +360,8 @@ data returned to the client.
 ### Add Ability to create and save views from Datasets
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
-  - **Skills**: C++
-  - **Difficulty**: Medium
+  - **Skills**: C++ 
+  - **No. of Hours**: 175 Hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
@@ -378,7 +378,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
-  - **Difficulty**: Medium
+  - **No. of Hours**: 175 or 350 Hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
