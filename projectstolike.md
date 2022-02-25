@@ -80,7 +80,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Tue Feb 22 18:33:52 UTC 2022 -->
+<!-- Added by: runner, at: Fri Feb 25 16:37:26 UTC 2022 -->
 
 <!--te-->
 
@@ -558,6 +558,7 @@ Design of  static RAMs in VLSI designs for good performance and area is generall
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
@@ -568,6 +569,7 @@ Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
@@ -578,6 +580,7 @@ Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) FreePDK45 design flow. OpenLane currently supports only Skywater 130nm PDK, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow using FreePDK45.
@@ -635,7 +638,7 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
   * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Tom Spyrou](mailto:aspyrou@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
-
+r
 ### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs&body=I am a potential OSRE22 sponsor and I am interested in Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase.)
 
@@ -905,6 +908,7 @@ systems sensor networks.
 - **Topics:** `User Interfaces`, `Python APIs`
 - **Skills:** Python
 - **Difficulty:** Easy
+- **Size**: Medium (175 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
@@ -915,6 +919,7 @@ Replace the custom logging framework in OpenRAM with [Python logging](https://do
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
 - **Difficulty:** Medium/Challenging
+- **Size**: Large (350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Read-Only Memory (ROM) file from an input hex file. Project
@@ -926,6 +931,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
 - **Difficulty:** Medium/Challenging
+- **Size**: Large (350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Register File from standard library cells. Project
@@ -937,6 +943,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 - **Topics:** `VLSI Design Basics`, `Python`, `Verilog`, `Testing`
 - **Skills:** Python, Verilog
 - **Difficulty:** Medium/Challenging
+- **Size:** Medium (175 hours)
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu), [Bugra Onal](mailto:bonal@ucsc.edu)
 
 Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
@@ -948,6 +955,7 @@ of OpenRAM memories using spare rows and columns in OpenRAM memories.
 - **Topics:** `VLSI Design Basics`, `Python`
 - **Skills:** Python, VLSI, JSON
 - **Difficulty:** Easy/Medium
+- **Size**: Medium or Large (175 or 350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Create a visualization interface to debug layout verses schematic mismatches in [Magic](https://github.com/RTimothyEdwards/magic) layout editor. Results will be parsed from a JSON output of [Netgen](https://github.com/RTimothyEdwards/netgen).
