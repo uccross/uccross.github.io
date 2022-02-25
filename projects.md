@@ -234,6 +234,7 @@ As storage devices get faster, data management tasks rob the host of CPU cycles 
 
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
+ - **Size** 175 or 350 hours 
  - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Recent research reveals that the compaction process in RocksDB can be altered to optimize future data access by changing the data layout in compaction levels. The benefit of this approach can be extended to different data layout optimization based on application access patterns and requirements. In this project, we want to create an interface that would allow users to dynamically inject layout optimization functions to RockDB, using containerization technologies such as Webassembly.
@@ -244,6 +245,7 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
  - **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
  - **Difficulty:** Challenging
+ - **Size** 175 or 350 hours 
  - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
@@ -258,6 +260,7 @@ SmartNICs have become one of important components in heterogeneous system archit
 
   * **Topics**: `Apache Arrow`, `RPC`, `networking`, `RDMA`, `dpdk`
   * **Skills**: C, C++, python, Linux, RDMA / dpdk
+  * **Size** 175 or 350 hours 
   * **Difficulty**: Challenging
   * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
@@ -267,6 +270,7 @@ Apache Arrow provides a set of tools to allow efficient in-memory analytics/proc
 
   * **Topics**: `SmartNIC`, `regex`, `networking`, `Apache Arrow`
   * **Skills**: C, C++, python, Linux, dpdk
+  * **Size** 175 or 350 hours 
   * **Difficulty**: Challenging
   * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
@@ -461,8 +465,8 @@ Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://githu
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: Mehdi Saligane <mailto:mehdi@umich.edu>, Ming-Hung  <mailto:minghung@umich.edu>
-  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
