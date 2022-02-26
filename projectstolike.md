@@ -74,7 +74,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Sat Feb 26 00:33:30 UTC 2022 -->
+<!-- Added by: runner, at: Sat Feb 26 00:51:03 UTC 2022 -->
 
 <!--te-->
 
@@ -356,6 +356,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Dask/Ray` 
   - **Skills**: C++ 
   - **Size**: 175 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 **Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
@@ -365,6 +366,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
   - **Skills**: C++ 
   - **Size**: 350 hours
+  - **Difficulty:** Hard
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
 
 **Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
@@ -380,6 +382,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++ 
   - **Size**: 175 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
@@ -398,6 +401,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **NSize**: 175 or 350 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
