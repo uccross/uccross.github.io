@@ -643,7 +643,7 @@ Specific tasks:
 - **Skills:** video editing, creating educational content, communication, (native or fluent in another language)
 - **Difficulty:** Easy-Moderate
 - **Commitment:** part-time (175 hours)
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Drew Ehrlich](mailto:deehrlic@ucsc.edu)
 
 Create a public face for PolyPhy that reflects its history, context, and teaches its functionality to users in different degrees of familiarity.
 
@@ -693,7 +693,7 @@ Specific tasks:
 - **Skills:** Python programming, UI/UX development experience, (knowledge of graphics)
 - **Difficulty:** Moderate
 - **Commitment:** full-time (350 hours)
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [David Abramov](mailto:dabramov@ucsc.edu)
 
 The key feature of PolyPhy is its interactivity. By interacting with the underlying simulation model, the user can adjust its parameters in real time and respond to its behavior. For instance, an astrophysics expert can load a dataset of 100k galaxies and reconstruct the large-scale structure of the intergalactic medium. A responsive UI combined with real-time visualization allows them to judge the fidelity of the reconstruction and make necessary changes.
 
@@ -709,7 +709,7 @@ Specific tasks:
 - **Skills:** basic graphics theory and math, Python, GPU programming, (previous experience visualizing novel datasets)
 - **Difficulty:** Challenging
 - **Commitment:** full-time (350 hours)
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [David Abramov](mailto:dabramov@ucsc.edu)
 
 Data visualization is one of the core components of PolyPhy, as it provides a real-time overview of the underlying MCPM simulation. Through the feedback provided by the visualization, PolyPhy users can adjust the simulation model and make new findings about the dataset. Various operations over the reconstructed data (e.g. spatial searching) as well as important statistical summaries also benefit from clear visual presentation.
 
@@ -725,7 +725,7 @@ Specific tasks:
 - **Skills:** good understanding of discrete math and graph theory, Python, (GPU programming)
 - **Difficulty:** Challenging
 - **Commitment:** full-time (350 hours)
-- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
+- **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Farhanul Hasan](mailto:farhasan@nmsu.edu)
 
 Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces network-like structures, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field by navigating the 1D ridges of the scalar field.
 
