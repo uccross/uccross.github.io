@@ -46,7 +46,7 @@ Table of Contents:
       * [Comprehensive Flow Testing](#comprehensive-flow-testing)
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
-      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledgebase)
+      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledge base](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledge-base)
    * [Package Management &amp; Reproducibility](#package-management--reproducibility)
       * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
@@ -74,8 +74,8 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Sat Feb 26 00:48:10 UTC 2022 -->
 
+<!-- Added by: runner, at: Sat Feb 26 01:00:02 UTC 2022 -->
 <!--te-->
 
 ## LiveHD
@@ -338,6 +338,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Dask/Ray` 
   - **Skills**: C++ 
   - **Size**: 175 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 **Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
@@ -346,6 +347,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
   - **Skills**: C++ 
   - **Size**: 350 hours
+  - **Difficulty:** Hard
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
 
 **Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
@@ -360,6 +362,7 @@ data returned to the client.
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
   - **Skills**: C++ 
   - **Size**: 175 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
@@ -377,6 +380,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
   - **NSize**: 175 or 350 hours
+  - **Difficulty:** Medium
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
@@ -475,6 +479,7 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
   * **Difficulty**: Medium
+  * **Size**: Medium (175 hours)
   * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane), develop demos showing:
@@ -488,6 +493,7 @@ Different design styles and particular challenges
   * **Topics**: `Testing`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
   * **Difficulty**: Medium
+  * **Size**: Medium (175 hours)
   * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 Develop detailed test plans to test the OpenLane flow to expand coverage and advanced features. Add open source designs to the regression test suite to improve tool quality and robustness. This includes design specification, configuration and creation of all necessary files for regression testing. Suggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
@@ -497,6 +503,7 @@ Develop detailed test plans to test the OpenLane flow to expand coverage and adv
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
@@ -506,15 +513,17 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
   * **Topics**: `Database`, `EDA`
   * **Skills**:  C++, Python, JSON, Jinja templating
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours)
   * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Tom Spyrou](mailto:aspyrou@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
 r
-### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase
+### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledge base
 
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours)
   * **Mentor**: [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu), [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project contains a storehouse of knowledge in it's Github repositories within Issues and Pull requests. Additionally, project related slack channels also hold useful information in the form of questions and answers, problems and solutions in conversation threads. Implement an AI analytics bot that filters, selects relevant discussions and classifies/records them into useful documentation and actionable issues. This should also directly track, increase project usage and report outcome metrics.
