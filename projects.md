@@ -46,7 +46,7 @@ Table of Contents:
       * [Comprehensive Flow Testing](#comprehensive-flow-testing)
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
-      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledgebase)
+      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledge base](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledge-base)
    * [Package Management &amp; Reproducibility](#package-management--reproducibility)
       * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
@@ -74,7 +74,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Fri Feb 25 23:37:22 UTC 2022 -->
+<!-- Added by: runner, at: Sat Feb 26 00:33:30 UTC 2022 -->
 
 <!--te-->
 
