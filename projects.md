@@ -4,12 +4,9 @@
 
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
-This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a Open Source Research Experience (OSRE) mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
+This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a UC-affiliated mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-*UC-affiliated mentors interested in OSRE'22 can add project ideas to this page. See instructions on our [READ ME](https://github.com/uccross/uccross.github.io/blob/master/README.md) file. If you have questions about being a mentor, go to the [Mentor Info Page](https://cross.ucsc.edu/2022-osre/osre2022mentor.html)*
-
-The Open Source Research Experience Program (https://cross.ucsc.edu/2022-osre/index.html) will be accepting student project application in February/March 2022. We will have exact deadlines published by January 2022. Connected to that CROSS will be applying to be a mentor organization under the Google Summer of Code for 2022 and hope to be part of that program again. The project ideas below can be utilized in applying for either of these programs.
 
 Table of Contents:
 
@@ -29,19 +26,13 @@ Table of Contents:
       * [Arrow data filtering using regular expression accelerator](#arrow-data-filtering-using-regular-expression-accelerator)
    * [Open Source Autonomous Vehicle Controller](#open-source-autonomous-vehicle-controller)
       * [Vehicle/Craft sensor driver development](#vehiclecraft-sensor-driver-development)
-      * [IMU calibration algorithm development](#imu-calibration-algorithm-development)
-      * [Path finding algorithm using OpenCV](#path-finding-algorithm-using-opencv)
+      * [Path finding algorithm using OpenCV and machine learning](#path-finding-algorithm-using-opencv-and-machine-learning)
       * [State estimation/sensor fusion algorithm development](#state-estimationsensor-fusion-algorithm-development)
-      * [Vehicle dynamic model development](#vehicle-dynamic-model-development)
    * [SkyhookDM](#skyhookdm)
+      * [Support reading from Skyhook in Dask/Ray using the Arrow Dataset API](#support-reading-from-skyhook-in-daskray-using-the-arrow-dataset-api)
+      * [Implement Gandiva based query executor in SkyhookDM](#implement-gandiva-based-query-executor-in-skyhookdm)
       * [Add Ability to create and save views from Datasets](#add-ability-to-create-and-save-views-from-datasets)
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
-   * [SkyhookDM/HDF5](#skyhookdmhdf5)
-      * [HDF5 - Apache Arrow Integration](#hdf5---apache-arrow-integration)
-      * [HDF5 - Ceph RADOS Integration](#hdf5---ceph-rados-integration)
-      * [Column-storage in HDF5](#column-storage-in-hdf5)
-      * [Sparse data storage in HDF5](#sparse-data-storage-in-hdf5)
-      * [Metadata search in HDF5 with Database Solutions](#metadata-search-in-hdf5-with-database-solutions)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
    * [CephFS](#cephfs)
@@ -55,7 +46,7 @@ Table of Contents:
       * [Comprehensive Flow Testing](#comprehensive-flow-testing)
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
-      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledgebase)
+      * [Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledge base](#implement-an-nlp-based-ai-bot-aimed-at-increasing-users-enhancing-usability-and-building-a-knowledge-base)
    * [Package Management &amp; Reproducibility](#package-management--reproducibility)
       * [Investigate the dynamic linking landscape](#investigate-the-dynamic-linking-landscape)
    * [Apache AsterixDB](#apache-asterixdb)
@@ -243,6 +234,7 @@ As storage devices get faster, data management tasks rob the host of CPU cycles 
 
  - **Skills:** C/C++, Java
  - **Difficulty:** Challenging
+ - **Size** 175 or 350 hours 
  - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Recent research reveals that the compaction process in RocksDB can be altered to optimize future data access by changing the data layout in compaction levels. The benefit of this approach can be extended to different data layout optimization based on application access patterns and requirements. In this project, we want to create an interface that would allow users to dynamically inject layout optimization functions to RockDB, using containerization technologies such as Webassembly.
@@ -253,6 +245,7 @@ Recent research reveals that the compaction process in RocksDB can be altered to
 
  - **Skills:** C/C++, Bash, Python, System architecture, Network fabrics
  - **Difficulty:** Challenging
+ - **Size** 350 hours 
  - **Mentor:** [Jianshen Liu](mailto:jliu120@ucsc.edu)
 
 Since the last decade, the slowing down in the performance improvement of general-purpose processors is driving the system architecture to be increasingly heterogeneous. We have seen the kinds of domain-specific accelerator hardware (e.g., FPAG, SmartNIC, TPU, GPU) are growing to take over many different jobs from the general-purpose processors. On the other hand, the network and storage device performance have been tremendously improved with a trajectory much outweighed than that of processors. With this trend, a natural thought to continuously scale the storage system performance economically is to efficiently utilize and share different sources from different nodes over the network. There already exist different resource sharing protocols like CCIX, CXL, and GEN-Z. Among these GEN-Z is the most interesting because, unlike RDMA, it enables remote memory accessing without exposing details to applications (i.e., not application changes). Therefore, it would be interesting to see how/whether these technologies can help improve the performance of storage systems, and to what extent. This project would require building a demo system that uses some of these technologies (especially GEN-Z) and run selected applications/workloads to better understand the benefits.
@@ -267,6 +260,7 @@ SmartNICs have become one of important components in heterogeneous system archit
 
   * **Topics**: `Apache Arrow`, `RPC`, `networking`, `RDMA`, `dpdk`
   * **Skills**: C, C++, python, Linux, RDMA / dpdk
+  * **Size** 175 or 350 hours 
   * **Difficulty**: Challenging
   * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
@@ -276,6 +270,7 @@ Apache Arrow provides a set of tools to allow efficient in-memory analytics/proc
 
   * **Topics**: `SmartNIC`, `regex`, `networking`, `Apache Arrow`
   * **Skills**: C, C++, python, Linux, dpdk
+  * **Size** 350 hours 
   * **Difficulty**: Challenging
   * **Mentor**: [Jianshen Liu](mailto:jliu120@ucsc.edu), [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
@@ -295,48 +290,34 @@ Projects for the OSAVC:
 ### Vehicle/Craft sensor driver development
  - **Topics**: Driver code to integrate sensor to a microcontroller
  - **Skills**: C, I2C, SPI, UART interfaces
- - **Difficulty** Easy
+ - **Size** 175 hours
+ - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
 
 Help develop a sensor library for use in autonomnous vehicles.  Possible sensors include range finders, ping sensors, IMUs, GPS receivers, RC receivers, barometers, air speed sensors, etc. Code will be written in C using state machine methodology and non-blocking algorithms. Test the drivers on a Microchip microncontroller.
 
-### IMU calibration algorithm development
- - **Topics**: Least Squares, DCM,
- - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
- - **Difficulty** Medium
- - **Mentor** Aaron Hunter
 
-
-The IMU is a sensor comprising nine separate sensors in a single package, including acceleromeeters, gyroscopes, and magnetometer. Using a model for sensor errors, develop calibration algorithms that characterize these errors and provide optimal estimates of the true sensor reading.  Provide an algorithm in C or Python to implement this efficiently on a microcontroller or single board computer (e.g., Raspberry Pi).
-
-### Path finding algorithm using OpenCV
+### Path finding algorithm using OpenCV and machine learning
  - **Topics**: Computer vision, blob detection
  - **Skills**: C/Python, OpenCV
+ - **Size** 175 or 350 hours 
  - **Difficulty** Medium
  - **Mentor** Aaron Hunter
 
 
-Use OpenCV to identify a track for an autonomous vehicle to follow.  For example, a closed circuit course for an autonomous race car might be demarcated by different colored cones indicating the left and right boundaries of the track.  Use OpenCV to find and track the location of these cones as the car navigates the course. Implement initially on a laptop using video frames.  Ideally, transfer the algorithm to a Raspberry Pi and test on a real track.
+Use OpenCV to identify a track for an autonomous vehicle to follow.  Build on previous work by developing a new model using EfficientDet and an existing training set of images. Port the model to TFlite and implement on the Coral USB Accelerator. Evaluate its performance against our previous efforts. 
 
 
 ### State estimation/sensor fusion algorithm development
  - **Topics**: Kalman filtering, Mahoney
- - **Skills**: C/Python, Matlab/Simulink, numerical optimzation algorithms
+ - **Skills**: C/Python, Matlab/Simulink, numerical optimization algorithms
+ - **Size** 350 hours
  - **Difficulty** Challenging
  - **Mentor** Aaron Hunter
 
 
 Implement an optimal state estimation algorithm from a model.  This model can be derived from a Kalman filter or some other state estimation filter (e.g., Mahoney filter).  THe model takes sensor readings as input and provides an estimate of the state of a vehicle. Finally, convert the model to standard C using the Simulink code generation or implement in Python (for use on a single board computer, e.g., Raspberry Pi)
-
-### Vehicle dynamic model development
- - **Topics**: Dynamic modeling, control theory
- - **Skills**: C, Matlab/Simulink
- - **Difficulty** Challenging
- - **Mentor** Aaron Hunter
-
-
-Help develop the library of models for autonomous vehicles. Develop a dynamic model of a vehicle based on standard vehicle types, e.g., differential-drive vehicle, surface vehicle (boat), quadcopter, etc.  Models to be developed in Matlab and ported to standard C.
 
 ## SkyhookDM
 
@@ -353,11 +334,32 @@ data returned to the client.
 
 -------------------
 
+### Support reading from Skyhook in Dask/Ray using the Arrow Dataset API
+  - **Topics**: `Arrow`, `Dask/Ray` 
+  - **Skills**: C++ 
+  - **Size**: 175 hours
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
+
+**Problem:** Dask and Ray are parallel-computing frameworks similar to Apache Spark but in a Python ecosystem. Each of these frameworks support reading tabular data from different data sources such as a local filesystem, cloud object stores, etc. These systems have recently added support for the Arrow Dataset API to read data from different sources. Since, the Arrow dataset API supports Skyhook, we can leverage this capability to offload compute-heavy Parquet file decoding and decompression into the Ceph storage layer. This can help us speed up the queries significantly as CPU will get freed up in the Dask/Ray workers for other processing tasks.
+
+### Implement Gandiva based query executor in SkyhookDM 
+  - **Topics**: `Arrow`, `Gandiva`, `SIMD` 
+  - **Skills**: C++ 
+  - **Size**: 350 hours
+  * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu) 
+
+**Problem:** [Gandiva](https://arrow.apache.org/blog/2018/12/05/gandiva-donation/) allows efficient evaluation of query expressions using runtime code generation using LLVM. The generated code leverages SIMD instructions and is highly optimized for parallel processing in modern CPUs. It is natively supported by Arrow for compiling and executing expressions. SkyhookDM currently uses the Arrow Dataset API (which internally uses Arrow Compute APIs) to execute query expressions inside the Ceph OSDs. Since, the Arrow Dataset API particularly does not support Gandiva currently, the goal of this project is to add support for Gandiva in the Arrow Dataset API in order to accelerate query processing when offloaded to the storage layer. This will help Skyhook combat some of the peformance issues due to the inefficient serialization interface of Arrow.
+
+**References:** 
+- https://arrow.apache.org/blog/2018/12/05/gandiva-donation/
+- https://www.dremio.com/subsurface/increasing-performance-with-arrow-and-gandiva/
+- https://github.com/apache/arrow/tree/master/cpp/src/gandiva
+
 ### Add Ability to create and save views from Datasets
 
   - **Topics**: `Arrow`, `Database views`, `virtual datasets`
-  - **Skills**: C++
-  - **Difficulty**: Medium
+  - **Skills**: C++ 
+  - **Size**: 175 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 Problem - Workloads may repeat the same or similar queries over time. This causes repetition of IO and compute operations, wasting resources.
@@ -374,7 +376,7 @@ https://docs.dremio.com/working-with-datasets/virtual-datasets.html
 
   - **Topics**: `data lakes`, `lake house`, `distributed query processing`
   - **Skills**: C++
-  - **Difficulty**: Medium
+  - **NSize**: 175 or 350 hours
   * **Mentor**: [Jayjeet Chakraboorty](mailto:jayjeetc@ucsc.edu)
 
 [Delta Lake](https://delta.io/) is a new architecture for querying big data lakes through Spark, providing transactions.
@@ -386,106 +388,17 @@ Reference: [Delta Lake paper] (https://databricks.com/jp/wp-content/uploads/2020
 
 -------
 
-## SkyhookDM/HDF5
-
-[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
-
-The HDF5 technology suite includes:
-* A versatile data model that can represent very complex data objects and a wide variety of metadata.
-* A completely portable file format with no limit on the number or size of data objects in the collection.
-* A software library that runs on a range of computational platforms, from laptops to massively parallel systems, and implements a high-level API with C, C++, Fortran 90, and Java interfaces.
-* A rich set of integrated performance features that allow for access time and storage space optimizations.
-* Tools and applications for managing, manipulating, viewing, and analyzing the data in the collection.
-
-
-
--------------------
-
-### HDF5 - Apache Arrow Integration
-
-  * **Topics**: `VOL connector`, `streaming data`, `column store`
-  * **Skills**: C, HDF5, Apache Arrow
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Apache Arrow](https://arrow.apache.org) creates in-memory column stores that can be used to manage streamed data.
-Accessing this data through the HDF5 API would allow applications to take advantage of transient, column-oriented
-data streams, such as realtime data from high-speed scientific instruments and cameras.  Bridging the gap between
-science applications and analytics tools that use HDF5 and Apache Arrow data streams could bring new kinds of tools
-and data together.  This project will create a standalone HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer)
-that allows applications to make HDF5 calls to access Apache Arrow data.
-
--------
-
-### HDF5 - Ceph RADOS Integration
-
-  * **Topics**: `VOL connector`, `Ceph`, `object storage`
-  * **Skills**: C, HDF5, Ceph / RADOS
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-The [Ceph](https://ceph.io) distributed storage system provides object, block, and file system layer interfaces.
-A prototype HDF5 [VOL connector](https://portal.hdfgroup.org/display/HDF5/Virtual+Object+Layer) has been developed
-to access the [RADOS](https://ceph.io/geen-categorie/the-rados-distributed-object-store/) object storage layer, enabling
-HDF5 objects (datasets, groups, etc) to be directly stored as RADOS objects.  This project would expand the capabilities
-of this VOL connector, enabling HDF5 applications to store data directly in RADOS pools.
-
--------
-
-### Column-storage in HDF5
-
-  * **Topics**: `HDF5`, `column-store`
-  * **Skills**: C, HDF5
-  * **Difficulty**: High
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Column-oriented storage](https://en.wikipedia.org/wiki/Column-oriented_DBMS) provides efficient access to fields within
-records, across many rows.  Adding this storage method to HDF5 would dramatically improve performance for applications that
-primarily access subsets of the fields in an HDF5 dataset.
-
--------
-
-### Sparse data storage in HDF5
-
-  * **Topics**: `HDF5`, `sparse data`
-  * **Skills**: C, HDF5
-  * **Difficulty**: High
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Sparse matrices](https://en.wikipedia.org/wiki/Sparse_matrix) have applications in many fields within science and mathematics.
-Storing and accesssing them in HDF5 is inefficient though, as HDF5 is currently optimized for storing dense arrays.
-Adding efficient storage of sparse data in HDF5 would dramatically improve performance for applications that wish to store and
-access sparse data.  This could extend beyond sparse matrices proper, and include any form of sparsely populated array or table.
-
--------
-
-### Metadata search in HDF5 with Database Solutions
-
-  * **Topics**: `HDF5`, `search`, `index`, `database`
-  * **Skills**: HDF5, Database Integration
-  * **Difficulty**: Medium
-  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov)
-
-[Relational databases](https://en.wikipedia.org/wiki/Relational_database) excel at many tasks, one of which is content queries.
-HDF5 does not currently have good methods for indexing and searching available to user applications, although protoyping work
-has been performed in a [git branch](https://bitbucket.hdfgroup.org/projects/HDFFV/repos/hdf5/branches?base=feature%2Findexing).
-Instead of adding index and query operations directly to HDF5, this project would instead connect a database package, such as
-[RocksDB](https://rocksdb.org) or [VoltDB](https://www.voltdb.com), with HDF5 and perform query and index operations in the
-database and array-oriented I/O with HDF5.
--->
-
 ## Proactive Data Containers (PDC)
 
 [Proactive Data Containers](https://sdm.lbl.gov/pdc/about.html) (PDC) are containers within a locus of storage (memory, NVRAM, disk, etc.) that store science data in an object-oriented manner.  Managing data as objects enables powerful optimization opportunities for data movement and
 transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning
-
--------------------
 
 ### Python interface to an object-centric data management system
 
   * **Topics**: `Python`, `object-centric data management`, `PDC`
   * **Skills**: Python, C, PDC
   * **Difficulty**: Medium
+  * **Size**: Large (350 hours)
   * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov), [Houjun Tang](mailto:htang4@lbl.gov)
 
 [Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it.
@@ -499,6 +412,7 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Topics**: `Ceph`, `filesystems`, `metadata`, `programmable storage`
   * **Skills**: C++, Ceph / MDS
   * **Difficulty**: Medium
+  * **Size**: Large (350 hours)
   * **Mentor**: [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
 The frequency of metadata service (MDS) requests relative to the amount of data accessed can severely affect the performance of distributed file systems like CephFS, especially for workloads that randomly access a large number of small files as is commonly the case for machine learning workloads: they purposefully randomize access for training and evaluation to prevent overfitting. The datasets of these workloads are read-only and therefore do not require strong coherence mechanisms that metadata services provide by default.
@@ -521,6 +435,7 @@ Design of  static RAMs in VLSI designs for good performance and area is generall
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) design planning with OpenRAM memories. Specifically, this project will utilize the macro placer/floorplanner and resolve any issues for memory placement. Issues that will need to be addressed may include power supply connectivity, ability to rotate memory macros, and solving pin-access issues.
@@ -530,6 +445,7 @@ Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) Static Timing Analysis using OpenRAM generated library files. Specifically, this will include verifying setup/hold conditions as well as creating additional checks such as minimum period, minimum pulse width, etc. Also, the project will add timing information to Verilog behavioral model.
@@ -539,6 +455,7 @@ Improve and verify [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) 
   * **Topics**: `Memory Compilers`, `OpenRAM`, `Programmable RAM`
   * **Skills**: python, basic knowledge of memory design, VLSI technology, PDK, Verilog
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
 
 Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) FreePDK45 design flow. OpenLane currently supports only Skywater 130nm PDK, but OpenROAD supports FreePDK45 (which is the same as Nangate45). This project will create a design using OpenRAM memories with the OpenLane flow using FreePDK45.
@@ -548,7 +465,8 @@ Integrate and verify FreePDK45 OpenRAM memories with an [OpenLane](https://githu
   * **Topics**: `Power Planning for VLSI`, `IR Drop Analysis`, `Power grid Creation and Analysis`
   * **Skills**: C++, tcl, VLSI Layout
   * **Difficulty**: Medium
-  * **Mentor**: [Matthew Guthaus](mailto:mrg@ucsc.edu), [Mehdi Saligane](mailto:mehdi@umich.edu)
+  * **Size**: Medium or Large (175 or 350 hours) 
+  * **Mentor**: Mehdi Saligane <mailto:mehdi@umich.edu>, Ming-Hung  <mailto:minghung@umich.edu>
 
 Take the existing power planning (pdngen.tcl) module of openroad and recode the functionality in C++ ensuring that all of the unit tests on the existing code pass correctly. Work with a senior member of the team at ARM. Ensure that designs created are of good quality for power routing and overall power consumption.
 
@@ -557,6 +475,7 @@ Take the existing power planning (pdngen.tcl) module of openroad and recode the 
   * **Topics**: `Demo Development`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design flow, tcl, shell scripts, Documentation, Markdown
   * **Difficulty**: Medium
+  * **Size**: Medium (175 hours)
   * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane), develop demos showing:
@@ -570,6 +489,7 @@ Different design styles and particular challenges
   * **Topics**: `Testing`, `Documentation`, `VLSI design basics`
   * **Skills**:  Knowledge of EDA tools, basics of VLSI design, tcl, shell scripts, Verilog, Layout
   * **Difficulty**: Medium
+  * **Size**: Medium (175 hours)
   * **Mentor**: [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 Develop detailed test plans to test the OpenLane flow to expand coverage and advanced features. Add open source designs to the regression test suite to improve tool quality and robustness. This includes design specification, configuration and creation of all necessary files for regression testing. Suggested sources : ICCAS benchmarks, opencores, LSOracle for synthesis flow option.
@@ -579,6 +499,7 @@ Develop detailed test plans to test the OpenLane flow to expand coverage and adv
   * **Topics**: `GUI`, `Visualization`, `User Interfaces`
   * **Skills**:  C++, Qt
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours) 
   * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and enhance visualizations for EDA data and algorithms in the OpenROAD GUI. Allow deeper understanding of the tool results for users and tool internals for developers.
@@ -588,15 +509,17 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD), develop and en
   * **Topics**: `Database`, `EDA`
   * **Skills**:  C++, Python, JSON, Jinja templating
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours)
   * **Mentor**: [Matt Liberty](mailto:mliberty@eng.ucsd.edu), [Tom Spyrou](mailto:aspyrou@eng.ucsd.edu)
 
 For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code generation for the OpenDB database which allows improvements to the data model with much less hand coding.  Allow the generation of storage, serialization, and callback code from a custom schema description format.
-
-### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledgebase
+r
+### Implement an NLP based AI bot aimed at increasing users, enhancing usability and building a knowledge base
 
   * **Topics**: `AI`, `ML`, `Analytics`
   * **Skills**:   Python. ML libraries (e.g., Tensorflow, PyTorch)
   * **Difficulty**: Medium
+  * **Size**: Medium or Large (175 or 350 hours)
   * **Mentor**: [Vitor Bandeira](mailto:vvbandeira@eng.ucsd.edu), [Indira Iyer Almeida](mailto:dralabeing@openroad.tools)
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project contains a storehouse of knowledge in it's Github repositories within Issues and Pull requests. Additionally, project related slack channels also hold useful information in the form of questions and answers, problems and solutions in conversation threads. Implement an AI analytics bot that filters, selects relevant discussions and classifies/records them into useful documentation and actionable issues. This should also directly track, increase project usage and report outcome metrics.
@@ -824,13 +747,12 @@ systems sensor networks.
   * **Topics**: `Data Visualization`, `Analytics`
   * **Skills**:  javascript,  python, bash, webservers, git, embedded systems
   * **Difficulty**: Easy/Moderate
+  * **Size** 175 hours
   * **Mentor**: [Colleen Josephson](mailto:cjosephson@ucsc.edu)
 
 - Develop set of visualization tools (ideally web based) that easily allows users to zoom in on date ranges, change axes, etc.
 - Document the tool thoroughly for future maintenance
 - If interested, we are also interested in investigating correlations between different data streams
-- ????
-- PROFIT!!
 
 ## OpenRAM
 
@@ -841,6 +763,7 @@ systems sensor networks.
 - **Topics:** `User Interfaces`, `Python APIs`
 - **Skills:** Python
 - **Difficulty:** Easy
+- **Size**: Medium (175 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Replace the custom logging framework in OpenRAM with [Python logging](https://docs.python.org/3/library/logging.html) module. New logging should allow levels of detail as well as tags to enable/disable logging of particular features to aid debugging.
@@ -850,6 +773,7 @@ Replace the custom logging framework in OpenRAM with [Python logging](https://do
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
 - **Difficulty:** Medium/Challenging
+- **Size**: Large (350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Read-Only Memory (ROM) file from an input hex file. Project
@@ -860,6 +784,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 - **Topics:** `VLSI Design Basics`, `Memories`, `Python`
 - **Skills:** Python, VLSI
 - **Difficulty:** Medium/Challenging
+- **Size**: Large (350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu)
 
 Use the OpenRAM API to generate a Register File from standard library cells. Project
@@ -870,6 +795,7 @@ will automatically generate a Spice netlist, layout, Verilog model and timing ch
 - **Topics:** `VLSI Design Basics`, `Python`, `Verilog`, `Testing`
 - **Skills:** Python, Verilog
 - **Difficulty:** Medium/Challenging
+- **Size:** Medium (175 hours)
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu), [Bugra Onal](mailto:bonal@ucsc.edu)
 
 Finish integration of parameterized Verilog modeule to support Built-In-Self-Test and Repair
@@ -880,6 +806,7 @@ of OpenRAM memories using spare rows and columns in OpenRAM memories.
 - **Topics:** `VLSI Design Basics`, `Python`
 - **Skills:** Python, VLSI, JSON
 - **Difficulty:** Easy/Medium
+- **Size**: Medium or Large (175 or 350 hours) 
 - **Mentors:** [Matthew Guthaus](mailto:mrg@ucsc.edu),[Jesse Cirimelli-Low](mailto:jcirimel@ucsc.edu)
 
 Create a visualization interface to debug layout verses schematic mismatches in [Magic](https://github.com/RTimothyEdwards/magic) layout editor. Results will be parsed from a JSON output of [Netgen](https://github.com/RTimothyEdwards/netgen).
