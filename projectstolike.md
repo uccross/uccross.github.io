@@ -74,7 +74,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Sat Feb 26 01:55:51 UTC 2022 -->
+<!-- Added by: runner, at: Sat Feb 26 18:08:08 UTC 2022 -->
 
 <!--te-->
 
@@ -93,6 +93,7 @@ Projects for [LiveHD](https://github.com/masc-ucsc/livehd). Lead Mentors: [Jose 
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
+| Size | Medium 175 hours|
 | [Link](https://github.com/masc-ucsc/hif)
 
 HIF (https://github.com/masc-ucsc/hif) stands for Hardware Interchange Format.
@@ -125,6 +126,7 @@ to create some small but useful tools around hif. Some projects:
 | Mentor(s) | Jose Renau|
 | Skills | C++17, synthesis |
 | Difficulty | Medium |
+| Size | Medium 175 hours|
 | [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#mockturtle)
 
 There are some issues with Mockturtle integration (new cells) and it is not using the latest Mockturtle library versions.
@@ -153,6 +155,7 @@ The goal is to use Mockturtle (https://github.com/lsils/mockturtle) with LiveHD.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
+| Size | Medium 175 hours|
 | [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#query-shell-not-lgshell-to-query-graphs)
 
 * Based on replxx (like lgshell)
@@ -181,6 +184,7 @@ easily and allow to build functions/libraries.
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
+| Size | Large 350 hours|
 | [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#lgraph-and-lnast-check-pass)
 
 Create a pass that checks that the Lgraph (and/or LNAST) is semantically
@@ -206,6 +210,7 @@ further expanded. Some checks:
 | Mentor(s) | Jose Renau|
 | Skills | C++17 |
 | Difficulty | Medium |
+| Size | Medium 175 hours|
 | [Link](https://github.com/masc-ucsc/livehd/blob/master/docs/cross.md#unbitwidth-local-and-global-bitwidth)
 
 This pass is needed to create less verbose CHISEL and Pyrope code generation.
@@ -575,6 +580,7 @@ Lead Mentor: [Farid Zakaria](https://users.soe.ucsc.edu/~fmzakari) <mailto:fmzak
 - **Topics:** `Operating Systems` `Compilers` `Linux` `Package Management` `NixOS`
 - **Skills:** Experience with systems programming and Linux familiarity
 - **Difficulty:** Moderate to Challenging
+- **Size**: Large (350 hours)
 - **Mentors:** [Farid Zakaria](mailto:fmzakari@ucsc.edu) & [Tom Scogland](https://people.llnl.gov/scogland1) <mailto:scogland1@llnl.gov>
 
 Dynamic linking as specified in the ELF file format has gone unchallenged since it's invention. With many new package management models that eschew the filesystem hierarchy standard (i.e. Nix, Guix and Spack), many of the idiosyncrasies that define the way in which libraries are discovered are no longer useful and potentially harmful.
@@ -596,6 +602,7 @@ AsterixDB is an open source parallel big-data management system [http://asterixd
 - *Topics*: Data science, SQL++, documentation
 - *Skills*: SQL, Writing, Spreadsheets
 - *Difficulty*: Medium
+- *Size*: Medium or Large (175 or 350 hours)
 - *Mentors*: [Ahmed Eldawy](mailto:eldawy@ucr.edu), [Akil Sevim](mailto:asevi006@ucr.edu)
 
 Build a data science project using AsterixDB that analyzes geospatial data among other dimensions. Use [Chicago Crimes](https://star.cs.ucr.edu/?Chicago%20Crimes#center=41.8313,-87.6830&zoom=11) as the main dataset and combine with other datasets including [points of interests](https://star.cs.ucr.edu/?osm21/pois#center=41.8313,-87.6830&zoom=11) [ZIP Code boundaries](https://star.cs.ucr.edu/?TIGER2018/ZCTA5#center=41.8313,-87.6830&zoom=11). During this project, we will answer interesting questions about the data and visualize the results such as:
@@ -625,6 +632,7 @@ As a bonus task, and depending on the progress of the project, we can explore th
   * **Topics**: `Data Management`, `Analytics`
   * **Skills**:   C++, github
   * **Difficulty**: Easy
+  * **Size**: Medium or Large (175 or 350 hours)
   * **Mentor**: [John Wu](mailto:kwu@lbl.gov), [Bin Dong](mailto:dbin@lbl.gov), [Suren Byna](mailto:sbyna@lbl.gov)
 
 - Develop a test suite for the public API of FasTensor
@@ -644,7 +652,7 @@ As a bonus task, and depending on the progress of the project, we can explore th
 - **Topics:** `Web Development` `Dynamic Updates` `UX`
 - **Skills:** web development experience, good communicator, (HTML/CSS), (Javascript)
 - **Difficulty:** Moderate
-- **Commitment:** part-time (175 hours) or full-time (350 hours)
+- **Size:** Medium or large (175 or 350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Develop a clean and welcoming website for the project. The organization needs to reflect the needs of PolyPhy users, but also provide a convenient entry point for interested project contributors. No excessive pop-ups or webjunk.
@@ -662,7 +670,7 @@ Specific tasks:
 - **Topics:** `Design` `Art` `UX`
 - **Skills:** vector and bitmap drawing, sense for spatial symmetry and framing, (interactive content creation), (animation)
 - **Difficulty:** Moderate
-- **Commitment:** part-time (175 hours)
+- **Size:** Medium (175 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Develop visual content for the project using its main themes: nature-inspired computation, biomimetics, interconnected structures. Aid in designing visual structure of the website as well as other public-facing artifacts.
@@ -679,7 +687,7 @@ Specific tasks:
 - **Topics:** `Writing` `Documentation` `Storytelling`
 - **Skills:** experienced writing structured text over 10 pages, well read, (technical or scientific education)
 - **Difficulty:** Moderate
-- **Commitment:** part-time (175 hours) or full-time (350 hours)
+- **Size:** Medium or Large (175 or 350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu)
 
 Integral to PolyPhy's presentation is a story that the users and the project contributors can relate to. The objective is to develop the verbal part of that story, as well as major portions of technical documentation that matches it. The difficulty of the project is scalable.
@@ -697,7 +705,7 @@ Specific tasks:
 - **Topics:** `Video Presentation` `Tutorials` `Didactics`
 - **Skills:** video editing, creating educational content, communication, (native or fluent in another language)
 - **Difficulty:** Easy-Moderate
-- **Commitment:** part-time (175 hours)
+- **Size:** Medium or Large (175 or 350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Drew Ehrlich](mailto:deehrlic@ucsc.edu)
 
 Create a public face for PolyPhy that reflects its history, context, and teaches its functionality to users in different degrees of familiarity.
@@ -715,7 +723,7 @@ Specific tasks:
 - **Topics:** `I/O Operations` `File Conversion` `Numerics` `Testing`
 - **Skills:** Python, experience working with scientific or statistical data, good debugging skills
 - **Difficulty:** Moderate-Challenging
-- **Commitment:** part-time (175 hours) or full-time (350 hours)
+- **Size:** Medium or Large (175 or 350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Anisha Goel](mailto:anishagoel14@gmail.com)
 
 By default, PolyPhy operates with an unordered set of points as an input and scalar fields (float ndarrays) as an output, but others are applicable as well. Design and implement interfaces to load and export different data formats (CSV, OBJ, HDF5, FITS...) and modalities (points, meshes, density fields). The difficulty of the project can be scaled based on contributor's interest.
@@ -733,7 +741,7 @@ Specific tasks:
 - **Topics:** `Continuous Integration` `Continuous Deployment` `DevOps`
 - **Skills:** experience with CI/CD, GitHub, Python package deployment
 - **Difficulty:** Moderate
-- **Commitment:** full-time (350 hours)
+- **Size:** Large (350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Anisha Goel](mailto:anishagoel14@gmail.com)
 
 The objective is to setup a CI/CD pipeline that automates the build testing and deployment of the software. The resulting process needs to be robust to contributor errors and work in the distributed conditions of a diverse contributor base.
@@ -750,7 +758,7 @@ Specific tasks:
 - **Topics:** `UI/UX` `Visual Experience`
 - **Skills:** Python programming, UI/UX development experience, (knowledge of graphics)
 - **Difficulty:** Moderate
-- **Commitment:** full-time (350 hours)
+- **Size:** Large (350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [David Abramov](mailto:dabramov@ucsc.edu)
 
 The key feature of PolyPhy is its interactivity. By interacting with the underlying simulation model, the user can adjust its parameters in real time and respond to its behavior. For instance, an astrophysics expert can load a dataset of 100k galaxies and reconstruct the large-scale structure of the intergalactic medium. A responsive UI combined with real-time visualization allows them to judge the fidelity of the reconstruction and make necessary changes.
@@ -767,7 +775,7 @@ Specific tasks:
 - **Topics:** `Interactive Visualization` `Data Analytics` `3D Rendering`
 - **Skills:** basic graphics theory and math, Python, GPU programming, (previous experience visualizing novel datasets)
 - **Difficulty:** Challenging
-- **Commitment:** full-time (350 hours)
+- **Size:** Large (350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [David Abramov](mailto:dabramov@ucsc.edu)
 
 Data visualization is one of the core components of PolyPhy, as it provides a real-time overview of the underlying MCPM simulation. Through the feedback provided by the visualization, PolyPhy users can adjust the simulation model and make new findings about the dataset. Various operations over the reconstructed data (e.g. spatial searching) as well as important statistical summaries also benefit from clear visual presentation.
@@ -784,7 +792,7 @@ Specific tasks:
 - **Topics:** `Graph Theory` `Data Science`
 - **Skills:** good understanding of discrete math and graph theory, Python, (GPU programming)
 - **Difficulty:** Challenging
-- **Commitment:** full-time (350 hours)
+- **Size:** Large (350 hours)
 - **Mentors:** [Oskar Elek](mailto:oelek@ucsc.edu), [Farhanul Hasan](mailto:farhasan@nmsu.edu)
 
 Develop a custom method for graph extraction from scalar field data produced by PolyPhy. Because PolyPhy typically produces network-like structures, representing these structures as weighted discrete graphs is very useful for efficiently navigating the data. The most important property of this abstracted representation is that it preserves the topology of the base scalar field by navigating the 1D ridges of the scalar field.
