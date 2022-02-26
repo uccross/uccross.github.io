@@ -557,6 +557,7 @@ AsterixDB is an open source parallel big-data management system [http://asterixd
 - *Topics*: Data science, SQL++, documentation
 - *Skills*: SQL, Writing, Spreadsheets
 - *Difficulty*: Medium
+- *Size*: Medium or Large (175 or 350 hours)
 - *Mentors*: [Ahmed Eldawy](mailto:eldawy@ucr.edu), [Akil Sevim](mailto:asevi006@ucr.edu)
 
 Build a data science project using AsterixDB that analyzes geospatial data among other dimensions. Use [Chicago Crimes](https://star.cs.ucr.edu/?Chicago%20Crimes#center=41.8313,-87.6830&zoom=11) as the main dataset and combine with other datasets including [points of interests](https://star.cs.ucr.edu/?osm21/pois#center=41.8313,-87.6830&zoom=11) [ZIP Code boundaries](https://star.cs.ucr.edu/?TIGER2018/ZCTA5#center=41.8313,-87.6830&zoom=11). During this project, we will answer interesting questions about the data and visualize the results such as:
