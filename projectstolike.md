@@ -74,7 +74,7 @@ Table of Contents:
       * [Built-In Self Test and Repair](#built-in-self-test-and-repair)
       * [Layout verses Schematic (LVS) visualization](#layout-verses-schematic-lvs-visualization)
 
-<!-- Added by: runner, at: Sat Feb 26 18:08:08 UTC 2022 -->
+<!-- Added by: runner, at: Tue Mar  1 00:55:52 UTC 2022 -->
 
 <!--te-->
 
@@ -631,8 +631,8 @@ As a bonus task, and depending on the progress of the project, we can explore th
 
   * **Topics**: `Data Management`, `Analytics`
   * **Skills**:   C++, github
-  * **Difficulty**: Easy
-  * **Size**: Medium or Large (175 or 350 hours)
+  * **Difficulty**: Medium
+  * **Size**: Large (350 hours)
   * **Mentor**: [John Wu](mailto:kwu@lbl.gov), [Bin Dong](mailto:dbin@lbl.gov), [Suren Byna](mailto:sbyna@lbl.gov)
 
 - Develop a test suite for the public API of FasTensor
