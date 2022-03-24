@@ -4,6 +4,8 @@
 
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
+### We are happy to announce we have been selected as a GSoC mentor organization. Please refer to our [proposal template and application process](https://cross.ucsc.edu/programs/gsoc_application_template.html) for details on how to apply for a GSoC contributor slot. 
+
 This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a UC-affiliated mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
