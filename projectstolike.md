@@ -4,6 +4,9 @@
 
 <img src="OSRE2021image.jpg" alt="Light bulb with digital business interface" valign="middle" />
 
+### We are happy to announce we have been selected as a GSoC mentor organization. Please refer to our [proposal template and application process](https://cross.ucsc.edu/programs/gsoc_application_template.html) for details on how to apply for a GSoC contributor slot. 
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in &body=I am a potential OSRE22 sponsor and I am interested in We are happy to announce we have been selected as a GSoC mentor organization. Please refer to our [proposal template and application process](https://cross.ucsc.edu/programs/gsoc_application_template.html) for details on how to apply for a GSoC contributor slot..)
+
 This list of projects are meant for student and other up-and-coming developers interested in contributing to participating Universiy of California-based open source projects. The list below notes the UC-based open source project and ideas associated to each that were submitted by a UC-affiliated mentor. If you have any questions, please visit our Gitter channel: [![Join the chat at
 https://gitter.im/uccross/gsoc](https://badges.gitter.im/uccross/gsoc.svg)](https://gitter.im/uccross/gsoc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -12,6 +15,7 @@ Table of Contents:
 
 <!--ts-->
 * [Open Source Project Ideas](#open-source-project-ideas)
+      * [We are happy to announce we have been selected as a GSoC mentor organization. Please refer to our <a href="https://cross.ucsc.edu/programs/gsoc_application_template.html" rel="nofollow">proposal template and application process</a> for details on how to apply for a GSoC contributor slot.](#we-are-happy-to-announce-we-have-been-selected-as-a-gsoc-mentor-organization-please-refer-to-our-proposal-template-and-application-process-for-details-on-how-to-apply-for-a-gsoc-contributor-slot)
    * [LiveHD](#livehd)
       * [HIF Tooling](#hif-tooling)
       * [Mockturtle](#mockturtle)
@@ -76,7 +80,7 @@ Table of Contents:
    * [Adaptive Load Balancers for Low-latency Multi-hop Networks](#adaptive-load-balancers-for-low-latency-multi-hop-networks)
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
-<!-- Added by: runner, at: Thu Mar 17 19:33:32 UTC 2022 -->
+<!-- Added by: runner, at: Thu Mar 24 19:00:26 UTC 2022 -->
 
 <!--te-->
 

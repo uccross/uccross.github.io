@@ -14,6 +14,7 @@ Table of Contents:
 
 <!--ts-->
 * [Open Source Project Ideas](#open-source-project-ideas)
+      * [We are happy to announce we have been selected as a GSoC mentor organization. Please refer to our <a href="https://cross.ucsc.edu/programs/gsoc_application_template.html" rel="nofollow">proposal template and application process</a> for details on how to apply for a GSoC contributor slot.](#we-are-happy-to-announce-we-have-been-selected-as-a-gsoc-mentor-organization-please-refer-to-our-proposal-template-and-application-process-for-details-on-how-to-apply-for-a-gsoc-contributor-slot)
    * [LiveHD](#livehd)
       * [HIF Tooling](#hif-tooling)
       * [Mockturtle](#mockturtle)
@@ -78,7 +79,7 @@ Table of Contents:
    * [Adaptive Load Balancers for Low-latency Multi-hop Networks](#adaptive-load-balancers-for-low-latency-multi-hop-networks)
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
-<!-- Added by: runner, at: Thu Mar 17 19:33:32 UTC 2022 -->
+<!-- Added by: runner, at: Thu Mar 24 19:00:26 UTC 2022 -->
 
 <!--te-->
 
