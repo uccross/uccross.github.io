@@ -39,6 +39,8 @@ Table of Contents:
       * [Integrating Delta Lake on top of SkyhookDM](#integrating-delta-lake-on-top-of-skyhookdm)
    * [Proactive Data Containers (PDC)](#proactive-data-containers-pdc)
       * [Python interface to an object-centric data management system](#python-interface-to-an-object-centric-data-management-system)
+   * [HDF5](#hdf5)
+      * [Python Interface to HDF5 Asynchronous I/O](#python-interface-to-hdf5-asynchronous-io)
    * [CephFS](#cephfs)
       * [CephFS namespace traversal offloading](#cephfs-namespace-traversal-offloading)
    * [OpenROAD - A Complete, Autonomous RTL-GDSII Flow for VLSI Designs](#openroad---a-complete-autonomous-rtl-gdsii-flow-for-vlsi-designs)
@@ -80,7 +82,8 @@ Table of Contents:
    * [Adaptive Load Balancers for Low-latency Multi-hop Networks](#adaptive-load-balancers-for-low-latency-multi-hop-networks)
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
-<!-- Added by: runner, at: Thu Mar 24 19:00:26 UTC 2022 -->
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: runner, at: Fri Apr  1 20:07:47 UTC 2022 -->
 
 <!--te-->
 
@@ -440,6 +443,31 @@ transformations, and storage mechanisms that take advantage of the deep storage 
   * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov), [Houjun Tang](mailto:htang4@lbl.gov)
 
 [Proactive Data Containers (PDC)](https://sdm.lbl.gov/pdc/about.html) is an object-centric data management system for scientific data on high performance computing systems. It manages objects and their associated metadata within a locus of storage (memory, NVRAM, disk, etc.). Managing data as objects enables powerful optimization opportunities for data movement and transformations, and storage mechanisms that take advantage of the deep storage hierarchy and enable automated performance tuning. Currently PDC has a C interface. Providing a python interface would make it easier for more Python applications to utilize it.
+
+-------
+
+## HDF5
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in HDF5.)
+
+[HDF5](https://portal.hdfgroup.org/display/knowledge/What+is+HDF5) is a unique technology suite that makes possible the management of extremely large and complex data collections.
+
+The HDF5 technology suite includes:
+  * A versatile data model that can represent very complex data objects and a wide variety of metadata.
+  * A completely portable file format with no limit on the number or size of data objects in the collection.
+  * A software library that runs on a range of computational platforms, from laptops to massively parallel systems, and implements a high-level API with C, C++, Fortran 90, and Java interfaces.
+  * A rich set of integrated performance features that allow for access time and storage space optimizations.
+  * Tools and applications for managing, manipulating, viewing, and analyzing the data in the collection.
+
+### Python Interface to HDF5 Asynchronous I/O
+💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  HDF5&body=I am a potential OSRE22 sponsor and I am interested in Python Interface to HDF5 Asynchronous I/O.)
+
+  * **Topics**: `Python`, `Async I/O`, `HDF5`
+  * **Skills**: Python, C, HDF5
+  * **Difficulty**: Medium
+  * **Size**: Large (350 hours)
+  * **Mentor**: [Suren Byna](mailto:sbyna@lbl.gov), [Houjun Tang](mailto:htang4@lbl.gov)
+
+HDF5 is a well-known library for storing and accessing (known as "Input and Output" or I/O) data on high-performance computing systems. Recently, new technologies, such as asynchronous I/O and caching, have been developed to utilize fast memory and storage devices and to hide the I/O latency. Applications can take advantage of an asynchronous interface by scheduling I/O as early as possible and overlapping computation with I/O operations to improve overall performance. The existing HDF5 asynchronous I/O feature supports the C/C++ interface. This project involves the development and performance evaluation of a Python interface that would allow more Python-based scientific codes to use and benefit from the asynchronous I/O.
 
 
 ## CephFS
