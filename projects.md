@@ -82,7 +82,7 @@ Table of Contents:
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Apr  1 20:07:47 UTC 2022 -->
+<!-- Added by: runner, at: Mon Apr  4 01:07:50 UTC 2022 -->
 
 <!--te-->
 
@@ -334,16 +334,16 @@ Implement an optimal state estimation algorithm from a model.  This model can be
 
 ## SkyhookDM
 
-[SkyhookDM](http://www.skyhookdm.com)
+[SkyhookDM](https://iris-hep.org/projects/skyhookdm.html)
+
 
 The Skyhook Data Management project extends object storage with data
 management functionality for tabular data. SkyhookDM enables storing and query
-database tables in Ceph distributed object storage.  SkyhookDM is an
-[Apache Arrow](https://arrow.apache.org) native
-storage system that utilizes the Arrow Dataset API to store and query data,
-and our Ceph extensions support server-side data processing. For example,
-pushing down SELECT, PROJECT and other functionality into storage to reduce
-data returned to the client.
+tabular data in the [Ceph](https://ceph.io) distributed object storage system. It thereby
+turns Ceph into an [Apache Arrow](https://arrow.apache.org)-native
+storage system, utilizing the Arrow Dataset API to store and query data with server-side data processing, including selection and projection that can significantly reduce the data returned to the client.
+
+SkyhookDM is now part of Apache Arrow (see [blog post](https://arrow.apache.org/blog/2022/01/31/skyhook-bringing-computation-to-storage-with-apache-arrow/)).
 
 -------------------
 
