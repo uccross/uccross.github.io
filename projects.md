@@ -266,6 +266,11 @@ Since the last decade, the slowing down in the performance improvement of genera
 
 ### When will Rotational Media Users abandon SATA and converge to NVMe?
 
+- **Skills:** Entrepreneurial mind, interest in researching high technology markets
+- **Difficulty:** Medium
+- **Size** 350 hours 
+- **Mentor:** [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
+
 **Goal:** Determine the benefits in particular market verticals such as genomics and health care to converge the storage stack in data center computer systems to the NVMe device interface, even when devices include rotational media (aka disk drives). The key question: “When do people abandon SATA and SAS and converge to NVMe?”
 
 **Background:** NVMe is a widely used device interface for fast storage devices such as flash that behave much more like random access memory than the traditional rotational media. Rotational media is accessed mostly via SATA and SAS which has served the industry well for close to two decades. SATA in particular is much cheaper than NVMe. Now that NVMe is widely available and quickly advancing in functionality, an interesting question is whether there is a market for rotational media devices with NVMe interfaces, converging the storage stack to only one logical device interface, thereby enabling a common ecosystem and more efficient connectivity from multiple processes to storage devices.
