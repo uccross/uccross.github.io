@@ -268,7 +268,7 @@ Since the last decade, the slowing down in the performance improvement of genera
 
 - **Skills:** Entrepreneurial mind, interest in researching high technology markets
 - **Difficulty:** Medium
-- **Size** 350 hours 
+- **Size:** 350 hours 
 - **Mentor:** [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
 
 **Goal:** Determine the benefits in particular market verticals such as genomics and health care to converge the storage stack in data center computer systems to the NVMe device interface, even when devices include rotational media (aka disk drives). The key question: “When do people abandon SATA and SAS and converge to NVMe?”
