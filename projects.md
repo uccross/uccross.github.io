@@ -24,6 +24,7 @@ Table of Contents:
    * [Eusocial Storage Devices](#eusocial-storage-devices)
       * [Dynamic function injection for RocksDB](#dynamic-function-injection-for-rocksdb)
       * [Demonstrating a composable storage system accelerated by memory semantic technologies](#demonstrating-a-composable-storage-system-accelerated-by-memory-semantic-technologies)
+      * [When will Rotational Media Users abandon SATA and converge to NVMe?](#when-will-rotational-media-users-abandon-sata-and-converge-to-nvme)
    * [SmartNICs](#smartnics)
       * [Employ kernel-bypass techniques in Apache Arrow Flight](#employ-kernel-bypass-techniques-in-apache-arrow-flight)
       * [Arrow data filtering using regular expression accelerator](#arrow-data-filtering-using-regular-expression-accelerator)
@@ -82,7 +83,7 @@ Table of Contents:
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Mon Apr  4 01:11:02 UTC 2022 -->
+<!-- Added by: runner, at: Thu May 26 18:40:27 UTC 2022 -->
 
 <!--te-->
 
