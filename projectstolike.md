@@ -84,7 +84,7 @@ Table of Contents:
       * [Adaptive, Dynamic Load Balancing for data center and WAN traffic](#adaptive-dynamic-load-balancing-for-data-center-and-wan-traffic)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Thu May 26 18:40:27 UTC 2022 -->
+<!-- Added by: runner, at: Thu May 26 18:53:42 UTC 2022 -->
 
 <!--te-->
 
@@ -278,6 +278,11 @@ Since the last decade, the slowing down in the performance improvement of genera
 ### When will Rotational Media Users abandon SATA and converge to NVMe?
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  Eusocial Storage Devices&body=I am a potential OSRE22 sponsor and I am interested in When will Rotational Media Users abandon SATA and converge to NVMe?.)
 
+- **Skills:** Entrepreneurial mind, interest in researching high technology markets
+- **Difficulty:** Medium
+- **Size:** 350 hours 
+- **Mentor:** [Carlos Maltzahn](mailto:carlosm@ucsc.edu)
+
 **Goal:** Determine the benefits in particular market verticals such as genomics and health care to converge the storage stack in data center computer systems to the NVMe device interface, even when devices include rotational media (aka disk drives). The key question: “When do people abandon SATA and SAS and converge to NVMe?”
 
 **Background:** NVMe is a widely used device interface for fast storage devices such as flash that behave much more like random access memory than the traditional rotational media. Rotational media is accessed mostly via SATA and SAS which has served the industry well for close to two decades. SATA in particular is much cheaper than NVMe. Now that NVMe is widely available and quickly advancing in functionality, an interesting question is whether there is a market for rotational media devices with NVMe interfaces, converging the storage stack to only one logical device interface, thereby enabling a common ecosystem and more efficient connectivity from multiple processes to storage devices.
@@ -306,8 +311,6 @@ https://www.storagereview.com/news/nvme-hdd-edges-closer-to-reality
 https://www.tomshardware.com/news/seagate-demonstrates-hdd-with-pcie-nvme-interface  
 https://nvmexpress.org/everything-you-need-to-know-about-the-nvme-2-0-specifications-and-new-technical-proposals/  
 https://www.tomshardware.com/news/nvme-2-0-supports-hard-disk-drives  
-
-
 
 ## SmartNICs
 💝 [Interested?](mailto:ospo-info-group@ucsc.edu?subject=OSRE22 Sponsor: Interested in  SmartNICs&body=I am a potential OSRE22 sponsor and I am interested in SmartNICs.)
