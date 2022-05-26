@@ -301,8 +301,6 @@ https://www.tomshardware.com/news/seagate-demonstrates-hdd-with-pcie-nvme-interf
 https://nvmexpress.org/everything-you-need-to-know-about-the-nvme-2-0-specifications-and-new-technical-proposals/  
 https://www.tomshardware.com/news/nvme-2-0-supports-hard-disk-drives  
 
-
-
 ## SmartNICs
 
 SmartNICs have become one of important components in heterogeneous system architectures for offloading computing to accelerate particular host functions that mostly found in networking, storage, security, and management services. Generally speaking, a SmartNIC is programmable, and therefore it is "smart." Though the programmability can have different definitions or implementations by different vendors, the hardware blocks of a SmartNIC that enables programmability are highly specialized (e.g., compression engine and encryption engine). Therefore, SmartNICs can be more efficient than host CPUs on particular jobs. The fundamental problem for SmartNICs for applications is how we can gain performance benefits by leveraging this new hardware.
