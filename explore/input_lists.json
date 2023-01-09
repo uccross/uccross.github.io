@@ -15,7 +15,7 @@
         "systemslab/tcp_inigo",
         "systemslab/tcp_relentless_inigo",
         "uccross/cavsat",
-        "uccross/skyhook-ceph",
+        "uccross/skyhookdm",
         "xiszishu/syssim",
         "masc-ucsc/livehd",
         "getpopper/popper",
