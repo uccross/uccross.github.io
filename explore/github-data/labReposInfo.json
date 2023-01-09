@@ -53,14 +53,14 @@
                 "name": "C"
             },
             "stargazers": {
-                "totalCount": 16
+                "totalCount": 17
             },
             "url": "https://github.com/cruzdb/pg_zlog"
         },
         "cruzdb/zlog": {
             "description": "A high-performance distributed shared-log for Ceph",
             "forks": {
-                "totalCount": 20
+                "totalCount": 24
             },
             "homepageUrl": "https://cruzdb.github.io/zlog/",
             "name": "zlog",
@@ -72,7 +72,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 107
+                "totalCount": 113
             },
             "url": "https://github.com/cruzdb/zlog"
         },
@@ -98,7 +98,7 @@
         "galaxykate/tracery2": {
             "description": "New tracery, with async and a variety of powerful new features.  Funded by the generosity of CROSS!",
             "forks": {
-                "totalCount": 5
+                "totalCount": 9
             },
             "homepageUrl": null,
             "name": "tracery2",
@@ -110,14 +110,14 @@
                 "name": "JavaScript"
             },
             "stargazers": {
-                "totalCount": 40
+                "totalCount": 49
             },
             "url": "https://github.com/galaxykate/tracery2"
         },
         "galaxykate/traceryeditor": {
             "description": "a Vue-based editor for Tracery and Tracery-likes",
             "forks": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "homepageUrl": null,
             "name": "traceryeditor",
@@ -129,14 +129,14 @@
                 "name": "JavaScript"
             },
             "stargazers": {
-                "totalCount": 7
+                "totalCount": 8
             },
             "url": "https://github.com/galaxykate/traceryeditor"
         },
         "getpopper/popper": {
             "description": "Container-native task automation engine.",
             "forks": {
-                "totalCount": 61
+                "totalCount": 59
             },
             "homepageUrl": "https://getpopper.io",
             "name": "popper",
@@ -148,7 +148,7 @@
                 "name": "Python"
             },
             "stargazers": {
-                "totalCount": 247
+                "totalCount": 277
             },
             "url": "https://github.com/getpopper/popper"
         },
@@ -174,7 +174,7 @@
         "masc-ucsc/livehd": {
             "description": "Live Hardware Development (LiveHD), a productive infrastructure for Synthesis and Simulation",
             "forks": {
-                "totalCount": 36
+                "totalCount": 42
             },
             "homepageUrl": "",
             "name": "livehd",
@@ -186,7 +186,7 @@
                 "name": "Verilog"
             },
             "stargazers": {
-                "totalCount": 127
+                "totalCount": 165
             },
             "url": "https://github.com/masc-ucsc/livehd"
         },
@@ -212,7 +212,7 @@
         "nimble-dev/nimble": {
             "description": "The base NIMBLE package for R",
             "forks": {
-                "totalCount": 19
+                "totalCount": 18
             },
             "homepageUrl": "http://R-nimble.org",
             "name": "nimble",
@@ -224,7 +224,7 @@
                 "name": "C++"
             },
             "stargazers": {
-                "totalCount": 109
+                "totalCount": 129
             },
             "url": "https://github.com/nimble-dev/nimble"
         },
@@ -250,7 +250,7 @@
         "systemslab/tcp_inigo": {
             "description": "TCP Inigo takes DCTCP's ECN based Congestion Control and uses a similar delay based CC alongside it, amongst other enhancements",
             "forks": {
-                "totalCount": 5
+                "totalCount": 4
             },
             "homepageUrl": null,
             "name": "tcp_inigo",
@@ -304,24 +304,24 @@
             },
             "url": "https://github.com/uccross/cavsat"
         },
-        "uccross/skyhookdm-ceph": {
-            "description": "Skyhook Data Management: programmable storage for databases.  This repo contains the Ceph extensions to support data management in storage.",
+        "uccross/skyhookdm": {
+            "description": "Parent repository for the SkyhookDM project.",
             "forks": {
-                "totalCount": 9
+                "totalCount": 2
             },
-            "homepageUrl": "",
-            "name": "skyhookdm-ceph",
-            "nameWithOwner": "uccross/skyhookdm-ceph",
+            "homepageUrl": "https://skyhookdm-arrow.readthedocs.io",
+            "name": "skyhookdm",
+            "nameWithOwner": "uccross/skyhookdm",
             "owner": {
                 "login": "uccross"
             },
             "primaryLanguage": {
-                "name": "C++"
+                "name": "Shell"
             },
             "stargazers": {
-                "totalCount": 25
+                "totalCount": 2
             },
-            "url": "https://github.com/uccross/skyhookdm-ceph"
+            "url": "https://github.com/uccross/skyhookdm"
         },
         "xiszishu/syssim": {
             "description": null,

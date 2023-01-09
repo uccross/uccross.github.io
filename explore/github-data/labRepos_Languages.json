@@ -178,6 +178,9 @@
                         "name": "Starlark"
                     },
                     {
+                        "name": "Tcl"
+                    },
+                    {
                         "name": "Python"
                     },
                     {
@@ -196,7 +199,7 @@
                         "name": "Roff"
                     }
                 ],
-                "totalCount": 11
+                "totalCount": 12
             }
         },
         "michaelsevilla/ceph": {
@@ -361,80 +364,20 @@
                 "totalCount": 5
             }
         },
-        "uccross/skyhookdm-ceph": {
+        "uccross/skyhookdm": {
             "languages": {
                 "nodes": [
                     {
-                        "name": "C++"
-                    },
-                    {
-                        "name": "Terra"
+                        "name": "Shell"
                     },
                     {
                         "name": "Python"
                     },
                     {
-                        "name": "Jupyter Notebook"
-                    },
-                    {
-                        "name": "Roff"
-                    },
-                    {
-                        "name": "Shell"
-                    },
-                    {
-                        "name": "C"
-                    },
-                    {
-                        "name": "CMake"
-                    },
-                    {
-                        "name": "Perl"
-                    },
-                    {
-                        "name": "JavaScript"
-                    },
-                    {
-                        "name": "HTML"
-                    },
-                    {
-                        "name": "Java"
-                    },
-                    {
-                        "name": "Assembly"
-                    },
-                    {
-                        "name": "Raku"
-                    },
-                    {
-                        "name": "CSS"
-                    },
-                    {
-                        "name": "Makefile"
-                    },
-                    {
-                        "name": "Ruby"
-                    },
-                    {
-                        "name": "Starlark"
-                    },
-                    {
-                        "name": "Dockerfile"
-                    },
-                    {
-                        "name": "DIGITAL Command Language"
-                    },
-                    {
-                        "name": "Lua"
-                    },
-                    {
-                        "name": "SWIG"
-                    },
-                    {
-                        "name": "Batchfile"
+                        "name": "C++"
                     }
                 ],
-                "totalCount": 23
+                "totalCount": 3
             }
         },
         "xiszishu/syssim": {

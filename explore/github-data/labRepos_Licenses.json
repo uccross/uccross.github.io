@@ -93,13 +93,8 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             }
         },
-        "uccross/skyhookdm-ceph": {
-            "licenseInfo": {
-                "name": "Other",
-                "nickname": null,
-                "spdxId": "NOASSERTION",
-                "url": "http://choosealicense.com/licenses/other/"
-            }
+        "uccross/skyhookdm": {
+            "licenseInfo": null
         },
         "xiszishu/syssim": {
             "licenseInfo": null
